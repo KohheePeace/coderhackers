@@ -1,7 +1,7 @@
 module.exports = {
   title: 'CODER HACKERS',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://modest-darwin-adaec1.netlify.com/',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
