@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'The tagline of my site',
   url: 'https://modest-darwin-adaec1.netlify.com/',
   baseUrl: '/',
-  favicon: 'img/favicon.png',
+  favicon: 'img/favicon.io',
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
   projectName: 'kohheepeace-blog', // Usually your repo name.
   themeConfig: {
