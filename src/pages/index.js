@@ -8,7 +8,7 @@ import styles from './index.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
+    title: <>crud2a react react-router</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
@@ -16,6 +16,7 @@ const features = [
         used to get your website up and running quickly.
       </>
     ),
+    link: 'docs/crud2a-react-react-router/00-intro'
   },
   {
     title: <>Focus on What Matters</>,
@@ -39,17 +40,21 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, link}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <Link
+        to={useBaseUrl(link)}
+      >
+        {imgUrl && (
+          <div className="text--center">
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </div>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </Link>
     </div>
   );
 }
