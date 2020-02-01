@@ -24,7 +24,7 @@ I wanted my blog site for managing not only blog but also tutorial contents.
 ## Looping sidebar contents
 By doing this, you don't need to write sidebar strcture.
 (*Note If you struct docs in order like below.)
-![sidebar]({{site.baseurl}}/https://storage.googleapis.com/coderhackers-assets/blog/docusaurus-sidebar-auto-lookup.png)
+![sidebar](https://storage.googleapis.com/coderhackers-assets/blog/docusaurus-sidebar-auto-lookup.png)
 
 #### `sidebars.js`
 
@@ -49,3 +49,6 @@ module.exports = {
 };
 ```
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg4NjcwNzk3N119
+-->
