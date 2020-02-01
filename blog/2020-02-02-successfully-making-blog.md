@@ -13,7 +13,7 @@ I managed to make my own blog 😄
 
 ## Tech Stack
 - [docusaurus 2](https://v2.docusaurus.io) for Blog and Document
-- [StackEdit]([https://github.com/benweet/stackedit](https://github.com/benweet/stackedit)) for CMS
+- [StackEdit](https://github.com/benweet/stackedit)
 - [Netlify](https://www.netlify.com/) for Deploy
 
 
@@ -50,5 +50,5 @@ module.exports = {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQ4MTg2ODQsLTg4NjcwNzk3N119
+eyJoaXN0b3J5IjpbLTc2MjU3MTk0LC04ODY3MDc5NzddfQ==
 -->
