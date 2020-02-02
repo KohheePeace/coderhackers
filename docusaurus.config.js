@@ -6,7 +6,11 @@ module.exports = {
   favicon: 'img/favicon.io',
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
   projectName: 'kohheepeace-blog', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-128556070-3',
+    },
     navbar: {
       title: 'Home',
       logo: {
