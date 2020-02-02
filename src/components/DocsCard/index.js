@@ -10,7 +10,7 @@ function DocsCard({imageUrl, title, description, link}) {
 
   return(
     <div className="col col--4" style={{marginBottom: '2rem'}}>
-      <Link to={link} className="card-link">
+      <Link to={link} className={styles.cardLink}>
         <div className={classnames('card shadow--tl', styles.card)}>
           <div className="card__image" style={{textAlign: 'center'}}>
             <img

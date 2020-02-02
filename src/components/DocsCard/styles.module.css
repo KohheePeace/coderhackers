@@ -1,8 +1,8 @@
-.card-link {
+.cardLink {
   color: #000;
 }
 
-.card-link:hover {
+.cardLink:hover {
   color: var(--ifm-link-color);
   cursor: pointer;
 }
