@@ -48,7 +48,7 @@ function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={classnames('hero', styles.heroBanner)}>
+      <header className={classnames('hero hero--dark', styles.heroBanner)}>
         <div className="container">
           <h1 className={classnames('hero--title', styles.heroTitle)}>{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
