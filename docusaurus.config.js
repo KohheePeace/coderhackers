@@ -1,6 +1,6 @@
 module.exports = {
   title: 'CODER HACKERS',
-  tagline: 'stock and share what I learned.',
+  tagline: "stock and share what I've learned.",
   url: 'https://www.coderhackers.com',
   baseUrl: '/',
   favicon: 'img/favicon.io',

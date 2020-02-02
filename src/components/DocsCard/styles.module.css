@@ -1,3 +1,8 @@
-.card {
-  /* text-align: center; */
+.card-link {
+  color: #000;
+}
+
+.card-link:hover {
+  color: var(--ifm-link-color);
+  cursor: pointer;
 }
