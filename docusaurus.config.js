@@ -6,10 +6,22 @@ module.exports = {
   favicon: 'img/favicon.io',
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
   projectName: 'kohheepeace-blog', // Usually your repo name.
-  plugins: ['@docusaurus/plugin-google-analytics'],
+  plugins: [
+    '@docusaurus/plugin-google-analytics',
+    '@docusaurus/plugin-google-gtag',
+    '@docusaurus/plugin-sitemap',
+    {
+      cacheTime: 600 * 1000, // 600 sec - cache purge period
+      changefreq: 'weekly',
+      priority: 0.5,
+    },
+  ],
   themeConfig: {
     googleAnalytics: {
       trackingID: 'UA-128556070-3',
+    },
+    gtag: {
+      trackingID: 'UA-141789564-1',
     },
     navbar: {
       title: 'Home',
