@@ -4,19 +4,21 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 4rem 0 0;
+  min-height: 20rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
 .heroTitle {
-  font-weight: 300;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2rem 2rem 0;
+    min-height: 16rem;
   }
 }
 
@@ -26,14 +28,7 @@
   justify-content: center;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.featureImage {
-  height: 200px;
-  width: 200px;
+.docsListSection {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }

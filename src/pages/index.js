@@ -3,12 +3,12 @@ import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './index.module.css';
+import styles from './styles.module.css';
+import DocsCard from '../components/DocsCard';
 
-const features = [
+const docsList = [
   {
-    title: <>crud2a react react-router</>,
+    title: <>Crud2a React React-Router</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
@@ -40,55 +40,27 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description, link}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={classnames('col col--4', styles.feature)}>
-      <Link
-        to={useBaseUrl(link)}
-      >
-        {imgUrl && (
-          <div className="text--center">
-            <img className={styles.featureImage} src={imgUrl} alt={title} />
-          </div>
-        )}
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </Link>
-    </div>
-  );
-}
-
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Description will go into a meta tag in <head />"
+    >
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className={classnames('hero--title', styles.heroTitle)}>{siteConfig.title}</h1>
-          <p className="hero__subtitle" style={{ fontWeight: 300 }}>{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/doc1')}>
-              Get Started
-            </Link>
-          </div>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
         </div>
       </header>
       <main>
-        {features && features.length && (
-          <section className={styles.features}>
+        {docsList && docsList.length && (
+          <section className={styles.docsListSection}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                {docsList.map((props, idx) => (
+                  <DocsCard key={idx} {...props} />
                 ))}
               </div>
             </div>

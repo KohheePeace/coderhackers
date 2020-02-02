@@ -1,11 +1,11 @@
 module.exports = {
   title: 'CODER HACKERS',
-  tagline: 'The tagline of my site',
-  url: 'https://modest-darwin-adaec1.netlify.com/',
+  tagline: 'stock and share what I learned.',
+  url: 'https://www.coderhackers.com',
   baseUrl: '/',
   favicon: 'img/favicon.io',
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
-  projectName: 'kohheepeace-blog', // Usually your repo name.
+  projectName: 'coderhackers', // Usually your repo name.
   plugins: [
     '@docusaurus/plugin-google-analytics',
     '@docusaurus/plugin-google-gtag',
@@ -21,7 +21,7 @@ module.exports = {
       trackingID: 'UA-128556070-3',
     },
     gtag: {
-      trackingID: 'UA-141789564-1',
+      trackingID: 'UA-128556070-3',
     },
     navbar: {
       title: 'Home',
@@ -30,7 +30,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        // {to: 'docs/doc1', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -42,24 +42,11 @@ module.exports = {
     footer: {
       links: [
         {
-          title: 'Docs',
+          title: 'About',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'About this site',
+              to: 'docs/about-this-site',
             },
           ],
         },
@@ -72,7 +59,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/kohheepeace',
+              href: 'https://github.com/kohheepeace/coderhackers',
             },
           ],
         },
@@ -86,8 +73,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
