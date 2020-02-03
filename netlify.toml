@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://jp.coderhackers.com/*"
+  to = "https://flamboyant-bardeen-07478d.netlify.com/:splat"
+  status = 301
+  force = true
