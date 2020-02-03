@@ -3,7 +3,7 @@ module.exports = {
   tagline: "stock and share what I've learned.",
   url: 'https://www.coderhackers.com',
   baseUrl: '/',
-  favicon: 'img/favicon.io',
+  favicon: 'img/favicon.ico',
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
   projectName: 'coderhackers', // Usually your repo name.
   plugins: [
