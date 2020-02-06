@@ -1,11 +1,14 @@
-## Step4 Folder Structure
+---
+title: Step4 Folder Structure
+---
+
 Rename `lib/main.dart` to `lib/main_initial.dart`.
 
 This file and comment is useful to understand code so I keep this.
 
 And create `lib/main.dart`
 
-### Create `lib/main.dart`
+## Create `lib/main.dart`
 This is super basic flutter file.
 
 1. html tag
@@ -54,7 +57,7 @@ class _HomePageState extends State<HomePage> {
 }
 ```
 
-### Prepare skelton folders and files
+## Prepare skelton folders and files
 Make `pages` folder. (some other developers may name `screens` but I prefer `pages`).
 
 1. `pages/home_page.dart`

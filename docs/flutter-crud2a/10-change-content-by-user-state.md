@@ -1,4 +1,7 @@
-## Step10 Change content by user's login state
+---
+title: Step10 Change content by user's login state
+---
+
 Ref: https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro
 
 There are a lot of options to manage state.
@@ -11,7 +14,7 @@ In this tutorial, we're going to...
 
 
 
-### Edit `lib/main.dart`
+## Edit `lib/main.dart`
 Convert from stateless widget to statefull widget
 ![convert-stateless-to-statefull.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
 
@@ -58,7 +61,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-### Edit `lib/pages/home_page.dart` to accept properties
+## Edit `lib/pages/home_page.dart` to accept properties
 You can imitate this by `lib/main_initial.dart`
 ```dart
 import 'package:flutter/material.dart';
@@ -146,7 +149,7 @@ body: Center(
 ...
 ```
 
-### Separate drawer widgets and change contents by user's login state
+## Separate drawer widgets and change contents by user's login state
 In this step we will change drawer contents by isAuthenticated.
 
 Make `widgets` folder under `lib`.
@@ -250,7 +253,7 @@ ListTile(
 ),
 ```
 
-### Pass `widget.isAuthenticated` to `home_drawer.dart`
+## Pass `widget.isAuthenticated` to `home_drawer.dart`
 
 `home_page.dart`
 ```dart

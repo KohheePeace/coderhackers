@@ -1,4 +1,7 @@
-## Step22 Firestore security rules (Backend authorization)
+---
+title: Step22 Firestore security rules (Backend authorization)
+---
+
 ```js
 rules_version = '2';
 

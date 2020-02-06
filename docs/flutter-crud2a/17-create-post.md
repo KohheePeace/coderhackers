@@ -1,5 +1,8 @@
-## Step17 Create Post
-### Add FloatingActionButton
+---
+title: Step17 Create Post
+---
+
+## Add FloatingActionButton
 https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
 
 `lib/pages/home_page.dart`
@@ -42,7 +45,7 @@ class _HomePageState extends State<HomePage> {
 }
 ```
 
-### Edit `lib/pages/posts_new_page.dart`
+## Edit `lib/pages/posts_new_page.dart`
 The all code is...
 
 `lib/pages/posts_new_page.dart`

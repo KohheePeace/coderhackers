@@ -1,4 +1,7 @@
-## Step2 Setup VS Code Editor
+---
+title: Step2 Setup VS Code Editor
+---
+
 https://flutter.dev/docs/get-started/editor?tab=vscode
 
 Fix Error of Android toolchain

@@ -1,4 +1,7 @@
-## Step7 Setup Firebase auth
+---
+title: Step7 Setup Firebase auth
+---
+
 Please follow this official guide
 https://firebase.google.com/docs/flutter/setup?platform=android#create-firebase-project
 

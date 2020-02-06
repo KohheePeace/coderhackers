@@ -1,4 +1,7 @@
-## Step18 List Posts
+---
+title: Step18 List Posts
+---
+
 In this step, let's show the posts in `HomePage`.
 
 This is almost same with official example.
@@ -27,10 +30,10 @@ body: StreamBuilder<QuerySnapshot>(
 ),
 ```
 
-### Add post again to check how **`StreamBuilder`** works
+## Add post again to check how **`StreamBuilder`** works
 By using **`StreamBuilder`**, new post automatically added to HomePage.
 
-### Navigate to **PostsShowPage**
+## Navigate to **PostsShowPage**
 When user tap each post, we want to navigate user to **PostsShowPage**.
 
 `lib/pages/home_page.dart`
@@ -79,7 +82,7 @@ body: StreamBuilder<QuerySnapshot>(
 ```
 
 
-### Create Post model
+## Create Post model
 `lib/models/post.dart`
 ```dart
 import 'package:cloud_firestore/cloud_firestore.dart';

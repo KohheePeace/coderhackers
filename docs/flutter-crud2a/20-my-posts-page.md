@@ -1,4 +1,7 @@
-## Step20 My Posts Page
+---
+title: Step20 My Posts Page
+---
+
 `lib/pages/my_posts_page.dart`
 ```dart
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -67,7 +70,7 @@ stream: Firestore.instance
 	.snapshots()
 ```
 
-### Add **PopupMenuButton** to `lib/pages/my_posts_page.dart`
+## Add **PopupMenuButton** to `lib/pages/my_posts_page.dart`
 ![add-popup-menu-button.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/add-popup-menu-button.gif)
 
 https://flutter-widget.live/widgets/PopupMenuButton

@@ -1,4 +1,6 @@
-## Step13 ChangeNotifierProvider
+---
+title: Step13 ChangeNotifierProvider
+---
 
 Ref:
 
@@ -19,7 +21,7 @@ class IsAuthenticated extends ChangeNotifier {
 }
 ```
 
-### Replace existing provider code
+## Replace existing provider code
 Replace 
 ```dart
 Provider.of<bool>(context);
@@ -31,7 +33,7 @@ with
 Provider.of<IsAuthenticated>(context).isAuthenticated
 ```
 
-### Add function to notify Provider's change
+## Add function to notify Provider's change
 
 In `lib/pages/login_page.dart` and `lib/pages/register_page.dart`
 ```dart
@@ -57,7 +59,7 @@ providers: [
 ```
 
 
-### This is troublesome. There is nice way! => StreamProvider
+## This is troublesome. There is nice way! => StreamProvider
 This approach is okay but code become messy :(
 
 **BUT!** There is a nice way! Let's try in the next step.

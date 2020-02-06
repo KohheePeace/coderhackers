@@ -1,4 +1,7 @@
-## Step9 Login Page
+---
+title: Step9 Login Page
+---
+
 Official example https://github.com/FirebaseExtended/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/lib/signin_page.dart
 
 The code is almost same with register page.

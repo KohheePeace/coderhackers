@@ -1,7 +1,10 @@
-## Step8 Edit Register page
+---
+title: Step8 Edit Register page
+---
+
 In this step, we will make this app able to register with **firebase auth**.
 
-### Install `firebase_auth` packages
+## Install `firebase_auth` packages
 https://pub.dev/packages/firebase_auth
 
 `pubspec.yaml`
@@ -18,16 +21,16 @@ dependencies:
 ...
 ```
 
-### Official example code
+## Official example code
 https://github.com/FirebaseExtended/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/lib/register_page.dart
 
-### About Form
+## About Form
 - https://flutter.dev/docs/cookbook#forms
 - https://flutter.dev/docs/cookbook/forms/validation
 - https://flutter.dev/docs/cookbook/forms/text-field-changes
 
 
-### Final code
+## Final code
 `lib/pages/register_page.dart`
 ```dart
 import 'package:flutter/material.dart';
@@ -165,7 +168,7 @@ class _RegisterPageState extends State<RegisterPage> {
 }
 ```
 
-### Test it
+## Test it
 ![test-register.png](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/test-register.png)
 
 And check firebase console authentication tab.

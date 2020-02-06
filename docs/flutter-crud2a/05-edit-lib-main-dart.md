@@ -1,5 +1,8 @@
-## Step5 Edit `lib/main.dart`
-Cleanup the code by moving `HomePage`.
+---
+title: Step5 Edit `lib/main.dart`
+---
+
+## Cleanup the code by moving `HomePage`.
 
 You see nothing has changed.
 

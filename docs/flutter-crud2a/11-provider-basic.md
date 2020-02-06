@@ -1,4 +1,7 @@
-## Step11 Provider Basic
+---
+title: Step11 Provider Basic
+---
+
 Provider is very simple.
 
 But the official docs example is too complicated.
@@ -8,7 +11,7 @@ Let's first start basic example.
 
 Refs: https://alligator.io/flutter/state-management/
 
-### Install Provider package
+## Install Provider package
 https://pub.dev/packages/provider
 
 `pubspec.yaml`
@@ -27,7 +30,7 @@ dependencies:
 ...
 ```
 
-### Edit `lib/main.dart` to use Provider
+## Edit `lib/main.dart` to use Provider
 In this example, just provide Text.
 
 ```dart hl_lines="17 33 34"
@@ -81,7 +84,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-### Consume Provided value in `lib/widgets/home_drawer.dart`
+## Consume Provided value in `lib/widgets/home_drawer.dart`
 
 To consume provided value you can use...
 

@@ -1,4 +1,7 @@
-## Step20 Delete Post
+---
+title: Step20 Delete Post
+---
+
 `lib/pages/my_posts_page.dart`
 ```dart
 case 'delete':

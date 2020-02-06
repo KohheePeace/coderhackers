@@ -1,5 +1,8 @@
-## Step22 Edit Post Page
-### Add Navigation to `lib/pages/posts_edit_page.dart`
+---
+title: Step22 Edit Post Page
+---
+
+## Add Navigation to `lib/pages/posts_edit_page.dart`
 `lib/pages/my_posts_page.dart`
 ```dart
 case 'edit':
@@ -12,7 +15,7 @@ case 'edit':
 	break;
 ```
 
-### Edit `lib/pages/posts_edit_page.dart`
+## Edit `lib/pages/posts_edit_page.dart`
 
 `lib/pages/posts_edit_page.dart`
 ```dart
@@ -124,7 +127,7 @@ class _PostsEditPageState extends State<PostsEditPage> {
 }
 ```
 
-### Important part of this code
+## Important part of this code
 
 Set initial form value.
 ```dart

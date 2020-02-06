@@ -1,9 +1,12 @@
-## Step 1 Install and Setup Flutter Sdk
+---
+title: Step1 Install Flutter Sdk
+---
+
 In this step, we will setup Flutter sdk by just following official document.
 
 https://flutter.dev/docs/get-started/install
 
-### For mac user
+## For mac user
 
 In `terminal`
 ```bash
@@ -19,7 +22,7 @@ pwd
 
 This path is needed to update path.
 
-#### Update flutter sdk path
+### Update flutter sdk path
 https://flutter.dev/docs/get-started/install/macos#update-your-path
 
 ```bash
@@ -46,9 +49,6 @@ which flutter
 /Users/kohheepeace/flutter-sdk/flutter/bin/flutter
 ```
 
-### For windows user
-
-
 ### flutter doctor
 If I run flutter doctor, it shows like a below.
 *I don't use ios, so this is enough.
@@ -73,3 +73,4 @@ flutter doctor
 ! Doctor found issues in 1 category.
 ```
 
+## For windows user

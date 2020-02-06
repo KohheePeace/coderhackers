@@ -1,6 +1,8 @@
-## Step6 Edit `pages/home_page.dart`
+---
+title: Step6 Edit `pages/home_page.dart`
+---
 
-### Add Drawer widget
+## Add Drawer widget
 We can choose **widgets** from
 https://flutter.dev/docs/development/ui/widgets/material
 
@@ -9,7 +11,7 @@ This is something **like Bootstrap components**.
 We will use **Drawer** widget
 https://api.flutter.dev/flutter/material/Drawer-class.html
 
-### Routing
+## Routing
 There are two way for navigate
 
 1. Navigate directly by using `MaterialPageRoute`
@@ -18,7 +20,7 @@ There are two way for navigate
 (https://flutter.dev/docs/cookbook/navigation/named-routes)
 
 
-### Final code
+## Final code
 
 `lib/main.dart`
 ```dart

@@ -1,4 +1,7 @@
-## Step19 Show Post Page
+---
+title: Step19 Show Post Page
+---
+
 `lib/pages/posts_show_page.dart`
 ```dart
 import 'package:flutter/material.dart';

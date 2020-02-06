@@ -1,17 +1,20 @@
-## Step16 Create User in Firestore
-### Why we need to create firestore user? Is firebase authentication user not enough?
+---
+title: Step16 Create User in Firestore
+---
+
+## Why we need to create firestore user? Is firebase authentication user not enough?
 
 1. Firebase auth stores information **only about authentication**.
 2. We **want to store relationship** with **User** and **Post** in firestore.
 
-### Install Firestore package
+## Install Firestore package
 https://pub.dev/packages/cloud_firestore
 Please use this or above version.
 ```yaml
 cloud_firestore: ^0.13.0+1
 ```
 
-### Store user when they successfully registered.
+## Store user when they successfully registered.
 `lib/pages/register_page.dart`
 ```dart hl_lines="11 12 13 14 15 16 17 18 19 20"
 onPressed: () async {
@@ -43,6 +46,6 @@ onPressed: () async {
 },
 ```
 
-### Test Register new account and check it.
+## Test Register new account and check it.
 please register new test user here...
 

@@ -1,4 +1,7 @@
-## Step12 Provide **isAuthenticated** state
+---
+title: Step12 Provide **isAuthenticated** state
+---
+
 In addition to provide **testProviderText**, let's provide **isAuthenticated** state.
 
 To provide multiple value, we need to use **MultiProvider**
@@ -45,7 +48,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-### Consume **isAuthenticated** param by using `Provider.of`
+## Consume **isAuthenticated** param by using `Provider.of`
 *I deleted ` ${Provider.of<String>(context)}`
 
 `lib/widgets/home_drawer.dart`
@@ -135,7 +138,7 @@ class HomeDrawer extends StatelessWidget {
 }
 ```
 
-### But how to change isAuthenticated value ?
+## But how to change isAuthenticated value ?
 `lib/main.dart`
 ```dart
 void initState() {
