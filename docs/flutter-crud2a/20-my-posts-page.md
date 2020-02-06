@@ -68,7 +68,7 @@ stream: Firestore.instance
 ```
 
 ### Add **PopupMenuButton** to `lib/pages/my_posts_page.dart`
-![add-popup-menu-button.gif](img/add-popup-menu-button.gif)
+![add-popup-menu-button.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/add-popup-menu-button.gif)
 
 https://flutter-widget.live/widgets/PopupMenuButton
 

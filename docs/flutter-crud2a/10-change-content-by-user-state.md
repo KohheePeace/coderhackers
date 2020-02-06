@@ -13,7 +13,7 @@ In this tutorial, we're going to...
 
 ### Edit `lib/main.dart`
 Convert from stateless widget to statefull widget
-![img/convert-stateless-to-statefull.gif](img/convert-stateless-to-statefull.gif)
+![convert-stateless-to-statefull.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
 
 And edit file...
 

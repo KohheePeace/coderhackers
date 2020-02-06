@@ -166,7 +166,7 @@ class _RegisterPageState extends State<RegisterPage> {
 ```
 
 ### Test it
-![mkdocs/img/test-register.png](img/test-register.png)
+![test-register.png](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/test-register.png)
 
 And check firebase console authentication tab.
 

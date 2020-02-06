@@ -10,5 +10,5 @@ https://firebase.google.com/docs/flutter/setup?platform=android#create-firebase-
 5. Uninstall app from emulator and restart
  
 Don't forget to enable **"Email/Password"** method.
-![enable-firebase-email-auth.png](img/enable-firebase-email-auth.png)
+![enable-firebase-email-auth.png](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/enable-firebase-email-auth.png)
 

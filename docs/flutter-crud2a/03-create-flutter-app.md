@@ -14,7 +14,7 @@ But you need to press
 2. "R" => for hot restart
 
 If you want to reload when you save code you need to start debugging.
-![mkdocs/img/start-flutter-debug.gif](img/start-flutter-debug.gif)
+![start-flutter-debug.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/start-flutter-debug.gif)
 
 Or press `cmd + shift + F5`.
 
