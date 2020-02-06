@@ -19,7 +19,7 @@ const docsList = [
     link: 'docs/crud2a-react-react-router/00-intro'
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <>Flutter Crud2a</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
@@ -27,6 +27,7 @@ const docsList = [
         ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
+    link: 'docs/flutter-crud2a/01-install-flutter-sdk'
   },
   {
     title: <>Powered by React</>,
