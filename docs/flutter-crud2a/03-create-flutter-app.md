@@ -6,6 +6,8 @@ In this step, we're going to **create and run** first flutter app.
 
 Ref: https://flutter.dev/docs/get-started/test-drive?tab=terminal
 
+## Create and run first flutter app
+
 `terminal`
 ```bash
 flutter create flutter_firebase_firestore_crud2a
@@ -19,6 +21,8 @@ But you need to press
 1. "r" => for hot reloading
 2. "R" => for hot restart
 
+
+## Start Debug mode of VS code
 If you want to reload when you save code you need to start debugging.
 ![start-flutter-debug.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/start-flutter-debug.gif)
 
@@ -26,3 +30,8 @@ Or press `cmd + shift + F5`.
 
 Ref: https://github.com/flutter/flutter/issues/24870
 
+### Test debug
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODc2NTEyMDMwXX0=
+-->
