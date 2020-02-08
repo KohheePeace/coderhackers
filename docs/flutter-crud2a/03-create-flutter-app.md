@@ -1,6 +1,9 @@
+
+
 ---
 title: Step3 Create and run flutter App
 ---
+In this step, we're going to **create and run** first flutter app.
 
 Ref: https://flutter.dev/docs/get-started/test-drive?tab=terminal
 
@@ -10,8 +13,10 @@ flutter create flutter_firebase_firestore_crud2a
 cd flutter_firebase_firestore_crud2a
 flutter run
 ```
+![flutter-create](https://flutter.dev/assets/get-started/ios/starter-app-5e284e57b8dce587ea1dfdac7da616e6ec9dc263a409a9a8f99cf836340f47b8.png)
 
 But you need to press
+
 1. "r" => for hot reloading
 2. "R" => for hot restart
 
