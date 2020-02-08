@@ -1,8 +1,7 @@
-
-
 ---
 title: Step3 Create and run flutter App
 ---
+
 In this step, we're going to **create and run** first flutter app.
 
 Ref: https://flutter.dev/docs/get-started/test-drive?tab=terminal
