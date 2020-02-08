@@ -33,7 +33,7 @@ Ref: https://github.com/flutter/flutter/issues/24870
 ### Test debug
 Change the string
 ```
-'You have **pushed** the button this many times'
+'You have pushed the button this many times'
 ```
 to
 
@@ -41,5 +41,5 @@ to
 'You have clicked the button this many times'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkxODg0MzQ3XX0=
+eyJoaXN0b3J5IjpbLTE4NDk0MzAxNDldfQ==
 -->
