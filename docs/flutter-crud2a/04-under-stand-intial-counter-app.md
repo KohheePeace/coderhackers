@@ -1,9 +1,15 @@
 ---
-title: Step4 Check stater counter app code
+title: Step4 Understand initial counter app
 ---
 
 Refs: https://flutterbyexample.com/dissecting-the-counter-app
 
+## What we will do in this step
+- Write initial `lib/main.dart` code from scratch.
+
+## Let's get started!
+
+This is initial `lib/main.dart` code.
 #### `lib/main.dart`
 ```dart
 import 'package:flutter/material.dart';
@@ -118,3 +124,20 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+### Rename `lib/main.dart` to `lib/initial_main.dart`.
+And make empty `lib/main.dart`.
+
+#### `lib/main.dart`
+```dart
+```
+
+## Flutter from web developers
+https://flutter.dev/docs/get-started/flutter-for/web-devs
+
+| Web                              | Flutter                                | What you need to learn                                                                                                                                      |
+| :------------------------------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<div>`, `<table>`               | `Text()`,`Table()`                     | [Flutter Widgets](https://api.flutter.dev/flutter/widgets/widgets-library.html), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
+| `<div style="font-size: 24px;">` | `Text(style: TextStyle(fontSize: 24))` | [How to layout flutter app](https://flutter.dev/docs/get-started/flutter-for/web-devs)                                                                      |
+| Bootstrap                        | package:flutter/material.dart          | [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material), [Official Gallery](https://flutter.github.io/samples/#/), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
+| javascript                       | dart                                   | [dart language tour](https://dart.dev/guides/language/language-tour)|
