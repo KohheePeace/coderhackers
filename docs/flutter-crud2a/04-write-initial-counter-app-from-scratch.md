@@ -1,5 +1,5 @@
 ---
-title: Step4 Understand initial counter app
+title: Step4 Write initial counter app from scratch
 ---
 
 Refs: https://flutterbyexample.com/dissecting-the-counter-app
@@ -128,9 +128,266 @@ class _MyHomePageState extends State<MyHomePage> {
 ### Rename `lib/main.dart` to `lib/initial_main.dart`.
 And make empty `lib/main.dart`.
 
+### Step 1
+1. Make **StatelessWidget** by VS code auto complete
+2. Add `Text()` (Check Container() has `child` by hovering)
+
 #### `lib/main.dart`
 ```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text('hello!!!'),
+    );
+  }
+}
 ```
+
+### Step2 Use `MaterialApp()`
+1. Use `MaterialApp()`
+https://api.flutter.dev/flutter/material/MaterialApp-class.html
+
+#### `lib/main.dart`
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello!')
+        ),
+      ),
+    );
+  }
+}
+```
+
+### Step3 Make StatefulWidget: `MyHomePage`
+1. Make **StatefulWidget** by VS code auto complete
+2. Pass `MyHomePage()` to `home:`
+
+#### `lib/main.dart`
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage()
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Hello!')
+      ),
+    );
+  }
+}
+```
+
+### Step4 Pass props to `MyHomePage`
+1. Pass props to `MyHomePage`
+2. Check dart constructor syntax
+
+- [What are Keys in the Stateless widgets class?](https://stackoverflow.com/questions/50080860/what-are-keys-in-the-stateless-widgets-class)
+- [You can skip to declare keys but...](https://github.com/flutter/flutter/issues/3868#issuecomment-218642695)
+- [Stakoverflow question about super](https://stackoverflow.com/questions/52056035/flutter-myhomepagekey-key-this-title-superkey-key-pls-any-one-explain)
+
+
+#### `lib/main.dart`
+```dart {13,19,20,31}
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page')
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title)
+      ),
+    );
+  }
+}
+```
+
+### Step5 Initial state and setState
+1. Declare initial State
+2. Add `floatingActionButton`
+3. Learn how to change state by using `setState()`
+
+#### `lib/main.dart`
+```dart {27,29-34,42-46}
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page')
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  // https://stackoverflow.com/questions/53142171/what-does-underscore-before-variable-name-mean-for-flutter/53142242
+  int _counter = 0;
+  
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+      print(_counter);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title)
+      ),
+      floatingActionButton: FloatingActionButton( // https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+```
+
+### Step6 Show state in screen
+#### `lib/main.dart`
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page')
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+  
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title)
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('You have clicked the button this many times:'),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.display1, //https://flutter.dev/docs/cookbook/design/themes#using-a-theme
+            )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+```
+
 
 ## Flutter from web developers
 https://flutter.dev/docs/get-started/flutter-for/web-devs

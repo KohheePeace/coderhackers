@@ -1,61 +1,6 @@
 ---
-title: Step4 Folder Structure
+title: Step5 Folder Structure
 ---
-
-Rename `lib/main.dart` to `lib/main_initial.dart`.
-
-This file and comment is useful to understand code so I keep this.
-
-And create `lib/main.dart`
-
-## Create `lib/main.dart`
-This is super basic flutter file.
-
-1. html tag
-2. styling
-3. dart language
-4. bootstrap (=> package:flutter/material.dart)
-
-```dart
-import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-	return MaterialApp(
-	  title: 'Flutter Demo',
-	  theme: ThemeData(
-		primarySwatch: Colors.blue,
-	  ),
-	  home: HomePage(),
-	);
-  }
-}
-
-/* HomePage StatefulWidget */
-class HomePage extends StatefulWidget {
-
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-	return Scaffold(
-	  appBar: AppBar(
-		title: Text("Home Page"),
-	  ),
-	  body: Center(
-		child: Text('This is home page')
-	  ),
-	);
-  }
-}
-```
 
 ## Prepare skelton folders and files
 Make `pages` folder. (some other developers may name `screens` but I prefer `pages`).
@@ -247,3 +192,24 @@ class _MyPostsPageState extends State<MyPostsPage> {
 }
 ```
 
+## Edit `lib/main.dart`
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+	return MaterialApp(
+	  title: 'Flutter Demo',
+	  theme: ThemeData(
+		primarySwatch: Colors.blue,
+	  ),
+	  home: HomePage(),
+	);
+  }
+}
+```
