@@ -30,7 +30,7 @@ dependencies:
 ...
 ```
 
-## Edit `lib/main.dart` to use Provider
+## Use Provider
 In this example, just provide Text.
 
 ```dart hl_lines="17 33 34"
@@ -84,7 +84,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-## Consume Provided value in `lib/widgets/home_drawer.dart`
+## Consume Provided value
 
 To consume provided value you can use...
 

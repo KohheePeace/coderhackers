@@ -9,6 +9,7 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.0.4",
     "@docusaurus/core": "^2.0.0-alpha.40",
     "@docusaurus/plugin-sitemap": "^2.0.0-alpha.37",
     "@docusaurus/preset-classic": "^2.0.0-alpha.40",

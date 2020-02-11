@@ -10,6 +10,7 @@ module.exports = {
     '@docusaurus/plugin-google-analytics',
     '@docusaurus/plugin-google-gtag',
     '@docusaurus/plugin-sitemap',
+    '@cmfcmf/docusaurus-search-local',
     {
       cacheTime: 600 * 1000, // 600 sec - cache purge period
       changefreq: 'weekly',

@@ -1,5 +1,5 @@
 ---
-title: Step6 Edit `pages/home_page.dart`
+title: Step6 Add Drawer and Routing
 ---
 
 ## Add Drawer widget
