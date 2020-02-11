@@ -1,6 +1,11 @@
 ---
-title: Step10 Change content by user's login state
+title: Step10 Change content by user login state
 ---
+
+## Goal of this step
+- Change content by user login state
+
+We will change 
 
 Ref: https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro
 
@@ -14,13 +19,16 @@ In this tutorial, we're going to...
 
 
 
-## Edit `lib/main.dart`
-Convert from stateless widget to statefull widget
+## Make `lib/main.dart` StatefulWidget
+Convert `lib/main.dart` from stateless widget to stateful widget
 ![convert-stateless-to-statefull.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
 
-And edit file...
+## Add firebase `onAuthStateChanged` and check `isAuthenticated`
+- check user login state by onAuthStateChanged and `isAuthenticated`
+- Pass `isAuthenticated` to `HomePage`
 
-`lib/main.dart`
+
+#### `lib/main.dart`
 ```dart
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +69,7 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 
-## Edit `lib/pages/home_page.dart` to accept properties
+## Edit HomePage to accept `isAuthenticated` props
 You can imitate this by `lib/main_initial.dart`
 ```dart
 import 'package:flutter/material.dart';
@@ -149,13 +157,17 @@ body: Center(
 ...
 ```
 
-## Separate drawer widgets and change contents by user's login state
-In this step we will change drawer contents by isAuthenticated.
+## Separate Drawer widgets
+In this step we will 
+
+- Move Drawer to different widgets
+- Change Drawer content by `isAuthenticated`.
 
 Make `widgets` folder under `lib`.
 
 Make `lib/widgets/home_drawer.dart`
 
+### `lib/widgets/home_drawer.dart`
 ```dart
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -276,6 +288,8 @@ class _HomePageState extends State<HomePage> {
   }
 }
 ```
+
+## Summery of pass down props
 
 Like this example, passing down `isAuthenticated` is troublesome...
 

@@ -2,29 +2,19 @@
 title: Step8 Edit Register page
 ---
 
-In this step, we will make this app able to register with **firebase auth**.
+## Goal of this step
+- In this step, we will make user register page!
+- Write Form code from scratch
+- Add `firebase_auth` code
 
-## Install `firebase_auth` packages
-https://pub.dev/packages/firebase_auth
+<img src="https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-11%20at%2022.56.17.png" height="480" />
 
-#### `pubspec.yaml`
-```yaml hl_lines="9"
-...
-dependencies:
-  flutter:
-	sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
-  firebase_auth: ^0.15.3+1
-...
-```
-
-## About Form
+## Edit Register Page
 - https://flutter.dev/docs/cookbook#forms
 - https://flutter.dev/docs/cookbook/forms/validation
 - https://flutter.dev/docs/cookbook/forms/text-field-changes
+
 
 
 #### `lib/pages/register_page.dart`
@@ -146,8 +136,25 @@ class _RegisterPageState extends State<RegisterPage> {
 }
 ```
 
+## Install `firebase_auth` packages
+https://pub.dev/packages/firebase_auth
 
-### Add firebase auth code for register user
+#### `pubspec.yaml`
+```yaml {9}
+...
+dependencies:
+  flutter:
+	sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  firebase_auth: ^0.15.3+1
+...
+```
+
+## Add firebase auth code for register user
+
 Official Flutter firebase auth example:
 - https://pub.dev/packages/firebase_auth#register-a-user
 - https://github.com/FirebaseExtended/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/lib/register_page.dart
@@ -170,6 +177,8 @@ onPressed: () async {
 	}
 },
 ```
+
+
 
 ## Final code
 
@@ -307,4 +316,3 @@ class _RegisterPageState extends State<RegisterPage> {
 And check firebase console authentication tab.
 
 You see email are registered.
-

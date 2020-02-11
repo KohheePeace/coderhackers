@@ -2,6 +2,10 @@
 title: Step6 Add Drawer and Routing
 ---
 
+## Goal of this step
+- Add Drawer widget
+- Add Routing
+
 ## Add Drawer widget
 We can choose **widgets** from
 https://flutter.dev/docs/development/ui/widgets/material
@@ -19,12 +23,12 @@ There are two way for navigate
 2. Define named routes and Navigate to these routes
 (https://flutter.dev/docs/cookbook/navigation/named-routes)
 
-### Document the pros and cons of using push vs pushNamed
+### Pros and Cons of using `push` vs `pushNamed`
 https://github.com/flutter/flutter/issues/3867
 
 ## Final code
 
-`lib/main.dart`
+#### `lib/main.dart`
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';
@@ -51,7 +55,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-`pages/home_page.dart`
+#### `pages/home_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';

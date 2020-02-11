@@ -2,10 +2,11 @@
 title: Step4 Write initial counter app from scratch
 ---
 
-Refs: https://flutterbyexample.com/dissecting-the-counter-app
-
-## What we will do in this step
+## Goal of this step
 - Write initial `lib/main.dart` code from scratch.
+- Understand code by writing.
+
+Refs: https://flutterbyexample.com/dissecting-the-counter-app
 
 ## Let's get started!
 

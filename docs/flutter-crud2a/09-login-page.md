@@ -2,6 +2,13 @@
 title: Step9 Login Page
 ---
 
+## Goal of this step
+- We will make Login Page.
+
+<img src="https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-11%20at%2023.32.10.png" height="480" />
+
+The code is almost same with Register Page. So, first just copy and paste code, then explain important part of code.
+
 ## Final Code
 
 #### `lib/pages/login_page.dart`

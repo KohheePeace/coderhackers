@@ -2,6 +2,9 @@
 title: Step5 Folder Structure
 ---
 
+## Goal of this step
+- Prepare pages for following steps.
+
 ## Prepare skelton folders and files
 Make `pages` folder. (some other developers may name `screens` but I prefer `pages`).
 
@@ -15,7 +18,7 @@ Make `pages` folder. (some other developers may name `screens` but I prefer `pag
 
 ---
 
-1. `pages/home_page.dart`
+1.`pages/home_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 
@@ -40,7 +43,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 ```
-1. `pages/login_page.dart`
+2.`pages/login_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 
@@ -65,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 }
 ```
-1. `pages/register_page.dart`
+3.`pages/register_page.dart`
 
 ```dart
 import 'package:flutter/material.dart';
@@ -91,7 +94,7 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 }
 ```
-4. `pages/posts_new_page.dart`
+4.`pages/posts_new_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 
@@ -116,7 +119,7 @@ class _PostsNewPageState extends State<PostsNewPage> {
   }
 }
 ```
-5. `pages/posts_edit_page.dart`
+5.`pages/posts_edit_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 
@@ -141,7 +144,7 @@ class _PostsEditPageState extends State<PostsEditPage> {
   }
 }
 ```
-6. `pages/posts_show_page.dart`
+6.`pages/posts_show_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 
@@ -166,7 +169,7 @@ class _PostsShowPageState extends State<PostsShowPage> {
   }
 }
 ```
-7. `pages/my_posts_page.dart`
+7.`pages/my_posts_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 
