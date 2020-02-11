@@ -19,6 +19,8 @@ There are two way for navigate
 2. Define named routes and Navigate to these routes
 (https://flutter.dev/docs/cookbook/navigation/named-routes)
 
+### Document the pros and cons of using push vs pushNamed
+https://github.com/flutter/flutter/issues/3867
 
 ## Final code
 
