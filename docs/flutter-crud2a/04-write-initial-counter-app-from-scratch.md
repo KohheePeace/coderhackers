@@ -23,7 +23,7 @@ This is a table to compare Web world and Flutter world.
 - At first you will feel flutter code is difficult.
 - But to see this table you can find the similarity of web and flutter
 - I hope this table will reduce the difficulty of flutter!
-- After that what you need to do is just writing a lot of flutter code!
+- You need a time to get used to flutter code as it took time to remeber HTML, CSS, Bootstrap and Javascript! 
 
 ## Let's get started!
 
