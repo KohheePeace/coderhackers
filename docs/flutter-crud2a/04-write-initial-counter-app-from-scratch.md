@@ -13,6 +13,8 @@ https://flutter.dev/docs/get-started/flutter-for/web-devs
 
 This is a table to compare Web world and Flutter world.
 
+The **purpose** of this table is **to use knowledge you already have to learn new thing.**
+
 | Web                              | Flutter                                | What you need to learn                                                                                                                                      |
 | :------------------------------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<div>`, `<table>`               | `Text()`,`Table()`                     | [Flutter Widgets](https://api.flutter.dev/flutter/widgets/widgets-library.html), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
