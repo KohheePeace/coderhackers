@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -53,6 +53,20 @@ function Headings({headings, isChild}) {
 }
 
 function DocItem(props) {
+  useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute('repo', "KohheePeace/coderhackers");
+    script.setAttribute('issue-term', "pathname");
+    script.setAttribute('label', "comment");
+    script.setAttribute('theme',"github-light");
+    script.crossOrigin = "anonymous";
+    script.async = true;
+  
+    document.getElementById("comment-system").appendChild(script);
+  }, []);
+  
   const {siteConfig = {}} = useDocusaurusContext();
   const {url: siteUrl, title: siteTitle} = siteConfig;
   const {content: DocContent} = props;
@@ -192,6 +206,7 @@ function DocItem(props) {
                 <div className="margin-vert--lg">
                   <DocPaginator metadata={metadata} />
                 </div>
+                <div id="comment-system"></div>
               </div>
             </div>
             {!hideTableOfContents && DocContent.rightToc && (
