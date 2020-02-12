@@ -8,6 +8,23 @@ title: Step4 Write initial counter app from scratch
 
 Refs: https://flutterbyexample.com/dissecting-the-counter-app
 
+## Flutter from web developers
+https://flutter.dev/docs/get-started/flutter-for/web-devs
+
+This is a table to compare Web world and Flutter world.
+
+| Web                              | Flutter                                | What you need to learn                                                                                                                                      |
+| :------------------------------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<div>`, `<table>`               | `Text()`,`Table()`                     | [Flutter Widgets](https://api.flutter.dev/flutter/widgets/widgets-library.html), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
+| `<div style="font-size: 24px;">` | `Text(style: TextStyle(fontSize: 24))` | [Flutter for web developers](https://flutter.dev/docs/get-started/flutter-for/web-devs)                                                                      |
+| Bootstrap                        | package:flutter/material.dart          | [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material), [Official Gallery](https://flutter.github.io/samples/#/), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
+| javascript                       | dart                                   | [dart language tour](https://dart.dev/guides/language/language-tour)|
+
+- At first you will feel flutter code is difficult.
+- But to see this table you can find the similarity of web and flutter
+- I hope this table will reduce the difficulty of flutter!
+- After that what you need to do is just writing a lot of flutter code!
+
 ## Let's get started!
 
 This is initial `lib/main.dart` code.
@@ -129,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
 ### Rename `lib/main.dart` to `lib/initial_main.dart`.
 And make empty `lib/main.dart`.
 
-### Step 1
+### Step 1 Write minimal flutter app
 1. Make **StatelessWidget** by VS code auto complete
 2. Add `Text()` (Check Container() has `child` by hovering)
 
@@ -388,14 +405,3 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
-
-
-## Flutter from web developers
-https://flutter.dev/docs/get-started/flutter-for/web-devs
-
-| Web                              | Flutter                                | What you need to learn                                                                                                                                      |
-| :------------------------------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<div>`, `<table>`               | `Text()`,`Table()`                     | [Flutter Widgets](https://api.flutter.dev/flutter/widgets/widgets-library.html), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
-| `<div style="font-size: 24px;">` | `Text(style: TextStyle(fontSize: 24))` | [How to layout flutter app](https://flutter.dev/docs/get-started/flutter-for/web-devs)                                                                      |
-| Bootstrap                        | package:flutter/material.dart          | [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material), [Official Gallery](https://flutter.github.io/samples/#/), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
-| javascript                       | dart                                   | [dart language tour](https://dart.dev/guides/language/language-tour)|
