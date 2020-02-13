@@ -30,6 +30,9 @@ The **purpose** of this table is **to use knowledge you already have to learn ne
 ## Let's get started!
 
 This is initial `lib/main.dart` code.
+
+From now, we will make this file step by step.
+
 #### `lib/main.dart`
 ```dart
 import 'package:flutter/material.dart';
@@ -146,11 +149,14 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 ### Rename `lib/main.dart` to `lib/initial_main.dart`.
+I leave initial file for reference. There are a lot of useful comments.
 And make empty `lib/main.dart`.
 
-### Step 1 Write minimal flutter app
+### Step 1 Hello World
 1. Make **StatelessWidget** by VS code auto complete
 2. Add `Text()` (Check Container() has `child` by hovering)
+
+https://flutter.dev/docs/development/ui/widgets-intro#hello-world
 
 #### `lib/main.dart`
 ```dart
@@ -162,7 +168,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('hello!!!'),
+      child: Text(
+        'Hello, world!',
+        textDirection: TextDirection.ltr,
+      ),
     );
   }
 }
@@ -188,13 +197,15 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello!')
+          title: Text('Hello World!')
         ),
       ),
     );
   }
 }
 ```
+> If you are using a material widget component, like Scaffold, Material, you don't need to specify textDirection in your Text widget...
+https://stackoverflow.com/questions/56122888/flutter-no-directionality-widget-found
 
 ### Step3 Make StatefulWidget: `MyHomePage`
 1. Make **StatefulWidget** by VS code auto complete
@@ -229,21 +240,21 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello!')
+        title: Text('Hello World!')
       ),
     );
   }
 }
 ```
 
+If you want to dive into stateful widget, read the below links.
+But I think it is ok not to understand perfectly right now.
+- https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html
+- *[Why are stateful widgets defined as two classes in flutter?](https://stackoverflow.com/questions/50612237/why-are-stateful-widgets-defined-as-two-classes-in-flutter)
+
+
 ### Step4 Pass props to `MyHomePage`
 1. Pass props to `MyHomePage`
-2. Check dart constructor syntax
-
-- [What are Keys in the Stateless widgets class?](https://stackoverflow.com/questions/50080860/what-are-keys-in-the-stateless-widgets-class)
-- [You can skip to declare keys but...](https://github.com/flutter/flutter/issues/3868#issuecomment-218642695)
-- [Stakoverflow question about super](https://stackoverflow.com/questions/52056035/flutter-myhomepagekey-key-this-title-superkey-key-pls-any-one-explain)
-
 
 #### `lib/main.dart`
 ```dart {13,19,20,31}
@@ -284,13 +295,19 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-### Step5 Initial state and setState
+***If you want to dive into this code, check the below links!**
+- [What are Keys in the Stateless widgets class?](https://stackoverflow.com/questions/50080860/what-are-keys-in-the-stateless-widgets-class)
+- [You can skip to declare keys but...](https://github.com/flutter/flutter/issues/3868#issuecomment-218642695)
+- [Stakoverflow question about super](https://stackoverflow.com/questions/52056035/flutter-myhomepagekey-key-this-title-superkey-key-pls-any-one-explain)
+
+### Step5 How to manage state by setState
 1. Declare initial State
 2. Add `floatingActionButton`
 3. Learn how to change state by using `setState()`
+4. Show state in body
 
 #### `lib/main.dart`
-```dart {27,29-34,42-46}
+```dart {28,30-35,43-59}
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -323,60 +340,6 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() {
     setState(() {
       _counter++;
-      print(_counter);
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title)
-      ),
-      floatingActionButton: FloatingActionButton( // https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
-    );
-  }
-}
-```
-
-### Step6 Show state in screen
-#### `lib/main.dart`
-```dart
-import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return  MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page')
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
     });
   }
 
@@ -398,7 +361,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton( // https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
@@ -407,3 +370,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+Okay, we successfully re-created initial counter app!
+
+I hope you've learned the fundamental of flutter!
