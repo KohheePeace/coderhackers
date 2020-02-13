@@ -216,3 +216,10 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
+*Note about **"import"**:
+> You can import a library using a relative path when both files are inside of lib, or when both files are outside of lib. However, you must use package: when importing a file that reaches inside, or outside, of lib. When in doubt, use the package: directive; it works in all cases.
+> 
+> https://dart.dev/guides/libraries/create-library-packages#importing-library-files
+
+I prefer "relative import" when I import file which is not library installed by pubspec.yaml
