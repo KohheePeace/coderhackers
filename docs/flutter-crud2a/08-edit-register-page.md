@@ -74,7 +74,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   if (value.isEmpty) {
                     return 'Please enter email';
                   } else if (!EmailValidator.validate(value)) {
-                    // User plugin https://pub.dev/packages/email_validator
+                    // Use plugin https://pub.dev/packages/email_validator
                     // If you don't want to use plugin https://stackoverflow.com/questions/16800540/validate-email-address-in-dart
                     return 'Please enter valid email';
                   }
