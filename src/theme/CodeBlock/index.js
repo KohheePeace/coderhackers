@@ -78,6 +78,10 @@ export default ({children, className: languageClassName, metastring}) => {
             className={classnames(className, styles.codeBlock)}
             style={style}>
             {tokens.map((line, i) => {
+              if (line.length === 1 && line[0].content === '') {
+                line[0].content = '\n'; // eslint-disable-line no-param-reassign
+              }
+              
               const lineProps = getLineProps({line, key: i});
 
               if (highlightLines.includes(i + 1)) {
