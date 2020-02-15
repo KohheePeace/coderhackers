@@ -138,7 +138,7 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
-  // dispose() is lifycycle method of flutter
+  // dispose() is lifecycle method of flutter
   // https://stackoverflow.com/questions/41479255/life-cycle-in-flutter
   @override
   void dispose() {
