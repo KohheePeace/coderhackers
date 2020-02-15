@@ -12,7 +12,7 @@ https://flutter.dev/docs/development/ui/widgets/material
 
 This is something **like Bootstrap components**.
 
-We will use **Drawer** widget
+We will add **Drawer** widget
 https://api.flutter.dev/flutter/material/Drawer-class.html
 
 
@@ -73,24 +73,24 @@ class _HomePageState extends State<HomePage> {
 ```
 
 ## Add Routing
-There are two way for navigate
+There are two way for navigate pages
 
 1. Navigate directly by using `MaterialPageRoute`
 (https://flutter.dev/docs/cookbook/navigation/navigation-basics)
 2. Define named routes and Navigate to these routes
 (https://flutter.dev/docs/cookbook/navigation/named-routes)
 
-### Pros and Cons of using `push` vs `pushNamed`
-https://github.com/flutter/flutter/issues/3867
+Let's try both.
+
+### Add Navaigation code to Drawer's ListTile
 
 #### `pages/home_page.dart`
-```dart {4-12,17-20}
+```dart {4-12,17-19}
 ListTile(
 	leading: Icon(Icons.exit_to_app),
 	title: Text('Login'),
 	onTap: () {
-		// https://flutter.dev/docs/cookbook/navigation/navigation-basics#2-navigate-to-the-second-route-using-navigatorpush
-		// https://stackoverflow.com/questions/43807184/how-to-close-scaffolds-drawer-after-an-item-tap
+		// https://stackoverflow.com/a/59154381
 		Navigator.pop(context);
 		Navigator.push(
 			context,
@@ -108,6 +108,8 @@ ListTile(
 ),
 ```
 
+### Define Named routes in main.dart
+
 #### `lib/main.dart`
 ```dart {6-11}
 return MaterialApp(
@@ -123,6 +125,9 @@ return MaterialApp(
 	},
 );
 ```
+
+### Pros and Cons of using `push` vs `pushNamed`
+https://github.com/flutter/flutter/issues/3867
 
 ## Final code
 

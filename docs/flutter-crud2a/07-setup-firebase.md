@@ -1,5 +1,5 @@
 ---
-title: Step7 Setup Firebase auth
+title: Step7 Setup Firebase
 ---
 
 ## Goal of this step
@@ -7,9 +7,15 @@ title: Step7 Setup Firebase auth
 
 
 ## Setup firebase
-Please follow this official guide
+Please follow this official guide:
+
+https://codelabs.developers.google.com/codelabs/flutter-firebase/#5
+or
 https://firebase.google.com/docs/flutter/setup?platform=android#create-firebase-project
 
+--- 
+
+### Summery of setup guide
 
 1. Open `app/build.gradle` and copy package name
 2. Download `google-services.json` and move to `android/app/google-services.json`
