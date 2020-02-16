@@ -13,21 +13,27 @@ The code is almost same with Register Page. So, first just copy and paste code, 
 
 #### `lib/pages/login_page.dart`
 ```dart
+import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
+
+import 'register_page.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
 }
+
 class _LoginPageState extends State<LoginPage> {
   final GlobalKey<FormState> _loginFormKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
   @override
-  initState() {
-    super.initState();
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
   }
 
   @override
@@ -46,9 +52,11 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(labelText: 'Email', hintText: "johnjackson@example.com"),
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
-                validator: (String value) {
+                validator: (value) {
                   if (value.isEmpty) {
                     return 'Please enter email';
+                  } else if (!EmailValidator.validate(value)) {
+                    return 'Please enter valid email';
                   }
                   return null;
                 },
@@ -101,22 +109,11 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-  @override
-  void dispose() {
-    // Clean up the controller when the Widget is disposed
-    // https://flutter.dev/docs/cookbook/forms/text-field-changes#create-a-texteditingcontroller
-    _emailController.dispose();
-    _passwordController.dispose();
-    super.dispose();
-  }
 }
 ```
 
 ## Check Firebase Auth SignIn Code
-The code is almost same with register page.
-
-And the important part is sign in code
-
+This is a part of firebase sing in code. This code is based on official example.
 ```dart
 onPressed: () async {
 	if (_loginFormKey.currentState.validate()) {
