@@ -19,8 +19,6 @@ https://api.flutter.dev/flutter/material/Drawer-class.html
 #### `pages/home_page.dart`
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -142,18 +140,18 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-		return MaterialApp(
-			title: 'Flutter Demo',
-			theme: ThemeData(
-				primarySwatch: Colors.blue,
-			),
-			initialRoute: '/',
-			routes: {
-				// When navigating to the "/" route, build the FirstScreen widget.
-				'/': (context) => HomePage(),
-				'/sign_up': (context) => RegisterPage(),
-			},
-		);
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      initialRoute: '/',
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        '/': (context) => HomePage(),
+        '/sign_up': (context) => RegisterPage(),
+      },
+    );
   }
 }
 ```
@@ -162,7 +160,6 @@ class MyApp extends StatelessWidget {
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);

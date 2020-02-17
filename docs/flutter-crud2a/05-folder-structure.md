@@ -218,8 +218,8 @@ class MyApp extends StatelessWidget {
 ```
 
 ## *Note about **"import"**:
-> You can import a library using a relative path when both files are inside of lib, or when both files are outside of lib. However, you must use package: when importing a file that reaches inside, or outside, of lib. When in doubt, use the package: directive; it works in all cases.
-> 
-> https://dart.dev/guides/libraries/create-library-packages#importing-library-files
+Dart and I also prefer relative path
+https://dart.dev/guides/language/effective-dart/usage#prefer-relative-paths-when-importing-libraries-within-your-own-packages-lib-directory
 
-I prefer "relative import" when I import file which is not library installed by pubspec.yaml
+### Quick fix of VS code not working well...
+https://stackoverflow.com/questions/54121559/import-from-parent-directory-in-flutter

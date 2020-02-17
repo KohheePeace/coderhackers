@@ -20,8 +20,9 @@ https://flutter.dev/docs/cookbook/forms/validation
 As described in official docs, we will add `GlobalKey` and `Form`.
 
 #### `pages/register_page.dart`
-```dart {7,15-25}
+```dart {8,16-26}
 import 'package:flutter/material.dart';
+
 class RegisterPage extends StatefulWidget {
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -151,7 +152,7 @@ Test validation behavior here.
 
 ### 5. Add link to Login Page
 ```dart {1,16-25}
-import 'login_page.dart';
+import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
 ...
 Container(
 // https://stackoverflow.com/questions/50186555/how-to-set-margin-for-a-button-in-flutter
@@ -458,7 +459,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'login_page.dart';
+import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
