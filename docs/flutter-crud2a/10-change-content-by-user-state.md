@@ -1,38 +1,31 @@
 ---
-title: Step10 Change content by user login state
+title: Step10 Change the content by user's login state
 ---
 
 ## Goal of this step
-- Change content by user login state
+- Change content by user's login state
 
-We will change 
-
-Ref: https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro
-
-There are a lot of options to manage state.
-
-In this tutorial, we're going to...
-
-1. Just **pass down state from top to bottom**
-2. After you feel pain of this approach use **Provider**
-
-
-
+In this step, we will just **pass down state from top to bottom**.
+And by using passed down props, change the content.
 
 ## Make `lib/main.dart` StatefulWidget
-Convert `lib/main.dart` from stateless widget to stateful widget
+Convert `lib/main.dart` from stateless widget to stateful widget.
+This is because I want to handle state in this widget.
+
 ![convert-stateless-to-statefull.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
 
 ## Add firebase `onAuthStateChanged` and check `isAuthenticated`
-- check user login state by onAuthStateChanged and `isAuthenticated`
-- Pass `isAuthenticated` to `HomePage`
+- Declare `isAuthenticated`
+- check user's login state by using `onAuthStateChanged` in `initState()`
+- Pass down `isAuthenticated` state to `HomePage`
 
 
 #### `lib/main.dart`
-```dart
+```dart {14,16-26,38}
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';
+import 'pages/home_page.dart';
+import 'pages/register_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -47,40 +40,38 @@ class _MyAppState extends State<MyApp> {
   // https://stackoverflow.com/questions/41479255/life-cycle-in-flutter
   // https://flutterbyexample.com/stateful-widget-lifecycle/
   void initState() {
-	super.initState();
-	// https://stackoverflow.com/questions/45353730/firebase-login-with-flutter-using-onauthstatechanged
-	FirebaseAuth.instance.onAuthStateChanged.listen((user) {
-	  setState(() {
-		isAuthenticated = user != null;
-	  });
-	});
+    super.initState();
+    // https://stackoverflow.com/questions/45353730/firebase-login-with-flutter-using-onauthstatechanged
+    FirebaseAuth.instance.onAuthStateChanged.listen((user) {
+      setState(() {
+        isAuthenticated = user != null;
+      });
+    });
   }
-
+  
   @override
   Widget build(BuildContext context) {
-	return MaterialApp(
-	  title: 'Flutter Demo',
-	  theme: ThemeData(
-		primarySwatch: Colors.blue,
-	  ),
-	  home: HomePage(isAuthenticated: isAuthenticated),
-	);
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      initialRoute: '/',
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        '/': (context) => HomePage(isAuthenticated: isAuthenticated),
+        '/sign_up': (context) => RegisterPage(),
+      },
+    );
   }
 }
 ```
 
 ## Edit HomePage to accept `isAuthenticated` props
 You can imitate this by `lib/main_initial.dart`
-```dart
-import 'package:flutter/material.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
-import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
-
+```dart {2-3,19-20,}
 class HomePage extends StatefulWidget {
-	// https://stackoverflow.com/questions/52056035/flutter-myhomepagekey-key-this-title-superkey-key-pls-any-one-explain
-	// This code means => construct HomePage by using parent constructor
   HomePage({Key key, this.isAuthenticated}) : super(key: key);
-
   final bool isAuthenticated;
 
   @override
@@ -93,61 +84,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 	return Scaffold(
 	  appBar: AppBar(
-		title: Text("Home Page"),
+		  title: Text("Home Page"),
 	  ),
-	  drawer: Drawer(
-		child: ListView(
-		  padding: EdgeInsets.zero,
-		  children: <Widget>[
-			DrawerHeader(
-			  decoration: BoxDecoration(
-				color: Colors.blue,
-			  ),
-			  child: Text(
-				'Drawer Header',
-				style: TextStyle(
-				  color: Colors.white,
-				  fontSize: 24,
-				),
-			  ),
-			),
-			ListTile(
-			  leading: Icon(Icons.exit_to_app),
-			  title: Text('Login'),
-			  onTap: () {
-				// https://flutter.dev/docs/cookbook/navigation/navigation-basics#2-navigate-to-the-second-route-using-navigatorpush
-				// https://stackoverflow.com/questions/43807184/how-to-close-scaffolds-drawer-after-an-item-tap
-				Navigator.pop(context);
-				Navigator.push(
-				  context,
-				  MaterialPageRoute(builder: (context) => LoginPage()),
-				);
-			  }
-			),
-			ListTile(
-			  leading: Icon(Icons.account_circle),
-			  title: Text('Register'),
-			  onTap: () {
-				Navigator.pop(context);
-				Navigator.push(
-				  context,
-				  MaterialPageRoute(builder: (context) => RegisterPage()),
-				);
-			  }
-			),
-		  ],
-		),
-	  ),
+    ...
 	  body: Center(
-		// https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
-		child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
+		  // https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
+		  child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
 	  ),
 	);
   }
 }
 ```
 
-Here, we change the content by users login state.
+Here, we change the content by user's login state.
 
 ```dart
 ...
@@ -157,19 +106,81 @@ body: Center(
 ...
 ```
 
-## Separate Drawer widgets
-In this step we will 
+So, we were able to pass down props and change the content by using passed down props!!
 
-- Move Drawer to different widgets
-- Change Drawer content by `isAuthenticated`.
+This is **1 level down**. So not troublesome. In the next section we will pass down props **2 level down**.
 
-Make `widgets` folder under `lib`.
+---
 
-Make `lib/widgets/home_drawer.dart`
+## Edit Drawer
 
-### `lib/widgets/home_drawer.dart`
+### 1. Separate Drawer widgets
+
+1. Make `widgets` folder under `lib`.
+2. Make `lib/widgets/home_drawer.dart`
+
+#### `lib/widgets/home_drawer.dart`
 ```dart
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
+
+class HomeDrawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Text(
+              'Drawer Header',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              ),
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.exit_to_app),
+            title: Text('Login'),
+            onTap: () {
+              // https://stackoverflow.com/a/59154381
+              Navigator.pop(context);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+              );
+            }
+          ),
+          ListTile(
+            leading: Icon(Icons.account_circle),
+            title: Text('Register'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/sign_up');
+            }
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
+
+### 2. Edit HomeDrawer to accept isAuthenticated
+
+```dart {2-3}
+class HomeDrawer extends StatelessWidget {
+  HomeDrawer({Key key, this.isAuthenticated}) : super(key: key);
+  final bool isAuthenticated;
+  ...
+```
+
+### 3. Change Drawer content by isAuthenticated
+```dart {23-69}
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/my_posts_page.dart';
@@ -177,7 +188,6 @@ import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
 
 class HomeDrawer extends StatelessWidget {
   HomeDrawer({Key key, this.isAuthenticated}) : super(key: key);
-
   final bool isAuthenticated;
 
   @override
@@ -204,18 +214,16 @@ class HomeDrawer extends StatelessWidget {
               leading: Icon(Icons.note),
               title: Text('My Posts'),
               onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => MyPostsPage()),
-              );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyPostsPage()),
+                );
               }
             ),
             ListTile(
               leading: Icon(Icons.exit_to_app),
               title: Text('Sign Out'),
               onTap: () async {
-              await FirebaseAuth.instance.signOut();
-              Navigator.pushNamed(context, '/');
               },
             ),
           ],
@@ -224,24 +232,24 @@ class HomeDrawer extends StatelessWidget {
               leading: Icon(Icons.exit_to_app),
               title: Text('Login'),
               onTap: () {
-              // https://flutter.dev/docs/cookbook/navigation/navigation-basics#2-navigate-to-the-second-route-using-navigatorpush
-              // https://stackoverflow.com/questions/43807184/how-to-close-scaffolds-drawer-after-an-item-tap
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => LoginPage()),
-              );
+                // https://flutter.dev/docs/cookbook/navigation/navigation-basics#2-navigate-to-the-second-route-using-navigatorpush
+                // https://stackoverflow.com/questions/43807184/how-to-close-scaffolds-drawer-after-an-item-tap
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
               }
             ),
             ListTile(
               leading: Icon(Icons.account_circle),
               title: Text('Register'),
               onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => RegisterPage()),
-              );
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RegisterPage()),
+                );
               }
             ),
           ],
@@ -251,10 +259,36 @@ class HomeDrawer extends StatelessWidget {
   }
 }
 ```
+
 * If you see sdk version warning, please click quick fix of vscode.
 
+### 4. Pass `widget.isAuthenticated` to `home_drawer.dart`
+
+`home_page.dart`
+```dart {11}
+...
+
+class _HomePageState extends State<HomePage> {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home Page"),
+      ),
+      drawer: HomeDrawer(isAuthenticated: widget.isAuthenticated),
+      body: Center(
+        // https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
+        child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
+      ),
+    );
+  }
+}
+```
+
+## Add Firebase Auth Sign Out code
 Sign out code is...
-```dart
+```dart {4-7}
 ListTile(
   leading: Icon(Icons.exit_to_app),
   title: Text('Sign Out'),
@@ -265,31 +299,7 @@ ListTile(
 ),
 ```
 
-## Pass `widget.isAuthenticated` to `home_drawer.dart`
-
-`home_page.dart`
-```dart
-...
-
-class _HomePageState extends State<HomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-	return Scaffold(
-	  appBar: AppBar(
-		title: Text("Home Page"),
-	  ),
-	  drawer: HomeDrawer(isAuthenticated: widget.isAuthenticated),
-	  body: Center(
-		// https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
-		child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
-	  ),
-	);
-  }
-}
-```
-
-## Summery of pass down props
+## Review pass down props
 
 Like this example, passing down `isAuthenticated` is troublesome...
 

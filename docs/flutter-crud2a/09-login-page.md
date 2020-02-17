@@ -16,8 +16,7 @@ The code is almost same with Register Page. So, first just copy and paste code, 
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import 'register_page.dart';
+import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
