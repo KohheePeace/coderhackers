@@ -37,5 +37,7 @@ Provider.of<IsAuthenticated>(context, listen: false).updateIsAuthenticated(false
 
 
 ## Ovserver Pattern
+I understand the concept of Stream. If you come flutter from Angular.js with rxjs...
 https://en.wikipedia.org/wiki/Observer_pattern
 https://angular.io/guide/observables
+https://www.didierboelens.com/2018/08/reactive-programming---streams---bloc/
