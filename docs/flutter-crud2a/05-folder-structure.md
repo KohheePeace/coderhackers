@@ -218,8 +218,13 @@ class MyApp extends StatelessWidget {
 ```
 
 ## *Note about **"import"**:
+There is two types of import
+- 
+
 Dart and I also prefer relative path
 https://dart.dev/guides/language/effective-dart/usage#prefer-relative-paths-when-importing-libraries-within-your-own-packages-lib-directory
+
+**But...**
 
 ### Quick fix of VS code not working well...
 https://stackoverflow.com/questions/54121559/import-from-parent-directory-in-flutter
