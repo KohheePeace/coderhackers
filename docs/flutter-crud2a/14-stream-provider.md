@@ -35,3 +35,7 @@ Remove from `lib/widgets/home_drawer.dart`
 Provider.of<IsAuthenticated>(context, listen: false).updateIsAuthenticated(false);
 ```
 
+
+## Ovserver Pattern
+https://en.wikipedia.org/wiki/Observer_pattern
+https://angular.io/guide/observables
