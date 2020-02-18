@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
     ...
 	  body: Center(
 		  // https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
-		  child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
+		  child: widget.isAuthenticated ? Text('Home Page after login') : Text('Home Page before login')
 	  ),
 	);
   }
@@ -101,7 +101,7 @@ Here, we change the content by user's login state.
 ```dart
 ...
 body: Center(
-  child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
+  child: widget.isAuthenticated ? Text('Home Page after login') : Text('Home Page before login')
 ),
 ...
 ```
@@ -180,7 +180,7 @@ class HomeDrawer extends StatelessWidget {
 ```
 
 ### 3. Change Drawer content by isAuthenticated
-```dart {23-69}
+```dart {28-72}
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/my_posts_page.dart';
@@ -223,7 +223,7 @@ class HomeDrawer extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.exit_to_app),
               title: Text('Sign Out'),
-              onTap: () async {
+              onTap: () {
               },
             ),
           ],
@@ -279,7 +279,7 @@ class _HomePageState extends State<HomePage> {
       drawer: HomeDrawer(isAuthenticated: widget.isAuthenticated),
       body: Center(
         // https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
-        child: widget.isAuthenticated ? Text('Home Page after login') : Text('This is home page')
+        child: widget.isAuthenticated ? Text('Home Page after login') : Text('Home Page before login')
       ),
     );
   }
