@@ -1,11 +1,11 @@
 ---
-title: Step12 MultiProvider **isAuthenticated** state
+title: Step12 MultiProvider
 ---
 
 ## Goal of this step
 - Learn MultiProvider
 
-In addition to provide **testProviderText**, let's provide **isAuthenticated** state.
+In this step, in addition to provide **testProviderText**, let's provide **isAuthenticated** state.
 
 To provide multiple value, we need to use: **MultiProvider**
 https://pub.dev/packages/provider#multiprovider
@@ -35,7 +35,25 @@ Widget build(BuildContext context) {
 ```
 
 ## Consume **isAuthenticated** param by using `Provider.of`
+### Edit HomePage
+#### `lib/pages/home_page.dart`
+```dart {1,3}
+final bool isAuthenticated = Provider.of<bool>(context);
+...
+isAuthenticated ? Text('Home Page after login') : Text('Home Page before login')
+```
 
+Delete passed props in `main.dart`.
+#### `main.dart`
+```dart {3}
+routes: {
+	// When navigating to the "/" route, build the FirstScreen widget.
+	'/': (context) => HomePage(),
+	'/sign_up': (context) => RegisterPage(),
+},
+```
+
+### Edit HomeDrawer
 #### `lib/widgets/home_drawer.dart`
 ```dart {6}
 ...
@@ -47,31 +65,13 @@ class HomeDrawer extends StatelessWidget {
 		...
 ```
 
-Delete passed props
+Delete passed props in `lib/pages/home_page.dart`.
 #### `lib/pages/home_page.dart`
 ```dart
 ...
 drawer: HomeDrawer(),
 ```
 
-## But how to change isAuthenticated value ?
-#### `lib/main.dart`
-```dart {5}
-void initState() {
-	super.initState();
-	// https://stackoverflow.com/questions/45353730/firebase-login-with-flutter-using-onauthstatechanged
-	FirebaseAuth.instance.onAuthStateChanged.listen((user) {
-		print('Hey Yo!!! onAuthStateChanged called!!!');
-		setState(() {
-			isAuthenticated = user != null;
-		});
-	});
-}
-```
-
-This code called when user login status changed and changes the `isAuthenticated` state in `MyApp` widget.
-
-**BUT** this changed `isAuthenticated` is not passed to Provider value.
-
-In the next step, let's solve this problem.
-
+## Test it
+- Check it works correctly
+- Then, Please "sign-in", "sign-out"

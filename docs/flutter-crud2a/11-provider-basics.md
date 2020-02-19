@@ -1,9 +1,9 @@
 ---
-title: Step11 Provider Basic
+title: Step11 Provider Basics
 ---
 
 ## Goal of this step
-- Learn basic provider
+- Learn provider basics
 
 Provider is very simple.
 
@@ -11,7 +11,7 @@ But the official docs example is too complicated.
 
 https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple
 
-Let's first start basic example.
+Let's first start from basic example.
 
 Refs: https://alligator.io/flutter/state-management/
 
@@ -20,6 +20,8 @@ Provider is one of the approaches to manage state.
 
 You can see there are a lot of other approaches.
 https://flutter.dev/docs/development/data-and-backend/state-mgmt/options
+
+`setState()` is also one of the approaches.
 
 ## Install Provider package
 https://pub.dev/packages/provider
@@ -43,7 +45,7 @@ dependencies:
 ## Use Provider
 In this example, we will just provide Text String.
 
-```dart {5,16,32-46}
+```dart {5,16,32-33}
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';
@@ -105,9 +107,9 @@ Ref:
 - https://pub.dev/packages/provider#reading-a-value
 - https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#consumer
 
-So, let's replace drawer header with `testProviderText` by using `Provider.of`
-
-```dart
+So, let's replace drawer header Text with `testProviderText`.
+### `Provider.of`
+```dart {2,9}
 ...
 import 'package:provider/provider.dart';
 ...
@@ -125,4 +127,21 @@ DrawerHeader(
 ),
 ```
 
-Did you notice that even though you didn't pass parameter but you could use it ?
+### `Consumer`
+```dart
+child: Consumer<String>(
+  builder: (context, value, child) {
+    return Text(
+      "$value",
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 24,
+      ),
+    );
+  },
+),
+```
+
+Did you notice that you didn't pass down parameter but you could use provided value ?
+
+This is the merit of Provider!!

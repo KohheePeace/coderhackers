@@ -316,10 +316,7 @@ class HomeDrawer extends StatelessWidget {
               title: Text('Register'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => RegisterPage()),
-                );
+                Navigator.pushNamed(context, '/sign_up');
               }
             ),
           ],
