@@ -1,5 +1,5 @@
 ---
-title: Step22 Firestore security rules (Backend authorization)
+title: Step23 Firestore security rules (Backend authorization)
 ---
 
 ```js

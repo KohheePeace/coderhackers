@@ -73,5 +73,4 @@ drawer: HomeDrawer(),
 ```
 
 ## Test it
-- Check it works correctly
-- Then, Please "sign-in", "sign-out"
+- Check it works correctly by "sign-in", "sign-out".

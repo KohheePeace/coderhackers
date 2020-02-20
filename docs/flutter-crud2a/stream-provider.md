@@ -1,5 +1,5 @@
 ---
-title: Step14 StreamProvider
+title: Step13 StreamProvider
 ---
 
 ## Goal of this step
@@ -40,8 +40,15 @@ Instead of checking `IsAuthenticated`, check login state by checking if login us
 	final bool isAuthenticated = user != null;
 ```
 
-## Ovserver Pattern
-I understand the concept of Stream. If you come flutter from Angular.js with rxjs...
-https://en.wikipedia.org/wiki/Observer_pattern
-https://angular.io/guide/observables
-https://www.didierboelens.com/2018/08/reactive-programming---streams---bloc/
+## About Stream
+**stream** is comming from Reactive Programming.
+
+I've got used to using it but I don't 100% understand it!
+
+If you want to dive into Stream check the below links!
+
+https://dart.dev/tutorials/language/streams
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nQBpOIHE4eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+https://medium.com/flutter-community/reactive-programming-streams-bloc-6f0d2bd2d248
