@@ -2,11 +2,14 @@
 title: Step17 Create Post
 ---
 
+## Goal of this step
+- Create Post in firestore
+
 ## Add FloatingActionButton
 https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
 
 `lib/pages/home_page.dart`
-```dart hl_lines="17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33"
+```dart {17-33}
 class _HomePageState extends State<HomePage> {
 
   @override
@@ -67,7 +70,7 @@ class _PostsNewPageState extends State<PostsNewPage> {
   final titleInputController = TextEditingController();
   final contentInputController = TextEditingController();
 
-  // https://flutter.dev/docs/development/ui/interactive
+  // https://flutter.dev/docs/development/ui/interactive#step-3-subclass-state
   bool _isSubmitting = false;
 
   @override
@@ -155,13 +158,15 @@ class _PostsNewPageState extends State<PostsNewPage> {
 }
 ```
 
+## Check code
 The important part of code is here.
 
 https://pub.dev/packages/cloud_firestore#usage
 
 ```dart
-final user = Provider.of<FirebaseUser>(context, listen: false);
-                      
+// final user = Provider.of<FirebaseUser>(context, listen: false);
+FirebaseUser user = await FirebaseAuth.instance.currentUser();
+                   
 await Firestore.instance
 	.collection('users')
 	.document(user.uid)
@@ -175,3 +180,6 @@ await Firestore.instance
 	});
 ```
 
+## Check firestore console
+Check how data is created in
+https://console.firebase.google.com/

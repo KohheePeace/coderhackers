@@ -1,11 +1,11 @@
 ---
-title: Step16 Create User in Firestore
+title: Step13 Create User in Firestore
 ---
 
 ## Why do we need to create firestore user? Is firebase authentication user not enough?
 
-1. Firebase auth stores information **only about authentication**.
-2. We **want to store relationship** with **User** and **Post** in firestore.
+1. Firebase auth stores information **only about authentication infomation**.
+2. We **want to store relationship** with **User** and **Post** in firestore later.
 
 ## Install Firestore package
 https://pub.dev/packages/cloud_firestore

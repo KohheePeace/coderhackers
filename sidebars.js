@@ -20,5 +20,27 @@ fs.readdirSync(flutterCrud2aFolder).forEach(file => {
 
 module.exports = {
   crud2aReactReactRouter: crud2aReactReactRouterFiles,
-  flutterCrud2a: futterCrud2aFiles,
+  flutterCrud2a: [
+    'flutter-crud2a/install-flutter-sdk',
+    'flutter-crud2a/setup-vscode-editor',
+    'flutter-crud2a/create-flutter-app',
+    'flutter-crud2a/write-initial-counter-app-from-scratch',
+    'flutter-crud2a/folder-structure',
+    'flutter-crud2a/add-drawer-and-routing',
+    'flutter-crud2a/setup-firebase',
+    'flutter-crud2a/edit-register-page',
+    'flutter-crud2a/login-page',
+    'flutter-crud2a/change-content-by-user-state',
+    'flutter-crud2a/provider-basics',
+    'flutter-crud2a/multi-provider',
+    'flutter-crud2a/stream-provider',
+    'flutter-crud2a/create-user-in-firestore',
+    'flutter-crud2a/create-post',
+    'flutter-crud2a/list-posts',
+    'flutter-crud2a/show-post-page',
+    'flutter-crud2a/my-posts-page',
+    'flutter-crud2a/delete-post',
+    'flutter-crud2a/edit-post-page',
+    'flutter-crud2a/firestore-security-rules',
+  ]
 };

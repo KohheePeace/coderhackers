@@ -21,7 +21,7 @@ providers: [
 ```
 
 ### Check the FirebaseAuth code
-#### firebase_auth-0.15.4/lib/src/firebase_auth.dart
+#### `firebase_auth-0.15.4/lib/src/firebase_auth.dart`
 You see `onAuthStateChanged` returns stream.
 ```dart
 /// Receive [FirebaseUser] each time the user signIn or signOut
@@ -39,21 +39,6 @@ Instead of checking `IsAuthenticated`, check login state by checking if login us
 	final user = Provider.of<FirebaseUser>(context);
 	final bool isAuthenticated = user != null;
 ```
-
-## Remove unnecessary code
-
-You don't need to call these method each time you want to change provider's value! nice!
-
-Remove from `lib/pages/login_page.dart` and `lib/pages/register_page.dart`
-```dart
-Provider.of<IsAuthenticated>(context, listen: false).updateIsAuthenticated(true);
-```
-
-Remove from `lib/widgets/home_drawer.dart` 
-```dart
-Provider.of<IsAuthenticated>(context, listen: false).updateIsAuthenticated(false);
-```
-
 
 ## Ovserver Pattern
 I understand the concept of Stream. If you come flutter from Angular.js with rxjs...
