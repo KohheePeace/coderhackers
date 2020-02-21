@@ -2,22 +2,21 @@
 title: Step19 Show Post Page
 ---
 
-`lib/pages/posts_show_page.dart`
+There is nothing new to learn in this step.
+
+#### `lib/pages/posts_show_page.dart`
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/models/post.dart';
 
 class PostsShowPage extends StatefulWidget {
-  final Post post;
-
   PostsShowPage({Key key, @required this.post}) : super(key: key);
+  final Post post;
 
   @override
   _PostsShowPageState createState() => _PostsShowPageState();
 }
-
 class _PostsShowPageState extends State<PostsShowPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

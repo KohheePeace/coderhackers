@@ -74,3 +74,9 @@ drawer: HomeDrawer(),
 
 ## Test it
 - Check it works correctly by "sign-in", "sign-out".
+
+## Provided value doesn't update...😟cp
+This is because `Provider` widget's value doesn't update.
+![dart-devtools](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/flutter-provider-state-dart-dev-tool.png)
+
+In the next step, let's solve this problem.

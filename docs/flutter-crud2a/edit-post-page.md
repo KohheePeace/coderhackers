@@ -2,8 +2,8 @@
 title: Step22 Edit Post Page
 ---
 
-## Add Navigation to `lib/pages/posts_edit_page.dart`
-`lib/pages/my_posts_page.dart`
+## Add Navigation to PostsEditPage
+#### `lib/pages/my_posts_page.dart`
 ```dart
 case 'edit':
 	Navigator.push(
@@ -15,9 +15,9 @@ case 'edit':
 	break;
 ```
 
-## Edit `lib/pages/posts_edit_page.dart`
+## Edit PostsEditPage
 
-`lib/pages/posts_edit_page.dart`
+#### `lib/pages/posts_edit_page.dart`
 ```dart
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -26,16 +26,15 @@ import 'package:flutter_firebase_firestore_crud2a/models/post.dart';
 import 'package:provider/provider.dart';
 
 class PostsEditPage extends StatefulWidget {
-  final Post post;
-
   PostsEditPage({Key key, @required this.post}) : super(key: key);
+  final Post post;
 
   @override
   _PostsEditPageState createState() => _PostsEditPageState();
 }
 
 class _PostsEditPageState extends State<PostsEditPage> {
-  final GlobalKey<FormState> _registerFormKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _editPostFormKey_ = GlobalKey<FormState>();
   final titleInputController = TextEditingController();
   final contentInputController = TextEditingController();
 
@@ -59,8 +58,8 @@ class _PostsEditPageState extends State<PostsEditPage> {
         body: Container(
           padding: const EdgeInsets.all(20.0),
           child: SingleChildScrollView(
-              child: Form(
-            key: _registerFormKey,
+            child: Form(
+            key: _editPostFormKey_,
             child: Column(
               children: <Widget>[
                 TextFormField(
@@ -88,7 +87,7 @@ class _PostsEditPageState extends State<PostsEditPage> {
                   color: Theme.of(context).primaryColor,
                   textColor: Colors.white,
                   onPressed: () async {
-                    if (_registerFormKey.currentState.validate()) {
+                    if (_editPostFormKey_.currentState.validate()) {
                       try {
                         setState(() {
                           _isSubmitting = true;
@@ -129,7 +128,7 @@ class _PostsEditPageState extends State<PostsEditPage> {
 
 ## Important part of this code
 
-Set initial form value.
+- Set initial form value.
 ```dart
 initState() {
 	// https://github.com/flutter/flutter/issues/9969
@@ -139,7 +138,8 @@ initState() {
 }
 ```
 
-Update firestore request
+- Update firestore request
+https://pub.dev/documentation/cloud_firestore/latest/cloud_firestore/DocumentReference-class.html
 ```dart
 await Firestore.instance
 	.collection('users')
