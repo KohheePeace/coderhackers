@@ -2,6 +2,9 @@
 title: Step22 Edit Post Page
 ---
 
+## Goal of this chapter
+- Edit Post Edit Page
+
 ## Add Navigation to PostsEditPage
 #### `lib/pages/my_posts_page.dart`
 ```dart
@@ -16,7 +19,7 @@ case 'edit':
 ```
 
 ## Edit PostsEditPage
-
+This code is almost same with Post New Page. I will explain the difference later.
 #### `lib/pages/posts_edit_page.dart`
 ```dart
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -128,7 +131,7 @@ class _PostsEditPageState extends State<PostsEditPage> {
 
 ## Important part of this code
 
-- Set initial form value.
+- Set initial form value by using passed props.
 ```dart
 initState() {
 	// https://github.com/flutter/flutter/issues/9969
@@ -138,7 +141,7 @@ initState() {
 }
 ```
 
-- Update firestore request
+- Update firestore request.
 https://pub.dev/documentation/cloud_firestore/latest/cloud_firestore/DocumentReference-class.html
 ```dart
 await Firestore.instance

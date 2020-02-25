@@ -6,8 +6,9 @@ title: Step14 StreamProvider
 - Add StreamProvider
 
 Ref:
-https://fireship.io/lessons/advanced-flutter-firebase/
-https://pub.dev/documentation/provider/latest/provider/StreamProvider-class.html
+
+- https://fireship.io/lessons/advanced-flutter-firebase/
+- https://pub.dev/documentation/provider/latest/provider/StreamProvider-class.html
 
 ## Replace ChangeNotifierProvider with StreamProvider
 
@@ -16,8 +17,19 @@ https://pub.dev/documentation/provider/latest/provider/StreamProvider-class.html
 MultiProvider(
 providers: [
 	Provider<String>(create: (context) => testProviderText),
-	StreamProvider<FirebaseUser>.value(value: FirebaseAuth.instance.onAuthStateChanged)
+	StreamProvider<FirebaseUser>(create: (context) => FirebaseAuth.instance.onAuthStateChanged)
 ],
+```
+
+### Check the FirebaseAuth code
+#### `firebase_auth-0.15.4/lib/src/firebase_auth.dart`
+You see `onAuthStateChanged` returns stream.
+```dart
+/// Receive [FirebaseUser] each time the user signIn or signOut
+Stream<FirebaseUser> get onAuthStateChanged {
+	return FirebaseAuthPlatform.instance.onAuthStateChanged(app.name).map(
+			(PlatformUser user) => user == null ? null : FirebaseUser._(user, app));
+}
 ```
 
 Delete code
@@ -44,17 +56,6 @@ void initState() {
 }
 ```
 
-### Check the FirebaseAuth code
-#### `firebase_auth-0.15.4/lib/src/firebase_auth.dart`
-You see `onAuthStateChanged` returns stream.
-```dart
-/// Receive [FirebaseUser] each time the user signIn or signOut
-Stream<FirebaseUser> get onAuthStateChanged {
-	return FirebaseAuthPlatform.instance.onAuthStateChanged(app.name).map(
-			(PlatformUser user) => user == null ? null : FirebaseUser._(user, app));
-}
-```
-
 ## Fix existing code
 ###  Check login state by checking if login user exists.
 `lib/pages/home_page.dart` and `lib/widgets/home_drawer.dart`
@@ -76,7 +77,7 @@ Everything works like a charm!!
 
 ## Recap StreamProvider
 ```dart
-StreamProvider<FirebaseUser>.value(value: FirebaseAuth.instance.onAuthStateChanged)
+StreamProvider<FirebaseUser>(create: (context) => FirebaseAuth.instance.onAuthStateChanged)
 ```
 In this code, 
 
@@ -103,6 +104,6 @@ If you want to dive into Stream check the below links!
 - https://dart.dev/tutorials/language/streams
 
 - Youtube video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nQBpOIHE4eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nQBpOIHE4eE?start=69" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - https://medium.com/flutter-community/reactive-programming-streams-bloc-6f0d2bd2d248

@@ -37,10 +37,41 @@ Widget build(BuildContext context) {
 ## Consume **isAuthenticated** param by using `Provider.of`
 ### Edit HomePage
 #### `lib/pages/home_page.dart`
-```dart {1,3}
-final bool isAuthenticated = Provider.of<bool>(context);
-...
-isAuthenticated ? Text('Home Page after login') : Text('Home Page before login')
+```dart {3,16,22,24}
+import 'package:flutter/material.dart';
+import 'package:flutter_firebase_firestore_crud2a/widgets/home_drawer.dart';
+import 'package:provider/provider.dart';
+
+class HomePage extends StatefulWidget {
+  HomePage({Key key, this.isAuthenticated}) : super(key: key);
+  final bool isAuthenticated;
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    final bool isAuthenticated = Provider.of<bool>(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home Page"),
+      ),
+      drawer: HomeDrawer(),
+      body: Center(
+        child: isAuthenticated ? Text('Home Page after login') : Text('Home Page before login')
+      ),
+    );
+  }
+}
+```
+
+And delete these code
+```dart
+HomePage({Key key, this.isAuthenticated}) : super(key: key);
+final bool isAuthenticated;
 ```
 
 Delete passed props in `main.dart`.
@@ -75,7 +106,7 @@ drawer: HomeDrawer(),
 ## Test it
 - Check it works correctly by "sign-in", "sign-out".
 
-## Provided value doesn't update...😟cp
+## Provided value doesn't update...😟
 This is because `Provider` widget's value doesn't update.
 ![dart-devtools](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/flutter-provider-state-dart-dev-tool.png)
 

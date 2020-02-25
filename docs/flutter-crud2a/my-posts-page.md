@@ -24,10 +24,11 @@ class MyPostsPage extends StatelessWidget {
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: Firestore.instance
-            .collection("users")
-            .document(user.uid)
-            .collection("posts")
-            .snapshots(),
+                  .collection("users")
+                  .document(user.uid)
+                  .collection("posts")
+                  .orderBy('createdAt', descending: true)
+                  .snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) return Text('Error: ${snapshot.error}');
           switch (snapshot.connectionState) {
@@ -35,8 +36,7 @@ class MyPostsPage extends StatelessWidget {
               return Text('Loading...');
             default:
               return ListView(
-                children:
-                    snapshot.data.documents.map((DocumentSnapshot document) {
+                children: snapshot.data.documents.map((DocumentSnapshot document) {
                   final post = Post.fromFirestore(document);
 
                   return ListTile(
@@ -67,18 +67,20 @@ class MyPostsPage extends StatelessWidget {
 This code is almost same with `lib/pages/home_page.dart`
 
 Note that stream is a little bit different.
-```dart
+```dart {2}
 stream: Firestore.instance
 	.collection("users")
 	.document(user.uid)
 	.collection("posts")
+    .orderBy('createdAt', descending: true)
 	.snapshots()
 ```
 
 ## Add **PopupMenuButton**
 <img src="https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/add-popup-menu-button.gif" height="400" />
 
-https://flutter-widget.live/widgets/PopupMenuButton
+- https://api.flutter.dev/flutter/material/PopupMenuButton-class.html
+- https://flutter-widget.live/widgets/PopupMenuButton
 
 ```dart {7-30}
 return ListTile(

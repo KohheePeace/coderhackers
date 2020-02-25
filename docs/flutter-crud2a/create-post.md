@@ -31,10 +31,10 @@ floatingActionButton: FloatingActionButton(
 ```
 
 ## Edit `lib/pages/posts_new_page.dart`
-The all code is...
+The all code is below.
 
-`lib/pages/posts_new_page.dart`
-```dart
+#### `lib/pages/posts_new_page.dart`
+```dart {17,52,62-64,66,68-78,82,83}
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -86,7 +86,7 @@ class _PostsNewPageState extends State<PostsNewPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.all(20.0),
-                  child: _isSubmitting ? // https://stackoverflow.com/questions/47065098/how-to-work-with-progress-indicator-in-flutter
+                  child: _isSubmitting ? // https://stackoverflow.com/a/53497047
                   Center(child: CircularProgressIndicator())
                   :
                   RaisedButton(
@@ -138,14 +138,13 @@ class _PostsNewPageState extends State<PostsNewPage> {
 }
 ```
 
-## Check code
+## Code of firestore to make a "Post" as subcollection
 The important part of code is here.
 
 https://pub.dev/packages/cloud_firestore#usage
 
 ```dart
-// final user = Provider.of<FirebaseUser>(context, listen: false);
-FirebaseUser user = await FirebaseAuth.instance.currentUser();
+final user = Provider.of<FirebaseUser>(context, listen: false);
                    
 await Firestore.instance
 	.collection('users')

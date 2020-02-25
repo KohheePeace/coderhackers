@@ -2,8 +2,6 @@
 title: Step19 Show Post Page
 ---
 
-There is nothing new to learn in this step.
-
 #### `lib/pages/posts_show_page.dart`
 ```dart
 import 'package:flutter/material.dart';
@@ -38,3 +36,4 @@ class _PostsShowPageState extends State<PostsShowPage> {
 }
 ```
 
+`toDate()`: https://pub.dev/documentation/cloud_firestore_platform_interface/latest/cloud_firestore_platform_interface/Timestamp-class.html

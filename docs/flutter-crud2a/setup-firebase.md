@@ -28,3 +28,8 @@ https://firebase.google.com/docs/flutter/setup?platform=android#create-firebase-
 Don't forget to enable **"Email/Password"** method.
 ![enable-firebase-email-auth.png](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/enable-firebase-email-auth.png)
 
+
+
+## Security Memo! (added)
+**Should I add the google-services.json (from Firebase) to my repository?**
+https://stackoverflow.com/questions/37358340/should-i-add-the-google-services-json-from-firebase-to-my-repository

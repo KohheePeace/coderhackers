@@ -3,8 +3,8 @@ title: Step13 ChangeNotifierProvider
 ---
 
 ## Goal of this step
-- Learn ChangeNotifierProvider
-- Notify Changes of isAuthenticated` To Provider
+- Learn how to use ChangeNotifierProvider
+- Notify Changes of `isAuthenticated` To Provider
 
 In this step, let's solve last step problem.
 We want to change the Provider's `isAuthenticated` value.
@@ -15,7 +15,7 @@ Ref:
 2. https://alligator.io/flutter/state-management/#change-notifier
 
 ## Make GlobalState class
-We need new class to use `ChangeNotifierProvider`.
+To use `ChangeNotifierProvider`, we need to make new Class ***which extends `ChangeNotifier`***.
 
 I just named it `GlobalState` class. It has `bool isAuthenticated`
 
@@ -74,6 +74,10 @@ await FirebaseAuth.instance.signOut();
 
 Provider.of<GlobalState>(context, listen: false).updateIsAuthenticated(false);
 ```
+
+These codes are just doing same thing in document: https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#providerof
+
+[About listen of `Provider.of`]https://pub.dev/documentation/provider/latest/provider/Provider/of.html
 
 ## Test it
 Test to check it works well...
