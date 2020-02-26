@@ -239,3 +239,9 @@ npm run test
 ```
 
 And visit generated url
+
+## Seed data
+https://github.com/firebase/firebase-tools/issues/1167#issuecomment-545641337
+https://stackoverflow.com/questions/56268092/how-to-setup-test-data-when-testing-firestore-rules-with-emulator
+https://github.com/sgr-ksmt/firestore-emulator-rules-test/blob/master/test/test.ts
+https://techlife.cookpad.com/entry/2018/11/05/143000
