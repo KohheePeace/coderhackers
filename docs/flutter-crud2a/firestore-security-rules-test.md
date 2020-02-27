@@ -6,7 +6,8 @@ title: Step24 Firestore Security Rules Testing
 - Learn how to write test of Firestore Security Rules
 
 ## Setup
-https://firebase.google.com/docs/firestore/security/test-rules-emulator
+- https://firebase.google.com/docs/firestore/security/test-rules-emulator
+- https://medium.com/@adityadroid/60-days-of-flutter-building-a-messenger-day-55-56-deploying-firestore-security-rules-using-d8d78fd1eeea
 
 ### Install firebase cli
 https://firebase.google.com/docs/cli/
@@ -20,10 +21,19 @@ npm install -g firebase-tools
 firebase login
 ```
 
+Check it works correctly
+```bash
+firebase projects:list
+```
+
+## Imitate Quickstart
+https://firebase.google.com/docs/firestore/security/test-rules-emulator#quickstart
+
 ### Make `server` folder
 
 #### `terminal`
 ```bash
+mkdir server
 cd server
 firebase init
 ```
@@ -192,8 +202,7 @@ describe("My app", () => {
 });
 ```
 
-## Run Test
-Let's run example test.
+### Copy quickstart rules.
 #### `firestore.rules`
 ```js
 rules_version = '2';
@@ -215,12 +224,15 @@ service cloud.firestore {
 }
 ```
 
+## Run Test
+Let's run example test.
+
 #### `terminal`
 ```bash
 firebase emulators:exec --only firestore 'npm test'
 ```
 
-## Generate test reports
+## Check test reports
 
 https://firebase.google.com/docs/rules/emulator-reports
 
@@ -240,7 +252,7 @@ npm run test
 
 And visit generated url
 
-## Test Coverage
+### Test Coverage
 https://firebase.google.com/docs/rules/emulator-reports
 
 If test is not applied to the rules, it shows message like this.
@@ -287,25 +299,26 @@ describe("My app", () => {
     const alice = authedApp({ uid: "alice" });
     const bob = authedApp({ uid: "bob" });
 
-    // Make alice post and set published false
-    const aliceDraftPost = alice.collection("users").doc("alice").collection("posts").doc("alice-draft-post1");
+    // Make alice's draft post
+    const aliceDraftPost = alice.collection("users").doc("alice").collection("posts").doc("alice-post1");
     await aliceDraftPost.set({title: "title", published: false});
 
-    const alicePublicPost = alice.collection("users").doc("alice").collection("posts").doc("alice-draft-post2");
+    // Make alice's published post
+    const alicePublicPost = alice.collection("users").doc("alice").collection("posts").doc("alice-post2");
     await alicePublicPost.set({title: "title", published: true});
 
     // Bob access alice's draft post
-    const bobQuery1 = bob.collection("users").doc("alice").collection("posts").doc("alice-draft-post1").get();
+    const bobQuery1 = bob.collection("users").doc("alice").collection("posts").doc("alice-post1").get();
 
-    // Bob access alice's public post
-    const bobQuery2 = bob.collection("users").doc("alice").collection("posts").doc("alice-draft-post2").get();
+    // Bob access alice's published post
+    const bobQuery2 = bob.collection("users").doc("alice").collection("posts").doc("alice-post2").get();
 
     // Alice access alice's draft post
     const aliceQuery = aliceDraftPost.get();
 
     await firebase.assertFails(bobQuery1);
-    await firebase.assertSucceeds(aliceQuery);
     await firebase.assertSucceeds(bobQuery2);
+    await firebase.assertSucceeds(aliceQuery);
   });
 
 
@@ -359,11 +372,6 @@ describe("My app", () => {
     const alice = authedApp({ uid: "alice" });
     const bob = authedApp({ uid: "bob" });
 
-    // Make bob's post
-    await bob.collection("users").doc("bob")
-      .collection("posts").doc("bobPost1")
-      .set({title: "hogehoge"});
-
     // alice query to update bob's post
     aliceQuery = alice.collection("users").doc("bob")
                   .collection("posts").doc("bobPost1")
@@ -372,6 +380,13 @@ describe("My app", () => {
     await firebase.assertFails(aliceQuery);
   });
 });
+```
+
+## Deploy Rules
+#### `terminal`
+```bash
+# inside server dir
+firebase deploy --only firestore:rules
 ```
 
 ## Seed data
