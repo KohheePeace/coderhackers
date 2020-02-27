@@ -240,6 +240,140 @@ npm run test
 
 And visit generated url
 
+## Test Coverage
+https://firebase.google.com/docs/rules/emulator-reports
+
+If test is not applied to the rules, it shows message like this.
+![ss-of-coverage](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-27%20at%205.31.13.png)
+
+## Test case for our Flutter app
+#### `test/test.js`
+```js
+...
+describe("My app", () => {
+  it("require users to log in before creating a profile", async () => {
+    const db = authedApp(null);
+    const profile = db.collection("users").doc("alice");
+    await firebase.assertFails(profile.set({ name: "Alice" }));
+  });
+
+  it("should let anyone read any published posts", async () => {  
+    const db = authedApp(null);
+    const queryPublished = db.collectionGroup('posts').where("published", "==", true).get();
+    const queryDrafts = db.collectionGroup('posts').where("published", "==", false).get();
+    await firebase.assertSucceeds(queryPublished);
+    await firebase.assertFails(queryDrafts);
+  });
+
+  it("should only let users to query their own post", async () => {
+    const db = authedApp({ uid: "alice" });
+    await firebase.assertSucceeds(
+      db
+        .collection("users")
+        .doc("alice")
+        .collection("posts")
+        .get()
+    );
+    await firebase.assertFails(
+      db
+        .collection("users")
+        .doc("bob")
+        .collection("posts")
+        .get()
+    );
+  });
+
+  it("should not allow to read other's draft post", async () => {
+    const alice = authedApp({ uid: "alice" });
+    const bob = authedApp({ uid: "bob" });
+
+    // Make alice post and set published false
+    const aliceDraftPost = alice.collection("users").doc("alice").collection("posts").doc("alice-draft-post1");
+    await aliceDraftPost.set({title: "title", published: false});
+
+    const alicePublicPost = alice.collection("users").doc("alice").collection("posts").doc("alice-draft-post2");
+    await alicePublicPost.set({title: "title", published: true});
+
+    // Bob access alice's draft post
+    const bobQuery1 = bob.collection("users").doc("alice").collection("posts").doc("alice-draft-post1").get();
+
+    // Bob access alice's public post
+    const bobQuery2 = bob.collection("users").doc("alice").collection("posts").doc("alice-draft-post2").get();
+
+    // Alice access alice's draft post
+    const aliceQuery = aliceDraftPost.get();
+
+    await firebase.assertFails(bobQuery1);
+    await firebase.assertSucceeds(aliceQuery);
+    await firebase.assertSucceeds(bobQuery2);
+  });
+
+
+  it("require users to log in before creating a post", async () => {
+    const db = authedApp(null);
+    const query = db.collection("users").doc("alice")
+                    .collection("posts").doc()
+                    .set({
+                      title: "alice",
+                      content: "All Things Firebase"
+                    })
+    await firebase.assertFails(query);
+  });
+
+  it("requires title field to create a post", async () => {
+    const db = authedApp({ uid: "alice" });
+    const postDocRef = db.collection("users").doc("alice").collection("posts").doc()
+                  
+    await firebase.assertFails(postDocRef.set({title: ""}));
+    await firebase.assertSucceeds(postDocRef.set({title: "title 1"}));
+  });
+
+
+  it("should not allow to update other's post", async () => {
+    const alice = authedApp({ uid: "alice" });
+    const bob = authedApp({ uid: "bob" });
+
+    // Make bob's post
+    await bob.collection("users").doc("bob")
+      .collection("posts").doc("bobPost1")
+      .set({title: "hogehoge"});
+
+    // alice query to update bob's post
+    aliceQuery = alice.collection("users").doc("bob")
+                  .collection("posts").doc("bobPost1")
+                  .update({title: "hoge"});
+                  
+    await firebase.assertFails(aliceQuery);
+  });
+
+  it("requires title field to update a post", async () => {
+    const db = authedApp({ uid: "alice" });
+    const postDocRef = db.collection("users").doc("alice").collection("posts").doc("post1");
+    await postDocRef.set({title: "hogehgoe"});
+                  
+    await firebase.assertFails(postDocRef.update({title: ""}));
+    await firebase.assertSucceeds(postDocRef.update({title: "title 1"}));
+  });
+
+  it("should not allow to delete other's post", async () => {
+    const alice = authedApp({ uid: "alice" });
+    const bob = authedApp({ uid: "bob" });
+
+    // Make bob's post
+    await bob.collection("users").doc("bob")
+      .collection("posts").doc("bobPost1")
+      .set({title: "hogehoge"});
+
+    // alice query to update bob's post
+    aliceQuery = alice.collection("users").doc("bob")
+                  .collection("posts").doc("bobPost1")
+                  .delete();
+                  
+    await firebase.assertFails(aliceQuery);
+  });
+});
+```
+
 ## Seed data
 https://github.com/firebase/firebase-tools/issues/1167#issuecomment-545641337
 https://stackoverflow.com/questions/56268092/how-to-setup-test-data-when-testing-firestore-rules-with-emulator
