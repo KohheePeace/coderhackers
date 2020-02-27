@@ -44,5 +44,6 @@ module.exports = {
     'flutter-crud2a/delete-post',
     'flutter-crud2a/edit-post-page',
     'flutter-crud2a/firestore-security-rules',
+    'flutter-crud2a/firestore-security-rules-test',
   ]
 };
