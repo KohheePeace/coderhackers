@@ -3,11 +3,21 @@ title: Step24 Firestore Security Rules Testing
 ---
 
 ## Goal of this step
-- Learn how to write test of Firestore Security Rules
+- Learn how to write test for Firestore Security Rules
 
-## Setup
+## Refs
 - https://firebase.google.com/docs/firestore/security/test-rules-emulator
 - https://medium.com/@adityadroid/60-days-of-flutter-building-a-messenger-day-55-56-deploying-firestore-security-rules-using-d8d78fd1eeea
+
+
+## Setup
+### Install java
+
+If you haven't installed java...
+- https://chocolatey.org/packages/openjdk#individual
+- https://firebase.google.com/docs/rules/emulator-setup
+
+*You may need to restart your pc after install!
 
 ### Install firebase cli
 https://firebase.google.com/docs/cli/
@@ -25,10 +35,6 @@ Check it works correctly
 ```bash
 firebase projects:list
 ```
-
-## Imitate Quickstart
-https://firebase.google.com/docs/firestore/security/test-rules-emulator#quickstart
-
 ### Make `server` folder
 
 #### `terminal`
@@ -37,6 +43,9 @@ mkdir server
 cd server
 firebase init
 ```
+
+## Imitate Quickstart
+https://firebase.google.com/docs/firestore/security/test-rules-emulator#quickstart
 
 ### Make `package.json`
 #### `server/package.json`
@@ -224,7 +233,7 @@ service cloud.firestore {
 }
 ```
 
-## Run Test
+### Run Test
 Let's run example test.
 
 #### `terminal`
@@ -232,41 +241,16 @@ Let's run example test.
 firebase emulators:exec --only firestore 'npm test'
 ```
 
-## Check test reports
-
-https://firebase.google.com/docs/rules/emulator-reports
-
-### Start emulator
-
-#### `terminal`
-```bash
-firebase emulators:start --only firestore
-```
-
-Then, in another terminal tab
-
-#### `terminal`
-```bash
-npm run test
-```
-
-And visit generated url
-
-### Test Coverage
-https://firebase.google.com/docs/rules/emulator-reports
-
-If test is not applied to the rules, it shows message like this.
-![ss-of-coverage](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-27%20at%205.31.13.png)
-
 ## Test case for our Flutter app
+So, let's write test for out security rules by imitating quickstart example.
 #### `test/test.js`
 ```js
 ...
 describe("My app", () => {
-  it("require users to log in before creating a profile", async () => {
+  it("require users to log in before creating a user", async () => {
     const db = authedApp(null);
-    const profile = db.collection("users").doc("alice");
-    await firebase.assertFails(profile.set({ name: "Alice" }));
+    const user = db.collection("users").doc("alice");
+    await firebase.assertFails(user.set({ name: "Alice" }));
   });
 
   it("should let anyone read any published posts", async () => {  
@@ -370,7 +354,6 @@ describe("My app", () => {
 
   it("should not allow to delete other's post", async () => {
     const alice = authedApp({ uid: "alice" });
-    const bob = authedApp({ uid: "bob" });
 
     // alice query to update bob's post
     aliceQuery = alice.collection("users").doc("bob")
@@ -382,6 +365,32 @@ describe("My app", () => {
 });
 ```
 
+## Check test reports
+
+https://firebase.google.com/docs/rules/emulator-reports
+
+### Start emulator
+
+#### `terminal`
+```bash
+firebase emulators:start --only firestore
+```
+
+Then, in another terminal tab
+
+#### `terminal`
+```bash
+npm run test
+```
+
+And visit generated url
+
+### Test Coverage
+https://firebase.google.com/docs/rules/emulator-reports
+
+If test is not applied to the rules, it shows message like this.
+![ss-of-coverage](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-27%20at%205.31.13.png)
+
 ## Deploy Rules
 #### `terminal`
 ```bash
@@ -390,6 +399,8 @@ firebase deploy --only firestore:rules
 ```
 
 ## Seed data
+This is just a memo links.
+
 https://github.com/firebase/firebase-tools/issues/1167#issuecomment-545641337
 https://stackoverflow.com/questions/56268092/how-to-setup-test-data-when-testing-firestore-rules-with-emulator
 https://github.com/sgr-ksmt/firestore-emulator-rules-test/blob/master/test/test.ts
