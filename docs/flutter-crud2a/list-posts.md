@@ -51,6 +51,13 @@ Firestore.instance.collectionGroup('posts').orderBy('createdAt', descending: tru
 ```
 https://pub.dev/documentation/cloud_firestore/latest/cloud_firestore/Query/orderBy.html
 
+### Error memo
+If you see error message like below, **"please click link" and "Add index".**
+#### `terminal`
+```bash
+I/System.out(11646): com.google.firebase.firestore.FirebaseFirestoreException: FAILED_PRECONDITION: The query requires a COLLECTION_GROUP_DESC index for collection posts and field createdAt. You can create it here: https://console.firebase.google.com/v1/r/project/flutter-test-app-bd9a5/firestore/indexes?create_exemption=Cltwcm9qZWN0cy9mbHV0dGVyLXRlc3QtYXBwLWJkOWE1L2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9wb3N0cy9maWVsZHMvY3JlYXRlZEF0EAIaDQoJY3JlYXRlZEF0EAI
+```
+
 ## Refactor code to use Post Model
 
 ### Why ?
