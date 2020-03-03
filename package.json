@@ -6,7 +6,8 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "hoge": "node hoge.js"
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^0.0.4",
@@ -14,7 +15,9 @@
     "@docusaurus/plugin-sitemap": "^2.0.0-alpha.37",
     "@docusaurus/preset-classic": "^2.0.0-alpha.43",
     "classnames": "^2.2.6",
+    "html-pdf": "^2.2.0",
     "prismjs": "^1.19.0",
+    "puppeteer": "^2.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },

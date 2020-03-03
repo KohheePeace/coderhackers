@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: 'CODER HACKERS',
   tagline: "stock and share what I've learned.",
@@ -7,6 +9,7 @@ module.exports = {
   organizationName: 'kohheepeace', // Usually your GitHub org/user name.
   projectName: 'coderhackers', // Usually your repo name.
   plugins: [
+    path.resolve(__dirname, 'hoge.js'),
     '@docusaurus/plugin-google-analytics',
     '@docusaurus/plugin-google-gtag',
     '@docusaurus/plugin-sitemap',

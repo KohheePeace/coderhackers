@@ -41,6 +41,10 @@ const docsList = [
   },
 ];
 
+async function Hello() {
+  console.log('hello');
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
@@ -53,6 +57,7 @@ function Home() {
         <div className="container">
           <h1 className={classnames('hero--title', styles.heroTitle)}>{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <button onClick={Hello}>Hello</button>
         </div>
       </header>
       <main>
