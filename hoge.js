@@ -45,7 +45,7 @@ module.exports = function(context, opts) {
         var options = { base: `file:///${base}/` };
         if (route == '/404.html') {
           console.log(html);
-          pdf.create(html, options).toFile('./404.pdf', function(err, res) {
+          pdf.create(html, options).toFile('./build/404.pdf', function(err, res) {
             if (err) return console.log(err);
             console.log(res); // { filename: '/app/businesscard.pdf' }
           });
