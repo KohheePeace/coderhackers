@@ -104,6 +104,7 @@ If you want to dive into Stream check the below links!
 - https://dart.dev/tutorials/language/streams
 
 - Youtube video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nQBpOIHE4eE?start=69" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div class="videoWrapper">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/nQBpOIHE4eE?start=69" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 - https://medium.com/flutter-community/reactive-programming-streams-bloc-6f0d2bd2d248
