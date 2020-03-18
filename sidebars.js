@@ -21,6 +21,7 @@ fs.readdirSync(flutterCrud2aFolder).forEach(file => {
 module.exports = {
   crud2aReactReactRouter: crud2aReactReactRouterFiles,
   flutterCrud2a: [
+    'flutter-crud2a/introduction',
     'flutter-crud2a/install-flutter-sdk',
     'flutter-crud2a/setup-vscode-editor',
     'flutter-crud2a/create-flutter-app',

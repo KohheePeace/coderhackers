@@ -1,5 +1,5 @@
 .cardLink {
-  color: #000;
+  color: var(--ifm-link-color);
 }
 
 .cardLink:hover {

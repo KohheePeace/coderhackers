@@ -27,7 +27,7 @@ const docsList = [
         ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
-    link: 'docs/flutter-crud2a/install-flutter-sdk'
+    link: 'docs/flutter-crud2a/introduction'
   },
   {
     title: <>Powered by React</>,
