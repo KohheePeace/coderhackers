@@ -18,6 +18,9 @@ module.exports = {
     },
   ],
   themeConfig: {
+    prism: {
+      additionalLanguages: ['powershell', 'dart'],
+    },
     googleAnalytics: {
       trackingID: 'UA-128556070-3',
     },
