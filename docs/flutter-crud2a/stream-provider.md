@@ -12,8 +12,7 @@ Ref:
 
 ## Replace ChangeNotifierProvider with StreamProvider
 
-#### `lib/main.dart`
-```dart {4}
+```dart {4} title="lib/main.dart"
 MultiProvider(
 providers: [
 	Provider<String>(create: (context) => testProviderText),
@@ -22,9 +21,8 @@ providers: [
 ```
 
 ### Check the FirebaseAuth code
-#### `firebase_auth-0.15.4/lib/src/firebase_auth.dart`
 You see `onAuthStateChanged` returns stream.
-```dart
+```dart title="firebase_auth-0.15.4/lib/src/firebase_auth.dart"
 /// Receive [FirebaseUser] each time the user signIn or signOut
 Stream<FirebaseUser> get onAuthStateChanged {
 	return FirebaseAuthPlatform.instance.onAuthStateChanged(app.name).map(
@@ -33,8 +31,7 @@ Stream<FirebaseUser> get onAuthStateChanged {
 ```
 
 Delete code
-#### `lib/main.dart`
-```dart
+```dart title="lib/main.dart"
 bool isAuthenticated = false;
 
 // https://stackoverflow.com/questions/41479255/life-cycle-in-flutter

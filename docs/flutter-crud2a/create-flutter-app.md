@@ -10,8 +10,7 @@ Ref: https://flutter.dev/docs/get-started/test-drive?tab=terminal
 
 ## Create and run first flutter app
 
-`terminal`
-```bash
+```bash title="terminal"
 flutter create flutter_firebase_firestore_crud2a
 cd flutter_firebase_firestore_crud2a
 flutter run

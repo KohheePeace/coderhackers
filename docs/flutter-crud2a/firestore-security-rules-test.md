@@ -22,23 +22,21 @@ If you haven't installed java...
 ### Install firebase cli
 https://firebase.google.com/docs/cli/
 
-#### `terminal`
-```bash
+```bash title="terminal"
 npm install -g firebase-tools
 ```
 
-```bash
+```bash title="terminal"
 firebase login
 ```
 
 Check it works correctly
-```bash
+```bash title="terminal"
 firebase projects:list
 ```
 ### Make `server` folder
 
-#### `terminal`
-```bash
+```bash title="terminal"
 mkdir server
 cd server
 firebase init
@@ -48,8 +46,7 @@ firebase init
 https://firebase.google.com/docs/firestore/security/test-rules-emulator#quickstart
 
 ### Make `package.json`
-#### `server/package.json`
-```json
+```json title="server/package.json"
 {
   "name": "cloud-firestore-emulator-javascript-quickstart",
   "version": "1.0.2",
@@ -70,8 +67,7 @@ https://firebase.google.com/docs/firestore/security/test-rules-emulator#quicksta
 run `npm install` in sever directory.
 
 ### Make `test/test.js`
-#### `test/test.js`
-```js {10}
+```js {10} title="test/test.js"
 const firebase = require("@firebase/testing");
 const fs = require("fs");
 
@@ -212,8 +208,7 @@ describe("My app", () => {
 ```
 
 ### Copy quickstart rules.
-#### `firestore.rules`
-```js
+```js title="firestore.rules"
 rules_version = '2';
 
 service cloud.firestore {
@@ -236,15 +231,13 @@ service cloud.firestore {
 ### Run Test
 Let's run example test.
 
-#### `terminal`
-```bash
+```bash title="terminal"
 firebase emulators:exec --only firestore 'npm test'
 ```
 
 ## Test case for our Flutter app
 So, let's write test for out security rules by imitating quickstart example.
-#### `test/test.js`
-```js
+```js title="test/test.js"
 ...
 describe("My app", () => {
   it("require users to log in before creating a user", async () => {
@@ -371,15 +364,13 @@ https://firebase.google.com/docs/rules/emulator-reports
 
 ### Start emulator
 
-#### `terminal`
-```bash
+```bash title="terminal"
 firebase emulators:start --only firestore
 ```
 
 Then, in another terminal tab
 
-#### `terminal`
-```bash
+```bash title="terminal"
 npm run test
 ```
 
@@ -392,8 +383,7 @@ If test is not applied to the rules, it shows message like this.
 ![ss-of-coverage](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-27%20at%205.31.13.png)
 
 ## Deploy Rules
-#### `terminal`
-```bash
+```bash title="terminal"
 # inside server dir
 firebase deploy --only firestore:rules
 ```

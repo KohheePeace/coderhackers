@@ -15,9 +15,7 @@ This is something **like Bootstrap components**.
 We will add **Drawer** widget
 https://api.flutter.dev/flutter/material/Drawer-class.html
 
-
-#### `pages/home_page.dart`
-```dart
+```dart title="pages/home_page.dart"
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -82,8 +80,7 @@ Let's try both.
 
 ### Add Navaigation code to Drawer's ListTile
 
-#### `pages/home_page.dart`
-```dart {4-12,17-19}
+```dart {4-12,17-19} title="pages/home_page.dart"
 ListTile(
 	leading: Icon(Icons.exit_to_app),
 	title: Text('Login'),
@@ -108,8 +105,7 @@ ListTile(
 
 ### Define Named routes in main.dart
 
-#### `lib/main.dart`
-```dart {6-11}
+```dart {6-11} title="lib/main.dart"
 return MaterialApp(
 	title: 'Flutter Demo',
 	theme: ThemeData(
@@ -129,8 +125,8 @@ https://github.com/flutter/flutter/issues/3867
 
 ## Final code
 
-#### `lib/main.dart`
-```dart
+
+```dart title="lib/main.dart"
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/register_page.dart';
@@ -156,8 +152,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-#### `pages/home_page.dart`
-```dart
+```dart title="pages/home_page.dart"
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
 

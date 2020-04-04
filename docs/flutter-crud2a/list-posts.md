@@ -16,8 +16,7 @@ But "posts" collection is subcollection of "users" top level collection.
 So, we need to use `collectionGroup`.
 
 Ref: https://stackoverflow.com/questions/46573014/firestore-query-subcollections
-#### `lib/pages/home_page.dart`
-```dart {2}
+```dart {2} title="lib/pages/home_page.dart"
 body: StreamBuilder<QuerySnapshot>(
 	stream: Firestore.instance.collectionGroup('posts').snapshots(),
 	builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -53,8 +52,7 @@ https://pub.dev/documentation/cloud_firestore/latest/cloud_firestore/Query/order
 
 ### Error memo
 If you see error message like below, **"please click link" and "Add index".**
-#### `terminal`
-```bash
+```bash title="terminal"
 I/System.out(11646): com.google.firebase.firestore.FirebaseFirestoreException: FAILED_PRECONDITION: The query requires a COLLECTION_GROUP_DESC index for collection posts and field createdAt. You can create it here: https://console.firebase.google.com/v1/r/project/flutter-test-app-bd9a5/firestore/indexes?create_exemption=Cltwcm9qZWN0cy9mbHV0dGVyLXRlc3QtYXBwLWJkOWE1L2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9wb3N0cy9maWVsZHMvY3JlYXRlZEF0EAIaDQoJY3JlYXRlZEF0EAI
 ```
 
@@ -70,8 +68,7 @@ But it is good practice to define `Post` model and what type of fields `Post` mo
 https://flutter.dev/docs/development/data-and-backend/json#serializing-json-inside-model-classes
 
 ### Create Post model
-#### `lib/models/post.dart`
-```dart
+```dart title="lib/models/post.dart"
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Post {
@@ -95,8 +92,7 @@ class Post {
 ```
 ### Refactor StreamBuilder
 
-#### `lib/pages/home_page.dart`
-```dart {12,16,19}
+```dart {12,16,19} title="lib/pages/home_page.dart"
 body: StreamBuilder<QuerySnapshot>(
 	stream: Firestore.instance.collectionGroup('posts').snapshots(),
 	builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -127,8 +123,7 @@ body: StreamBuilder<QuerySnapshot>(
 ## Navigate to **PostsShowPage**
 When user tap each post, we want to navigate user to **PostsShowPage**.
 
-`lib/pages/home_page.dart`
-```dart {19-27}
+```dart {19-27} title="lib/pages/home_page.dart"
 body: StreamBuilder<QuerySnapshot>(
 	stream: Firestore.instance.collectionGroup('posts').snapshots(),
 	builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {

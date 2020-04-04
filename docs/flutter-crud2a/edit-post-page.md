@@ -6,8 +6,7 @@ title: Step22 Edit Post Page
 - Edit Post Edit Page
 
 ## Add Navigation to PostsEditPage
-#### `lib/pages/my_posts_page.dart`
-```dart
+```dart title="lib/pages/my_posts_page.dart"
 case 'edit':
 	Navigator.push(
 		context,
@@ -20,8 +19,7 @@ case 'edit':
 
 ## Edit PostsEditPage
 This code is almost same with Post New Page. I will explain the difference later.
-#### `lib/pages/posts_edit_page.dart`
-```dart
+```dart title="lib/pages/posts_edit_page.dart"
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';

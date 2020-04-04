@@ -29,8 +29,7 @@ And make firestore database in **"test mode"**.
 ![ss](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/create-firestore-database.png)
 
 ## Add Firestore code
-#### `lib/pages/register_page.dart`
-```dart {11-20}
+```dart {11-20} title="lib/pages/register_page.dart"
 onPressed: () async {
 	if (_registerFormKey.currentState.validate()) {
 		try {

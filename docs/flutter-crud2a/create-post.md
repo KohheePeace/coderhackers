@@ -33,8 +33,7 @@ floatingActionButton: FloatingActionButton(
 ## Edit `lib/pages/posts_new_page.dart`
 The all code is below.
 
-#### `lib/pages/posts_new_page.dart`
-```dart {17,52,62-64,66,68-78,82,83}
+```dart {17,52,62-64,66,68-78,82,83} title="lib/pages/posts_new_page.dart"
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

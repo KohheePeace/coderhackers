@@ -26,8 +26,7 @@ https://flutter.dev/docs/development/data-and-backend/state-mgmt/options
 ## Install Provider package
 https://pub.dev/packages/provider
 
-`pubspec.yaml`
-```yaml
+```yaml title="pubspec.yaml"
 ...
 
 dependencies:
@@ -45,7 +44,7 @@ dependencies:
 ## Use Provider
 In this example, we will just provide Text String.
 
-```dart {5,16,32-33}
+```dart {5,16,32-33} title="lib/main.dart"
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';

@@ -2,8 +2,7 @@
 title: Step19 Show Post Page
 ---
 
-#### `lib/pages/posts_show_page.dart`
-```dart
+```dart title="lib/pages/posts_show_page.dart"
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/models/post.dart';
 

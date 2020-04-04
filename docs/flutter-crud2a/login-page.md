@@ -11,8 +11,7 @@ The code is almost same with Register Page. So, first just copy and paste code, 
 
 ## Final Code
 
-#### `lib/pages/login_page.dart`
-```dart
+```dart title="lib/pages/login_page.dart"
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

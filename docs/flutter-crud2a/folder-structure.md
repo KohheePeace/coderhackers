@@ -19,7 +19,7 @@ Make `pages` folder. (some other developers may name `screens` but I prefer `pag
 ---
 
 1.`pages/home_page.dart`
-```dart
+```dart title="pages/home_page.dart"
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
 }
 ```
 2.`pages/login_page.dart`
-```dart
+```dart title="pages/login_page.dart"
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
 ```
 3.`pages/register_page.dart`
 
-```dart
+```dart title="pages/register_page.dart"
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -95,7 +95,7 @@ class _RegisterPageState extends State<RegisterPage> {
 }
 ```
 4.`pages/posts_new_page.dart`
-```dart
+```dart title="pages/posts_new_page.dart"
 import 'package:flutter/material.dart';
 
 class PostsNewPage extends StatefulWidget {
@@ -120,7 +120,7 @@ class _PostsNewPageState extends State<PostsNewPage> {
 }
 ```
 5.`pages/posts_edit_page.dart`
-```dart
+```dart title="pages/posts_edit_page.dart"
 import 'package:flutter/material.dart';
 
 class PostsEditPage extends StatefulWidget {
@@ -145,7 +145,7 @@ class _PostsEditPageState extends State<PostsEditPage> {
 }
 ```
 6.`pages/posts_show_page.dart`
-```dart
+```dart title="pages/posts_show_page.dart"
 import 'package:flutter/material.dart';
 
 class PostsShowPage extends StatefulWidget {
@@ -170,7 +170,7 @@ class _PostsShowPageState extends State<PostsShowPage> {
 }
 ```
 7.`pages/my_posts_page.dart`
-```dart
+```dart title="pages/my_posts_page.dart"
 import 'package:flutter/material.dart';
 
 class MyPostsPage extends StatefulWidget {
@@ -197,7 +197,7 @@ class _MyPostsPageState extends State<MyPostsPage> {
 
 ## Edit `lib/main.dart`
 
-```dart
+```dart title="lib/main.dart"
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/home_page.dart';
 

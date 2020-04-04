@@ -4,8 +4,7 @@ title: Step20 My Posts Page
 
 ## Edit MyPostsPage
 
-#### `lib/pages/my_posts_page.dart`
-```dart
+```dart title="lib/pages/my_posts_page.dart"
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -82,7 +81,7 @@ stream: Firestore.instance
 - https://api.flutter.dev/flutter/material/PopupMenuButton-class.html
 - https://flutter-widget.live/widgets/PopupMenuButton
 
-```dart {7-30}
+```dart {7-30} title="lib/pages/my_posts_page.dart"
 return ListTile(
   title: Text(
     post.title,

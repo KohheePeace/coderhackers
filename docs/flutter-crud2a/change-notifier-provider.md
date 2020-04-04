@@ -35,8 +35,7 @@ class GlobalState extends ChangeNotifier {
 
 ## Replace existing provider code
 
-#### `lib/main.dart`
-```dart {3}
+```dart {3} title="lib/main.dart"
 providers: [
 	Provider<String>(create: (context) => testProviderText),
 	ChangeNotifierProvider<GlobalState>(create: (context) => GlobalState())

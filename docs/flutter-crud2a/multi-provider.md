@@ -10,8 +10,7 @@ In this step, in addition to provide **testProviderText**, let's provide **isAut
 To provide multiple value, we need to use: **MultiProvider**
 https://pub.dev/packages/provider#multiprovider
 
-#### `lib/main.dart`
-```dart {2-6}
+```dart {2-6} title="lib/main.dart"
 Widget build(BuildContext context) {
 	return  MultiProvider(
 		providers: [
@@ -36,8 +35,7 @@ Widget build(BuildContext context) {
 
 ## Consume **isAuthenticated** param by using `Provider.of`
 ### Edit HomePage
-#### `lib/pages/home_page.dart`
-```dart {3,16,22,24}
+```dart {3,16,22,24} title="lib/pages/home_page.dart"
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/widgets/home_drawer.dart';
 import 'package:provider/provider.dart';
@@ -75,8 +73,7 @@ final bool isAuthenticated;
 ```
 
 Delete passed props in `main.dart`.
-#### `main.dart`
-```dart {3}
+```dart {3} title="main.dart"
 routes: {
 	// When navigating to the "/" route, build the FirstScreen widget.
 	'/': (context) => HomePage(),
@@ -85,8 +82,7 @@ routes: {
 ```
 
 ### Edit HomeDrawer
-#### `lib/widgets/home_drawer.dart`
-```dart {6}
+```dart {6} title="lib/widgets/home_drawer.dart"
 ...
 
 class HomeDrawer extends StatelessWidget {
@@ -97,8 +93,7 @@ class HomeDrawer extends StatelessWidget {
 ```
 
 Delete passed props in `lib/pages/home_page.dart`.
-#### `lib/pages/home_page.dart`
-```dart
+```dart title="lib/pages/home_page.dart"
 ...
 drawer: HomeDrawer(),
 ```

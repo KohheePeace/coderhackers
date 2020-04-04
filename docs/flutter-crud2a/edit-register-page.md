@@ -19,8 +19,7 @@ https://flutter.dev/docs/cookbook/forms/validation
 ### 1. Create a Form with a GlobalKey
 As described in official docs, we will add `GlobalKey` and `Form`.
 
-#### `pages/register_page.dart`
-```dart {8,16-26}
+```dart {8,16-26} title="pages/register_page.dart"
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -54,8 +53,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
 ### 2. Add a TextFormField with validation logic
 
-#### `pages/register_page.dart`
-```dart {22-54}
+```dart {22-54} title="pages/register_page.dart"
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -181,8 +179,7 @@ FlatButton(
 
 ### 6. Improve email validation
 Install https://pub.dev/packages/email_validator
-#### `pubspec.yaml`
-```yaml {9}
+```yaml {9} title="pubspec.yaml"
 ...
 dependencies:
   flutter:
@@ -215,8 +212,7 @@ In this section, we will decorate `TextFormField`
 
 https://flutter.dev/docs/cookbook/forms/text-input#textformfield
 
-#### `lib/pages/register_page.dart`
-```dart {2,11,12,25,26,35,36}
+```dart {2,11,12,25,26,35,36} title="lib/pages/register_page.dart"
 TextFormField(
   decoration: InputDecoration(labelText: 'Name', hintText: "John Jackson"),
   validator: (value) {
@@ -395,8 +391,7 @@ In this section, we will...
 ### Install `firebase_auth` packages
 https://pub.dev/packages/firebase_auth
 
-#### `pubspec.yaml`
-```yaml {10}
+```yaml {10} title="pubspec.yaml"
 ...
 dependencies:
   flutter:
@@ -453,8 +448,7 @@ You see email are registered.
 
 ## Final code
 
-#### `lib/pages/register_page.dart`
-```dart
+```dart title="lib/pages/register_page.dart"
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -595,8 +589,7 @@ class _RegisterPageState extends State<RegisterPage> {
 ![error-pic](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/RenderFlex-error.png)
 
 ### Error log
-#### `terminal`
-```bash
+```bash title="terminal"
 
 ════════ Exception caught by rendering library ═════════════════════════════════
 The following assertion was thrown during layout:
@@ -615,8 +608,7 @@ This is considered an error condition because it indicates that there is content
 ### How to fix
 https://stackoverflow.com/questions/49480051/flutter-dart-exceptions-caused-by-rendering-a-renderflex-overflowed
 
-#### `register_page.dart`
-```dart
+```dart title="register_page.dart"
 body: SingleChildScrollView(
   child: Form(
     ...

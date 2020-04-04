@@ -11,21 +11,20 @@ In this step, we will
 2. Change the content by using passed down state.
 
 ## Make `lib/main.dart` StatefulWidget
-Convert `lib/main.dart` from stateless widget to stateful widget.
+Convert `lib/main.dart` from stateless widget to StatefulWidget.
 This is because I want to handle state in this widget.
 
 ![convert-stateless-to-statefull.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
 
 ## Add firebase `onAuthStateChanged` and check `isAuthenticated`
 - Declare `isAuthenticated`
-- `initState()` is lifecycle method
+- `initState()` is LifeCycle method
 - `onAuthStateChanged` is triggered on sign-in or sign-out. https://firebase.google.com/docs/reference/js/firebase.auth.Auth.html#onauthstatechanged
 - In `onAuthStateChanged` if user exists, [setState()](https://flutter.dev/docs/development/data-and-backend/state-mgmt/options#setstate) => `isAuthenticated` true.
 - Pass down `isAuthenticated` state to `HomePage`
 
 
-#### `lib/main.dart`
-```dart {14,16-32,44}
+```dart {14,16-32,44} title="lib/main.dart"
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
@@ -79,7 +78,8 @@ class _MyAppState extends State<MyApp> {
 
 ## Edit HomePage to accept `isAuthenticated` props
 You can imitate this by `lib/main_initial.dart`
-```dart {2-3,20,}
+
+```dart {2-3,20} title="lib/pages/home_page.dart"
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.isAuthenticated}) : super(key: key);
   final bool isAuthenticated;
@@ -120,8 +120,8 @@ body: Center(
 Sign out code is...
 https://pub.dev/documentation/firebase_auth/latest/firebase_auth/FirebaseAuth-class.html
 
-#### `lib/pages/home_page.dart`
-```dart
+
+```dart title="lib/pages/home_page.dart"
 ListTile(
   leading: Icon(Icons.exit_to_app),
   title: Text('Sign Out'),
@@ -152,8 +152,8 @@ In the next section we will pass down props **2 level down**.
 2. Make `lib/widgets/home_drawer.dart`
 
 Extract `Drawer` from HomePage.
-#### `lib/widgets/home_drawer.dart`
-```dart
+
+```dart title="lib/widgets/home_drawer.dart"
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
@@ -215,8 +215,8 @@ class HomeDrawer extends StatelessWidget {
 
 ### 2. Pass `widget.isAuthenticated` to `home_drawer.dart`
 
-`home_page.dart`
-```dart {11}
+
+```dart {11} title="home_page.dart"
 ...
 
 class _HomePageState extends State<HomePage> {
@@ -239,7 +239,7 @@ class _HomePageState extends State<HomePage> {
 
 ### 3. Edit HomeDrawer to accept isAuthenticated
 
-```dart {2-3}
+```dart {2-3} title="home_drawer.dart"
 class HomeDrawer extends StatelessWidget {
   HomeDrawer({Key key, this.isAuthenticated}) : super(key: key);
   final bool isAuthenticated;
@@ -248,7 +248,7 @@ class HomeDrawer extends StatelessWidget {
 
 
 ### 4. Change Drawer content by `isAuthenticated`
-```dart {28-74}
+```dart {28-74} title="home_drawer.dart"
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/login_page.dart';
 import 'package:flutter_firebase_firestore_crud2a/pages/my_posts_page.dart';

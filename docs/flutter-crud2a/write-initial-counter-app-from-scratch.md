@@ -15,12 +15,12 @@ This is a table to compare Web world and Flutter world.
 
 The **purpose** of this table is **to use knowledge you already have to learn new thing.**
 
-| Web                              | Flutter                                | What you need to learn                                                                                                                                      |
-| :------------------------------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<div>`, `<table>`               | `Text()`,`Table()`                     | [Flutter Widgets](https://api.flutter.dev/flutter/widgets/widgets-library.html), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
-| `<div style="font-size: 24px;">` | `Text(style: TextStyle(fontSize: 24))` | [Flutter for web developers](https://flutter.dev/docs/get-started/flutter-for/web-devs)                                                                      |
+| Web                              | Flutter                                | What you need to learn                                                                                                                                                                                                        |
+| :------------------------------- | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<div>`, `<table>`               | `Text()`,`Table()`                     | [Flutter Widgets](https://api.flutter.dev/flutter/widgets/widgets-library.html), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction)                                                                   |
+| `<div style="font-size: 24px;">` | `Text(style: TextStyle(fontSize: 24))` | [Flutter for web developers](https://flutter.dev/docs/get-started/flutter-for/web-devs)                                                                                                                                       |
 | Bootstrap                        | package:flutter/material.dart          | [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material), [Official Gallery](https://flutter.github.io/samples/#/), [Flutter Widget Livebook](https://flutter-widget.live/basics/introduction) |
-| javascript                       | dart                                   | [dart language tour](https://dart.dev/guides/language/language-tour)|
+| javascript                       | dart                                   | [dart language tour](https://dart.dev/guides/language/language-tour)                                                                                                                                                          |
 
 - At first you will feel flutter code is difficult.
 - But to see this table you can find the similarity of web and flutter
@@ -33,8 +33,7 @@ This is initial `lib/main.dart` code.
 
 From now, we will make this file step by step.
 
-#### `lib/main.dart`
-```dart
+```dart title="lib/main.dart"
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -158,8 +157,7 @@ And make empty `lib/main.dart`.
 
 https://flutter.dev/docs/development/ui/widgets-intro#hello-world
 
-#### `lib/main.dart`
-```dart
+```dart title="lib/main.dart"
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -181,8 +179,7 @@ class MyApp extends StatelessWidget {
 1. Use `MaterialApp()`
 https://api.flutter.dev/flutter/material/MaterialApp-class.html
 
-#### `lib/main.dart`
-```dart
+```dart title="lib/main.dart"
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -211,8 +208,7 @@ https://stackoverflow.com/questions/56122888/flutter-no-directionality-widget-fo
 1. Make **StatefulWidget** by VS code auto complete
 2. Pass `MyHomePage()` to `home:`
 
-#### `lib/main.dart`
-```dart
+```dart title="lib/main.dart"
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -256,8 +252,7 @@ But I think it is ok not to understand perfectly right now.
 ### Step4 Pass props to `MyHomePage`
 1. Pass props to `MyHomePage`
 
-#### `lib/main.dart`
-```dart {13,19,20,31}
+```dart {13,19,20,31} title="lib/main.dart"
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -306,8 +301,7 @@ class _MyHomePageState extends State<MyHomePage> {
 3. Learn how to change state by using `setState()`
 4. Show state in body
 
-#### `lib/main.dart`
-```dart {28,30-35,43-59}
+```dart {28,30-35,43-59} title="lib/main.dart"
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
