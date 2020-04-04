@@ -3,11 +3,36 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-import Microlink from '@microlink/react'
+## Note\*
+
+This document is WIP state.
+
+import Microlink from "@microlink/react";
 
 This is crud2A project of
+
 - react.js
 - react-router
 
 Github Repo
-<Microlink url='https://github.com/KohheePeace/react-react-router-crud2a' />
+
+<Microlink url="https://github.com/KohheePeace/react-react-router-crud2a" />
+
+## Rails backend
+
+This is a backend rails api for this project.
+
+<Microlink url="https://github.com/KohheePeace/rails-api-token-auth-crud2A" />
+
+So, Run the below command.
+
+```bash title="terminal"
+git clone https://github.com/KohheePeace/rails-api-token-auth-crud2A.git
+cd rails-api-token-auth-crud2A
+rails db:create
+rails db:migrate
+rails s
+```
+
+And please note your react app should be run at 3001 port.
+Rails app should be run at 3000 port.
