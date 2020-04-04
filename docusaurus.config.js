@@ -31,7 +31,7 @@ module.exports = {
       title: "Home",
       logo: {
         alt: "Logo",
-        src: "img/logo.svg"
+        src: "img/logo.png"
       },
       links: [
         // {to: 'docs/doc1', label: 'Docs', position: 'left'},
