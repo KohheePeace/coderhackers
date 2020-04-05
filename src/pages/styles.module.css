@@ -10,8 +10,32 @@
   overflow: hidden;
 }
 
+.heroLogo {
+  animation-duration: 2s;
+  animation-name: jackInTheBox;
+  padding: 20px;
+  width: 130px;
+  height: 130px;
+}
+
 .heroTitle {
   font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.hero {
+  background-color: #2b3137;
+  padding: 48px;
+}
+
+.heroInner {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.heroProjectKeywords {
+  color: var(--ifm-color-primary);
 }
 
 .buttons {

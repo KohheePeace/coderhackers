@@ -1,10 +1,10 @@
 import React from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./styles.module.css";
 import DocsCard from "../components/DocsCard";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const docsList = [
   {
@@ -40,14 +40,33 @@ function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={classnames("hero hero--dark", styles.heroBanner)}>
-        <div className="container">
+      <div className={classnames("hero hero--dark", styles.heroBanner)}>
+        {/* <div className="container">
           <h1 className={classnames("hero--title", styles.heroTitle)}>
             {siteConfig.title}
           </h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+        </div> */}
+        <div
+          style={{ display: "flex", flexDirection: "column", margin: "0 auto" }}
+        >
+          <div>
+            <img
+              alt="Kohheepeace avatar"
+              className={styles.heroLogo}
+              src={useBaseUrl("img/logo.png")}
+            />
+            <h1 className={classnames("hero--title", styles.heroTitle)}>
+              {siteConfig.title}
+            </h1>
+          </div>
+          <h1 className={styles.heroProjectTagline}>
+            <span className={styles.heroProjectKeywords}>Stock</span> and{" "}
+            <span className={styles.heroProjectKeywords}>Share</span>, what I
+            learned.
+          </h1>
         </div>
-      </header>
+      </div>
       <main>
         {docsList && docsList.length && (
           <section className={styles.docsListSection}>
