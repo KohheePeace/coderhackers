@@ -16,20 +16,29 @@ const docsList = [
         used to get your website up and running quickly.
       </>
     ),
-    link: "docs/crud2a-react-react-router/00-intro"
+    link: "docs/crud2a-react-react-router/00-intro",
   },
   {
     title: <>Flutter Crud2a</>,
     imageUrl:
-      "https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Copy%20of%20Flutter%20CRUD%20for%20Youtube%20(3).png",
+      "https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/corse-thumbnail.gif",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Fastest way to learn the combination of Flutter and Firebase and
+        Firestore.
       </>
     ),
-    link: "docs/flutter-crud2a/introduction"
-  }
+    link: "docs/flutter-crud2a/introduction",
+  },
+  {
+    title: "Fullstack web development 2020",
+    imageUrl:
+      "https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/course-thumbnail.gif",
+    description: (
+      <>Complete guide to web development 2020 with Ruby on rails.</>
+    ),
+    link: "docs/the-complete-webdev-with-rails-2020",
+  },
 ];
 
 function Home() {
@@ -41,12 +50,6 @@ function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <div className={classnames("hero hero--dark", styles.heroBanner)}>
-        {/* <div className="container">
-          <h1 className={classnames("hero--title", styles.heroTitle)}>
-            {siteConfig.title}
-          </h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-        </div> */}
         <div
           style={{ display: "flex", flexDirection: "column", margin: "0 auto" }}
         >
