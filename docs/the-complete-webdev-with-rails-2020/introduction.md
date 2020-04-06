@@ -1,5 +1,5 @@
 # Introduction
-このドキュメントはそもそも詰まらないで録画できるようにするスクリプト。
+
 
 ## Tech stack
 Why choose **Ruby on rails**
@@ -12,4 +12,4 @@ Why choose **jQuery?**
 ![recap-frontend](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/recap-frontend/upwork-docs.gif)
 
 ## What we will make
-ここに、demoをあげる。
+Show demo in this section.

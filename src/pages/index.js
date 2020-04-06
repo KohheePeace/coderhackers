@@ -8,12 +8,13 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const docsList = [
   {
-    title: <>Crud2a React React-Router</>,
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: <>[WIP]Crud2a React React-Router</>,
+    imageUrl:
+      "https://storage.googleapis.com/coderhackers-assets/crud2a-react-react-router/thumbnail.gif",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Crud with Authentication and Authorization of React and React-Router.
+        Backend is Ruby on rails.
       </>
     ),
     link: "docs/crud2a-react-react-router/00-intro",
@@ -31,13 +32,13 @@ const docsList = [
     link: "docs/flutter-crud2a/introduction",
   },
   {
-    title: "Fullstack web development 2020",
+    title: "[WIP]Fullstack web development 2020",
     imageUrl:
       "https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/course-thumbnail.gif",
     description: (
       <>Complete guide to web development 2020 with Ruby on rails.</>
     ),
-    link: "docs/the-complete-webdev-with-rails-2020",
+    link: "docs/the-complete-webdev-with-rails-2020/introduction",
   },
 ];
 
