@@ -1,31 +1,33 @@
-!!! abstract "Chapter Goals"
-    - Understand what is CSS
-    - Try CSS
-    - Learn CSS syntax
+---
+title: Introduction to CSS
+---
+
+In this chapter, we are going to...
+
+- Understand what is CSS
+- Try CSS
+- Learn CSS syntax
 
 ## What is CSS ?
 
 From wikipedia...
-> Cascading Style Sheets (CSS) is ==a style sheet language== used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+> Cascading Style Sheets (CSS) is <mark>a style sheet language</mark> used for describing the presentation of a document written in a markup language like HTML.
 
 https://en.wikipedia.org/wiki/Cascading_Style_Sheets
 
-
-!!! info
-    **CSS is a language for styling**
+**<mark>CSS is a language for styling</mark>**
 
 That's it and let's try it.
 
 ## Let's try CSS!
 
-we will copy the below example to add CSS.
+We will copy the below example to add CSS.
 
 ![css-intro-copy-style-tag](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/css-intro-copy-style-tag.png)
 
 https://www.w3schools.com/tags/tag_style.asp
 
-`test.html`
-```html hl_lines="7 8 9 10"
+```html {7-10} title="test.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,17 +55,19 @@ https://www.w3schools.com/tags/tag_style.asp
 ```
 ![First style tag](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/first-style-tag.png)
 
-You see ==**CSS is a language for styling**==.
+You see  that <mark>**CSS is a language for styling**</mark>.
 
 ## Check the CSS syntax
 
 ```css
   h1 { color: white; ... }
-  /* target { css-property: property value; } */
+  target { css-property: property-value; }
 ```
 
-1. target-element can be HTML tag (`h1`, `ul`, `li`...), Class or ID( We will check it in [the next chapter](/css-guide/02-class-and-id/)).
-2. You don't need to memorize all **css-property**. You will gradually get used to it.
+:::note
+1. `target-element` can be HTML tag (`h1`, `ul`, `li`...) or `Class` or `ID`. We will check it in the next chapter.
+2. You don't need to memorize all `css-property` **now**. You will become used to it at the end of this course.
+:::
 
-## Ref Links
+## Refs
 https://www.w3schools.com/whatis/whatis_css.asp

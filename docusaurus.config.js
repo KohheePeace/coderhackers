@@ -9,23 +9,24 @@ module.exports = {
   plugins: [
     "@docusaurus/plugin-google-analytics",
     "@docusaurus/plugin-google-gtag",
-    "@cmfcmf/docusaurus-search-local"
+    "@cmfcmf/docusaurus-search-local",
   ],
   themeConfig: {
+    sidebarCollapsible: false,
     prism: {
-      additionalLanguages: ["powershell", "dart"]
+      additionalLanguages: ["powershell", "dart"],
     },
     googleAnalytics: {
-      trackingID: "UA-128556070-3"
+      trackingID: "UA-128556070-3",
     },
     gtag: {
-      trackingID: "UA-128556070-3"
+      trackingID: "UA-128556070-3",
     },
     navbar: {
       title: "Home",
       logo: {
         alt: "Logo",
-        src: "img/logo.png"
+        src: "img/logo.png",
       },
       links: [
         // {to: 'docs/doc1', label: 'Docs', position: 'left'},
@@ -33,9 +34,9 @@ module.exports = {
         {
           href: "https://github.com/kohheepeace/coderhackers",
           label: "GitHub",
-          position: "right"
-        }
-      ]
+          position: "right",
+        },
+      ],
     },
     footer: {
       links: [
@@ -44,26 +45,26 @@ module.exports = {
           items: [
             {
               label: "About this site",
-              to: "docs/about-this-site"
-            }
-          ]
+              to: "docs/about-this-site",
+            },
+          ],
         },
         {
           title: "Social",
           items: [
             {
               label: "Blog",
-              to: "blog"
+              to: "blog",
             },
             {
               label: "GitHub",
-              href: "https://github.com/kohheepeace/coderhackers"
-            }
-          ]
-        }
+              href: "https://github.com/kohheepeace/coderhackers",
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} @kohheepeace`
-    }
+      copyright: `Copyright © ${new Date().getFullYear()} @kohheepeace`,
+    },
   },
   presets: [
     [
@@ -71,12 +72,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: null
+          editUrl: null,
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }
-    ]
-  ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
 };

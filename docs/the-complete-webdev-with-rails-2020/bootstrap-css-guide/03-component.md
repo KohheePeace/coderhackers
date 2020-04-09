@@ -1,9 +1,16 @@
-!!! abstract "Chapter Goals"
-    - Learn the idea of Component
+---
+title: Component and Layout
+---
+
+In this chapter, we're going to 
+  - Get used to Bootstrap Component and Layout
 
 In this chapter, we're going to try some Bootstrap component and layout.
 
-## Navbar
+## Component
+**Component** is just a part of website.
+
+### Navbar
 ![copy-navbar-html.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-html.gif)
 
 ```html
@@ -76,15 +83,7 @@ But the benefit of Bootstrap is
 ==**You can create Responsive website just copy and paste even if you don't understand it.**==
 
 
-### If you are curious...
-  1. Read the bootstrap explanation carefully.
-  2. Use google dev tools to read class.
-
-For example, you can check `mr-auto` class effect like below...
-![check-bootstrap-class.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-bootstrap-class.gif)
-
-
-## Jumbotron
+### Jumbotron
 https://getbootstrap.com/docs/4.3/components/jumbotron/
 
 `test3.html`
@@ -157,7 +156,17 @@ https://getbootstrap.com/docs/4.3/components/jumbotron/
 
 ![output-after-jumbotron](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-jumbotron.png)
 
-## Grid Column Layout
+
+### If you are curious...
+  1. Read the bootstrap explanation carefully.
+  2. Use google dev tools to read class.
+
+For example, you can check `mr-auto` class effect like below...
+![check-bootstrap-class.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-bootstrap-class.gif)
+
+## Layout
+
+### Grid Column Layout
 
 https://getbootstrap.com/docs/4.3/layout/grid/
 
@@ -247,7 +256,7 @@ https://getbootstrap.com/docs/4.3/layout/grid/
 
 ![output-after-copy-grid](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-grid.png)
 
-## Card
+### Add Card component 
 https://getbootstrap.com/docs/4.3/components/card/
 
 ![copy-card.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-card.gif)
@@ -376,6 +385,9 @@ Then, replace img src
 ![output-after-copy-card](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-card.gif)
 
 
-!!! info
-    - Component is a piece of a puzzle.
-    - You can combine each component and make website.
+## Summery
+
+:::info
+ - Component is a piece of a puzzle.
+ - You can combine each component and make website.
+:::

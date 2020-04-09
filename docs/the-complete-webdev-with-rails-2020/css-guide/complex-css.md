@@ -1,16 +1,27 @@
-!!! abstract "Chapter Goals"
-    - To understand only using pure CSS is troublesome
+---
+title: Complex CSS
+---
 
-In this chapter, we are going to make some part of real website.
+In this chapter, we are going to
+  - Understand only using CSS is troublesome
+  - Understand why we need Bootstrap
+
+## Overview of this chapter
+
+In this chapter, I will show you how to make some part of real website.
 
 ![complex-css-demo](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/complex-css-demo.png)
 
 Responsive
 ![complex-css-responsive](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/complex-css-responsive.gif)
 
-You don't need to understand the code.
 
-==**The purpose of this is understanding why we need Bootstrap.**==
+:::caution
+- You don't need to understand the code in this chapter **now**. Just looking is enough.
+- The purpose of this chapter is understanding **why Bootstrap is useful**.
+:::
+
+## Write HTML and CSS
 
 Okay let's start!
 
@@ -161,6 +172,11 @@ body {
 }
 ```
 
-!!! info "What you need to understand from `test2.css`"
-    1. You need to write a lot of CSS
-    2. You need to get familiar with CSS
+## Summery
+
+What you need to learn from `test2.css`
+
+:::important
+  1. You need to write a lot of CSS
+  2. You need to get familiar with CSS
+:::

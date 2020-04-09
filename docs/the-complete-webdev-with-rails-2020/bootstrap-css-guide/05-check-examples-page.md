@@ -1,6 +1,14 @@
-!!! abstract "Chapter Goals"
-    - Learn how to copy code from Bootstrap examples.
-    - Get used to check console tab's log of google dev tools.
+---
+title: Bootstrap example page
+---
+
+In this chapter, we are going to
+
+  - Learn how to copy code from Bootstrap examples page.
+  - Get used to check `console` log of Chrome DevTools.
+
+
+## Check examples page
 
 There is a **Examples** page in Bootstrap.
 
@@ -12,15 +20,19 @@ https://getbootstrap.com/docs/4.3/examples/
 In this chapter, we'll be learning how to copy one of this example.
 
 
-!!! info
-    - Examples are combination of Bootstrap component.
-    - These examples teache you how to make real website by combining each components.
+:::note
+  - Examples are **combination of Bootstrap component**.
+  - These examples show how to make real website **by combining each components and layout**.
+  - This will be **helpful when you make you own website**.
+:::
+
+## Try album example
 
 We will copy album example: https://getbootstrap.com/docs/4.3/examples/album/
 ![album-example-demo.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-demo.gif)
 
 
-## Copy all source code
+### Copy all source code
 ![copy-album-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-album-code.gif)
 
 Then...
@@ -31,9 +43,7 @@ Then...
 
 The result is below...
 
-`album.html`
-```html
-
+```html title="album.html"
 <!doctype html>
 <html lang="en">
   <head>
@@ -279,18 +289,22 @@ The result is below...
 </html>
 ```
 
-But just copy and paste is not working.
+
+**But just copy and paste is not working.
+**
+
 
 ![album-example-not-working.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-not-working.png)
 
-## Check the bug
+## Fix bug
+Okay, so let's **fix bug and learn to check bug**.
 
-Please open google dev tools and click `console` tab.
+Please open Chrome DevTools and click **`console`** tab.
 
 ![check-console-error.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-console-error.gif)
 
 
-In `google dev tools console`
+In `Chrome DevTools console`
 ```js
 album.html:1 Access to CSS stylesheet at 'file:///docs/4.3/dist/css/bootstrap.min.css' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
 album.html:15 GET file:///docs/4.3/dist/css/bootstrap.min.css net::ERR_FAILED
@@ -301,10 +315,16 @@ album.html:242 GET file:///docs/4.3/dist/js/bootstrap.bundle.min.js net::ERR_FAI
 
 Let's fix these errors step by step.
 
-### Step1 `GET file:///docs/4.3/dist/css/bootstrap.min.css net::ERR_FAILED`
+### Error1: `GET file:///docs/4.3/dist/css/bootstrap.min.css net::ERR_FAILED`
 
 Search the error code in editor.
 ![how-to-search-bug.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/how-to-search-bug.gif)
+
+:::note
+This error happened because
+  - **Bootstrap CSS href is wrong**
+  - Then, Bootstrap CSS is **not imported correctly**
+:::
 
 Replace
 ```
@@ -317,62 +337,28 @@ to
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 ```
 
-`album.html`
-```html hl_lines="14"
+#### Check output...
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Album example · Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
-  </head>
-  <body>
-  ...
-</html>
-```
-
-Check output...
-
-You see the output changes and error console log decreased.
+You see **the output changes and error console log decreased**.
 
 ![album-example-fix-step1.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-fix-step1.png)
 
-### Step2 `GET file:///Users/kohheepeace/Code/asobi/html-playground/album.css net::ERR_FILE_NOT_FOUND`
-Make `album.css`
+### Error2: `GET file:///Users/kohheepeace/Code/asobi/html-playground/album.css net::ERR_FILE_NOT_FOUND`
+
+:::note
+This error happened because there is no `album.css`
+:::
+
+#### Make `album.css`
 ![make-album-css.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/make-album-css.gif)
 
+
+#### Copy `album.css`
 ![copy-album-css.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-album-css.gif)
 
-`album.css`
-```css
+
+#### Final `album.css`
+```css title="album.css"
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -408,15 +394,20 @@ footer p {
 }
 ```
 
-Check output...
+#### Check output
 ![check-output-after-album-css.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-output-after-album-css.png)
 
 
-### Step3 `GET file:///docs/4.3/dist/js/bootstrap.bundle.min.js net::ERR_FAILED`
+### Error3 `GET file:///docs/4.3/dist/js/bootstrap.bundle.min.js net::ERR_FAILED`
 
-Search by `cmd + F` "docs/4.3/dist/js/bootstrap.bundle.min.js"
+:::note
+This error occurred because js file loading failed.
+:::
 
-Replace
+#### Search by `cmd + F` `docs/4.3/dist/js/bootstrap.bundle.min.js`
+
+
+In `album.html` replace
 ```
 <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 ```
@@ -427,28 +418,14 @@ to
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 ```
 
-```html hl_lines="20"
-<!doctype html>
-<html lang="en">
-  <head>
-    ...
-  </head>
-  <body>
-    ...
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
-      </div>
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
 
-```
+#### Check output
+You see every error log disappeared.
+
+## Summery
+we successfully copied Bootstrap examples.
+
+:::info
+- Use this example **to learn Bootstrap code**
+- Use this example **to make your own website in future**.
+:::

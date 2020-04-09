@@ -1,7 +1,17 @@
-# Introduction
+---
+title: Course introduction
+---
 
 
-## Tech stack
+
+## Requirements
+
+
+## Course description
+
+
+
+## What you will learn
 Why choose **Ruby on rails**
 Why choose **jQuery?**
 

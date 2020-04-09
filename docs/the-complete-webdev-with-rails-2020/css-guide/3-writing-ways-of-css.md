@@ -1,7 +1,11 @@
-!!! abstract "Chapter Goals"
-    - Learn 3 writing styles of CSS
+---
+title: 3 writing ways of CSS
+---
 
-### 1. Style Tag
+In this chapter, we are going to
+  - Learn 3 writing ways of CSS
+
+### 1. Style tag
 
 We already saw this writing style.
 
@@ -12,9 +16,9 @@ We already saw this writing style.
 </style>
 ```
 
-### 2. Inline Style
-`test.html`
-```html hl_lines="9 12"
+### 2. Inline style
+
+```html {9,12} title="test.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,25 +41,25 @@ We already saw this writing style.
 ```
 
 ### 3. External CSS file
-==**This is important to understand Bootstrap**==
+
+**<mark>This is important to understand Bootstrap</mark>**
 
 Make new file `test.css`
 
-`test.css`
-```css
+```css title="test.css"
   h1 { color: white; background: navy; }
   ul { background: #FFFF33; }
 ```
 
 Edit `test.html`
 
-`test.html`
-```html
+```html title="test.html"
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Title of the document</title>
+  <!-- highlight-next-line -->
   <link rel="stylesheet" href="test.css">
 </head>
 
@@ -76,15 +80,15 @@ Edit `test.html`
 Current folder structure looks like this
 ![External Css Folder Structure](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/external-css-folder.png)
 
-!!! info
-    You see that all 1, 2, 3 output is same.
+:::important
+**  You see that all 1, 2, 3 output is same.**
+:::
 
-
-In the next chapter, we will learn how to use **class** and **id** as an css target.
+In the next chapter, we will learn how to use **class** and **id** as an **css target**.
 
 
 ## Refs
-you can check the pros and cons of each styling way.
-https://www.w3schools.com/css/css_howto.asp
-https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
-https://www.inmotionhosting.com/support/email/outlook/using-css/linking-your-css-to-your-website
+You can check the pros and cons of each styling way. **But currently it is enough to know there is 3 ways of writing CSS.**
+- https://www.w3schools.com/css/css_howto.asp
+- https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
+- https://www.inmotionhosting.com/support/email/outlook/using-css/linking-your-css-to-your-website

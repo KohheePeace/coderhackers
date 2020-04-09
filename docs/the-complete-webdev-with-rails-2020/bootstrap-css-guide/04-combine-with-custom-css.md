@@ -1,10 +1,45 @@
-!!! summary "Chapter Goals"
-    - Combine custom CSS with Bootstrap CSS
+---
+title: Combine with custom CSS
+---
 
-## External CSS file
+In this chapter, we are going to
+  - Combine custom CSS with Bootstrap CSS
 
-`test3.html`
-```html hl_lines="11 12"
+
+## Why ?
+Bootstrap is useful to make nice website rapidly.
+
+**But**, **<mark>there is a case you want to customize default CSS styling.</mark>**
+
+So, in this chapter, we going to learn to do it!
+
+## Change `.jumbotron` background color
+
+First, let's change jumbotron background color.
+
+As shown below gif,
+
+1. Open Chrome DevTools
+2. Find `.jumbotron` class
+3. Change `background-color` css-property to `yellow`
+4. Copy code
+
+![change-jumbotron-css](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/change-jumbotron-css.gif)
+
+### Make `test3.css`
+
+Copy and Paste and delete unnecessary part.
+
+`test3.css`
+```css
+.jumbotron {
+  background-color: yellow;
+}
+```
+
+### Import `test3.css`
+
+```html {11,12} title="test3.html"
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,26 +58,15 @@
 </html>
 ```
 
-![change-jumbotron-css](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/change-jumbotron-css.gif)
+## Make "Hello, world!" bold
 
-Make `test3.css`.
-
-Copy and Paste and delete unnecessary part.
-
-`test3.css`
-```css
-.jumbotron {
-  background-color: yellow;
-}
-```
-
-## Inline style
+Next, we want to make **"Hello, world!"** text bold.
 
 ![custom-css-inline-style](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/custom-css-inline-style.gif)
 
 `test3.html`
 
-```html hl_lines="18"
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -60,6 +84,7 @@ Copy and Paste and delete unnecessary part.
   <body>
     ...
     <div class="jumbotron">
+      <!-- highlight-next-line -->
       <h1 class="display-4" style="font-weight: bold;">Hello, world!</h1>
       <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
       <hr class="my-4">
@@ -70,3 +95,7 @@ Copy and Paste and delete unnecessary part.
   </body>
 </html>
 ```
+
+:::note
+Of course, you can use `external css` to make **"Hello, world!"** bold
+:::

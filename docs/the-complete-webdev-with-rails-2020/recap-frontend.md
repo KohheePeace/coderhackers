@@ -1,4 +1,6 @@
-# Recap Front end
+---
+title: Recap Front end
+---
 
 Congratulation! You've done all of frontend curriculum!
 
@@ -10,12 +12,14 @@ Congratulation! You've done all of frontend curriculum!
 4. Bootstrap
 5. jQuery
 
-As described the upwork document, these are the frontend stacks.
+As described in Upwork website, these are the frontend stacks.
+
 ![recap-frontend](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/recap-frontend/upwork-docs.gif)
 
 https://www.upwork.com/hiring/for-clients/frontend-vs-backend-web-development/
 
-## What you cannot do with only frontend...
+## What next ?
+There are things you cannot do with only frontend.
 
 - Save data persistently
 - How to login or logout
@@ -24,4 +28,6 @@ https://www.upwork.com/hiring/for-clients/frontend-vs-backend-web-development/
 
 etc...
 
-As described the upwork document, we will choose **Ruby** and it's framework **Ruby on rails**.
+To accomplish these requirements, we need to learn backend.
+
+As described in the Upwork document, we will choose **Ruby** and it's framework **Ruby on rails** to implement backend.

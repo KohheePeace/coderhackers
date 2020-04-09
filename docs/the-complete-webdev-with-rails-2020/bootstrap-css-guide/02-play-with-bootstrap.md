@@ -1,9 +1,14 @@
-!!! abstract "Chapter Goals"
-    - Get used to Bootstrap CSS
+---
+title: Play with Bootstrap CSS
+---
+In this chapter, we are going to
+  - Get used to Bootstrap CSS
 
-In the last chapter, we saw that Bootstrap is a huge external CSS file.
+## Try Bootstrap CSS
 
-**It means if you add class to html, the style applied to that HTML.**
+In the last chapter, we saw that **Bootstrap is a huge external CSS file**.
+
+**<mark>It means if you add class to html, the style applied to that HTML.</mark>**
 
 Let's check it.
 
@@ -13,8 +18,7 @@ Copy and paste bootstrap starter template.
 
 ![copy-bootstrap-starter-html](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-starter-html.gif)
 
-`test3.html`
-```html
+```html title="test3.html"
 <!doctype html>
 <html lang="en">
   <head>
@@ -92,5 +96,10 @@ Copy `alert alert-primary` class and add this to `<h1>` tag.
 Check output...
 
 ![output-after-alert-class.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-alert-class.png)
+
+
+## Detect applied CSS by Chrome DevTools
+check applied css by `alert` `alert-primary` here...
+
 
 In the next chapter, let's see another example.

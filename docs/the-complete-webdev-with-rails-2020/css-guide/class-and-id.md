@@ -1,6 +1,10 @@
+---
+title: Class and ID
+---
 
-!!! abstract "Chapter Goals"
-    - Learn how to use **class** and **id** for css styling target
+In this chapter, we are going to
+
+- Learn how to use **class** and **id** for css styling target
 
 ## Class and ID
 In addition to HTML tag like `<h1>`, you can use **class** and **id** as **css target**.
@@ -9,8 +13,7 @@ And this is more common way to apply CSS.
 
 Let's edit `test.html` file like below.
 
-`test.html`
-```html
+```html title="test.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,9 +27,11 @@ Let's edit `test.html` file like below.
   <h2>Here is a subtitle.</h2>
 
   <ul>
-    <li id="coffee" class="drink">Coffee</li>
+    <!-- highlight-start -->
+    <li class="drink" id="coffee">Coffee</li>
     <li class="drink tea">Tea</li>
     <li class="drink">Milk</li>
+    <!--  highlight-end -->
   </ul>
 </body>
 
@@ -36,15 +41,17 @@ Let's edit `test.html` file like below.
 ```css
 h1 { color: white; background: navy; }
 ul { background: #FFFF33; }
+/* highlight-start */
 .drink {
   color: red;
-}
-.tea {
-  font-weight: bold;
 }
 #coffee {
   text-decoration: underline;
 }
+.tea {
+  font-weight: bold;
+}
+/* highlight-end */
 ```
 
 The output is like below...

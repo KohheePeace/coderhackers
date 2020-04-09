@@ -1,4 +1,6 @@
-# Coffee Break 1
+---
+title: Coffee Break 1
+---
 
 ## Is **jQuery** outdated or dead?
 => No.
