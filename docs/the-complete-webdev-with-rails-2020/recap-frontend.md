@@ -30,4 +30,4 @@ etc...
 
 To accomplish these requirements, we need to learn backend.
 
-As described in the Upwork document, we will choose **Ruby** and it's framework **Ruby on rails** to implement backend.
+We will choose **Ruby** and it's framework **Ruby on rails** to implement backend.

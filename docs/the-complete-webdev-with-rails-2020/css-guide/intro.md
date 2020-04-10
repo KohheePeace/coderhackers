@@ -17,7 +17,7 @@ https://en.wikipedia.org/wiki/Cascading_Style_Sheets
 
 **<mark>CSS is a language for styling</mark>**
 
-That's it and let's try it.
+That's it and let's try CSS.
 
 ## Let's try CSS!
 
@@ -27,7 +27,9 @@ We will copy the below example to add CSS.
 
 https://www.w3schools.com/tags/tag_style.asp
 
-```html {7-10} title="test.html"
+### Add style
+
+```html {7-10} title="test1.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,6 +55,8 @@ https://www.w3schools.com/tags/tag_style.asp
 
 </html>
 ```
+
+### Check the output
 ![First style tag](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/first-style-tag.png)
 
 You see  that <mark>**CSS is a language for styling**</mark>.
@@ -60,13 +64,13 @@ You see  that <mark>**CSS is a language for styling**</mark>.
 ## Check the CSS syntax
 
 ```css
-  h1 { color: white; ... }
-  target { css-property: property-value; }
+  h1 { color: white; background: navy; }
+  target { css-property: property-value; css-property: property-value; ... }
 ```
 
 :::note
-1. `target-element` can be HTML tag (`h1`, `ul`, `li`...) or `Class` or `ID`. We will check it in the next chapter.
-2. You don't need to memorize all `css-property` **now**. You will become used to it at the end of this course.
+1. `target-element` can be HTML tag (`h1`, `ul`, `li`...) or `Class` or `ID`. We will check it in the chapter after the next.
+2. You don't need to memorize all `css-property` **now**. You will get used to it at the end of this course.
 :::
 
 ## Refs

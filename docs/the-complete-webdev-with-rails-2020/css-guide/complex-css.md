@@ -25,7 +25,7 @@ Responsive
 
 Okay let's start!
 
-`test2.html`
+Make `test2.html`
 
 Writing HTML manually...
 
@@ -76,7 +76,7 @@ Writing HTML manually...
 ```
 
 
-`test2.css`
+Make `test2.css`
 
 Writing CSS manually...
 
@@ -180,3 +180,5 @@ What you need to learn from `test2.css`
   1. You need to write a lot of CSS
   2. You need to get familiar with CSS
 :::
+
+By using **Bootstrap**, you can **easily make** cool website!

@@ -18,7 +18,7 @@ We already saw this writing style.
 
 ### 2. Inline style
 
-```html {9,12} title="test.html"
+```html {9,12} title="test1.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,23 +44,23 @@ We already saw this writing style.
 
 **<mark>This is important to understand Bootstrap</mark>**
 
-Make new file `test.css`
+Make new file `test1.css`
 
-```css title="test.css"
+```css title="test1.css"
   h1 { color: white; background: navy; }
   ul { background: #FFFF33; }
 ```
 
-Edit `test.html`
+Edit `test1.html`
 
-```html title="test.html"
+```html title="test1.html"
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Title of the document</title>
   <!-- highlight-next-line -->
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="test1.css">
 </head>
 
 <body>
@@ -78,10 +78,12 @@ Edit `test.html`
 ```
 
 Current folder structure looks like this
-![External Css Folder Structure](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/external-css-folder.png)
+![External Css Folder Structure](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/css-ch2-folder-fix.png)
+
+
 
 :::important
-**  You see that all 1, 2, 3 output is same.**
+You see that **<mark>all 1, 2, 3 output is same.</mark>**
 :::
 
 In the next chapter, we will learn how to use **class** and **id** as an **css target**.

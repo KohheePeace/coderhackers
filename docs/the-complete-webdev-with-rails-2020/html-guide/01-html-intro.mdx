@@ -2,6 +2,9 @@
 title: "Introduction to HTML"
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 In this chapter, we are going to learn basics of HTML.
 
 ## What is HTML ?
@@ -20,21 +23,26 @@ Image from: https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowse
 
 ## Let's write basic HTML!
 
-We will use an example of the below link.
-
 ### Create project
+
+We are going to make project in Desktop.
 
 In `terminal`
 
 ```bash
+cd ~/Desktop
 mkdir html-test # make directory
 cd html-test # change directory
-touch test.html # make file
+code . # open project in VS Code
 ```
 
-### Edit html file
+### Make html file
 
-```html title="test.html"
+Make `test1.html`
+
+Copy and paste below code. I will explain the meaning of this code in the next chapter.
+
+```html title="test1.html"
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,12 +60,31 @@ Refs: https://www.w3schools.com/html/html5_intro.asp
 
 ### Open this html file in chrome (**web browser**).
 
-`terminal`
+In `terminal`
 
-```bash
-# under html-playground folder
-open test.html
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    { label: "Windows", value: "win" },
+    { label: "macOS", value: "mac" },
+  ]}
+>
+<TabItem value="win">
+
+```powershell title="terminal"
+Invoke-item test1.html
 ```
+
+</TabItem>
+<TabItem value="mac">
+
+```bash title="terminal"
+open test1.html
+```
+
+</TabItem>
+</Tabs>
 
 ![Screenshot](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/html-guide/first-html-example.png)
 
@@ -65,6 +92,6 @@ open test.html
 
 Do you notice that we have achieved the definition of HTML?
 
-**"Display documents in a web browser"**
+**<mark>"Display documents in a web browser"</mark>**
 
-In the next chapter, we will be learning the meaning of html code in this chapter!
+In the next chapter, we will be learning the meaning of `test1.html` code.
