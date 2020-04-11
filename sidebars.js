@@ -69,11 +69,12 @@ module.exports = {
     },
     {
       "Bootstrap CSS": [
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/01-intro",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/02-play-with-bootstrap",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/03-component",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/04-combine-with-custom-css",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/05-check-examples-page",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/intro",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/play-with-bootstrap",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/component",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/layout",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/combine-with-custom-css",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-examples-page",
       ],
     },
     {

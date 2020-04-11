@@ -17,7 +17,7 @@ Responsive
 
 
 :::caution
-- You don't need to understand the code in this chapter **now**. Just looking is enough.
+- You don't need to understand the code in this chapter **now**. **Just looking is enough**.
 - The purpose of this chapter is understanding **why Bootstrap is useful**.
 :::
 
@@ -35,6 +35,7 @@ Writing HTML manually...
 <head>
   <meta charset="UTF-8">
   <!-- Add viewport meta for mobile scale -->
+  <!-- Todo to explain about this meta tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Title of the document</title>

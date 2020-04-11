@@ -1,10 +1,13 @@
+---
+title: Introduction to Bootstrap JS
+---
 
 Bootstrap needs javascript for below components.
 
-In this chapter, let's check one of them: **Modal** component.
+![Bootstrap components requiring JavaScript](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/bootstrap-need-js-component.png)
+https://getbootstrap.com/docs/4.4/getting-started/introduction/#js
 
-![get-started-js-modal](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/get-started-js-modal.gif)
-
+In this chapter, let's check one of them: **Modal component**.
 
 ## Check Modal Page
 
@@ -19,7 +22,7 @@ And this is why javascript is needed.
 
 ## Copy and Paste the code and check it.
 
-1. Un commentout script tag
+### 1. Un commentout script tag
 ```html hl_lines="23 24"
 <!doctype html>
 <html lang="en">
@@ -50,7 +53,7 @@ And this is why javascript is needed.
 </html>
 ```
 
-2. copy and paste Modal code
+### 2. copy and paste Modal code
 ```html hl_lines="21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45"
 <!doctype html>
 <html lang="en">
@@ -107,21 +110,32 @@ And this is why javascript is needed.
 </html>
 ```
 
-3. check output
+### 3. check output
 ![check-modal-output](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/check-modal-output.gif)
+
+## Summery
 
 If you want to dive into the meaning of code, you can googling like below...
 
-"what is data-target ?"
-"what is tabindex ?"
-...
+**"what is data-target ?"** 
 
-**But!!!**
+**"what is tabindex ?"**
 
-==**The important things is that you don't need to write javascript.**==
+etc...
+
+**But !!!**
+
+**The most important things is that...**
+
+:::important
+Thanks to Bootstrap,
+- **<mark>you don't need to write javascript by yourself</mark>**
+:::
 
 Because it is already written in below Bootstrap js file.
 
 ```js
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 ```
+
+Your website become **interactive** just copy and paste.(You don't need knowledge)
