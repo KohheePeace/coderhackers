@@ -64,6 +64,8 @@ module.exports = {
         "the-complete-webdev-with-rails-2020/css-guide/3-writing-ways-of-css",
         "the-complete-webdev-with-rails-2020/css-guide/class-and-id",
         "the-complete-webdev-with-rails-2020/css-guide/google-dev-tools",
+        "the-complete-webdev-with-rails-2020/css-guide/margin-and-padding",
+        "the-complete-webdev-with-rails-2020/css-guide/media-query",
         "the-complete-webdev-with-rails-2020/css-guide/complex-css",
       ],
     },
@@ -78,10 +80,11 @@ module.exports = {
       ],
     },
     {
-      Javascript: [
+      JavaScript: [
         "the-complete-webdev-with-rails-2020/javascript-guide/intro",
         "the-complete-webdev-with-rails-2020/javascript-guide/play-with-javascript",
-        "the-complete-webdev-with-rails-2020/javascript-guide/3-writing-styles",
+        "the-complete-webdev-with-rails-2020/javascript-guide/dive-into-javascript",
+        "the-complete-webdev-with-rails-2020/javascript-guide/various-writing-ways",
       ],
     },
     {
@@ -91,7 +94,7 @@ module.exports = {
       ],
     },
     {
-      "Bootstrap JS": [
+      "JavaScript for Bootstrap": [
         "the-complete-webdev-with-rails-2020/bootstrap-js-guide/01-intro",
         "the-complete-webdev-with-rails-2020/bootstrap-js-guide/02-manual-js",
       ],
@@ -99,7 +102,12 @@ module.exports = {
     {
       "Combine all front end": [
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/intro",
-        "the-complete-webdev-with-rails-2020/combine-front-end-guide/tutorial",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/navbar",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/jumbotron",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/about-us",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/carousel",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/company-logo-section",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/footer",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/jquery-back-to-top",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/deploy",
       ],

@@ -1,13 +1,28 @@
-!!! abstract "Chapter Goal"
-    - Learn how to deploy.
-    - Learn how to use deploy service.
+---
+title: Deploy
+---
 
-## Before Start
+- Learn how to deploy.
+- Learn how to use deploy service.
 
-Please check you have installed node and npm.
+## What is deploy?
+> **Software deployment** is all of the activities that **make a software system available for use**.
 
-`terminal`
-```bash
+https://en.wikipedia.org/wiki/Software_deployment
+
+Currently our website can be accessed by only you.
+
+By deploying your website, others can access your site.
+
+
+## Install Node
+
+### Check if you have already installed node and npm.
+
+Please
+
+In `terminal`
+```sh
 kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ node -v
 v10.10.0
 kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ npm -v
@@ -31,12 +46,36 @@ kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ npm -v
 kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ 
 ```
 
-## Zeit now
+## Zeit "now"
 https://zeit.co/
 
-Under the `bootstrap-combine-demo` folder
-`terminal`
-```bash
+### Create zeit account
+Please create zeit account.
+
+### Install "now"
+
+In `terminal`
+```sh
+npm i -g now
+```
+
+
+### Login with now
+In `terminal`
+
+```sh
+now login
+```
+
+And follow the logs in terminal.
+
+### Deploy with now
+
+Under the `bootstrap-combine-demo` folder,
+
+Just type **`now`**
+
+```sh title="terminal"
 kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ now
 > Deploying ~/Code/important/bootstrap-combine-demo under kohheepeace
 > Using project bootstrap-combine-demo
@@ -46,3 +85,6 @@ kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ now
 ```
 
 Visit URL...
+
+
+## Summery

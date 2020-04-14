@@ -7,12 +7,19 @@ In this chapter, we are going to
 - Try Bootstrap **grid system**
 - Understand **`col-`** class
 
-## Try Grid system
-Okay, first let's try Bootstrap grid system.
+## What is Grid system ?
+> Bootstrap’s grid system uses a series of **containers**, **rows**, and **columns** **to layout and align content**.
 
-https://getbootstrap.com/docs/4.3/layout/grid/
+https://getbootstrap.com/docs/4.4/layout/grid/
+
+## Try Grid system
+Let's try Bootstrap grid system 👍
+
+https://getbootstrap.com/docs/4.4/layout/grid/
 
 ![copy-grid-layout](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-grid-layout.gif)
+
+### Copy and Paste code
 
 In `test3.html`
 
@@ -98,6 +105,8 @@ In `test3.html`
   </body>
 </html>
 ```
+
+### Check the output
 
 ![output-after-copy-grid](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-grid.png)
 
@@ -233,7 +242,7 @@ Then, replace img src
 </html>
 ```
 
-### The output
+### Check the output
 ![output-after-copy-card](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-card.gif)
 
 
@@ -251,11 +260,11 @@ Then, replace img src
 
 
 ## Understand `col-`
-Let's consider more real use case and understand `col-`
+Let's consider more real use case and understand **`col-`**
 
 :::note Real use case
 - Laptop => 6 columns
-- ipad => 3 columns
+- iPad => 3 columns
 - mobile => 1 column
 :::
 
@@ -340,6 +349,7 @@ Let's consider more real use case and understand `col-`
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </div>
 
+  <!-- highlight-start -->
   <div class="container">
     <div class="row">
       <div class="col">
@@ -416,6 +426,7 @@ Let's consider more real use case and understand `col-`
       </div>
     </div>
   </div>
+  <!-- highlight-end -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -434,20 +445,34 @@ Let's consider more real use case and understand `col-`
 ```
 
 #### Check current output with multiple devices
+Only using **`col-`** doesn't satisfy the specification
+
 ![bootstrap-grid-system-various-device-chrome-devtool](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-grid-system-various-device-chrome-devtool.gif)
 
-### Start from mobile
-![bootstrap-grid-options](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-grid-options-mobile_LI%20(2).jpg)
-https://getbootstrap.com/docs/4.3/layout/grid/#grid-options
+### Mobile
+So, let's start from mobile layout.
 
+:::note Specification
+- Laptop => 6 columns
+- iPad => 3 columns
+- **mobile => 1 column**
+:::
+
+#### Check device width
+You can see **"Pixel 2"** layout width is **411**
 ![this-is-device-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/this-is-device-width.png)
+
+#### Check grid options tables
+Then, check this link https://getbootstrap.com/docs/4.3/layout/grid/#grid-options
+
+![bootstrap-grid-options](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-grid-options-mobile_LI%20(2).jpg)
 
 :::note
 - As above image, use `col-` toward mobile layout.
 - We want mobile layout **1 column** => `col-12`
 :::
 
-You will understand `col-12` after iPad layout.
+I will explain `col-12` after finishing iPad layout.
 
 ```html
 <!-- highlight-next-line -->
@@ -466,7 +491,17 @@ You will understand `col-12` after iPad layout.
 ```
 
 ### iPad
+:::note Specification
+- Laptop => 6 columns
+- **iPad => 3 columns**
+- mobile => 1 column
+:::
+
+#### Check device width
 ![iPad-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/ipad-width-chrome-dev-tools.png)
+
+#### Grid options table
+![grid-options-table](../../img/2020-04-13-06-06-49.png)
 
 :::note
 - So, we need to use `col-md`
@@ -497,7 +532,19 @@ You will understand `col-12` after iPad layout.
 :::
 
 ### Laptop
+
+:::note Specification
+- **Laptop => 6 columns**
+- iPad => 3 columns
+- mobile => 1 column
+:::
+
+#### Check device width
+
 ![laptop-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/laptop-width.png)
+
+#### Grid options table
+![grid-options-table](../../img/2020-04-13-06-06-49.png)
 
 :::note
 - So, we need to use **`col-xl`**
@@ -520,9 +567,9 @@ You will understand `col-12` after iPad layout.
 ```
 
 ### Check the output
-Confirm everything works well in Chrome DevTools.
+Confirm everything works well in Chrome DevTools here...
 
 ## So what is `col-sm` ?
 `col-sm` is 
-- Applied if device screen widths **`≥576px`**
+- Applied if device screen width **`≥576px`**
 - **Automatically** layout as equal width columns.

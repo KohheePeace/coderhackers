@@ -14,7 +14,7 @@ https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 ![copy-bootstrap-starter-html](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-starter-html.gif)
 
 :::note
-- Ignore Javascript files **now**.
+- Ignore Javascript files now.
 - After we learn javascript, I will explain about these files.
 :::
 
@@ -54,23 +54,24 @@ https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 ```
 
 ## Check Output
-Let's check current output.
+Let's check the current output.
 ![copy-bootstrap-html-output](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-html-output.png)
 
 
-## Add Bootstrap Class
+## Try Bootstrap
 
-So, let's add class to `test3.html`.
+So, let's try bootstrap.
 
-First, please go to **Component** page
+First, please go to **Component** page.
 
 ![click-component-link](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/click-component-link.gif)
+
 
 In Bootstrap site, they show
 
 :::note
 1. Output of the HTML
-2. HTML with class that generates the output result
+2. **HTML with class** that generates the output result
 :::
 
 ![copy-alert-class](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-alert-class.gif)
@@ -118,8 +119,7 @@ Did you notice the merit of Bootstrap?
 
 :::note
 Thanks to Bootstrap,
-- You don't need to write CSS by yourself
-- **Just adding class is enough**
+- **You don't need to write CSS** by yourself
 :::
 
 In the next chapter, let's see another example of Bootstrap.

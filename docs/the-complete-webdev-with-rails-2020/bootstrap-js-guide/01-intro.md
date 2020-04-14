@@ -1,29 +1,43 @@
 ---
-title: Introduction to Bootstrap JS
+title: Introduction to JS for Bootstrap
 ---
 
-Bootstrap needs javascript for below components.
+In this chapter, we are going to
+- Learn JavaScript for Bootstrap
+- Add Modal component
+
+## Overview
+> Many of our components require the use of JavaScript to function. Specifically, they require **jQuery**, **Popper.js**, and **our own JavaScript plugins**.
+
+```html
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+```
+
+
+And Bootstrap needs javascript for below components.
 
 ![Bootstrap components requiring JavaScript](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/bootstrap-need-js-component.png)
 https://getbootstrap.com/docs/4.4/getting-started/introduction/#js
 
-In this chapter, let's check one of them: **Modal component**.
+In this chapter, let's check **Modal** component*.
 
-## Check Modal Page
+## Check Modal section
 
 https://getbootstrap.com/docs/4.3/components/modal/
 
-You will find that this is **interactive** (user click and modal shows up).
+You will find that this is **"interactive"** (user click button and modal shows up).
 
-And this is why javascript is needed.
+**<mark>And this is why javascript is needed for this component.</mark>**
 
 ![check-modal-bootstrap](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/check-modal-bootstrap.gif)
 
 
-## Copy and Paste the code and check it.
+## Try Modal component
 
-### 1. Un commentout script tag
-```html hl_lines="23 24"
+### 1. Un comment out Bootstrap related script tag
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,20 +55,21 @@ And this is why javascript is needed.
 
     <div id="demo">Click here</div>
     <div id="alert">Alert Click!</div>
-
     <div id="hover-me">Hover me!</div>
-
+    
     <!-- Optional JavaScript -->
+    <!-- highlight-start -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- highlight-end -->
     <script src="script4.js"></script>
   </body>
 </html>
 ```
 
-### 2. copy and paste Modal code
-```html hl_lines="21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45"
+### 2. Copy and paste Modal code
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -72,14 +87,16 @@ And this is why javascript is needed.
 
     <div id="demo">Click here</div>
     <div id="alert">Alert Click!</div>
-
     <div id="hover-me">Hover me!</div>
 
+    <!-- highlight-start -->
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Launch demo modal
     </button>
+    <!-- highlight-end -->
     
+    <!-- highlight-start -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -100,6 +117,7 @@ And this is why javascript is needed.
         </div>
       </div>
     </div>
+    <!-- highlight-end -->
 
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -110,12 +128,12 @@ And this is why javascript is needed.
 </html>
 ```
 
-### 3. check output
+### 3. Check output
 ![check-modal-output](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/check-modal-output.gif)
 
-## Summery
 
-If you want to dive into the meaning of code, you can googling like below...
+### *Note!
+If you want to dive into the meaning of code, you can googling like ...
 
 **"what is data-target ?"** 
 
@@ -129,13 +147,11 @@ etc...
 
 :::important
 Thanks to Bootstrap,
-- **<mark>you don't need to write javascript by yourself</mark>**
+- **<mark>You don't need to write javascript by yourself to make `Modal`</mark>**
 :::
 
-Because it is already written in below Bootstrap js file.
-
-```js
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-```
-
-Your website become **interactive** just copy and paste.(You don't need knowledge)
+## Summery
+:::note
+- Some Bootstrap component needs JS
+- You can make interactive website just copy and paste.
+:::

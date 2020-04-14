@@ -1,5 +1,11 @@
-!!! abstract "Chapter Goals"
-    - Replace javascript with jQuery
+---
+title: Play with jQuery
+---
+
+In this chapter, we are going to
+  - Replace javascript with jQuery
+
+## Overview
 
 We learned in last chapter that jQuery is easy writing alternative of javascript.
 
@@ -11,14 +17,11 @@ The most important things is always googling.
 
 ![jquery-replace-onclick-search](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/jquery-guide/jquery-replace-onclick-search.gif)
 
-Replace click
-https://api.jquery.com/click/
+- Replace `onclick`: https://api.jquery.com/click/
 
-Replace innerHTML
-https://api.jquery.com/html/
+- Replace `innerHTML`: https://api.jquery.com/html/
 
-Replace style
-https://api.jquery.com/css/
+- Replace `style`: https://api.jquery.com/css/
 
 `test4.html`
 ```js
@@ -45,17 +48,11 @@ Check it works as before...
 
 ## Replace `alert`
 ```js
-// another example
-// document.getElementById('alert').onclick = function () {
-//   // you can get used to and remember method like this
-//   window.alert('Alert!!!!!!!!!!');     
-// }
+  let alertElement = document.getElementById('alert');
 
-document.getElementById("alert").addEventListener("click", clickAlert);
-
-function clickAlert() {
+  alertElement.addEventListener("click", function () {
   window.alert('Alert!!!!!!!!!!');
-}
+});
 ```
 
 becomes
@@ -89,3 +86,10 @@ $("#hover-me").mouseover(function() {
 ```
 
 Check it works as before...
+
+## Summery
+Now, it is enough
+
+:::note
+- 今の現状として、jQueryを自分で書けるかわからないけど、やっていることがわかれば大丈夫です。
+:::

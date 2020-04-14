@@ -5,14 +5,17 @@ title: Component
 In this chapter, we're going to 
   - Get used to Bootstrap **Component**
 
-In this chapter, we're going to try some Bootstrap component.
 
 ## Component
 **Component** is just a part of website.
 
 **By combining each components**, you can make cool website.
 
+Okay let's get started! 😀
+
 ### Navbar
+First, let's try **Navbar** component
+
 https://getbootstrap.com/docs/4.4/components/navbar/
 ![copy-navbar-html.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-html.gif)
 
@@ -75,19 +78,29 @@ Copy and paste to `test3.html`
 ```
 
 #### The output
+Cool navbar added and it is also **responsive**.
 ![copy-navbar-output.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-output.gif)
 
 
 :::note
 You may feel fear because there are a lot of unknown HTML with class.
 
-**But the benefit of Bootstrap is**
+**But** the benefit of Bootstrap is
 
 **<mark>You can create Responsive website just copy and paste even if you don't understand it.</mark>
 **
 :::
 
+#### But, If you are curious...
+  1. Read the bootstrap explanation carefully.
+  2. Use Chrome DevTools to read class.
+
+#### For example, you can check **`mr-auto` class effect** like below...
+![check-bootstrap-class.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-bootstrap-class.gif)
+
 ### Jumbotron
+So, next let's try jumbotron component
+
 https://getbootstrap.com/docs/4.3/components/jumbotron/
 
 ```html title="test3.html"
@@ -157,13 +170,6 @@ https://getbootstrap.com/docs/4.3/components/jumbotron/
 #### The output
 ![output-after-jumbotron](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-jumbotron.png)
 
-
-### If you are curious...
-  1. Read the bootstrap explanation carefully.
-  2. Use Chrome DevTools to read class.
-
-#### For example, you can check **`mr-auto` class effect** like below...
-![check-bootstrap-class.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-bootstrap-class.gif)
 
 
 ## Summery
