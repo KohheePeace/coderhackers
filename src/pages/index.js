@@ -38,7 +38,7 @@ const docsList = [
     description: (
       <>Complete guide to web development 2020 with Ruby on rails.</>
     ),
-    link: "docs/the-complete-webdev-with-rails-2020/introduction",
+    // link: "docs/the-complete-webdev-with-rails-2020/introduction",
   },
 ];
 
