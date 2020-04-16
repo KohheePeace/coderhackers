@@ -163,4 +163,4 @@ Change navbar background (just remove `bg-light` class)
 ```
 
 ### Current Output
-![current-output-navbar](../../img/2020-04-14-04-04-50.png)
+![current-output-navbar](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-14-04-04-50.png)

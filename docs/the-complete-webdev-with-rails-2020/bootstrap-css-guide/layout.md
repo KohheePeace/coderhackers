@@ -501,7 +501,7 @@ I will explain `col-12` after finishing iPad layout.
 ![iPad-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/ipad-width-chrome-dev-tools.png)
 
 #### Grid options table
-![grid-options-table](../../img/2020-04-13-06-06-49.png)
+![grid-options-table](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-06-06-49.png)
 
 :::note
 - So, we need to use `col-md`
@@ -544,7 +544,7 @@ I will explain `col-12` after finishing iPad layout.
 ![laptop-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/laptop-width.png)
 
 #### Grid options table
-![grid-options-table](../../img/2020-04-13-06-06-49.png)
+![grid-options-table](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-06-06-49.png)
 
 :::note
 - So, we need to use **`col-xl`**

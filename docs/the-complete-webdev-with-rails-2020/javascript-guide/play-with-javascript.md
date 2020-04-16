@@ -47,7 +47,7 @@ We are going to refactor last chapter code **to make it easy to understand what 
 We will do the same thing described the below link. 
 
 
-![refactor-onclick-method](../../img/2020-04-13-16-42-20.png)
+![refactor-onclick-method](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-16-42-20.png)
 https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 
 
@@ -90,7 +90,7 @@ demoElement.innerHTML = "Help me";
 demoElement.style = "Color: red";
 ```
 
-![effect-of-function-contents](../../img/2020-04-13-18-40-20-js-onclick-effect.gif)
+![effect-of-function-contents](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-18-40-20-js-onclick-effect.gif)
 :::   
 
 
