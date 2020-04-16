@@ -12,7 +12,7 @@ module.exports = {
     "@cmfcmf/docusaurus-search-local",
   ],
   themeConfig: {
-    sidebarCollapsible: false,
+    // sidebarCollapsible: false,
     prism: {
       additionalLanguages: ["powershell", "dart"],
     },

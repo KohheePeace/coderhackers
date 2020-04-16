@@ -26,7 +26,12 @@ module.exports = {
     "flutter-crud2a/setup-vscode-editor",
     "flutter-crud2a/create-flutter-app",
     "flutter-crud2a/write-initial-counter-app-from-scratch",
-    "flutter-crud2a/folder-structure",
+    {
+      "Step5 Folder Structure": [
+        "flutter-crud2a/prepare-files",
+        "flutter-crud2a/note-about-import",
+      ],
+    },
     "flutter-crud2a/add-drawer-and-routing",
     "flutter-crud2a/setup-firebase",
     "flutter-crud2a/edit-register-page",
