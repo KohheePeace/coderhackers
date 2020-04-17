@@ -32,7 +32,12 @@ module.exports = {
         "flutter-crud2a/note-about-import",
       ],
     },
-    "flutter-crud2a/add-drawer-and-routing",
+    {
+      "Step6 Add Drawer and Routing": [
+        "flutter-crud2a/add-drawer",
+        "flutter-crud2a/add-routing",
+      ],
+    },
     "flutter-crud2a/setup-firebase",
     "flutter-crud2a/edit-register-page",
     "flutter-crud2a/login-page",
