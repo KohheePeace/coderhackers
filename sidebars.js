@@ -39,7 +39,17 @@ module.exports = {
       ],
     },
     "flutter-crud2a/setup-firebase",
-    "flutter-crud2a/edit-register-page",
+    {
+      "Step8 Edit Register Page": [
+        "flutter-crud2a/edit-register-page/overview",
+        "flutter-crud2a/edit-register-page/build-a-form-with-validation",
+        "flutter-crud2a/edit-register-page/styling-text-form-field",
+        "flutter-crud2a/edit-register-page/fix-render-flex-error",
+        "flutter-crud2a/edit-register-page/retrieve-value-from-text-form-field",
+        "flutter-crud2a/edit-register-page/improve-validation",
+        "flutter-crud2a/edit-register-page/add-firebase-auth",
+      ],
+    },
     "flutter-crud2a/login-page",
     "flutter-crud2a/change-content-by-user-state",
     "flutter-crud2a/provider-basics",

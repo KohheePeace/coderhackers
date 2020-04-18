@@ -1,0 +1,100 @@
+Unknown Speaker  0:09  
+These are form, we started the session. In this session, we are going to pedido form is validation. Okay, so let's get started. One art form widget, with a cobra key, as described in our short talks, we will create home and add Gerber key to the form. So, create open this thing. This is our short example how to create a form with Gerber key.
+
+Unknown Speaker  0:37  
+So, you see here,
+
+Unknown Speaker  0:38  
+this is returning form widget and
+
+Unknown Speaker  0:42  
+art form key to this form.
+
+Unknown Speaker  0:45  
+So let's do the same thing.
+
+Unknown Speaker  0:48  
+Let's copy these nine
+
+Unknown Speaker  0:50  
+lines of code,
+
+Unknown Speaker  0:53  
+and go to editor. Inside the pages, they just saw pistol turd. So let's press this body property with Cisco, and next ad is on key.
+
+Unknown Speaker  1:10  
+m s here.
+
+Unknown Speaker  1:15  
+Property this uniquely identifies a form and arrows partition of the form in radius.
+
+Unknown Speaker  1:24  
+Okay, so let's go next.
+
+Unknown Speaker  1:26  
+Number two other takes form field with partition logic.
+
+Unknown Speaker  1:31  
+So let's open this thing.
+
+Unknown Speaker  1:35  
+So this is a text form link, and is party data rajic. So this is logic. If body is empty. It returns error message. If this force it return now.
+
+Unknown Speaker  1:52  
+So,
+
+Unknown Speaker  1:54  
+it's copy this Rhine.
+
+Unknown Speaker  2:02  
+And open editor inside here.
+
+Unknown Speaker  2:07  
+Yes, this cool.
+
+Unknown Speaker  2:11  
+So this is just check partition with text view. And the current art booties. Go to big space. It's just empty text fear. I already fixed this writer, but currently This is okay. So let's go next. Nema city create a pattern to validate on submit the form. So, it is document. This is a bright spot on, and on, press function is party erotic. If form key the current state of the party did is, okay. It shows this Nakba.
+
+Unknown Speaker  3:00  
+So let's do the same thing with this.
+
+Unknown Speaker  3:05  
+So please copy this code.
+
+Unknown Speaker  3:11  
+And on the text form here, which paste this. So this is container inside a container says race for 10. So, which is register texture register. So like this photo. And on press function, we don't show snuck by just Purim partition okay Submit. If
+
+Unknown Speaker  3:36  
+it's rajic is through.
+
+Unknown Speaker  3:40  
+Okay, so
+
+Unknown Speaker  3:43  
+for test failure test this validation behavior. So currently, every takes form field is empty. That's why it shows error message like this. Okay. The 502 B, two Seraglio is finally that's on the D two zero wimpish.
+
+Unknown Speaker  4:07  
+Okay, so please copy these final
+
+Unknown Speaker  4:09  
+lines of code.
+
+Unknown Speaker  4:13  
+And under container. Is this code.
+
+Unknown Speaker  4:17  
+And the basic output.
+
+Unknown Speaker  4:20  
+We need to refresh.
+
+Unknown Speaker  4:25  
+Oh, we need to quick fix this so impish and import
+
+Unknown Speaker  4:31  
+domain case.
+
+Unknown Speaker  4:34  
+All right, check. Okay, I already have icon. So this is text vision and undertakes visit. No, very important. And if you own press navigated or push to know game pace. So if you're Greek. It caught to knowing this. Okay, so this is any of this stuff so let's go next.
+
+Transcribed by https://otter.ai

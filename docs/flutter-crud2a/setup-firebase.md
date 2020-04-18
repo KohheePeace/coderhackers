@@ -2,16 +2,13 @@
 title: Step7 Setup Firebase
 ---
 
-## Goal of this step
-- Setup Firebase
-
+In this step, we are going to 
+- setup firebase.
 
 ## Setup firebase
-Please follow this official guide:
+Let's follow this official guide:
 
 https://codelabs.developers.google.com/codelabs/flutter-firebase/#5
-or
-https://firebase.google.com/docs/flutter/setup?platform=android#create-firebase-project
 
 --- 
 
@@ -30,6 +27,17 @@ Don't forget to enable **"Email/Password"** method.
 
 
 
-## Security Memo! (added)
+## Security tip
+:::tip
 **Should I add the google-services.json (from Firebase) to my repository?**
 https://stackoverflow.com/questions/37358340/should-i-add-the-google-services-json-from-firebase-to-my-repository
+:::
+
+According to this stackoverflow question, I think it is good to ignore  `google-services.json` in `.gitignore`
+
+So, in project root `.gitignore` file,
+
+```git title=".gitignore"
+...
+google-services.json
+```
