@@ -2,12 +2,15 @@
 title: Step9 Login Page
 ---
 
-## Goal of this step
-- We will make Login Page.
+In this step, we're going to
+
+- make Login page.
 
 <img src="https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-11%20at%2023.32.10.png" height="480" />
 
-The code is almost same with Register Page. So, first just copy and paste code, then explain important part of code.
+The code is almost same with Register page.
+
+So, first just copy and paste code, and then I will explain the important part of the code.
 
 ## Final Code
 
@@ -23,16 +26,20 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final GlobalKey<FormState> _loginFormKey = GlobalKey<FormState>();
+  <!-- highlight-start -->
+  final _loginFormKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  <!-- highlight-end -->
 
+  <!-- highlight-start -->
   @override
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
     super.dispose();
   }
+  <!-- highlight-end -->
 
   @override
   Widget build(BuildContext context) {
@@ -40,12 +47,14 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(
         title: Text("Login Page"),
       ),
+      <!-- highlight-next-line -->
       body: Form(
         key: _loginFormKey,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: <Widget>[
+              <!-- highlight-next-line -->
               TextFormField(
                 decoration: InputDecoration(labelText: 'Email', hintText: "johnjackson@example.com"),
                 controller: _emailController,
@@ -59,6 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                   return null;
                 },
               ),
+              <!-- highlight-next-line -->
               TextFormField(
                 decoration: InputDecoration(labelText: 'Password'),
                 controller: _passwordController,
@@ -76,6 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: Text("Login"),
                   color: Theme.of(context).primaryColor,
                   textColor: Colors.white,
+                  <!-- highlight-start -->
                   onPressed: () async {
                     if (_loginFormKey.currentState.validate()) {
                       try {                        
@@ -89,6 +100,7 @@ class _LoginPageState extends State<LoginPage> {
                       }  
                     }
                   },
+                  <!-- highlight-end -->
                 ),
               ),
               Text("You don't have an account?"),
@@ -111,7 +123,9 @@ class _LoginPageState extends State<LoginPage> {
 ```
 
 ## Check Firebase Auth SignIn Code
-This is a part of firebase sing in code. This code is based on official example.
+This is a part of firebase sign in code. This code is based on official example.
+
+https://github.com/FirebaseExtended/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/lib/signin_page.dart
 ```dart
 onPressed: () async {
 	if (_loginFormKey.currentState.validate()) {
@@ -128,6 +142,8 @@ onPressed: () async {
 },
 ```
 
-Official example https://github.com/FirebaseExtended/flutterfire/blob/master/packages/firebase_auth/firebase_auth/example/lib/signin_page.dart
+---
 
+Currently we cannot distinguish if user is login or not.
 
+So, from the next step, let's learn how to change the content by user's login state!
