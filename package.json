@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "docusaurus build && npx docusaurus-pdf from-build build/ docs/flutter-crud2a/introduction",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy"
   },
