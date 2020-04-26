@@ -2,6 +2,8 @@
 title: Understand basic HTML
 ---
 
+## Overview
+
 In this chapter, we are going to
 
 - Understand last chapter HTML code
@@ -41,7 +43,7 @@ I choose this link https://www.w3schools.com/tags/tag_doctype.asp
 
 > The <!DOCTYPE> declaration is not an HTML tag; <mark>**it is an instruction to the web browser about what version of HTML the page is written in.**</mark>
 
-So, if you want to use HTML4 version...
+So, if you want to use **`HTML4`** version...
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -51,15 +53,20 @@ So, if you want to use HTML4 version...
 
 Let's google **"what is head tag of html"**
 
-> **<mark>the `<head>` tag is used to contain specific information about a web page</mark>**, often referred to as metadata.
+> The `<head>` element is a container for metadata (data about data) and is placed between the `<html>` tag and the `<body>` tag.
+> HTML metadata is data about the HTML document. **Metadata is not displayed.**
+> Metadata typically define the document title, character set, styles, scripts, and other meta information.
+> The following tags describe metadata: `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, and `<base>`.
 
-https://www.computerhope.com/jargon/h/html-head-tag.htm
+https://www.w3schools.com/html/html_head.asp
 
 ### 3. `<meta charset="UTF-8">`
 
 Let's google **"meta charset=UTF-8"**
 
-> The HTML charset Attribute is used to specify the character encoding for the HTML document.
+> The charset attribute specifies the character encoding for the HTML document.
+
+https://www.w3schools.com/tags/att_meta_charset.asp
 
 According to the below link, charset can be...
 
@@ -76,10 +83,11 @@ If you change the charset and add content like below...
 
 It does not display correctly.
 
-```html hl_lines="9"
+```html
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- highlight-next-line -->
     <meta charset="ISO-8859-1" />
     <title>Title of the document</title>
   </head>
@@ -93,7 +101,11 @@ It does not display correctly.
 
 ![meta-charset-check](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/html-guide/meta-charset-check.png)
 
-ref: https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8
+Ref: https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8
+
+:::caution
+Always using **`UTF-8`** is enough.
+:::
 
 ### 4. `<title>`
 
@@ -102,6 +114,7 @@ You can easily understand what is `<title>` tag.
 
 ### 5. `<body>`
 
-> The HTML `<body>` tag defines the main content of the HTML document or the section of the HTML document <mark>that will be directly visible on your web page.</mark>
+> The `<body>` tag defines the document's body.
+> The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
 
-https://www.techonthenet.com/html/elements/body_tag.php
+Ref: https://www.w3schools.com/tags/tag_body.asp
