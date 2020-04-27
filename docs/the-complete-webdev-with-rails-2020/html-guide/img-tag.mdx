@@ -2,3 +2,152 @@
 title: <img> tag
 ---
 
+## Overview
+
+In this step, we're going to
+
+- Learn how to use `<img>` tag
+
+## What is `img` tag ?
+
+> The `<img>` tag <mark>**defines an image in an HTML page**</mark>.
+
+https://www.w3schools.com/tags/tag_img.asp
+
+## Try `img` tag
+
+Googling **"public domain cats image wiki commons"**
+
+And then, please **"copy image address"**
+![copy-img-address](../../img/20200427_041422.gif)
+
+In `test1.html`
+
+```html title="test1.html"
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+    <h1>Here is a title.</h1>
+    <h2>Here is a subtitle.</h2>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <!-- highlight-start -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/2/28/Tortoiseshell_she-cat.JPG"
+      alt=""
+    />
+    <!-- highlight-end -->
+  </body>
+</html>
+```
+
+#### Check the output
+
+Image size is too big...
+![cat-screenshot](../../img/2020-04-27-04-26-17.png)
+
+### `width` and `height` attributes
+
+Add `width` and `height` attributes to adjust image size.
+
+```html title="test1.html"
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+    <h1>Here is a title.</h1>
+    <h2>Here is a subtitle.</h2>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <!-- highlight-start -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/2/28/Tortoiseshell_she-cat.JPG"
+      alt=""
+      width="320"
+      height="320"
+    />
+    <!-- highlight-end -->
+  </body>
+</html>
+```
+
+#### Check the output
+
+![cat-adjust-size](../../img/2020-04-27-04-35-10.png)
+
+## What is `alt` attribute?
+
+> The required alt attribute specifies <mark>an alternate text for an image, **if the image cannot be displayed**</mark>.
+>
+> The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+https://www.w3schools.com/tags/att_img_alt.asp
+
+## Try `alt` attributes
+
+Add `alt="Hello this is cat image"` to `img` tag.
+
+```html title="test1.html"
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+    <h1>Here is a title.</h1>
+    <h2>Here is a subtitle.</h2>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <!-- highlight-start -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/2/28/Tortoiseshell_she-cat.JPG"
+      alt="Hello this is cat image"
+      width="320"
+      height="320"
+    />
+    <!-- highlight-end -->
+  </body>
+</html>
+```
+
+### Make your PC airplane mode
+
+This is for making the situation when you cannot access image.
+
+![screenshot-airplane](../../img/20200427_055645.gif)
+
+### Open file in incognito window mode
+
+Even though you are offline, you can access image because image cache remains.
+
+To disable cache, open `test1.html` file in incognito window.
+
+And then, you see the effect of `alt` attribute.
+
+![gif-open-incognito-window-mode](../../img/20200427_060807.gif)

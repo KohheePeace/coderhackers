@@ -80,6 +80,7 @@ module.exports = {
         "the-complete-webdev-with-rails-2020/html-guide/img-tag",
         "the-complete-webdev-with-rails-2020/html-guide/a-tag",
         "the-complete-webdev-with-rails-2020/html-guide/relative-and-absolute-path",
+        "the-complete-webdev-with-rails-2020/html-guide/check-web-flow",
       ],
     },
     {
