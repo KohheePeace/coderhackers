@@ -2,6 +2,8 @@
 title: Introduction to CSS
 ---
 
+## Overview
+
 In this chapter, we are going to...
 
 - Understand what is CSS
@@ -21,11 +23,29 @@ That's it and let's try CSS.
 
 ## Let's try CSS!
 
-We will copy the below example to add CSS.
+### Start from this file
 
-![css-intro-copy-style-tag](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/css-intro-copy-style-tag.png)
+```html title="test1.html"
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Title of the document</title>
+</head>
 
-https://www.w3schools.com/tags/tag_style.asp
+<body>
+  <h1>Here is a title.</h1>
+  <h2>Here is a subtitle.</h2>
+
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+</body>
+
+</html>
+```
 
 ### Add style
 
@@ -57,11 +77,15 @@ https://www.w3schools.com/tags/tag_style.asp
 ```
 
 ### Check the output
-![First style tag](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/first-style-tag.png)
+![css-intro](../../img/2020-04-27-22-31-34.png)
 
 You see  that <mark>**CSS is a language for styling**</mark>.
 
 ## Check the CSS syntax
+
+![css-syntax](https://www.tutorialrepublic.com/lib/images/css-selector.png)
+
+Ref: https://www.tutorialrepublic.com/css-tutorial/css-syntax.php
 
 ```css
   h1 { color: white; background: navy; }

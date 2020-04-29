@@ -2,7 +2,9 @@
 title: Class and ID
 ---
 
-In this chapter, we are going to
+## Overview
+
+In this step, we are going to
 
 - Learn how to use **class** and **id** for css styling target
 
@@ -58,7 +60,8 @@ ul { background: #FFFF33; }
 ```
 
 The output is like below...
-![Class and Id](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/class-and-id.png)
+
+![css-class-and-id](../../img/2020-04-27-22-48-30.png)
 
 ## Difference between an id and a class?
 

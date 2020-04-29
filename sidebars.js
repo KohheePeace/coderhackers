@@ -70,6 +70,7 @@ module.exports = {
   theCompleteWebDevWithRails2020: [
     "the-complete-webdev-with-rails-2020/introduction",
     "the-complete-webdev-with-rails-2020/udemy-course-comparison",
+    "the-complete-webdev-with-rails-2020/install-chrome-browser",
     "the-complete-webdev-with-rails-2020/install-editor",
     "the-complete-webdev-with-rails-2020/terminal",
     {
@@ -90,8 +91,11 @@ module.exports = {
         "the-complete-webdev-with-rails-2020/css-guide/class-and-id",
         "the-complete-webdev-with-rails-2020/css-guide/google-dev-tools",
         "the-complete-webdev-with-rails-2020/css-guide/margin-and-padding",
+        "the-complete-webdev-with-rails-2020/css-guide/play-with-padding",
+        "the-complete-webdev-with-rails-2020/css-guide/play-with-margin",
         "the-complete-webdev-with-rails-2020/css-guide/media-query",
         "the-complete-webdev-with-rails-2020/css-guide/flexbox",
+        "the-complete-webdev-with-rails-2020/css-guide/flexbox-navbar",
         "the-complete-webdev-with-rails-2020/css-guide/complex-css",
       ],
     },
@@ -126,7 +130,7 @@ module.exports = {
       ],
     },
     {
-      "Combine all front end": [
+      "🔥 Combine all front end": [
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/intro",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/navbar",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/jumbotron",
