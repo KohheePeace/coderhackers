@@ -2,18 +2,20 @@
 title: Component
 ---
 
+## Overview
+
 In this chapter, we're going to 
   - Get used to Bootstrap **Component**
 
 
-## Component
+## What is Component ?
 **Component** is just a part of website.
 
-**By combining each components**, you can make cool website.
+**By combining each components like a puzzle**, you can make cool website.
 
 Okay let's get started! 😀
 
-### Navbar
+## `Navbar`
 First, let's try **Navbar** component
 
 https://getbootstrap.com/docs/4.4/components/navbar/
@@ -77,7 +79,7 @@ Copy and paste to `test3.html`
 </html>
 ```
 
-#### The output
+#### Check the output
 Cool navbar added and it is also **responsive**.
 ![copy-navbar-output.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-output.gif)
 
@@ -98,7 +100,7 @@ You may feel fear because there are a lot of unknown HTML with class.
 #### For example, you can check **`mr-auto` class effect** like below...
 ![check-bootstrap-class.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-bootstrap-class.gif)
 
-### Jumbotron
+## `Jumbotron`
 So, next let's try jumbotron component
 
 https://getbootstrap.com/docs/4.3/components/jumbotron/
@@ -167,7 +169,7 @@ https://getbootstrap.com/docs/4.3/components/jumbotron/
 </html>
 ```
 
-#### The output
+#### Check the output
 ![output-after-jumbotron](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-jumbotron.png)
 
 
@@ -175,6 +177,6 @@ https://getbootstrap.com/docs/4.3/components/jumbotron/
 ## Summery
 
 :::note
- - Component is a **piece of a puzzle**.
- - You can **combine each component and make website**.
+ - Component is **a piece of a puzzle**.
+ - You can **combine each component and make cool website**.
 :::

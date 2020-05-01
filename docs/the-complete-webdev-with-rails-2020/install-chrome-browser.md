@@ -13,4 +13,4 @@ If you haven't installed google chrome browser, please install from this link.
 https://www.google.com/chrome/
 
 ## *Note
-**<mark>Please use google chrome browser</mark>** in this course.
+Please **<mark>use google chrome browser</mark>** in this course.

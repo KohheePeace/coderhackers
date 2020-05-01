@@ -2,12 +2,14 @@
 title: Play with JavaScript
 ---
 
-In this chapter, we are going to
-  - Understand last chapter's js code.
-  - Try different javascript code to get used to it.
+## Oveview
+
+In this step, we are going to
+  - 🐯 Understand last chapter's js code.
+  - 🐅 Try different javascript code to get used to it.
 
 
-## Where to write javascript code
+## Where to write javascript code ?
 > **In HTML**, JavaScript code is inserted between `<script>` and `</script>` tags.
 
 https://www.w3schools.com/js/js_whereto.asp
@@ -22,7 +24,8 @@ We will add `<script></script>` tag inside `<body>` tag.
 </body>
 ```
 :::note
-Actually you can write javascript code in various places. I will introduce about this in the next chapter.
+- Actually you can write javascript code in **various places**
+- I will introduce about this in later step.
 :::
 
 
@@ -41,7 +44,7 @@ Okay so, let's understand the last chapter's code
 
 
 
-### Understand the flow
+### Refactor code
 We are going to refactor last chapter code **to make it easy to understand what we are doing**.
 
 We will do the same thing described the below link. 
@@ -75,14 +78,19 @@ So `test4.html`
 </script>
 ```
 
-:::important
-At first, please understand **the flow!**
+:::note The flow
+At first, just understanding **the flow** is enough!
 
-1. From **`document`**, get target **`element`** by id and assign it to demoElement variable declared by **`let`**.
-2. Attach function to demoElement's onclick **`event`**
-3. function() contents is to do something towards demoElement
+1. From **`document`**, get target **`element`** by using **id**.
+2. Assign it to demoElement **variable** declared by **`let`**.
+3. Attach function to demoElement's onclick **`event`**
+4. Inside function(), do something towards demoElement
+
+:::
 
 ---
+
+### Check effect of the `function()`
 
 This is a gif of the effect of function content.
 ```js
@@ -91,12 +99,14 @@ demoElement.style = "Color: red";
 ```
 
 ![effect-of-function-contents](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-18-40-20-js-onclick-effect.gif)
-:::   
 
+
+## What's next ?
+In the next step, let's check these important words.
 
 :::note important words
-- **document**
-- **Element**
-- **let**
-- **Event**
+- **`document`**
+- **`Element`**
+- **`let`**
+- **`Event`**
 :::

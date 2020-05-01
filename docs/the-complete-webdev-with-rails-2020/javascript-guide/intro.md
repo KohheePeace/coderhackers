@@ -2,8 +2,9 @@
 title: Introduction to JavaScript
 ---
 
-In this chapter, we are going to
-  - Understand **what is javascript**
+## Overview
+In this step, we're going to
+- 🐧Understand **what is javascript**
 
 
 ## What is JavaScript
@@ -16,30 +17,19 @@ https://en.wikipedia.org/wiki/JavaScript
 
 ## Let's check about the meaning of "interactive"
 
-Let's start with Bootstrap starter template with comment out javascript script.
+Please make `js-test` folder and create `test1.html` inside it.
 
-`test4.html`
-```html
-<!doctype html>
+Then, make html boilderplate.
+
+```html title="js-test/test1.html"
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-  </body>
+  <body></body>
 </html>
 ```
 
@@ -50,39 +40,27 @@ I choose the below example as a first step.
 ![copy-mdn-onclick-demo-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/javascript-guide/copy-mdn-onclick-demo-code.gif)
 https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
 
-**You don't need to understand the meaning of this code now!**
+**<mark>You don't need to understand the meaning of this code right now!</mark>**
 
 This is just a example to understand the meaning of **"interactive"**.
 
 `test4.html`
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <div id="demo">Click here</div>
-
-    <!-- Optional JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <!-- highlight-start -->
+    <div id="demo">Click here</div>
     <script>
-      document.getElementById('demo').onclick = function changeContent() {
-        document.getElementById('demo').innerHTML = "Help me";
-        document.getElementById('demo').style = "Color: red";
-      }
+      document.getElementById("demo").onclick = function changeContent() {
+        document.getElementById("demo").innerHTML = "Help me";
+        document.getElementById("demo").style = "Color: red";
+      };
     </script>
     <!-- highlight-end -->
   </body>
@@ -100,4 +78,4 @@ This is just a example to understand the meaning of **"interactive"**.
 
 This is **interactive** right ?
 
-In the next chapter, we will learn the meaning of this javascript code and write more javascript.
+In the next step, we will learn the meaning of this javascript code and write more javascript.

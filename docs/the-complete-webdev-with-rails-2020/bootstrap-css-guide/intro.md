@@ -2,18 +2,20 @@
 title: Introduction to Bootstrap
 ---
 
-In this chapter, we are going to
-- Understand what is Bootstrap CSS
+## Overview
+
+In this step, we are going to
+- Understand what is **Bootstrap CSS**
 
 ## What is Bootstrap ?
 From wikipedia...
-> Bootstrap is a free and open-source <mark>**CSS framework**</mark> directed at responsive, mobile-first front-end web development. <mark>**It contains CSS- and (optionally) JavaScript-based**</mark> design templates for typography, forms, buttons, navigation and other interface components.
+> Bootstrap is a free and open-source <mark>**CSS framework**</mark> directed at responsive, mobile-first front-end web development. <mark>**It contains CSS- and (optionally) JavaScript-based**</mark> design templates for typography, forms, buttons, navigation and other interface **components**.
 
 https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
 
-So, Bootstrap is CSS framework which contains CSS and Javascript.
+So, Bootstrap is a **CSS framework** which contains CSS and Javascript.
 
-In this section, we are going to **focus on CSS part**.
+In this step, we are going to **focus on CSS part**.
 
 ## Check official website
 

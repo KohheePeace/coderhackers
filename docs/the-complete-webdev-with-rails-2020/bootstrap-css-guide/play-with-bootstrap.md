@@ -1,12 +1,15 @@
 ---
 title: Play with Bootstrap CSS
 ---
-In this chapter, we are going to
+
+## Overview
+
+In this step, we are going to
   - Get used to Bootstrap CSS
 
 ## Start from Bootstrap starter template
 
-Make `test3.html`
+Make `bootstrap-test` folder, and make `bootstrap-test.html`
 
 Copy and paste bootstrap starter template.
 https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
@@ -53,7 +56,7 @@ https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 </html>
 ```
 
-## Check Output
+## Check current output
 Let's check the current output.
 ![copy-bootstrap-html-output](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-html-output.png)
 
@@ -109,7 +112,7 @@ Check output...
 
 
 ## Detect applied CSS by Chrome DevTools
-check applied css by `alert` `alert-primary` here...
+You see  CSS applied by `alert` `alert-primary` class from Bootstrap.
 
 ![bootstrap-alert-class](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-alert-class.png)
 
@@ -122,4 +125,4 @@ Thanks to Bootstrap,
 - **You don't need to write CSS** by yourself
 :::
 
-In the next chapter, let's see another example of Bootstrap.
+In the next step, let's see another example of Bootstrap.

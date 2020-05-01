@@ -2,18 +2,26 @@
 title: Complex CSS
 ---
 
-In this chapter, we are going to
+## Overview
+
+In this step, we are going to
+  - Make a part of real website for recapping what we've learned
+
+
+<!-- In this step, we are going to
   - Understand only using CSS is troublesome
-  - Understand why we need Bootstrap
+  - Understand why we need Bootstrap -->
 
-## Overview of this chapter
+## What we will make
 
-In this chapter, I will show you how to make some part of real website.
+A part of real world website.
 
-![complex-css-demo](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/complex-css-demo.png)
+#### Desktop
+![complex-css-demo](../../img/2020-04-29-19-06-52.png)
 
-Responsive
-![complex-css-responsive](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/css-guide/complex-css-responsive.gif)
+
+#### Mobile
+![complex-css-responsive](../../img/2020-04-29-19-06-29.png)
 
 
 :::caution
@@ -25,127 +33,139 @@ Responsive
 
 Okay let's start!
 
-Make `test2.html`
+Make **`complex-css-test.html`** and **`complex-css-test.css`** in `css-test` folder.
 
-Writing HTML manually...
+Writing HTML and CSS manually from here in video...
 
-```html
+## Final code
+```html title="complex-css-test.html"
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <!-- Add viewport meta for mobile scale -->
-  <!-- Todo to explain about this meta tag -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <title>Title of the document</title>
-  <link rel="stylesheet" href="test2.css">
-</head>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="complex-css-test.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <a href="#">Logo</a>
+      <ul class="navbar-list">
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="#">Features</a>
+        </li>
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="#">Pricing</a>
+        </li>
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="#">About</a>
+        </li>
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="#">Team</a>
+        </li>
+        <li class="navbar-list-item">
+          <a class="navbar-list-item-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button class="sign-up-button">Sign Up</button>
+    </nav>
+    <!-- #End navbar -->
 
-<body>
-  <!-- header -->
-  <nav class="header">
-    <a class="logo" href="#">LOGO</a>
-    <ul class="header-list">
-      <li class="header-list-item">
-        <a class="header-list-item-link" href="#">Features</a>
-      </li>
-      <li class="header-list-item">
-        <a class="header-list-item-link" href="#">Pricing</a>
-      </li>
-      <li class="header-list-item">
-        <a class="header-list-item-link" href="#">About</a>
-      </li>
-      <li class="header-list-item">
-        <a class="header-list-item-link" href="#">Team</a>
-      </li>
-      <li class="header-list-item">
-        <a class="header-list-item-link" href="#">Contact</a>
-      </li>
-    </ul>
-    <button type="button" class="sign-up-button">Sign up</button>
-  </nav>
-  <!-- main content -->
-  <div class="jumbotron">
-    <h1>We provide solutions for your business</h1>
-    <p>And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-    <a class="get-started-button" href="#">Get started</a>
-  </div>
-</body>
-
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <h1>We provide solutions for your business</h1>
+      <p>
+        And an even wittier subheading to boot. Jumpstart your marketing efforts
+        with this example based on Apple’s marketing pages.
+      </p>
+      <a class="get-started-button" href="#">Get started</a>
+    </div>
+    <!-- #End jumbotron -->
+  </body>
 </html>
 ```
 
-
-Make `test2.css`
-
-Writing CSS manually...
-
-```css
-/* Disable Browser default margin from body */
+```css title="complex-css-test.css"
+/* General
+------------------- */
 body {
   margin: 0;
 }
 
-.header {
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Navbar
+-------------------- */
+.navbar {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: #FFF;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  padding: 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #dddddd;
 }
 
 .logo {
-  color: black;
+  color: #007bff;
   font-weight: 800;
   text-decoration: none;
-  margin-right: auto;
 }
 
-.header-list {
+.navbar-list {
+  margin-left: auto;
   display: flex;
-  flex-direction: row;
   padding-left: 0;
-  margin: 0;
-  margin-right: 1rem;
   list-style: none;
 }
 
-/* Responsive CSS for hide header-list for mobile */
+/* Responsive CSS for hide navbar-list for mobile */
 @media only screen and (max-width: 600px) {
-  .header-list {
+  .navbar-list {
     display: none;
   }
 }
 
-.header-list-item {
-  padding-right: .5rem;
-  padding-left: .5rem;
+.navbar-list-item {
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
-.header-list-item-link {
+.navbar-list-item-link {
   color: blue;
 }
 
 .sign-up-button {
+  margin-left: 16px;
+  padding: 6px 12px;
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
-  font-weight: 400; 
-  text-align: center;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 1.5;
-  border-radius: .25rem;
+  border-radius: 4px;
 }
 
+@media only screen and (max-width: 600px) {
+  .sign-up-button {
+    margin-left: auto;
+  }
+}
+
+/* Section Jumbotron
+------------------- */
 .jumbotron {
   text-align: center;
   background: aliceblue;
-  padding: 2rem 3rem 6rem;
+  padding: 32px 48px 96px;
 }
 
 /* CSS for child of jumbotron */
@@ -154,7 +174,7 @@ body {
 }
 
 .jumbotron > p {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .get-started-button {
@@ -162,12 +182,11 @@ body {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
-  font-weight: 800; 
+  font-weight: 800;
   text-align: center;
-  border: 1px solid transparent;
   padding: 10px 32px;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
 }

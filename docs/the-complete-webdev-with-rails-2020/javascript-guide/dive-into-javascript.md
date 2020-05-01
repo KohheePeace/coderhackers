@@ -2,9 +2,11 @@
 title: Dive into Javascript
 ---
 
-In the previous chapter, we learned the flow of the javascript code.
+## Overview
 
-So, in this chapter, let's
+In the previous step, we learned the flow of the javascript code.
+
+So, in this step, let's
 - Dive into javascript code
 
 

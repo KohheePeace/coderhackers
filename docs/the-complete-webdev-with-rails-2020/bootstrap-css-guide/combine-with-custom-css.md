@@ -2,18 +2,21 @@
 title: Combine with custom CSS
 ---
 
-In this chapter, we are going to
+
+## Overview
+
+In this step, we're going to
   - Combine custom CSS with Bootstrap CSS
 
 
 ## Why ?
 Bootstrap is useful to make nice website rapidly.
 
-**But**, **<mark>there is a case you want to customize default CSS styling.</mark>**
+**But**, **<mark>there is a case you want to customize default Bootstrap's CSS.</mark>**
 
-So, in this chapter, we going to learn to do it!
+So, in this chapter, we going to learn how to do it!
 
-## Change `.jumbotron` background color
+## 1. Change `.jumbotron` background color
 
 First, let's change jumbotron background color.
 
@@ -58,7 +61,7 @@ Copy and Paste and delete unnecessary part.
 </html>
 ```
 
-## Make "Hello, world!" bold
+## 2. Make "Hello, world!" bold
 
 Next, we want to make **"Hello, world!"** text bold.
 
@@ -99,3 +102,6 @@ Next, we want to make **"Hello, world!"** text bold.
 :::note
 Of course, you can use `external css` to make **"Hello, world!"** bold
 :::
+
+
+## 3. Change button color
