@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     "@docusaurus/plugin-google-analytics",
     "@docusaurus/plugin-google-gtag",
-    "@cmfcmf/docusaurus-search-local",
+    "docusaurus-lunr-search",
   ],
   themeConfig: {
     // sidebarCollapsible: false,
