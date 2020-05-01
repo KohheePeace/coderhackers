@@ -9,11 +9,11 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "^0.0.4",
-    "@docusaurus/core": "^2.0.0-alpha.50",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.50",
+    "@docusaurus/core": "^2.0.0-alpha.54",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.54",
     "@microlink/react": "^5.1.3",
     "classnames": "^2.2.6",
+    "docusaurus-lunr-search": "^1.0.2",
     "prismjs": "^1.19.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
