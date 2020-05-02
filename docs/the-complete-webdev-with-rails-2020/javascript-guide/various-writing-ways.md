@@ -2,60 +2,82 @@
 title: Various writing ways of JavaScript
 ---
 
-In this chapter, we are going to
-
-  - Learn various writings ways of javascript
-
+## Goal
+- 🦁 Learn different writing styles of javascript
+  
 ## Overview
 
-In this chapter, we'll be learning the different writing styles of javascript.
+In this step, we'll be learning the different writing styles of javascript **which is doing the same things**.
 
-This is similar with what we did in CSS chapter.
+This is similar with what we did in CSS step.
 
 
-## 1. `object.onclick = function(){myScript};`
+## Preparation
+Make `test2.html` in `js-test` folder.
 
-This is what we did in the last chapter.
+```html title="test2.html"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo">Click here</div>
+
+    <script>
+      let demoElement = document.getElementById("demo");
+
+      demoElement.onclick = function changeContent() {
+        demoElement.innerHTML = "Help me";
+        demoElement.style = "color: red";
+      };
+    </script>
+  </body>
+</html>
+```
+
+
+
+## 1. `element.onclick = function(){do something};`
+
+This is what we did in the last step.
 
 ```html
 <script>
-  alertElement.onclick = function () {
-    window.alert('Alert!!!!!!!!!!');
-  }
+  let demoElement = document.getElementById("demo");
+
+  demoElement.onclick = function changeContent() {
+    demoElement.innerHTML = "Help me";
+    demoElement.style = "color: red";
+  };
 </script>
 ```
 
 ## 2. `<element onclick="...">`
-1. comment out existing code.
+1. add `onclick`
 ```html
-<script>
-// document.getElementById('alert').onclick = function () {
-//   // you can get used to and remember method like this
-//   window.alert('Alert!!!!!!!!!!');     
-// }
-</script>
-```
-
-2. add `onclick`
-```html
-<div id="alert" onclick="window.alert('Alert!!!!!!!!!!');">Alert Click!</div>
+<div
+  id="demo"
+  onclick="demoElement.innerHTML = 'Help me'; demoElement.style = 'color: red';"
+>
+  Click here
+</div>
 ```
 
 Check it also works.
 
-## 3. `object.addEventListener("click", myScript);`
-1. delete `onclick="..."`
-```js
-<div id="alert">Alert Click!</div>
-```
+## 3. `element.addEventListener("click", do something);`
+```html
+<script>
+  let demoElement = document.getElementById("demo");
 
-2. add `object.addEventListener("click", myScript);`
-```js
-  let alertElement = document.getElementById('alert');
-
-  alertElement.addEventListener("click", function () {
-    window.alert('Alert!!!!!!!!!!');
+  demoElement.addEventListener("click", function () {
+    demoElement.innerHTML = "Help me";
+    demoElement.style = "color: red";
   });
+</script>
 ```
 
 ### Refs: Event type
@@ -67,65 +89,27 @@ This is important to understand Bootstrap js.
 
 Make `script4.js`
 ```js title="script4.js"
-// document.getElementById('demo').onclick = function changeContent() {
-//   document.getElementById('demo').innerHTML = "Help me";
-//   document.getElementById('demo').style = "Color: red";
-// }
+let demoElement = document.getElementById("demo");
 
-// Get Target element
-let demoElement = document.getElementById('demo');
-
-// Add onclick function to the #demoElement.
-// you can skip function name 'changeContent'
-demoElement.onclick = function () {
+demoElement.addEventListener("click", function () {
   demoElement.innerHTML = "Help me";
-  demoElement.style = "Color: red";
-}
-
-// another example
-// document.getElementById('alert').onclick = function () {
-//   // you can get used to and remember method like this
-//   window.alert('Alert!!!!!!!!!!');     
-// }
-
-document.getElementById("alert").addEventListener("click", clickAlert);
-
-function clickAlert() {
-  window.alert('Alert!!!!!!!!!!');
-}
-
-// example of onmouseover
-document.getElementById('hover-me').onmouseover = function () {
-  console.log('Hover!!!!!!!!!!');     
-}
+  demoElement.style = "color: red";
+});
 ```
 
 Import `script4.js` in `test4.html`
-```html
-<!doctype html>
+
+```html title="test4.html"
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
     <div id="demo">Click here</div>
-    <div id="alert">Alert Click!</div>
 
-    <div id="hover-me">Hover me!</div>
-
-    <!-- Optional JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <!-- highlight-next-line -->
     <script src="script4.js"></script>
   </body>
@@ -134,33 +118,43 @@ Import `script4.js` in `test4.html`
 
 You see it also works.
 
-## Import in `head` tag
-
-> Scripts can be placed in the `<body>`, or in the `<head>` section of an HTML page, or in both.
-
+### Import in `head` tag
+You can import script file inside `<head>` tag.
 https://www.w3schools.com/js/js_whereto.asp
 
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
     <!-- highlight-next-line -->
     <script src="script4.js"></script>
   </head>
   <body>
-    ...
+    <div id="demo">Click here</div>
   </body>
 </html>
 ```
 
-## Refs
-https://www.w3schools.com/jsref/event_onclick.asp
+:::note
+**But**, if you import script tag in `<head>`, **it doesn't work**.
+
+This is because HTML file is read from top to bottom by browser.
+
+Because this js file is before **`<div id="demo">Click here</div>`**
+
+This js file cannot access DOM.
+```js
+  let demoElement = document.getElementById("demo");
+```
+
+:::
+
+## Summery
+:::info
+**It is enough** to know **there are various writing styles doing the same thing** in javascript. 👍
+:::

@@ -36,3 +36,7 @@
   width: 100%;
   height: 100%;
 }
+
+.alert.alert--info {
+  color: rgb(41, 45, 62);
+}

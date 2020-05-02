@@ -2,11 +2,10 @@
 title: Introduction to jQuery
 ---
 
-In this chapter, we are going to
+## Goal
+  - ⚡ Learn what is jQuery
 
-  - Learn what is jQuery
-
-## What is jQuery
+## What is jQuery?
 
 From wikipedia...
 > jQuery's syntax is <mark>**designed to make it easier**</mark> to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.
@@ -22,15 +21,18 @@ http://youmightnotneedjquery.com/
 
 This is a document aimed to show **how to replace jQuery with pure javascript**,
 
-**<mark>but it also suggests the merit of jQuery.</mark>**
+**<mark>But it also suggests the merit of jQuery.</mark>**
 
 ![you-might-not-need-jquery](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/jquery-guide/you-might-not-need-jquery.gif)
 
-Do you find the merit of jQuery ?
+Did you find the merit of jQuery ?
 
-**<mark>You write less code compared to pure JavaScript</mark>**
+**You write less code compared to pure JavaScript**
 
-### Visit official site and check logo
+Check jQuery logo ...
+
+**<mark>"write less, do more"</mark>**
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/768px-JQuery-Logo.svg.png)
 https://jquery.com/
 
 ## Refs

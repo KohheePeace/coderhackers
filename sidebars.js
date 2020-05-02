@@ -120,8 +120,8 @@ module.exports = {
         // "the-complete-webdev-with-rails-2020/javascript-guide/play-with-javascript",
         "the-complete-webdev-with-rails-2020/javascript-guide/dom-document",
         "the-complete-webdev-with-rails-2020/javascript-guide/element",
-        "the-complete-webdev-with-rails-2020/javascript-guide/dive-into-javascript",
         "the-complete-webdev-with-rails-2020/javascript-guide/various-writing-ways",
+        // "the-complete-webdev-with-rails-2020/javascript-guide/dive-into-javascript",
       ],
     },
     {

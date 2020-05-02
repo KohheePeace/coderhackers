@@ -59,13 +59,17 @@ This is just a example to understand the meaning of **"interactive"**.
     <script>
       document.getElementById("demo").onclick = function changeContent() {
         document.getElementById("demo").innerHTML = "Help me";
-        document.getElementById("demo").style = "Color: red";
+        document.getElementById("demo").style = "color: red";
       };
     </script>
     <!-- highlight-end -->
   </body>
 </html>
 ```
+
+:::note
+I edited `Color: red` => `color: red`.
+:::
 
 #### Check the output
 ![output-copy-mdn-onclick-demo-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/javascript-guide/output-copy-mdn-onclick-demo-code.gif)

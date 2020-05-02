@@ -59,7 +59,7 @@ It is enough to remember that **`let`** is used to declare variable.
 
   x.onclick = function () {
     x.innerHTML = "Help me";
-    x.style = "Color: red";
+    x.style = "color: red";
   }
 ```
 :::
@@ -103,7 +103,7 @@ In `test4.html`
     // Comment out before code.
     // document.getElementById('demo').onclick = function changeContent() {
     //   document.getElementById('demo').innerHTML = "Help me";
-    //   document.getElementById('demo').style = "Color: red";
+    //   document.getElementById('demo').style = "color: red";
     // }
 
     // Get target element
@@ -114,7 +114,7 @@ In `test4.html`
     demoElement.onclick = function () {
       // Do something towards target Element
       demoElement.innerHTML = "Help me";
-      demoElement.style = "Color: red";
+      demoElement.style = "color: red";
     }
 
     // highlight-start
@@ -122,7 +122,7 @@ In `test4.html`
 
     hoverMeElement.onmouseover = function () {
       hoverMeElement.innerHTML = "Help me";
-      hoverMeElement.style = "Color: red";
+      hoverMeElement.style = "color: red";
     }
     // highlight-end
   </script>
@@ -177,7 +177,7 @@ https://www.w3schools.com/js/js_output.asp
   <script>
     // document.getElementById('demo').onclick = function changeContent() {
     //   document.getElementById('demo').innerHTML = "Help me";
-    //   document.getElementById('demo').style = "Color: red";
+    //   document.getElementById('demo').style = "color: red";
     // }
 
     // Get Target element
@@ -187,7 +187,7 @@ https://www.w3schools.com/js/js_output.asp
     // you can skip function name 'changeContent'
     demoElement.onclick = function () {
       demoElement.innerHTML = "Help me";
-      demoElement.style = "Color: red";
+      demoElement.style = "color: red";
     }
 
     // Get Target element

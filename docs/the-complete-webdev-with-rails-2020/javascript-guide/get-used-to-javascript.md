@@ -57,7 +57,7 @@ This is current code.
 <script>
   document.getElementById('demo').onclick = function changeContent() {
     document.getElementById('demo').innerHTML = "Help me";
-    document.getElementById('demo').style = "Color: red";
+    document.getElementById('demo').style = "color: red";
   }
 </script>
 ```
@@ -76,7 +76,7 @@ So `test4.html` becomes
 
   demoElement.onclick = function changeContent () {        --- (2)
     demoElement.innerHTML = "Help me";                     --- (3)
-    demoElement.style = "Color: red";
+    demoElement.style = "color: red";
   }
 </script>
 ```

@@ -14,7 +14,7 @@ In this step, we're going to
 
   demoElement.onclick = function changeContent () {        --- (2)
     demoElement.innerHTML = "Help me";                     --- (3)
-    demoElement.style = "Color: red";
+    demoElement.style = "color: red";
   }
 </script>
 ```

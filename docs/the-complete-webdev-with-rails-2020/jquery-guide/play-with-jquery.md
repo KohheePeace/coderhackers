@@ -2,18 +2,18 @@
 title: Play with jQuery
 ---
 
-In this chapter, we are going to
-  - Replace javascript with jQuery
+## Goal
+  - ⚡ Get used to jQuery
 
 ## Overview
 
-We learned in last chapter that jQuery is easy writing alternative of javascript.
+In last step, We learned that jQuery is easy writing alternative of javascript.
 
 So, let's replace existing code with jQuery.
 
 ##  Replace `onclick`, `innerHTML`, `style`
 
-The most important things is always googling.
+The most important things is **always googling**.
 
 ![jquery-replace-onclick-search](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/jquery-guide/jquery-replace-onclick-search.gif)
 
@@ -23,44 +23,21 @@ The most important things is always googling.
 
 - Replace `style`: https://api.jquery.com/css/
 
-`test4.html`
-```js
-// Get Target element
+```js title="Javascript"
 let demoElement = document.getElementById('demo');
 
-// Add onclick function to the #demoElement.
-// you can skip function name 'changeContent'
 demoElement.onclick = function () {
   demoElement.innerHTML = "Help me";
-  demoElement.style = "Color: red";
+  demoElement.style = "color: red";
 }
 ```
 becomes
 
-```js
+```js title="jQuery"
 $("#demo").click(function() {
   $("#demo").html("Help me");
   $("#demo").css({ color: "red" });
 });
-```
-
-Check it works as before...
-
-## Replace `alert`
-```js
-  let alertElement = document.getElementById('alert');
-
-  alertElement.addEventListener("click", function () {
-  window.alert('Alert!!!!!!!!!!');
-});
-```
-
-becomes
-
-```js
-$("#alert").click(function() {
-  window.alert('Alert!!!!!!!!!!');
-})
 ```
 
 Check it works as before...
@@ -86,10 +63,3 @@ $("#hover-me").mouseover(function() {
 ```
 
 Check it works as before...
-
-## Summery
-Now, it is enough
-
-:::note
-- 今の現状として、jQueryを自分で書けるかわからないけど、やっていることがわかれば大丈夫です。
-:::
