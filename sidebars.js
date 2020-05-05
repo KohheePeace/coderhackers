@@ -139,9 +139,13 @@ module.exports = {
     {
       "🔥 Combine all front end": [
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/intro",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/change-font",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/navbar",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/jumbotron",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/font-awesome",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/about-us",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/how-it-works",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/customers-voice",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/footer",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/jquery-scroll",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/favicon",

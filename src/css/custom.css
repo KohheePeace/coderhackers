@@ -15,6 +15,17 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
 
   --ifm-code-font-size: 95%;
+
+  --ifm-color-success: #25c2a0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul.contains-task-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 .docusaurus-highlight-code-line {
@@ -37,6 +48,46 @@
   height: 100%;
 }
 
-.alert.alert--info {
+/* Admonitions
+--------------- */
+
+.alert.alert--secondary {
+  background-color: #f5f7f9;
+  border-color: #f5f7f9;
+}
+
+.alert.alert--success {
+  background-color: #f5f7f9;
+  border-color: #f5f7f9;
   color: rgb(41, 45, 62);
+  border-left: 4px solid var(--ifm-color-success);
+}
+
+.alert.alert--success .admonition-icon svg {
+  fill: var(--ifm-color-success) !important;
+  stroke: var(--ifm-color-success) !important;
+}
+
+.alert.alert--info {
+  background-color: #f5f7f9;
+  border-color: #f5f7f9;
+  color: rgb(41, 45, 62);
+  border-left: 4px solid var(--ifm-color-info);
+}
+
+.alert.alert--info .admonition-icon svg {
+  fill: var(--ifm-color-info) !important;
+  stroke: var(--ifm-color-info) !important;
+}
+
+.alert.alert--warning {
+  background-color: #f5f7f9;
+  border-color: #f5f7f9;
+  color: rgb(41, 45, 62);
+  border-left: 4px solid var(--ifm-color-warning);
+}
+
+.alert.alert--warning .admonition-icon svg {
+  fill: var(--ifm-color-warning) !important;
+  stroke: var(--ifm-color-warning) !important;
 }

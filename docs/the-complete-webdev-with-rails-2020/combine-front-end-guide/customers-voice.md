@@ -1,179 +1,90 @@
 ---
-title: About Us Section
+title : Customers Voice section
 ---
 
 ## Goal
-- ⚡ Make about us section
+- ⚡ Make Customers Voice Section
 
-## Prepare images
-Download images from https://undraw.co/search with `#00B0FF` color. 
-
-Please search, download, move to `img` folder and rename it.
-
-| Search Word       |
-| ----------------- |
-| mobile wireframe  |
-| breakfast         |
-| personal notebook |
-| Cautious dog      |
-| Modern woman      |
-
-
-## Boilerplate
+## Boilerplate and section header
 ```html
-<!-- About Us -->
-<section id="about-us">
+<!-- Customers Voice -->
+<section id="customers-voice">
   <div class="container">
-    <div class="section-header">
-      <h1>About Us</h1>
+    <div class="section-header text-center">
+      <h1 class="display-5 mb-4">What our customers say</h1>
       <p>
         Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore.
       </p>
     </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-    </div>
+    <div class="row"></div>
   </div>
 </section>
-<!-- # About Us -->
-```
-
-## Section header
-```html
-<div class="section-header text-center">
-  <h1 class="display-5 mb-4">About Us</h1>
-  <p>
-    Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore.
-  </p>
-</div>
+<!-- # Customers Voice -->
 ```
 
 ```css title="css/custom.css"
-#about-us .section-header {
+/* Customers voice
+-------------------- */
+#customers-voice {
+  padding: 5rem 0;
+}
+
+#customers-voice .section-header {
   margin-bottom: 5rem;
 }
 
 @media screen and (min-width: 769px) {
-  #about-us .section-header p {
+  #customers-voice .section-header p {
     max-width: 50%;
     margin: 0 auto;
   }
 }
 ```
 
-## Each Row
+## Prepare images
+Then, download below images with small size.
 
-### Row 1
+- https://www.pexels.com/photo/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-photo-736716/
+- https://www.pexels.com/photo/adult-attractive-beautiful-beauty-415829/
+- https://www.pexels.com/photo/photography-of-a-guy-wearing-green-shirt-1222271/
+
+Then, move under **`img`** folder.
+
+## Each `col`
 ```html
-<div class="row">
-  <div class="col-md-6">
-    <!-- highlight-start -->
-    <img
-      src="img/undraw_mobile_wireframe_euf4.svg"
-      class="img-fluid"
-      alt=""
-    />
-    <!-- highlight-end -->
-  </div>
-
-  <!-- highlight-start -->
-  <div
-    class="col-md-6 d-flex flex-column justify-content-center"
-  >
-    <h3 class="mb-4">Easy to customize</h3>
-    <p>
-      One pacifice typi tot hic successum sed nulla id orci pulvinar non
-      modo in minim, rem, eos quam unde germania. Quo cum per turpis
-      sanguinis nunc nicolae peccat.
-    </p>
-    <a href="#" class="font-weight-bold"
-      >See ways how to customize
-      <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
-  </div>
-  <!-- highlight-end -->
-</div>
-```
-
-### Row 2
-```html
-<div class="row">
-  <!-- highlight-next-line -->
-  <div class="col-md-6 order-md-2 mb-2">
-    <img src="img/undraw_breakfast_psiw.svg" class="img-fluid" alt="" />
-  </div>
-
-  <div
-    <!-- highlight-next-line -->
-    class="col-md-6 order-md-1 d-flex flex-column justify-content-center"
-  >
-    <h3 class="mb-4">Easy to make</h3>
-    <p>
-      One pacifice typi tot hic successum sed nulla id orci pulvinar non
-      modo in minim, rem, eos quam unde germania. Quo cum per turpis
-      sanguinis nunc nicolae peccat.
-    </p>
-    <a href="#" class="font-weight-bold">
-      See ways how to make
-      <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
+<div class="col-md-4 mb-4">
+  <div class="card w-100 shadow" style="border: none;">
+    <div class="card-body">
+      <div class="media mb-3">
+        <img
+          src="img/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg"
+          class="mr-3 rounded-circle"
+          alt="..."
+          style="width: 40px; height: 40px;"
+        />
+        <div class="media-body">
+          <h6 class="mb-0">Kenny Omega</h6>
+          <span class="text-muted" style="font-size: 0.8rem;">
+            @WWE wrestler
+          </span>
+        </div>
+      </div>
+      <p class="card-text text-muted">
+        Rem mus tibi vero metenda ea indignitatem modo. Harum netus
+        fames sit eius, memorabilem magistratu ille. Magna te eget dis
+        quod arduas victrici.
+      </p>
+    </div>
   </div>
 </div>
 ```
 
-#### Add margin and paddint to each row
-```css title="css/custom.css"
-#about-us .row {
-  margin-bottom: 10rem;
-  padding: 0 1.25rem;
-}
-```
-
-### Row 3
-This is almost same code with row 1.
-```html
-<div class="row">
-  <div class="col-md-6">
-    <img
-      src="img/undraw_personal_notebook_sobb.svg"
-      class="img-fluid"
-      alt=""
-    />
-  </div>
-
-  <div class="col-md-6 d-flex flex-column justify-content-center">
-    <h3 class="mb-4">Easy to memorize</h3>
-    <p>
-      One pacifice typi tot hic successum sed nulla id orci pulvinar non
-      modo in minim, rem, eos quam unde germania. Quo cum per turpis
-      sanguinis nunc nicolae peccat.
-    </p>
-    <a href="#" class="font-weight-bold">
-      See ways how to memorize
-      <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
-  </div>
-</div>
-```
-
-## Add padding to section#about-us
-```css
-#about-us {
-  padding-top: 5rem;
-}
-```
-
+### Bootstrap refs
+- `card`, `card-body`, `card-text`: https://getbootstrap.com/docs/4.4/components/card/#titles-text-and-links
+- `media`: https://getbootstrap.com/docs/4.4/components/media-object/
+- `rounded-circle`: https://getbootstrap.com/docs/4.4/utilities/borders/#border-radius
+- `text-muted`: https://getbootstrap.com/docs/4.4/utilities/colors/#color
 
 ## Final Code
 ```html title="index.html"
@@ -400,6 +311,190 @@ This is almost same code with row 1.
     </section>
     <!-- # About Us -->
 
+    <!-- How it works -->
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <h1 class="display-5 mb-4">How it works</h1>
+          <p>
+            Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="img/undraw_breakfast_psiw.svg"
+                style="width: 200px; height: 140px;"
+                alt=""
+              />
+            </div>
+            <div class="p-3">
+              <h5>
+                <div
+                  style="width: 22px;"
+                  class="badge badge-primary align-top mr-2"
+                >
+                  1
+                </div>
+                Make breakfast
+              </h5>
+              <p>
+                Cum similitudinem vero te nisi fructum sem duis Desideriis's
+                quis similitudinem quos. Earum class metus iis duis,
+                recordatione crudelitas illa.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="img/undraw_Cautious_dog_q83f.svg"
+                style="width: 200px; height: 140px;"
+                alt=""
+              />
+            </div>
+            <div class="p-3">
+              <h5>
+                <div
+                  style="width: 22px;"
+                  class="badge badge-primary align-top mr-2"
+                >
+                  2
+                </div>
+                Feeding
+              </h5>
+              <p>
+                Cum similitudinem vero te nisi fructum sem duis Desideriis's
+                quis similitudinem quos. Earum class metus iis duis,
+                recordatione crudelitas illa.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="img/undraw_Modern_woman_lxh7.svg"
+                style="width: 200px; height: 140px;"
+                alt=""
+              />
+            </div>
+            <div class="p-3">
+              <h5>
+                <div
+                  style="width: 22px;"
+                  class="badge badge-primary align-top mr-2"
+                >
+                  3
+                </div>
+                Dog walking
+              </h5>
+              <p>
+                Cum similitudinem vero te nisi fructum sem duis Desideriis's
+                quis similitudinem quos. Earum class metus iis duis,
+                recordatione crudelitas illa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- # How it works -->
+
+    <!-- highlight-start -->
+    <!-- Customers Voice -->
+    <section id="customers-voice">
+      <div class="container">
+        <div class="section-header text-center">
+          <h1 class="display-5 mb-4">What our customers say</h1>
+          <p>
+            Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card w-100 shadow" style="border: none;">
+              <div class="card-body">
+                <div class="media mb-3">
+                  <img
+                    src="img/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg"
+                    class="mr-3 rounded-circle"
+                    alt="..."
+                    style="width: 40px; height: 40px;"
+                  />
+                  <div class="media-body">
+                    <h6 class="mb-0">Kenny Omega</h6>
+                    <span class="text-muted" style="font-size: 0.8rem;">
+                      @WWE wrestler
+                    </span>
+                  </div>
+                </div>
+                <p class="card-text text-muted">
+                  Rem mus tibi vero metenda ea indignitatem modo. Harum netus
+                  fames sit eius, memorabilem magistratu ille. Magna te eget dis
+                  quod arduas victrici.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card w-100 shadow" style="border: none;">
+              <div class="card-body">
+                <div class="media mb-3">
+                  <img
+                    src="img/adult-attractive-beautiful-beauty-415829.jpg"
+                    class="mr-3 rounded-circle"
+                    alt="..."
+                    style="width: 40px; height: 40px;"
+                  />
+                  <div class="media-body">
+                    <h6 class="mb-0">Ema Wasignton</h6>
+                    <span class="text-muted" style="font-size: 0.8rem;">
+                      @CEO of testfy
+                    </span>
+                  </div>
+                </div>
+                <p class="card-text text-muted">
+                  Rem mus tibi vero metenda ea indignitatem modo. Harum netus
+                  fames sit eius, memorabilem magistratu ille. Magna te eget dis
+                  quod arduas victrici.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card w-100 shadow" style="border: none;">
+              <div class="card-body">
+                <div class="media mb-3">
+                  <img
+                    src="img/photography-of-a-guy-wearing-green-shirt-1222271.jpg"
+                    class="mr-3 rounded-circle"
+                    alt="..."
+                    style="width: 40px; height: 40px;"
+                  />
+                  <div class="media-body">
+                    <h6 class="mb-0">Vince McMahon</h6>
+                    <span class="text-muted" style="font-size: 0.8rem;">
+                      @CEO of WWE
+                    </span>
+                  </div>
+                </div>
+                <p class="card-text text-muted">
+                  Rem mus tibi vero metenda ea indignitatem modo. Harum netus
+                  fames sit eius, memorabilem magistratu ille. Magna te eget dis
+                  quod arduas victrici.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- # Customers Voice -->
+    <!-- highlight-end -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -480,4 +575,41 @@ body {
   margin-bottom: 10rem;
   padding: 0 1.25rem;
 }
+
+/* How it works
+------------------- */
+#how-it-works {
+  padding: 5rem 0;
+  background-color: #ecf5ff;
+}
+
+#how-it-works .section-header {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 769px) {
+  #how-it-works .section-header p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* highlight-start */
+/* Customers voice
+-------------------- */
+#customers-voice {
+  padding: 5rem 0;
+}
+
+#customers-voice .section-header {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 769px) {
+  #customers-voice .section-header p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+/* highlight-end */
 ```

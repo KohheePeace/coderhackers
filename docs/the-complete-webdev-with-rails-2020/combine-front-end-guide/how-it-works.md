@@ -1,179 +1,106 @@
 ---
-title: About Us Section
+title: How it works section
 ---
 
 ## Goal
-- ⚡ Make about us section
-
-## Prepare images
-Download images from https://undraw.co/search with `#00B0FF` color. 
-
-Please search, download, move to `img` folder and rename it.
-
-| Search Word       |
-| ----------------- |
-| mobile wireframe  |
-| breakfast         |
-| personal notebook |
-| Cautious dog      |
-| Modern woman      |
-
+- ⚡ Make "How it works" section
 
 ## Boilerplate
 ```html
-<!-- About Us -->
-<section id="about-us">
+<!-- How it works -->
+<section id="how-it-works">
   <div class="container">
-    <div class="section-header">
-      <h1>About Us</h1>
+    <div class="section-header text-center">
+      <h1 class="display-5 mb-4">How it works</h1>
       <p>
         Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore.
       </p>
     </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-    </div>
   </div>
 </section>
-<!-- # About Us -->
+<!-- # How it works -->
 ```
 
-## Section header
-```html
-<div class="section-header text-center">
-  <h1 class="display-5 mb-4">About Us</h1>
-  <p>
-    Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore.
-  </p>
-</div>
+## Section css
+```css title="css/custom.css"
+/* How it works
+------------------- */
+#how-it-works {
+  padding: 5rem 0;
+  background-color: #ecf5ff;
+}
 ```
+
+## Section Header
+This is same code with "about us" section.
 
 ```css title="css/custom.css"
-#about-us .section-header {
+#how-it-works .section-header {
   margin-bottom: 5rem;
 }
 
 @media screen and (min-width: 769px) {
-  #about-us .section-header p {
+  #how-it-works .section-header p {
     max-width: 50%;
     margin: 0 auto;
   }
 }
 ```
 
-## Each Row
+## Prepare row and column
 
-### Row 1
 ```html
 <div class="row">
-  <div class="col-md-6">
-    <!-- highlight-start -->
-    <img
-      src="img/undraw_mobile_wireframe_euf4.svg"
-      class="img-fluid"
-      alt=""
-    />
-    <!-- highlight-end -->
+  <div class="col-lg-4">
   </div>
-
-  <!-- highlight-start -->
-  <div
-    class="col-md-6 d-flex flex-column justify-content-center"
-  >
-    <h3 class="mb-4">Easy to customize</h3>
-    <p>
-      One pacifice typi tot hic successum sed nulla id orci pulvinar non
-      modo in minim, rem, eos quam unde germania. Quo cum per turpis
-      sanguinis nunc nicolae peccat.
-    </p>
-    <a href="#" class="font-weight-bold"
-      >See ways how to customize
-      <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
+  <div class="col-lg-4">
   </div>
-  <!-- highlight-end -->
-</div>
-```
-
-### Row 2
-```html
-<div class="row">
-  <!-- highlight-next-line -->
-  <div class="col-md-6 order-md-2 mb-2">
-    <img src="img/undraw_breakfast_psiw.svg" class="img-fluid" alt="" />
-  </div>
-
-  <div
-    <!-- highlight-next-line -->
-    class="col-md-6 order-md-1 d-flex flex-column justify-content-center"
-  >
-    <h3 class="mb-4">Easy to make</h3>
-    <p>
-      One pacifice typi tot hic successum sed nulla id orci pulvinar non
-      modo in minim, rem, eos quam unde germania. Quo cum per turpis
-      sanguinis nunc nicolae peccat.
-    </p>
-    <a href="#" class="font-weight-bold">
-      See ways how to make
-      <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
+  <div class="col-lg-4">
   </div>
 </div>
 ```
 
-#### Add margin and paddint to each row
-```css title="css/custom.css"
-#about-us .row {
-  margin-bottom: 10rem;
-  padding: 0 1.25rem;
-}
-```
-
-### Row 3
-This is almost same code with row 1.
+## column 1
 ```html
-<div class="row">
-  <div class="col-md-6">
+<div class="col-lg-4">
+  <div class="text-center">
     <img
-      src="img/undraw_personal_notebook_sobb.svg"
-      class="img-fluid"
+      src="img/undraw_breakfast_psiw.svg"
+      style="width: 200px; height: 140px;"
       alt=""
     />
   </div>
-
-  <div class="col-md-6 d-flex flex-column justify-content-center">
-    <h3 class="mb-4">Easy to memorize</h3>
+  <div class="p-3">
+    <h5>
+      <div
+        style="width: 22px;"
+        class="badge badge-primary align-top mr-2"
+      >
+        1
+      </div>
+      Make breakfast
+    </h5>
     <p>
-      One pacifice typi tot hic successum sed nulla id orci pulvinar non
-      modo in minim, rem, eos quam unde germania. Quo cum per turpis
-      sanguinis nunc nicolae peccat.
+      Cum similitudinem vero te nisi fructum sem duis Desideriis's
+      quis similitudinem quos. Earum class metus iis duis,
+      recordatione crudelitas illa.
     </p>
-    <a href="#" class="font-weight-bold">
-      See ways how to memorize
-      <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
-    </a>
   </div>
 </div>
 ```
+### Bootstrap refs
+- `text-center`: https://getbootstrap.com/docs/4.4/utilities/text/#text-alignment
+- `badge badge-primary`: https://getbootstrap.com/docs/4.4/components/badge/
+- `align-top`: https://getbootstrap.com/docs/4.4/utilities/vertical-align/
 
-## Add padding to section#about-us
-```css
-#about-us {
-  padding-top: 5rem;
-}
+
+Then, just copy and paste this to make 2, 3 column.
+
+## Responsive margin
+```html
+<div class="col-lg-4 mb-5 mb-lg-0">
 ```
-
 
 ## Final Code
 ```html title="index.html"
@@ -400,6 +327,99 @@ This is almost same code with row 1.
     </section>
     <!-- # About Us -->
 
+    <!-- highlight-start -->
+    <!-- How it works -->
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <h1 class="display-5 mb-4">How it works</h1>
+          <p>
+            Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="img/undraw_breakfast_psiw.svg"
+                style="width: 200px; height: 140px;"
+                alt=""
+              />
+            </div>
+            <div class="p-3">
+              <h5>
+                <div
+                  style="width: 22px;"
+                  class="badge badge-primary align-top mr-2"
+                >
+                  1
+                </div>
+                Make breakfast
+              </h5>
+              <p>
+                Cum similitudinem vero te nisi fructum sem duis Desideriis's
+                quis similitudinem quos. Earum class metus iis duis,
+                recordatione crudelitas illa.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="img/undraw_Cautious_dog_q83f.svg"
+                style="width: 200px; height: 140px;"
+                alt=""
+              />
+            </div>
+            <div class="p-3">
+              <h5>
+                <div
+                  style="width: 22px;"
+                  class="badge badge-primary align-top mr-2"
+                >
+                  2
+                </div>
+                Feeding
+              </h5>
+              <p>
+                Cum similitudinem vero te nisi fructum sem duis Desideriis's
+                quis similitudinem quos. Earum class metus iis duis,
+                recordatione crudelitas illa.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="text-center">
+              <img
+                src="img/undraw_Modern_woman_lxh7.svg"
+                style="width: 200px; height: 140px;"
+                alt=""
+              />
+            </div>
+            <div class="p-3">
+              <h5>
+                <div
+                  style="width: 22px;"
+                  class="badge badge-primary align-top mr-2"
+                >
+                  3
+                </div>
+                Dog walking
+              </h5>
+              <p>
+                Cum similitudinem vero te nisi fructum sem duis Desideriis's
+                quis similitudinem quos. Earum class metus iis duis,
+                recordatione crudelitas illa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- # How it works -->
+    <!-- highlight-end -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -480,4 +500,24 @@ body {
   margin-bottom: 10rem;
   padding: 0 1.25rem;
 }
+
+/* highlight-start */
+/* How it works
+------------------- */
+#how-it-works {
+  padding: 5rem 0;
+  background-color: #ecf5ff;
+}
+
+#how-it-works .section-header {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 769px) {
+  #how-it-works .section-header p {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+/* highlight-end */
 ```

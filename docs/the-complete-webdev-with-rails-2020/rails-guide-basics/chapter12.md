@@ -5,10 +5,10 @@ Ref: https://guides.rubyonrails.org/getting_started.html#updating-articles
 
 We are in the middle of learning **CRUD**.
 
-* [x] C: Create
-* [x] R: Read
-* [ ] ==U: Update==
-* [ ] D: Delete
+* ✅ C: Create
+* ✅ R: Read
+* ⬜ ==U: Update==
+* ⬜ D: Delete
 
 In this chapter, we will fix last chapter error.
 
