@@ -3,10 +3,19 @@ title: Footer
 ---
 
 
+## Goal
+- ⚡ Make Footer
+
+![](../../img/2020-05-05-09-44-00.png)
+
 ## Footer
+Copy code from here
+
 https://getbootstrap.com/docs/4.3/examples/product/
 
-```html
+
+Then, paste it
+```html title="index.html"
 <!-- Footer -->
 <footer class="container py-5">
   <div class="row">
@@ -55,4 +64,23 @@ https://getbootstrap.com/docs/4.3/examples/product/
   </div>
 </footer>
 <!-- # Footer -->
+```
+
+## Change color
+```css title="css/custom.css"
+/* Footer
+------------------- */
+footer {
+  background: #2f2e41;
+  color: white;
+}
+```
+
+## Fix footer
+```html
+<footer class="py-5 px-2">
+  <div class="container">
+    ...
+  </div>
+</footer>
 ```
