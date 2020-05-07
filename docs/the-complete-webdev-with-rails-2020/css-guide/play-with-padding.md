@@ -2,9 +2,8 @@
 title: Play with Padding
 ---
 
-## Overview
-In this step, we're going to
-- Learn `padding` syntax
+## Goal
+- ⚡ Learn `padding` syntax
 
 
 ## Padding - Individual Sides

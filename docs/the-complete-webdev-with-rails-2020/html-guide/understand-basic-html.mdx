@@ -2,12 +2,10 @@
 title: Understand basic HTML
 ---
 
-## Overview
+## Goal
 
-In this chapter, we are going to
-
-- Understand last chapter HTML code
-- Acquire the habit of googling
+- ⚡ Understand last chapter HTML code
+- 🔥 Acquire the habit of googling
 
 ## Check the meaning of the HTML code
 
@@ -19,23 +17,23 @@ This is the code we used in the last chapter.
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
-    Content of the document......
+    Hello World!
   </body>
 </html>
 ```
 
 Let's check this code from top to bottom.
 
-### 1. `<!DOCTYPE html>`
+## 1. `<!DOCTYPE html>`
 
-Let's google "**what is doctype in html**"
+Googling "**what is doctype in html**"
 
 I choose this link https://www.geeksforgeeks.org/html-doctypes/
 
@@ -47,20 +45,38 @@ So, if you want to use **`HTML 4.01 Strict`** version...
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 ```
 
-### 2. `<head>`
+## 2. `<html>` tag
 
-Let's google **"what is head tag of html"**
+> The `<html>` tag tells the browser that **this is an HTML document**.
+>
+> The `<html>` tag represents **the root of an HTML document**.
+>
+> The `<html>` tag is **the container for all other HTML elements** (except for the <!DOCTYPE> tag).
 
-> The `<head>` element is a container for metadata (data about data) and is placed between the `<html>` tag and the `<body>` tag.
+https://www.w3schools.com/tags/tag_html.asp
+
+### `lang` attribute
+
+> The `lang` attribute **specifies the language of the element's content.**
+
+> Common examples are "en" for English, "es" for Spanish, "fr" for French, and so on.
+
+https://www.w3schools.com/tags/att_global_lang.asp
+
+## 3. `<head>`
+
+Googling **"html head tag"**
+
+> The `<head>` element is a **container for metadata (data about data)** and is placed between the `<html>` tag and the `<body>` tag.
 > HTML metadata is data about the HTML document. **Metadata is not displayed.**
 > Metadata typically define the document title, character set, styles, scripts, and other meta information.
 > The following tags describe metadata: `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, and `<base>`.
 
 https://www.w3schools.com/html/html_head.asp
 
-### 3. `<meta charset="UTF-8">`
+## 3. `<meta charset="UTF-8">`
 
-Let's google **"meta charset=UTF-8"**
+Googling **"meta charset=UTF-8"**
 
 > The charset attribute specifies the character encoding for the HTML document.
 
@@ -105,12 +121,36 @@ Ref: https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8
 Always using **`UTF-8`** is enough.
 :::
 
-### 4. `<title>`
+## 4. `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
+
+Googling **"meta viewport"**
+
+> You should include the following `<meta>` viewport element in all your web pages:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+> A `<meta>` viewport element gives the browser instructions on **`how to control the page's dimensions and scaling`**.
+
+> The `width=device-width` part **`sets the width of the page`** to follow **`the screen-width of the device`** (which will vary depending on the device).
+
+> The `initial-scale=1.0` part sets the initial **`zoom level when the page is first loaded`** by the browser.
+
+https://www.w3schools.com/css/css_rwd_viewport.asp
+
+:::tip
+Just adding the default one is enough.
+:::
+
+## 5. `<title>`
 
 You can easily understand what is `<title>` tag.
 ![What is title tag of html](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/html-guide/what-is-title-tag-of-html.gif)
 
-### 5. `<body>`
+## 6. `<body>`
+
+Googling **"html body tag"**
 
 > The `<body>` tag defines the document's body.
 > The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.

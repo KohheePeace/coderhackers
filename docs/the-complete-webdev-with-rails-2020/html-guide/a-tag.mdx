@@ -2,17 +2,15 @@
 title: <a> Tag
 ---
 
-## Overview
+## Goal
 
-In this step, we're going to
-
-- Learn how to use `<a>` tag
+- ⚡ Learn how to use `<a>` tag
 
 ## What is `<a>` tag ?
 
 > The `<a>` tag defines a hyperlink, which is <mark>**used to link from one page to another**</mark>.
 >
-> The most important attribute of the `<a>` element is the href attribute, which indicates the link's destination.
+> The most important attribute of the `<a>` element is the <mark>**href**</mark> attribute, which indicates **the link's destination**.
 
 https://www.w3schools.com/tags/tag_a.asp
 
@@ -20,10 +18,11 @@ https://www.w3schools.com/tags/tag_a.asp
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
 
   <body>
@@ -49,11 +48,17 @@ https://www.w3schools.com/tags/tag_a.asp
 </html>
 ```
 
+![](../../img/20200507_224112.gif)
+
 ## Navigate to different file
+
+I will show how to navigate to the different file.
+
+### Make `test2.html`
 
 Let's make `test2.html` by using VS code auto completion.
 
-```html title="test2.html"
+```html title="html-test/test2.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -71,10 +76,11 @@ Let's make `test2.html` by using VS code auto completion.
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
 
   <body>
@@ -101,6 +107,8 @@ Let's make `test2.html` by using VS code auto completion.
 </html>
 ```
 
+![](../../img/20200507_224542.gif)
+
 ## Try absolute Path
 
 Instead of this code
@@ -117,11 +125,4 @@ The below code also works.
 </a>
 ```
 
-:::note
-
-- This is **just a example to show absolute path**.
-- Ofcourse this is not working in real web because **only you can access your file system**.
-
-:::
-
-In the next step, let's check this `relative path` and `absolute path`.
+In the next step, let's check the difference of `relative path` and `absolute path`.

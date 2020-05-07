@@ -2,9 +2,8 @@
 title: Install google Chrome browser
 ---
 
-## Overview
-In this step, we're going to
-- Install google chrome browser
+## Goal
+- ⚡ Install google chrome browser
 
 
 ## Install

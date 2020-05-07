@@ -2,13 +2,11 @@
 title: Introduction to CSS
 ---
 
-## Overview
+## Goal
 
-In this chapter, we are going to...
-
-- Understand what is CSS
-- Try CSS
-- Learn CSS syntax
+- ⚡ Understand what is CSS
+- 🔥 Try CSS
+- 🌻 Learn CSS syntax
 
 ## What is CSS ?
 
@@ -25,13 +23,19 @@ That's it and let's try CSS.
 
 ### Start from this file
 
-```html title="test1.html"
+:::info
+  Make `css-test` folder and then create `test1.html`
+:::
+
+Let's start from this code.
+```html title="css/test1.html"
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Title of the document</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
 <body>
   <h1>Here is a title.</h1>
@@ -49,17 +53,21 @@ That's it and let's try CSS.
 
 ### Add style
 
-```html {7-10} title="test1.html"
+```html title="css/test1.html"
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Title of the document</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
+  <!-- highlight-start -->
   <style>
     h1 { color: white; background: navy; }
     ul { background: #FFFF33; }
   </style>
+  <!-- highlight-end -->
 </head>
 
 <body>
@@ -72,7 +80,6 @@ That's it and let's try CSS.
     <li>Milk</li>
   </ul>
 </body>
-
 </html>
 ```
 
@@ -89,11 +96,11 @@ Ref: https://www.tutorialrepublic.com/css-tutorial/css-syntax.php
 
 ```css
   h1 { color: white; background: navy; }
-  target { css-property: property-value; css-property: property-value; ... }
+  selector { css-property: property-value; css-property: property-value; ... }
 ```
 
-:::note
-1. `target-element` can be HTML tag (`h1`, `ul`, `li`...) or `Class` or `ID`. We will check it in the chapter after the next.
+:::info
+1. **`selector`** can be HTML tag (`h1`, `ul`, `li`...) or `Class` or `ID`. We will check it in the chapter after the next.
 2. You don't need to memorize all `css-property` **now**. You will get used to it at the end of this course.
 :::
 

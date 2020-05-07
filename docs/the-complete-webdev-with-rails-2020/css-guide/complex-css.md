@@ -2,15 +2,8 @@
 title: Complex CSS
 ---
 
-## Overview
-
-In this step, we are going to
-  - Make a part of real website for recapping what we've learned
-
-
-<!-- In this step, we are going to
-  - Understand only using CSS is troublesome
-  - Understand why we need Bootstrap -->
+## Goal
+  - ⚡ Make a part of real website for recapping what we've learned
 
 ## What we will make
 
@@ -25,7 +18,7 @@ A part of real world website.
 
 
 :::caution
-- You don't need to understand the code in this chapter **now**. **Just looking is enough**.
+- You don't need to understand the code in this chapter now. **Just looking or copying is enough**.
 - The purpose of this chapter is understanding **why Bootstrap is useful**.
 :::
 
@@ -194,11 +187,9 @@ ul {
 
 ## Summery
 
-What you need to learn from `test2.css`
-
-:::important
+:::important What you need to learn from this step
   1. You need to write a lot of CSS
   2. You need to get familiar with CSS
 :::
 
-By using **Bootstrap**, you can **easily make** cool website!
+By using **Bootstrap**, these problems are solved!

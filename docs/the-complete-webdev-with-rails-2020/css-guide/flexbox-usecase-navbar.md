@@ -1,10 +1,9 @@
 ---
-title: Flexbox Navbar
+title: Flexbox Usecase - Navbar
 ---
 
-## Overview
-In this step, we're going to
-- Make navbar by using Flexbox
+## Goal
+- ⚡ Make navbar by using Flexbox
 
 ![navbar-flexbox-goal](../../img/2020-04-29-06-45-20.png)
 
@@ -38,7 +37,7 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
 </html>
 ```
 
-#### Check the output
+#### Check the current output
 ![html-only-navbar](../../img/2020-04-29-05-06-10.png)
 
 ## Add class name
@@ -51,8 +50,10 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
     <title>Document</title>
   </head>
   <body>
+    <!-- highlight-next-line -->
     <nav class="navbar">
       <a href="#">Logo</a>
+      <!-- highlight-start -->
       <ul class="navbar-list">
         <li class="navbar-list-item"><a href="#">Features</a></li>
         <li class="navbar-list-item"><a href="#">Pricing</a></li>
@@ -60,6 +61,7 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
         <li class="navbar-list-item"><a href="#">Team</a></li>
         <li class="navbar-list-item"><a href="#">Contact</a></li>
       </ul>
+      <!-- highlight-end -->
       <button>Sign Up</button>
     </nav>
   </body>

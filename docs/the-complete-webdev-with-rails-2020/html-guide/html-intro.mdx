@@ -5,11 +5,9 @@ title: "Introduction to HTML"
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-## Overview
+## Goal
 
-In this step, we are going to
-
-- Learn basics of HTML.
+- ⚡ Learn basics of HTML.
 
 ## What is HTML ?
 
@@ -25,74 +23,52 @@ Web browser is something like below...
 ![Web-browser-screenshot](https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png)
 Image from: https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png
 
-## Let's write basic HTML!
+## Create project for this course
 
-### Create project
-
-We are going to make project in Desktop.
+We are going to make folder **`udemy-complete-web-dev`** in Desktop.
 
 In `terminal`
 
 ```bash
 cd ~/Desktop
-mkdir html-test # make directory
-cd html-test # change directory
+mkdir udemy-complete-web-dev # make directory
+cd udemy-complete-web-dev # change directory
 code . # open project in VS Code
 ```
 
+### Make `html-test` folder
+
+Please make **`html-test`** folder. This is a folder for HTML section.
+
+![make-html-test-folder](../../img/20200506_055038.gif)
+
 ### Make html file
 
-Make `test1.html`
+Make `test1.html` inside `html-test` folder.
 
-Copy and paste below code. I will explain the meaning of this code in the next step.
+Make html boilerplate by using VS code auto completion.
 
-```html title="test1.html"
+![](../../img/20200506_063148.gif)
+
+I will explain the meaning of this code in the next step.
+
+```html title="html-test/test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
-    Content of the document......
+    Hello World!
   </body>
 </html>
 ```
 
-Refs: https://www.w3schools.com/html/html5_intro.asp
+## Open this html file in chrome **web browser**.
 
-### Open this html file in chrome (**web browser**).
-
-In `terminal`
-
-<Tabs
-  groupId="operating-systems"
-  defaultValue="win"
-  values={[
-    { label: "Windows", value: "win" },
-    { label: "macOS", value: "mac" },
-  ]}
->
-<TabItem value="win">
-
-```powershell title="terminal"
-ii test1.html
-```
-
-</TabItem>
-<TabItem value="mac">
-
-```bash title="terminal"
-open test1.html
-```
-
-</TabItem>
-</Tabs>
-
-#### output
-
-![screenshot](../../img/2020-04-26-19-44-48.png)
+![open-first-html](../../img/20200506_070602.gif)
 
 ## Finish!
 

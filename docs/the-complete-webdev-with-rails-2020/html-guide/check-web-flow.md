@@ -2,11 +2,9 @@
 title: Check web flow
 ---
 
-## Overview
+## Goal
 
-In this step, we're going to
+- ⚡ Check the flow of web
 
-- Check the flow of web
-
-## Check web flow by using canva
-![check-web-flow](../../img/2020-04-27-20-16-18.png)
+## Check web flows
+![](../../img/2020-05-08-01-20-51.png)

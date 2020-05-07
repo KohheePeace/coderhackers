@@ -2,12 +2,10 @@
 title: 3 writing ways of CSS
 ---
 
-## Overview
+## Goal
+  - ⚡ Learn 3 writing ways of CSS
 
-In this chapter, we are going to
-  - Learn 3 writing ways of CSS
-
-### 1. Style tag
+## 1. Style tag
 
 This is just we did in the previous step.
 
@@ -18,14 +16,15 @@ This is just we did in the previous step.
 </style>
 ```
 
-### 2. Inline style
+## 2. Inline style
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
 
   <body>
@@ -43,7 +42,7 @@ This is just we did in the previous step.
 </html>
 ```
 
-### 3. External CSS file
+## 3. External CSS file
 
 **<mark>This is important to understand Bootstrap</mark>**
 
@@ -58,13 +57,15 @@ Edit `test1.html`
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Title of the document</title>
-  <!-- highlight-next-line -->
-  <link rel="stylesheet" href="test1.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+    <!-- highlight-next-line -->
+    <link rel="stylesheet" href="test1.css">
+  </head>
 
 <body>
   <h1>Here is a title.</h1>
@@ -76,7 +77,6 @@ Edit `test1.html`
     <li>Milk</li>
   </ul>
 </body>
-
 </html>
 ```
 
@@ -89,11 +89,13 @@ Current folder structure looks like this
 You see that **<mark>all 1, 2, 3 output is same.</mark>**
 :::
 
-In the next chapter, we will learn how to use **class** and **id** as an **css target**.
+In the next step, we will learn how to use **class** and **id** as an **css selector**.
 
 
 ## Refs
-You can check the pros and cons of each styling way. **But currently it is just enough to know there is 3 ways of writing CSS.**
+You can check the pros and cons of each styling way.
+
+**But currently it is just enough to know there is 3 ways of writing CSS.**
 - https://www.w3schools.com/css/css_howto.asp
 - https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
 - https://www.inmotionhosting.com/support/email/outlook/using-css/linking-your-css-to-your-website

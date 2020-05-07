@@ -2,9 +2,8 @@
 title: Flexbox
 ---
 
-## Overview
-In this step, we're going to
-- Learn **Flexbox**
+## Goal
+- ⚡ Learn **Flexbox**
 
 ## What is Flexbox ?
 > The Flexible Box Layout Module, **<mark>makes it easier to design flexible responsive layout</mark>** structure 

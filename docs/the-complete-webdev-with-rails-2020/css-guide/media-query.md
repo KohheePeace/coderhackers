@@ -2,9 +2,8 @@
 title: Media Query
 ---
 
-## Overview
-In this step, we're going to
-- Learn media query
+## Goal
+- ⚡ Learn media query
 
 ## What is media query ?
 
@@ -12,10 +11,13 @@ In this step, we're going to
 
 https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php
 
-You will easily understand media query if you use it.
+You will easily understand media query if you use it!
 
 ## Basic media query syntax
-**If the screen width is 480 px or wider**, background-color is `lightgreen`.
+
+:::info
+**If the screen width is `480px` or wider**, background-color becomes `lightgreen`.
+:::
 
 ```css
 @media screen and (min-width: 480px) {
@@ -29,7 +31,9 @@ You will easily understand media query if you use it.
 
 ![css-media-types](../../img/2020-04-28-21-56-24.png)
 
-So, don't care about it.
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+So, don't need to care about it.
 
 
 ## Try media query
@@ -92,3 +96,4 @@ Make `media-query.html` in `css-test` folder.
 ```
 
 ### Check the output
+![change-width-media-query](../../img/20200508_072257.gif)

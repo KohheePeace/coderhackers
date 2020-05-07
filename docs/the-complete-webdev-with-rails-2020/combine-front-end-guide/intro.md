@@ -7,7 +7,7 @@ title: Introduction
 
 In this section, we'll combine the knowledge we've learned so far and make real website like below.
 
-![preview-of-frontend-final.gif](../../img/20200503_063800.gif)
+![preview-of-frontend-final.gif](../../img/20200507_214000.gif)
 
 
 

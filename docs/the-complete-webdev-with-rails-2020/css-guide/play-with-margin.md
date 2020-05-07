@@ -2,9 +2,8 @@
 title: Play with Margin
 ---
 
-## Overview
-In this step, we're going to
-- Learn `margin` syntax
+## Goal
+- ⚡ Learn `margin` syntax
 
 
 ## Margin - Individual Sides
@@ -42,3 +41,5 @@ margin: 5px 1px 0 2px;
 > The browser selects a **<mark>suitable margin to use.</mark>** For example, in certain cases this value **<mark>can be used to center an element.</mark>**
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+
+![margin-auto](../../img/20200508_061215.gif)

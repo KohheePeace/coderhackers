@@ -2,41 +2,40 @@
 title: Class and ID
 ---
 
-## Overview
+## Goal
 
-In this step, we are going to
-
-- Learn how to use **class** and **id** for css styling target
+- ⚡Learn how to use **`class`** and **`id`** for css selector.
 
 ## Class and ID
-In addition to HTML tag like `<h1>`, you can use **class** and **id** as **css target**.
+In addition to HTML tag like `<h1>`, you can use **class** and **id** as **css selector**.
 
 And this is more common way to apply CSS.
 
 Let's edit `test1.html` file like below.
 
-```html title="test1.html"
+```html title="css/test1.html"
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Title of the document</title>
-  <link rel="stylesheet" href="test1.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<body>
-  <h1>Here is a title.</h1>
-  <h2>Here is a subtitle.</h2>
+    <link rel="stylesheet" href="test1.css" />
+  </head>
 
-  <ul>
-    <!-- highlight-start -->
-    <li class="drink" id="coffee">Coffee</li>
-    <li class="drink tea">Tea</li>
-    <li class="drink">Milk</li>
-    <!--  highlight-end -->
-  </ul>
-</body>
+  <body>
+    <h1>Here is a title.</h1>
+    <h2>Here is a subtitle.</h2>
 
+    <ul>
+      <!-- highlight-start -->
+      <li class="drink" id="coffee">Coffee</li>
+      <li class="drink tea">Tea</li>
+      <li class="drink">Milk</li>
+      <!--  highlight-end -->
+    </ul>
+  </body>
 </html>
 ```
 `test1.css`
@@ -97,7 +96,7 @@ So...
 </ul>
 ```
 
-:::note
+:::tip
 - Even if you wrongly use same `id`, it works.
 - Don't worry too much.
 :::

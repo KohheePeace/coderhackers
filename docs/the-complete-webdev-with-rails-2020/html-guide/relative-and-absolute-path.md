@@ -2,16 +2,13 @@
 title: Absolute and Relative Path
 ---
 
-## Overview
-In this step, we're going to
+## Goal
+- ⚡ Learn **Absolute** and **Relative** Path
 
-- Learn **Absolute** and **Relative** Path
-
-![relative-absolute-path](../../img/relative-absolute-path.png.png)
-
+![relative-absolute-path](../../img/2020-05-08-01-14-31.png)
 
 ## Absolute Path
-Absolute path is **exact location of your file** in your PC.
+**`Absolute path`**: **Exact location of your file** in your PC.
 
 Something like
 

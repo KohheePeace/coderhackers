@@ -2,11 +2,9 @@
 title: <img> tag
 ---
 
-## Overview
+## Goal
 
-In this step, we're going to
-
-- Learn how to use `<img>` tag
+- ⚡ Learn how to use `<img>` tag
 
 ## What is `img` tag ?
 
@@ -16,7 +14,7 @@ https://www.w3schools.com/tags/tag_img.asp
 
 ## Try `img` tag
 
-Googling **"public domain cats image wiki commons"**
+Googling: **"public domain cats image wiki commons"**
 
 And then, please **"copy image address"**
 ![copy-img-address](../../img/20200427_041422.gif)
@@ -25,12 +23,12 @@ In `test1.html`
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
     <h1>Here is a title.</h1>
     <h2>Here is a subtitle.</h2>
@@ -62,12 +60,12 @@ Add `width` and `height` attributes to adjust image size.
 
 ```html title="test1.html"
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
     <h1>Here is a title.</h1>
     <h2>Here is a subtitle.</h2>
@@ -102,18 +100,18 @@ Add `width` and `height` attributes to adjust image size.
 
 https://www.w3schools.com/tags/att_img_alt.asp
 
-## Try `alt` attributes
+## Try and check `alt` attributes
 
 Add `alt="Hello this is cat image"` to `img` tag.
 
-```html title="test1.html"
+```html title="test1.html" {20}
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
     <h1>Here is a title.</h1>
     <h2>Here is a subtitle.</h2>
@@ -124,14 +122,12 @@ Add `alt="Hello this is cat image"` to `img` tag.
       <li>Milk</li>
     </ul>
 
-    <!-- highlight-start -->
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/2/28/Tortoiseshell_she-cat.JPG"
       alt="Hello this is cat image"
       width="320"
       height="320"
     />
-    <!-- highlight-end -->
   </body>
 </html>
 ```

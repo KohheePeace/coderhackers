@@ -2,8 +2,8 @@
 title: Deploy
 ---
 
-- Learn how to deploy.
-- Learn how to use deploy service.
+## Goal
+- ⚡ Learn how to deploy.
 
 ## What is deploy?
 > **Software deployment** is all of the activities that **make a software system available for use**.
@@ -23,27 +23,30 @@ Please
 
 In `terminal`
 ```sh
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ node -v
+node -v
+# highlight-next-line
 v10.10.0
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ npm -v
+npm -v
+# highlight-next-line
 6.4.1
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ 
 ```
 
-If you have not installed node js, please download nodejs.
+If you have not installed node js,
+
+please download nodejs <mark>**"LTS"** version</mark>
 
 https://nodejs.org/
 
-You will find tutorial to download on youtube.
 
-After you finish dowload, please check if it shows version.
+After you finish download, please check if it shows version.
 
-```bash
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ node -v
+```sh
+node -v
+# highlight-next-line
 v10.10.0
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ npm -v
+npm -v
+# highlight-next-line
 6.4.1
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ 
 ```
 
 ## Zeit "now"
@@ -76,7 +79,7 @@ Under the `bootstrap-combine-demo` folder,
 Just type **`now`**
 
 ```sh title="terminal"
-kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ now
+$ now
 > Deploying ~/Code/important/bootstrap-combine-demo under kohheepeace
 > Using project bootstrap-combine-demo
 > Synced 198 files (2.24MB) [3s]
@@ -85,6 +88,3 @@ kohheepeace@kohheepeacenoMacBook bootstrap-combine-demo $ now
 ```
 
 Visit URL...
-
-
-## Summery
