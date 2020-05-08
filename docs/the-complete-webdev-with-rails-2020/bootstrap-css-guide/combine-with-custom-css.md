@@ -3,10 +3,8 @@ title: Combine with custom CSS
 ---
 
 
-## Overview
-
-In this step, we're going to
-  - Combine custom CSS with Bootstrap CSS
+## Goal
+  - ⚡ Combine custom CSS with Bootstrap CSS
 
 
 ## Why ?
@@ -29,18 +27,18 @@ As shown below gif,
 
 ![change-jumbotron-css](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/change-jumbotron-css.gif)
 
-### Make `test3.css`
+### Make `bootstrap-test-1.css`
 
 Copy and Paste and delete unnecessary part.
 
-`test3.css`
+`bootstrap-test-1.css`
 ```css
 .jumbotron {
   background-color: yellow;
 }
 ```
 
-### Import `test3.css`
+### Import `bootstrap-test-1.css`
 
 ```html {11,12} title="test3.html"
 <!doctype html>
@@ -54,7 +52,7 @@ Copy and Paste and delete unnecessary part.
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="test3.css">
+    <link rel="stylesheet" href="bootstrap-test-1.css">
     <title>Hello, world!</title>
   </head>
   ...
@@ -81,7 +79,7 @@ Next, we want to make **"Hello, world!"** text bold.
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="test3.css">
+    <link rel="stylesheet" href="bootstrap-test-1.css">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -98,10 +96,3 @@ Next, we want to make **"Hello, world!"** text bold.
   </body>
 </html>
 ```
-
-:::note
-Of course, you can use `external css` to make **"Hello, world!"** bold
-:::
-
-
-## 3. Change button color

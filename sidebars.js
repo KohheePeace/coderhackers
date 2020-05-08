@@ -102,10 +102,10 @@ module.exports = {
     },
     {
       "Bootstrap CSS": [
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/intro",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-css-intro",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/play-with-bootstrap",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/component",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/layout",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/components",
+        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/grid-layout",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/col",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/combine-with-custom-css",
         // "the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-examples-page",

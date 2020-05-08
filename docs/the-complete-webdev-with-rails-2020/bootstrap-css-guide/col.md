@@ -2,38 +2,44 @@
 title: More detail of col
 ---
 
-## Overview
-In this step, we're going to
-- Learn `col-` in detail
+## Goal
+- ⚡ Learn `col-` in detail
 
 
 ## Understand `col-`
 Let's consider more real use case and understand **`col-`**
 
-:::note Real use case
+:::info Real use case
 - Laptop => 6 columns
 - iPad => 3 columns
 - mobile => 1 column
 :::
 
-### Prepare 6 col
+## Prepare 6 col
+Replace existing `col-sm` in `bootstrap-test1.html` with 6 `col`
 ```html
 <div class="col">
   <div class="card" style="width: 100%;">
-    <img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/05-thumbnail.jpg"
-      class="card-img-top" alt="...">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
+      class="card-img-top"
+      alt="..."
+    />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 </div>
 ```
+So, the code becomes...
 
-#### Current code
-```html title="test3.html"
+### Current code
+```html title="bootstrap-test1.html"
 <!doctype html>
 <html lang="en">
 
@@ -192,80 +198,101 @@ Let's consider more real use case and understand **`col-`**
 </html>
 ```
 
-#### Check current output with multiple devices
+### Check the current output
 Only using **`col-`** doesn't satisfy the specification
 
-![bootstrap-grid-system-various-device-chrome-devtool](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-grid-system-various-device-chrome-devtool.gif)
-
-### Mobile
-So, let's start from mobile layout.
-
-:::note Specification
+:::info specification
 - Laptop => 6 columns
 - iPad => 3 columns
-- **mobile => 1 column**
+- mobile => 1 column
 :::
 
-#### Check device width
-You can see **"Pixel 2"** layout width is **411**
-![this-is-device-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/this-is-device-width.png)
+![bootstrap-grid-system-various-device-chrome-devtool](../../img/20200509_020555.gif)
 
-#### Check grid options tables
+
+## Mobile
+So, let's start from mobile layout.
+
+:::info Specification
+- ⬜ Laptop => 6 columns
+- ⬜ iPad => 3 columns
+- <mark>⬜ mobile => 1 column</mark>
+:::
+
+### Check device width
+You see **"Pixel 2"** viewport width is **411**px
+
+![](../../img/2020-05-09-05-02-15.png)
+
+### Check grid options tables
 Then, check this link https://getbootstrap.com/docs/4.3/layout/grid/#grid-options
 
 ![bootstrap-grid-options](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-grid-options-mobile_LI%20(2).jpg)
 
-:::note
-- As above image, use `col-` toward mobile layout.
-- We want mobile layout **1 column** => `col-12`
+:::tip
+- As shown above image, we should use `col-` for mobile layout (**411px** < 576px).
+- We want mobile layout **1 column**, => use `col-12`
 :::
 
-I will explain `col-12` after finishing iPad layout.
+I will explain why <mark>`col-12` for **1 column**</mark> after finishing iPad layout.
 
+Change every `col` to `col-12`
 ```html
 <!-- highlight-next-line -->
 <div class="col-12">
   <div class="card" style="width: 100%;">
-    <img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/05-thumbnail.jpg"
-      class="card-img-top" alt="...">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
+      class="card-img-top"
+      alt="..."
+    />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 </div>
 ```
 
-### iPad
-:::note Specification
-- Laptop => 6 columns
-- **iPad => 3 columns**
-- mobile => 1 column
+## iPad
+:::info Specification
+- ⬜ Laptop => 6 columns
+- <mark>⬜ iPad => 3 columns</mark>
+- ✅ mobile => 1 column
 :::
 
-#### Check device width
-![iPad-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/ipad-width-chrome-dev-tools.png)
+### Check device width
+![](../../img/2020-05-09-05-13-58.png)
 
-#### Grid options table
-![grid-options-table](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-06-06-49.png)
+### Grid options table
+![](../../img/2020-05-09-05-15-12.png)
 
 :::note
 - So, we need to use `col-md`
 - We want **3 columns** for iPad => `col-md-4`
 :::
 
+
+Add every `col-md-4` to every column.
 ```html
 <!-- highlight-next-line -->
 <div class="col-12 col-md-4">
   <div class="card" style="width: 100%;">
-    <img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/05-thumbnail.jpg"
-      class="card-img-top" alt="...">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
+      class="card-img-top"
+      alt="..."
+    />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
@@ -279,45 +306,64 @@ I will explain `col-12` after finishing iPad layout.
 - **`col-*-12`** and **`1 column`** = **`12`**
 :::
 
-### Laptop
+## Laptop
 
-:::note Specification
-- **Laptop => 6 columns**
-- iPad => 3 columns
-- mobile => 1 column
+:::info Specification
+- <mark>⬜ Laptop => 6 columns</mark>
+- ✅ iPad => 3 columns
+- ✅ mobile => 1 column
 :::
 
-#### Check device width
+### Check device width
 
-![laptop-width](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/laptop-width.png)
+![](../../img/2020-05-09-05-18-52.png)
 
-#### Grid options table
-![grid-options-table](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-06-06-49.png)
+### Grid options table
+![](../../img/2020-05-09-05-19-48.png)
+
+But, `col-lg` also covers this device width.
+
+And we use `col-xl` to change layout for large desktop like monitor.
+
+So, `col-lg` is enough for normal desktop or laptop.
+
+![](../../img/2020-05-09-05-24-13.png)
+Ref: https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints
 
 :::note
-- So, we need to use **`col-xl`**
-- We want **6 columns** for laptop => **`col-xl-2`**
+- So, we use **`col-lg`** for desktop
+- We want **6 columns** for desktop => **`col-lg-2`**
 :::
 
+
+Add every `col-lg-2` to every column.
 ```html
-<div class="col-12 col-md-4 col-xl-2">
+<!-- highlight-next-line -->
+<div class="col-12 col-md-4 col-lg-2">
   <div class="card" style="width: 100%;">
-    <img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/05-thumbnail.jpg"
-      class="card-img-top" alt="...">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
+      class="card-img-top"
+      alt="..."
+    />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 </div>
 ```
 
-### Check the output
+## Check the output
 Confirm everything works well in Chrome DevTools here...
 
 ## So what is `col-sm` ?
 `col-sm` is 
 - Applied if device screen width **`≥576px`**
 - **Automatically** layout as equal width columns.
+
+https://getbootstrap.com/docs/4.4/layout/grid/#auto-layout-columns

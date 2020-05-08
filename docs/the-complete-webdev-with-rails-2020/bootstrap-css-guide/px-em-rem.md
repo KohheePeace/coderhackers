@@ -2,16 +2,14 @@
 title: px vs em vs rem
 ---
 
-## Overview
-In this step, we're going to
-- Learn the difference of `px` vs `em` vs `rem`
-
+## Goal
+- ⚡ Learn the difference of `px` vs `em` vs `rem`
 
 
 ## What is this ?
 Please make **`px-em-rem.html`** file in `bootstrap-test` folder.
 
-```html title="px-em-rem.html"
+```html title="bootstrap-test/px-em-rem.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -60,7 +58,7 @@ https://www.w3schools.com/cssref/css_units.asp
 <p class="i-am-2em">Hello I'm 2em</p>
 ```
 
-This default  font-size is `14px` which is inherited from the parent `em-area` class.
+This default  font-size is `14px` which is inherited from the parent `.em-area` class.
 
 That's why `2em` becomes `14px x 2 = 28px`.
 
@@ -80,6 +78,7 @@ you see
 ```
 also become bigger.
 
+![](../../img/20200509_074317.gif)
 
 ## What is `rem` ?
 > Relative to font-size of the root element	
@@ -109,19 +108,20 @@ you see
 ```
 also become bigger.
 
+![](../../img/20200509_074159.gif)
+
 
 
 ## Which should I use ?
-Bootstrap uses **`rem`**, so following **"When in Rome, do as the Romans do."** proverb,
+Bootstrap uses **`rem`**, so following **"When in Rome, do as the Romans do"** proverb.
 
-Let's use **`rem`** from now on towards
-
+Use **`rem`** towards these properties
 - `font-size`
 - `margin`
 - `padding`
 
 ## Refs
 
-Discussion in bootstrap issue: https://github.com/twbs/bootstrap/issues/19943
-
-https://stackoverflow.com/questions/11799236/should-i-use-px-or-rem-value-units-in-my-css
+Discussion about this topic: 
+- https://github.com/twbs/bootstrap/issues/19943
+- https://stackoverflow.com/questions/11799236/should-i-use-px-or-rem-value-units-in-my-css

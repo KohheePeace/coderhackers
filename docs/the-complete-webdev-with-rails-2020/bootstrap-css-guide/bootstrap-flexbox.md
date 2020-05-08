@@ -2,19 +2,16 @@
 title: Bootstrap Flexbox
 ---
 
-## Overview
-In this step, we're going to
-- 🚁 Learn bootstrap Flexbox class
+## Goal
+- ⚡ Learn bootstrap Flexbox class
 
 
 ## What is this ?
 Bootstrap provides flexbox utilities classes.
 
-By adding these **`class`**, you don't need to write your custom CSS to use Flexbox.
+By adding these **`classes`**, <mark>you don't need to write your custom CSS to use Flexbox.</mark>
 
 https://getbootstrap.com/docs/4.4/utilities/flex/
-
-**<mark>By using this you don't need to write CSS to add margin or padding.</mark>**
 
 
 ## For example

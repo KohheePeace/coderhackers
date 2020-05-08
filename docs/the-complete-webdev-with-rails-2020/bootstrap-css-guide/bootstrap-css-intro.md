@@ -2,10 +2,8 @@
 title: Introduction to Bootstrap
 ---
 
-## Overview
-
-In this step, we are going to
-- Understand what is **Bootstrap CSS**
+## Goal
+- ⚡ Understand what is **Bootstrap CSS**
 
 ## What is Bootstrap ?
 From wikipedia...
@@ -46,9 +44,10 @@ https://chrome.google.com/webstore/detail/javascript-and-css-code-b/iiglodndmmef
 ![beautified-bootstrap-ss](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/beautified-bootstrap-ss.png)
 
 
-
+:::info
 **You see this is a <mark>huge external CSS file</mark>.**
+:::
 
 This is the same thing we did in [last chapter](../css-guide/3-writing-ways-of-css#3-external-css-file).
 
-In the next chapter, let's play with bootstrap!
+In the next chapter, let's play with bootstrap CSS!
