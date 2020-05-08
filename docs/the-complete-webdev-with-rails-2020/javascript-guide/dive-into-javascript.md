@@ -2,7 +2,7 @@
 title: Dive into Javascript
 ---
 
-## Overview
+## Goal
 
 In the previous step, we learned the flow of the javascript code.
 

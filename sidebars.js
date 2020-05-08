@@ -116,7 +116,7 @@ module.exports = {
     },
     {
       JavaScript: [
-        "the-complete-webdev-with-rails-2020/javascript-guide/intro",
+        "the-complete-webdev-with-rails-2020/javascript-guide/javascript-intro",
         "the-complete-webdev-with-rails-2020/javascript-guide/get-used-to-javascript",
         // "the-complete-webdev-with-rails-2020/javascript-guide/play-with-javascript",
         "the-complete-webdev-with-rails-2020/javascript-guide/dom-document",
