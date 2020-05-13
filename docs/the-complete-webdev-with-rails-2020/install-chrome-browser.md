@@ -3,13 +3,23 @@ title: Install google Chrome browser
 ---
 
 ## Goal
+
 - ⚡ Install google chrome browser
 
-
 ## Install
-If you haven't installed google chrome browser, please install from this link.
+
+If you haven't installed google chrome browser, please install from the below link.
 
 https://www.google.com/chrome/
 
-## *Note
+
+:::tip
+Open link in new tab
+
+- `mac`: `cmd + click`
+- `windows`: `ctrl + click`
+:::
+
+:::caution
 Please **<mark>use google chrome browser</mark>** in this course.
+:::

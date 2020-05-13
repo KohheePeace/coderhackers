@@ -29,7 +29,7 @@ You will easily understand media query if you use it!
 
 "`screen`" can take values like "`all`", "`print`" as shown below image, but you almost never use expect "`screen`".
 
-![css-media-types](../../img/2020-04-28-21-56-24.png)
+![css-media-types](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-28-21-56-24.png)
 
 https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 
@@ -96,4 +96,4 @@ Make `media-query.html` in `css-test` folder.
 ```
 
 ### Check the output
-![change-width-media-query](../../img/20200508_072257.gif)
+![change-width-media-query](https://storage.googleapis.com/coderhackers-assets/docs/img/20200508_072257.gif)

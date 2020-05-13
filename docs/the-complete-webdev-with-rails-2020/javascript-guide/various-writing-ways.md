@@ -3,19 +3,19 @@ title: Various writing ways of JavaScript
 ---
 
 ## Goal
-- 🦁 Learn different writing styles of javascript
+- ⚡ Learn different writing styles of javascript
   
 ## Overview
 
 In this step, we'll be learning the different writing styles of javascript **which is doing the same things**.
 
-This is similar with what we did in CSS step.
+**This is similar with what we did in CSS section.**
 
 
 ## Preparation
-Make `test2.html` in `js-test` folder.
+Make `js-test2.html` in `javascript-test` folder.
 
-```html title="test2.html"
+```html title="js-test2.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,15 +80,12 @@ Check it also works.
 </script>
 ```
 
-### Refs: Event type
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-
 
 ## 4. Separate js file
 This is important to understand Bootstrap js.
 
-Make `script4.js`
-```js title="script4.js"
+Make `js-test2.js`
+```js title="js-test2.js"
 let demoElement = document.getElementById("demo");
 
 demoElement.addEventListener("click", function () {
@@ -97,9 +94,9 @@ demoElement.addEventListener("click", function () {
 });
 ```
 
-Import `script4.js` in `test4.html`
+Import `js-test2.js` in `js-test2.html`
 
-```html title="test4.html"
+```html title="js-test2.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -111,7 +108,7 @@ Import `script4.js` in `test4.html`
     <div id="demo">Click here</div>
 
     <!-- highlight-next-line -->
-    <script src="script4.js"></script>
+    <script src="js-test2.js"></script>
   </body>
 </html>
 ```
@@ -132,7 +129,7 @@ https://www.w3schools.com/js/js_whereto.asp
     <title>Document</title>
 
     <!-- highlight-next-line -->
-    <script src="script4.js"></script>
+    <script src="js-test2.js"></script>
   </head>
   <body>
     <div id="demo">Click here</div>
@@ -140,14 +137,22 @@ https://www.w3schools.com/js/js_whereto.asp
 </html>
 ```
 
-:::note
+:::caution
 **But**, if you import script tag in `<head>`, **it doesn't work**.
 
-This is because HTML file is read from top to bottom by browser.
+This is because 
 
-Because this js file is before **`<div id="demo">Click here</div>`**
+- HTML file is read from top to bottom by browser.
+- When js file is read
 
-This js file cannot access DOM.
+```html
+<div id="demo">Click here</div>
+```
+
+is not loaded yet.
+
+That's why js file cannot find `<div id="demo">`
+
 ```js
   let demoElement = document.getElementById("demo");
 ```

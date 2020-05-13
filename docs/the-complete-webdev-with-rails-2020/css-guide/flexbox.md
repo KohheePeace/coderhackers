@@ -10,7 +10,7 @@ title: Flexbox
 
 So by using Flexbox, it will be easier to make complicated layout like below image.
 
-![flex-box-complex-layout](../../img/2020-04-28-22-07-10.png)
+![flex-box-complex-layout](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-28-22-07-10.png)
 Ref: https://www.w3schools.com/css/css3_flexbox.asp
 
 
@@ -20,7 +20,7 @@ Okay so, let's try basic Flexbox.
 We're doing the same thing which is introduced in this link.
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-![css-tricks-flexbox](../../img/2020-04-29-01-24-56.png)
+![css-tricks-flexbox](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-01-24-56.png)
 
 ### Prepare Flexbox playground
 
@@ -64,7 +64,7 @@ Make `flexbox-test.html` in `css-test` folder.
 
 This is a image of layout without Flexbox.
 
-![css-flexbox-skelton](../../img/2020-04-29-01-09-01.png)
+![css-flexbox-skelton](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-01-09-01.png)
 
 
 ### Try it here...

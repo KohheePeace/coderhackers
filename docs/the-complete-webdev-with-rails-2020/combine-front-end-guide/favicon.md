@@ -12,12 +12,12 @@ https://realfavicongenerator.net/
 
 :::note
 We will place favicon files under favicons folder
-![](../../img/20200506_030309.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_030309.gif)
 :::
 
 Make `favicons` folder and then move downloaded files.
 
-![](../../img/2020-05-06-03-06-13.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-06-13.png)
 
 ## Link in `index.html`
 ```html title="index.html"
@@ -52,7 +52,7 @@ Make `favicons` folder and then move downloaded files.
 ```
 
 ## Check the output
-![](../../img/2020-05-06-03-09-43.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-09-43.png)
 
 ## Favicon checker
 https://realfavicongenerator.net/favicon_checker#.XrGiHKgzbb2

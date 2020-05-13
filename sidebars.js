@@ -80,7 +80,7 @@ module.exports = {
         "the-complete-webdev-with-rails-2020/html-guide/play-with-html",
         "the-complete-webdev-with-rails-2020/html-guide/img-tag",
         "the-complete-webdev-with-rails-2020/html-guide/a-tag",
-        "the-complete-webdev-with-rails-2020/html-guide/relative-and-absolute-path",
+        // "the-complete-webdev-with-rails-2020/html-guide/relative-and-absolute-path",
         "the-complete-webdev-with-rails-2020/html-guide/check-web-flow",
         "the-complete-webdev-with-rails-2020/html-guide/div-and-span",
       ],
@@ -117,24 +117,26 @@ module.exports = {
     {
       JavaScript: [
         "the-complete-webdev-with-rails-2020/javascript-guide/javascript-intro",
-        "the-complete-webdev-with-rails-2020/javascript-guide/get-used-to-javascript",
+        "the-complete-webdev-with-rails-2020/javascript-guide/where-to-write-script",
+        "the-complete-webdev-with-rails-2020/javascript-guide/refactor",
         // "the-complete-webdev-with-rails-2020/javascript-guide/play-with-javascript",
         "the-complete-webdev-with-rails-2020/javascript-guide/dom-document",
-        "the-complete-webdev-with-rails-2020/javascript-guide/element",
+        "the-complete-webdev-with-rails-2020/javascript-guide/element-events",
+        "the-complete-webdev-with-rails-2020/javascript-guide/element-properties",
         "the-complete-webdev-with-rails-2020/javascript-guide/various-writing-ways",
         // "the-complete-webdev-with-rails-2020/javascript-guide/dive-into-javascript",
       ],
     },
     {
       jQuery: [
-        "the-complete-webdev-with-rails-2020/jquery-guide/intro",
+        "the-complete-webdev-with-rails-2020/jquery-guide/jquery-intro",
         "the-complete-webdev-with-rails-2020/jquery-guide/play-with-jquery",
       ],
     },
     {
       "JavaScript for Bootstrap": [
-        "the-complete-webdev-with-rails-2020/bootstrap-js-guide/01-intro",
-        "the-complete-webdev-with-rails-2020/bootstrap-js-guide/02-manual-js",
+        "the-complete-webdev-with-rails-2020/bootstrap-js-guide/bootstrap-js-intro",
+        "the-complete-webdev-with-rails-2020/bootstrap-js-guide/combine-custom-js-with-bootstrap",
       ],
     },
     {

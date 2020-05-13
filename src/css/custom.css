@@ -97,3 +97,7 @@ code {
   fill: var(--ifm-color-warning) !important;
   stroke: var(--ifm-color-warning) !important;
 }
+
+.alert a {
+  color: var(--ifm-link-color);
+}

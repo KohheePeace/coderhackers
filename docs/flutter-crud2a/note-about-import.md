@@ -11,7 +11,7 @@ There are two types of `import` in flutter
 - package imports
 - relative imports
 
-![flutter-import-files](../img/2020-04-17-05-34-02.png)
+![flutter-import-files](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-17-05-34-02.png)
 
 
 https://stackoverflow.com/questions/50732897/whats-the-different-between-full-path-and-relative-path-in-dart

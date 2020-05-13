@@ -82,7 +82,7 @@ Edit `test1.html`
 
 Current folder structure looks like this
 
-![css-3-writing-styles-folder](../../img/2020-04-27-22-36-21.png)
+![css-3-writing-styles-folder](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-27-22-36-21.png)
 
 
 :::important

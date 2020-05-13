@@ -5,7 +5,7 @@ title: Javascript Plugin
 ## Goal
 - ⚡Learn how to use javascript plugin
 
-![](../../img/20200506_010547.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)
 
 ## Wow
 https://wowjs.uk/
@@ -21,12 +21,12 @@ From document https://wowjs.uk/docs.html, we need to install
 
 Go to: https://github.com/graingert/wow
 
-![](../../img/20200506_004112.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_004112.gif)
 
 ### Animate css
 https://github.com/daneden/animate.css
 
-![](../../img/20200506_003923.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_003923.gif)
 
 
 
@@ -180,7 +180,7 @@ Add class `wow bounceInUp` and property to target element you want to add effect
 <!-- # Customers Voice -->
 ```
 
-![](../../img/20200506_010335.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010335.gif)
 
 
 ## Change each `delay` time
@@ -204,4 +204,4 @@ Add class `wow bounceInUp` and property to target element you want to add effect
 >
 ```
 
-![](../../img/20200506_010547.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)

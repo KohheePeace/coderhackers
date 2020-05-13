@@ -52,7 +52,7 @@ You just need to add `mb-4`
 </div>
 ```
 
-![](../../img/20200509_063104.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_063104.gif)
 
 ## Syntax
 
@@ -121,7 +121,7 @@ pb-xl-3
 - we don't need `margin-bottom` for laptop
 :::
 
-![](../../img/20200509_064024.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_064024.gif)
 
 ```html
 <!-- highlight-next-line -->

@@ -5,7 +5,7 @@ title: Font Awesome
 ## Goal
 - ⚡ Learn how to add icons
 
-![](../../img/2020-05-05-00-04-44.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-00-04-44.png)
 
 ## What is Font Awesome?
 > Font Awesome is a font and icon toolkit...
@@ -18,7 +18,7 @@ By using Font Awesome you can easily add cool fonts.
 ## Install
 1. Please enter your email in Font Awesome site and sign-in
 
-![](../../img/20200504_234358.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_234358.gif)
 
 Then,
 
@@ -42,7 +42,7 @@ In `index.html` inside `<head>` tag
 ## How to add icons
 Go to icons page: https://fontawesome.com/icons?d=gallery
 
-![](../../img/20200504_235918.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_235918.gif)
 
 ## Paste code code
 By just pasting code you can add cool icons.

@@ -14,7 +14,7 @@ body {
 }
 ```
 
-![change-font](../../img/20200503_234618.gif)
+![change-font](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_234618.gif)
 
 
 ## How to use font which is not installed by default ?
@@ -44,7 +44,7 @@ In stead, **fallback `font-family`** is applied.
 :::tip
 This is not **`'Tangerine'`** font.
 
-![tangerine-font-test](../../img/20200503_235157.gif)
+![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_235157.gif)
 :::
 
 ### Add Google font
@@ -55,7 +55,7 @@ To add non default font,
 3. **Select** font-weight you want to use.
 4. Copy **embed `<link>`**
 
-![](../../img/20200503_075419.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_075419.gif)
 
 Paste inside `<head>` tag.
 
@@ -77,7 +77,7 @@ body {
 }
 ```
 
-![](../../img/20200503_080252.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_080252.gif)
 
 
 ## Fallback font

@@ -463,7 +463,7 @@ body {
 ------------------- */
 @media screen and (min-width: 769px) {
   .jumbotron {
-    background: url(../img/jumbotron-bg.png);
+    background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
     background-size: cover;
     margin-bottom: 0;
     height: calc(100vh - 57.69px);

@@ -2,10 +2,8 @@
 title: DOM - Document Object Model
 ---
 
-## Overview
-
-In this step, we're going to
-- Tackle **(1)** of the below part
+## Goal
+- ⚡ Understand **"(1)"** of the below code
 
 ```html title="test4.html"
 <script>
@@ -28,10 +26,10 @@ To understand `document`, we need to understand **"DOM - Document Object Model"*
 ### What is DOM ?
 When browser receives HTML file, the browser turns HTML file into a **Document Object Model (DOM) Tree** under browser **window** object.
 
-![browser-html-to-DOM](../../img/2020-05-02-01-53-13.png)
+![browser-html-to-DOM](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-02-01-53-13.png)
 ref: https://developers.google.com/web/updates/2018/09/inside-browser-part3
 
-### Why ?
+### Why making DOM ?
 <mark>By making DOM tree, it becomes easier to handle by javascript.</mark>
 
 
@@ -40,14 +38,14 @@ Let's check `document` in chrome console.
 
 In **`console`** tab, you can write **`javascript` code**.
 
-![check-document](../../img/20200501_053737.gif)
+![check-document](https://storage.googleapis.com/coderhackers-assets/docs/img/20200501_053737.gif)
 
 
 ## `getElementById()` method
 
-**`document`** has various methods.
+**`document`** has various **"methods"**.
 
-https://developer.mozilla.org/en-US/docs/Web/API/Document#Methods
+https://developer.mozilla.org/en-US/docs/Web/API/Document
 
 **`getElementById()`** is one of these **`document`**'s method.
 
@@ -58,11 +56,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
 ## Image of `getElementById()`
 This is the merit of DOM. Easily access to the other element.
 
-![dom-getElementById](../../img/2020-05-02-02-39-08.png)
+![dom-getElementById](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-02-02-39-08.png)
 
 ### Check returned Element
 
-![check-returned-element](../../img/20200501_054401.gif)
+![check-returned-element](https://storage.googleapis.com/coderhackers-assets/docs/img/20200501_054401.gif)
 
 ```js
 document.getElementById('demo');
@@ -81,7 +79,7 @@ returns this element.
 let demoElement = document.getElementById('demo');
 ```
 
-is equivalent to
+is shorthand of
 
 
 ```js

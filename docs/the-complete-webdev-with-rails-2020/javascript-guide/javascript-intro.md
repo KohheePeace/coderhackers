@@ -4,7 +4,7 @@ title: Introduction to JavaScript
 
 ## Overview
 In this step, we're going to
-- 🐧Understand **what is javascript**
+- ⚡ Understand **what is javascript**
 
 
 ## What is JavaScript
@@ -17,11 +17,11 @@ https://en.wikipedia.org/wiki/JavaScript
 
 ## Let's check about the meaning of "interactive"
 
-Please make `js-test` folder and create `test1.html` inside it.
+Please make `javascript-test` folder and create `js-test1.html` inside it.
 
-Then, make html boilderplate.
+Then, make html boilerplate.
 
-```html title="js-test/test1.html"
+```html title="javascript-test/js-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,17 +35,14 @@ Then, make html boilderplate.
 
 ## Try First JavaScript
 
-I choose the below example as a first step.
-
-![copy-mdn-onclick-demo-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/javascript-guide/copy-mdn-onclick-demo-code.gif)
-https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
 
 **<mark>You don't need to understand the meaning of this code right now!</mark>**
 
 This is just a example to understand the meaning of **"interactive"**.
 
-`test4.html`
-```html
+Please copy and paste the code.
+
+```html title="js-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -67,9 +64,8 @@ This is just a example to understand the meaning of **"interactive"**.
 </html>
 ```
 
-:::note
-I edited `Color: red` => `color: red`.
-:::
+Ref: https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
+
 
 #### Check the output
 ![output-copy-mdn-onclick-demo-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/javascript-guide/output-copy-mdn-onclick-demo-code.gif)

@@ -207,7 +207,7 @@ Only using **`col-`** doesn't satisfy the specification
 - mobile => 1 column
 :::
 
-![bootstrap-grid-system-various-device-chrome-devtool](../../img/20200509_020555.gif)
+![bootstrap-grid-system-various-device-chrome-devtool](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_020555.gif)
 
 
 ## Mobile
@@ -222,7 +222,7 @@ So, let's start from mobile layout.
 ### Check device width
 You see **"Pixel 2"** viewport width is **411**px
 
-![](../../img/2020-05-09-05-02-15.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-02-15.png)
 
 ### Check grid options tables
 Then, check this link https://getbootstrap.com/docs/4.3/layout/grid/#grid-options
@@ -266,10 +266,10 @@ Change every `col` to `col-12`
 :::
 
 ### Check device width
-![](../../img/2020-05-09-05-13-58.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-13-58.png)
 
 ### Grid options table
-![](../../img/2020-05-09-05-15-12.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-15-12.png)
 
 :::note
 - So, we need to use `col-md`
@@ -316,10 +316,10 @@ Add every `col-md-4` to every column.
 
 ### Check device width
 
-![](../../img/2020-05-09-05-18-52.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-18-52.png)
 
 ### Grid options table
-![](../../img/2020-05-09-05-19-48.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-19-48.png)
 
 But, `col-lg` also covers this device width.
 
@@ -327,7 +327,7 @@ And we use `col-xl` to change layout for large desktop like monitor.
 
 So, `col-lg` is enough for normal desktop or laptop.
 
-![](../../img/2020-05-09-05-24-13.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-24-13.png)
 Ref: https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints
 
 :::note

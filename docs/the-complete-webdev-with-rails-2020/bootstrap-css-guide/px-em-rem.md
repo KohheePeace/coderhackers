@@ -78,7 +78,7 @@ you see
 ```
 also become bigger.
 
-![](../../img/20200509_074317.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_074317.gif)
 
 ## What is `rem` ?
 > Relative to font-size of the root element	
@@ -108,7 +108,7 @@ you see
 ```
 also become bigger.
 
-![](../../img/20200509_074159.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_074159.gif)
 
 
 

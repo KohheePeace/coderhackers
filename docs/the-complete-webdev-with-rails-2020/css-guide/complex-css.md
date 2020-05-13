@@ -10,11 +10,11 @@ title: Complex CSS
 A part of real world website.
 
 #### Desktop
-![complex-css-demo](../../img/2020-04-29-19-06-52.png)
+![complex-css-demo](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-19-06-52.png)
 
 
 #### Mobile
-![complex-css-responsive](../../img/2020-04-29-19-06-29.png)
+![complex-css-responsive](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-19-06-29.png)
 
 
 :::caution

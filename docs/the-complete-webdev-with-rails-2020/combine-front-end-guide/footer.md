@@ -6,7 +6,7 @@ title: Footer
 ## Goal
 - ⚡ Make Footer
 
-![](../../img/2020-05-05-09-44-00.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-09-44-00.png)
 
 ## Footer
 Copy code from here

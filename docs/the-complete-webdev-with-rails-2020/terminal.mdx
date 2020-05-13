@@ -34,13 +34,13 @@ Okay, so let's do the same thing with both **GUI** and **CLI**.
 
 1. Make `test-gui` folder inside `desktop`
 2. Create new file `text.txt` inside `test-gui`
-3. Open `text.txt`
+3. Open `test-gui` folder in VS code
 
 ### CLI
 
 1. Make `test-cli` folder inside `desktop`
 2. Create new file `text.txt` inside `test-cli`
-3. Open `text.txt`
+3. Open `test-cli` folder in VS code
 
 <Tabs
   groupId="operating-systems"
@@ -56,7 +56,8 @@ Okay, so let's do the same thing with both **GUI** and **CLI**.
 cd ~/Desktop
 mkdir test-cli
 cd test-cli
-ni -Path . -Name "text.txt"
+ni -Path . -Name "text.txt" # not recommend
+code .
 ```
 
 :::tip I don't recommend to create file with Powershell
@@ -75,6 +76,7 @@ cd ~/desktop
 mkdir test-cli
 cd test-cli
 touch "text.txt"
+code .
 ```
 
 </TabItem>

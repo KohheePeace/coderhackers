@@ -60,7 +60,7 @@ ul { background: #FFFF33; }
 
 The output is like below...
 
-![css-class-and-id](../../img/2020-04-27-22-48-30.png)
+![css-class-and-id](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-27-22-48-30.png)
 
 ## Difference between an id and a class?
 

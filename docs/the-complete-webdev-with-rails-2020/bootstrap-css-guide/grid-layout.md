@@ -320,7 +320,7 @@ Then, replace img src with ...
 ```
 
 ### Check the output
-![](../../img/2020-05-09-01-51-04.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-01-51-04.png)
 
 
 ## Summery

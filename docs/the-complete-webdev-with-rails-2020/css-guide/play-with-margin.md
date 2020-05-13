@@ -18,7 +18,7 @@ Visit: https://margin-padding-demo.now.sh/
 
 And edit element style by using chrome dev tools.
 
-![play-with-padding](../../img/20200428_040404.gif)
+![play-with-padding](https://storage.googleapis.com/coderhackers-assets/docs/img/20200428_040404.gif)
 
 
 ## Margin - Shorthand Property
@@ -42,4 +42,4 @@ margin: 5px 1px 0 2px;
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/margin
 
-![margin-auto](../../img/20200508_061215.gif)
+![margin-auto](https://storage.googleapis.com/coderhackers-assets/docs/img/20200508_061215.gif)

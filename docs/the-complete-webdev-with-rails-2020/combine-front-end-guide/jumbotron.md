@@ -5,7 +5,7 @@ title: Jumbotron
 ## Goal
 - ⚡ Make Jumbotron section
 
-![](../../img/2020-05-04-05-42-31.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-05-42-31.png)
 
 ## Copy code from
 https://getbootstrap.com/docs/4.3/components/jumbotron/
@@ -58,18 +58,18 @@ Then, paste it to the `index.html`
 - Download svg
 - Move download file to **`img`** folder
 
-![](../../img/2020-05-04-05-48-28.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-05-48-28.png)
 
 
 ### Background image
 Go to https://www.canva.com/
 
 Then create "Presentation"
-![](../../img/20200504_055222.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_055222.gif)
 
 Then
 
-![](../../img/20200504_212238.gif)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_212238.gif)
 
 - Make jumbotron background image
 - Download file as **`.png`**
@@ -155,7 +155,7 @@ So the Jumbotron looks...
 /* Jumbotron
 ------------------- */
 .jumbotron {
-  background: url(../img/jumbotron-bg.png);
+  background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
   background-size: cover;
 }
 ```
@@ -173,7 +173,7 @@ Ref: https://stackoverflow.com/questions/4810927/how-to-go-up-a-level-in-the-src
 /* Jumbotron
 ------------------- */
 .jumbotron {
-  background: url(../img/jumbotron-bg.png);
+  background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
   background-size: cover;
   /* highlight-start */
   margin-bottom: 0;
@@ -185,7 +185,7 @@ Ref: https://stackoverflow.com/questions/4810927/how-to-go-up-a-level-in-the-src
 ```
 
 **`57.69px`** is navbar height.
-![](../../img/2020-05-04-07-51-28.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-07-51-28.png)
 
 - To fit jumbotron perfectly, I use `vh`.
 - By using Flexbox, centerize jumbotron content
@@ -213,7 +213,7 @@ So add media query.
 ```css title="css/custom.css"
 @media screen and (min-width: 769px) {
   .jumbotron {
-    background: url(../img/jumbotron-bg.png);
+    background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
     background-size: cover;
     margin-bottom: 0;
     height: calc(100vh - 57.69px);
@@ -276,10 +276,10 @@ https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints
 This code is for changing the layout of buttons
 
 #### Desktop
-![](../../img/2020-05-04-21-18-02.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-21-18-02.png)
 
 #### Mobile
-![](../../img/2020-05-04-21-18-50.png)
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-21-18-50.png)
 
 ## Final Code
 ```html title="index.html"
@@ -463,7 +463,7 @@ body {
 ------------------- */
 @media screen and (min-width: 769px) {
   .jumbotron {
-    background: url(../img/jumbotron-bg.png);
+    background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
     background-size: cover;
     margin-bottom: 0;
     height: calc(100vh - 57.69px);

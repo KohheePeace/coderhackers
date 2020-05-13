@@ -7,7 +7,7 @@ title: Introduction
 
 In this section, we'll combine the knowledge we've learned so far and make real website like below.
 
-![preview-of-frontend-final.gif](../../img/20200507_214000.gif)
+![preview-of-frontend-final.gif](https://storage.googleapis.com/coderhackers-assets/docs/img/20200507_214000.gif)
 
 
 
@@ -74,7 +74,7 @@ Please make
 1. `css`, `js`, and `img` folder.
 2. `custom.css` and `custom.js` file.
 
-![folder-structure](../../img/2020-05-03-23-20-58.png)
+![folder-structure](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-03-23-20-58.png)
 
 We're going to write custom CSS and Javascript code in these file.
 
