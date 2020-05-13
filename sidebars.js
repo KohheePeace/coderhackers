@@ -88,9 +88,10 @@ module.exports = {
     {
       CSS: [
         "the-complete-webdev-with-rails-2020/css-guide/css-intro",
+        "the-complete-webdev-with-rails-2020/css-guide/chrome-dev-tools",
+        "the-complete-webdev-with-rails-2020/css-guide/css-colors",
         "the-complete-webdev-with-rails-2020/css-guide/3-writing-ways-of-css",
         "the-complete-webdev-with-rails-2020/css-guide/class-and-id",
-        "the-complete-webdev-with-rails-2020/css-guide/chrome-dev-tools",
         "the-complete-webdev-with-rails-2020/css-guide/margin-and-padding",
         "the-complete-webdev-with-rails-2020/css-guide/play-with-padding",
         "the-complete-webdev-with-rails-2020/css-guide/play-with-margin",

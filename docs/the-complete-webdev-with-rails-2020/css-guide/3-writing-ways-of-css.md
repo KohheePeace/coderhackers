@@ -18,7 +18,7 @@ This is just we did in the previous step.
 
 ## 2. Inline style
 
-```html title="test1.html"
+```html title="css-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,16 +46,16 @@ This is just we did in the previous step.
 
 **<mark>This is important to understand Bootstrap</mark>**
 
-Make new file `test1.css`
+Make new file `css-test1.css` in `css-test` folder
 
-```css title="test1.css"
+```css title="css-test1.css"
   h1 { color: white; background: navy; }
   ul { background: #FFFF33; }
 ```
 
-Edit `test1.html`
+Edit `css-test1.html`
 
-```html title="test1.html"
+```html title="css-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -64,7 +64,7 @@ Edit `test1.html`
     <title>Document</title>
   
     <!-- highlight-next-line -->
-    <link rel="stylesheet" href="test1.css">
+    <link rel="stylesheet" href="css-test1.css">
   </head>
 
 <body>
@@ -93,9 +93,11 @@ In the next step, we will learn how to use **class** and **id** as an **css sele
 
 
 ## Refs
-You can check the pros and cons of each styling way.
-
+You can check the pros and cons of each styling way in the below links.
+:::caution
 **But currently it is just enough to know there is 3 ways of writing CSS.**
+:::
+
 - https://www.w3schools.com/css/css_howto.asp
 - https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
 - https://www.inmotionhosting.com/support/email/outlook/using-css/linking-your-css-to-your-website

@@ -1,3 +1,5 @@
+const remarkExternalLinks = require("remark-external-links");
+
 module.exports = {
   title: "CODER HACKERS",
   tagline: "stock and share what I've learned.",
@@ -73,6 +75,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: null,
+          remarkPlugins: [[remarkExternalLinks, { target: "_blank" }]],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

@@ -4,7 +4,7 @@ title: Introduction to CSS
 
 ## Goal
 
-- ⚡ Understand what is CSS
+- ⚡ Learn what is CSS
 - 🔥 Try CSS
 - 🌻 Learn CSS syntax
 
@@ -21,14 +21,14 @@ That's it and let's try CSS.
 
 ## Let's try CSS!
 
-### Start from this file
+### Preparation
 
 :::info
-  Make `css-test` folder and then create `test1.html`
+  Make `css-test` folder and then create `css-test1.html`
 :::
 
 Let's start from this code.
-```html title="css/test1.html"
+```html title="css/css-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,36 +51,41 @@ Let's start from this code.
 </html>
 ```
 
-### Add style
+### Add CSS
 
-```html title="css/test1.html"
+```html title="css/css-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
+    <!-- highlight-start -->
+    <style>
+      h1 {
+        color: white;
+        background-color: navy;
+      }
+      ul {
+        background-color: #ffff00;
+      }
+    </style>
+    <!-- highlight-end -->
   </head>
 
-  <!-- highlight-start -->
-  <style>
-    h1 { color: white; background: navy; }
-    ul { background: #FFFF33; }
-  </style>
-  <!-- highlight-end -->
-</head>
+  <body>
+    <h1>Here is a title.</h1>
+    <h2>Here is a subtitle.</h2>
 
-<body>
-  <h1>Here is a title.</h1>
-  <h2>Here is a subtitle.</h2>
-
-  <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ul>
-</body>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </body>
 </html>
+
 ```
 
 ### Check the output
@@ -89,20 +94,16 @@ Let's start from this code.
 You see  that <mark>**CSS is a language for styling**</mark>.
 
 ## Check the CSS syntax
+Okay, so let's check CSS syntax.
 
 ![css-syntax](https://www.tutorialrepublic.com/lib/images/css-selector.png)
 
 Ref: https://www.tutorialrepublic.com/css-tutorial/css-syntax.php
 
 ```css
-  h1 { color: white; background: navy; }
+  h1 { color: white; background-color: navy; }
   selector { css-property: property-value; css-property: property-value; ... }
 ```
-
-:::info
-1. **`selector`** can be HTML tag (`h1`, `ul`, `li`...) or `Class` or `ID`. We will check it in the chapter after the next.
-2. You don't need to memorize all `css-property` **now**. You will get used to it at the end of this course.
-:::
 
 ## Refs
 https://www.w3schools.com/whatis/whatis_css.asp

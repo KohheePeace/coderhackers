@@ -74,7 +74,7 @@ The output is like below...
 >  - You can use the same `class` on multiple elements.
 >  - You can use multiple `class`es on the same element.
 
-https://stackoverflow.com/questions/544010/whats-the-difference-between-an-id-and-a-class
+https://stackoverflow.com/a/12889416
 
 So...
 
