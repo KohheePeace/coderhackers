@@ -7,13 +7,13 @@ title: Class and ID
 - ⚡Learn how to use **`class`** and **`id`** for css selector.
 
 ## Class and ID
-In addition to HTML tag like `<h1>`, you can use **class** and **id** as **css selector**.
+In addition to HTML tag like `<h1>`, you can use **`class`** and **`id`** as **css selector**.
 
 And this is more common way to apply CSS.
 
-Let's edit `test1.html` file like below.
+Let's edit `css-test1.html` file like below.
 
-```html title="css/test1.html"
+```html title="css-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +21,7 @@ Let's edit `test1.html` file like below.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="test1.css" />
+    <link rel="stylesheet" href="css-test1.css" />
   </head>
 
   <body>
@@ -38,10 +38,16 @@ Let's edit `test1.html` file like below.
   </body>
 </html>
 ```
-`test1.css`
+`css-test1.css`
 ```css
-h1 { color: white; background: navy; }
-ul { background: #FFFF33; }
+h1 {
+  color: white;
+  background-color: navy;
+}
+
+ul {
+  background-color: #ffff00;
+}
 
 /* highlight-start */
 .drink {
@@ -62,7 +68,7 @@ The output is like below...
 
 ![css-class-and-id](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-27-22-48-30.png)
 
-## Difference between an id and a class?
+## Difference between an `id` and a `class`?
 
 > **`id`s are unique**
 > 
@@ -95,8 +101,3 @@ So...
   <li class="drink">Milk</li>
 </ul>
 ```
-
-:::tip
-- Even if you wrongly use same `id`, it works.
-- Don't worry too much.
-:::

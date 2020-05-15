@@ -6,7 +6,9 @@ title: Flexbox
 - ⚡ Learn **Flexbox**
 
 ## What is Flexbox ?
-> The Flexible Box Layout Module, **<mark>makes it easier to design flexible responsive layout</mark>** structure 
+> **The Flexible Box Module**, usually referred to as **flexbox**, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and <mark>powerful alignment capabilities</mark>.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 
 So by using Flexbox, it will be easier to make complicated layout like below image.
 
@@ -68,4 +70,7 @@ This is a image of layout without Flexbox.
 
 
 ### Try it here...
-Recording how to imitate https://css-tricks.com/snippets/css/a-guide-to-flexbox/ here...
+Recording how to imitate https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+## Refs
+https://www.w3schools.com/css/css3_flexbox.asp

@@ -12,7 +12,7 @@ This is just we did in the previous step.
 ```html
 <style>
   h1 { color: white; background: navy; }
-  ul { background: #FFFF33; }
+  ul { background: #ffff00; }
 </style>
 ```
 
@@ -33,7 +33,7 @@ This is just we did in the previous step.
     <h2>Here is a subtitle.</h2>
 
     <!-- highlight-next-line -->
-    <ul style="background: #ffff33;">
+    <ul style="background: #ffff00;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
@@ -44,13 +44,11 @@ This is just we did in the previous step.
 
 ## 3. External CSS file
 
-**<mark>This is important to understand Bootstrap</mark>**
-
 Make new file `css-test1.css` in `css-test` folder
 
 ```css title="css-test1.css"
   h1 { color: white; background: navy; }
-  ul { background: #FFFF33; }
+  ul { background: #ffff00; }
 ```
 
 Edit `css-test1.html`
@@ -82,14 +80,13 @@ Edit `css-test1.html`
 
 Current folder structure looks like this
 
-![css-3-writing-styles-folder](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-27-22-36-21.png)
-
+![css-3-writing-styles-folder](../../img/2020-05-14-12-47-40.png)
 
 :::important
 You see that **<mark>all 1, 2, 3 output is same.</mark>**
 :::
 
-In the next step, we will learn how to use **class** and **id** as an **css selector**.
+In the next step, we will learn how to use **`class`** and **`id`** as an **css selector**.
 
 
 ## Refs

@@ -6,34 +6,28 @@ title: Media Query
 - ⚡ Learn media query
 
 ## What is media query ?
-
-> Media queries allow you to customize the presentation of your web pages <mark>**for a specific range of devices like mobile phones, tablets, desktops, etc.**</mark>
-
-https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php
-
-You will easily understand media query if you use it!
+:::info
+  **Media query** is really important CSS features to <mark>change styles depending on device screen width</mark>.
+:::
 
 ## Basic media query syntax
 
-:::info
-**If the screen width is `480px` or wider**, background-color becomes `lightgreen`.
-:::
-
 ```css
+/* if your browser's viewport width is equal to or widder than 480px */
 @media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
+  /* write CSS here */
+  /* This CSS is applied only in specified range */
 }
 ```
 
-"`screen`" can take values like "`all`", "`print`" as shown below image, but you almost never use expect "`screen`".
+You will easily understand this syntax after you tried it!
 
+<!-- **`screen`** can take values like **`all`**, **`print`** as shown below image, but you almost never use except **`screen`**.
+
+So, you don't need to care about it currently.
 ![css-media-types](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-28-21-56-24.png)
 
-https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
-
-So, don't need to care about it.
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp -->
 
 
 ## Try media query
@@ -95,5 +89,7 @@ Make `media-query.html` in `css-test` folder.
 
 ```
 
-### Check the output
+Code Ref: https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php
+
+## Check the output
 ![change-width-media-query](https://storage.googleapis.com/coderhackers-assets/docs/img/20200508_072257.gif)

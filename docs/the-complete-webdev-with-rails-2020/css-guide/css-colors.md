@@ -7,15 +7,15 @@ title: CSS Colors
 
 ## Comparison
 
+Visit: https://www.w3schools.com/colors/colors_converter.asp
+
+![](../../img/2020-05-14-05-51-42.png)
+
 | name   | hex       | rgb                | hsl                  |
 | ------ | --------- | ------------------ | -------------------- |
 | yellow | `#ffff00` | `rgb(255, 255, 0)` | `hsl(60, 100%, 50%)` |
 
 This is all representing same color **"yellow"**
-
-https://www.w3schools.com/colors/colors_converter.asp
-
-![](../../img/2020-05-14-05-51-42.png)
 
 ```css title="CSS usage example"
 color: yellow;
@@ -29,18 +29,25 @@ color: hsl(60, 100%, 50%);
 
 
 ## Change transparency or opacity
-`rbga` and `hsla` change the **opacity**.
+| `rgba`               | `hsla`               |
+| -------------------- | -------------------- |
+| change `rgb` opacity | change `hsl` opacity |
+
 
 `0.0` (fully transparent) to `1.0` (fully opaque).
 
 Let's check this link
 https://www.w3schools.com/css/css_colors_rgb.asp
 
-:::important
-`rgba`: `rgba(255, 255, 0, 0.8)` => **opacity: 0.8** of the `rgb(255, 255, 0)`
+```css title="CSS usage example"
+/* 0.8 opacity of rgb(255, 255, 0) */
+color: rgba(255, 255, 0, 0.8);
 
-`hsla`: `hsla(60, 100%, 50%, 0.8)` => **opacity: 0.8** of the `hsl(60, 100%, 50%)`
-:::
+/* 0.8 opacity of hsl(60, 100%, 50%) */
+color: hsla(60, 100%, 50%, 0.8);
+```
+
+
 
 ## Which should I use ?
 It depends, so I show you my use case.

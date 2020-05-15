@@ -7,13 +7,14 @@ title: Flexbox Usecase - Navbar
 
 ![navbar-flexbox-goal](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-06-45-20.png)
 
-## Try it!
 
-Please make `flexbox-navbar-test.html` in `test-css` folder.
+## Preparation
+
+Please make `flexbox-navbar.html` in `css-test` folder.
 
 ## Add html code
 
-```html title="flexbox-navbar-test.html"
+```html title="flexbox-navbar.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +23,7 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
     <title>Document</title>
   </head>
   <body>
+    <!-- highlight-start -->
     <nav>
       <a href="#">Logo</a>
       <ul>
@@ -33,6 +35,7 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
       </ul>
       <button>Sign Up</button>
     </nav>
+    <!-- highlight-end -->
   </body>
 </html>
 ```
@@ -41,7 +44,8 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
 ![html-only-navbar](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-05-06-10.png)
 
 ## Add class name
-```html title="flexbox-navbar-test.html"
+Add class name to add CSS
+```html title="flexbox-navbar.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,8 +84,7 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
     <title>Document</title>
     <style>
       /* highlight-start */
-      /* Disable Browser default style
-      --------------------------------- */
+      /* Disable Browser default style */
       body {
         margin: 0;
       }
@@ -113,10 +116,9 @@ Please make `flexbox-navbar-test.html` in `test-css` folder.
 
 ### Step2 Use Flexbox
 To align navbar item, let's use Flexbox!
-```html title="flexbox-navbar-test.html"
+```html title="flexbox-navbar.html"
 <style>
-  /* Disable Browser default style
-  --------------------------------- */
+  /* Disable Browser default style */
   body {
     margin: 0;
   }
@@ -128,8 +130,7 @@ To align navbar item, let's use Flexbox!
     padding-left: 0;
   }
 
-  /* Navbar style
-  ---------------- */
+  /* Navbar style */
   .navbar {
     /* highlight-next-line */
     display: flex;
@@ -145,8 +146,7 @@ To align navbar item, let's use Flexbox!
 ### Step3 Make navbar cool
 ```html
 <style>
-  /* Disable Browser default style
-  --------------------------------- */
+  /* Disable Browser default style */
   body {
     margin: 0;
   }
@@ -158,8 +158,7 @@ To align navbar item, let's use Flexbox!
     padding-left: 0;
   }
 
-  /* Navbar style
-  ---------------- */
+  /* Navbar style */
   .navbar {
     display: flex;
     /* highlight-start */
@@ -170,6 +169,7 @@ To align navbar item, let's use Flexbox!
 
   .navbar-list {
     display: flex;
+    /* highlight-next-line */
     margin-left: auto;
   }
 
@@ -182,7 +182,7 @@ To align navbar item, let's use Flexbox!
 ```
 
 ## Final Code
-```html title="flexbox-navbar-test.html"
+```html title="flexbox-navbar.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -190,8 +190,7 @@ To align navbar item, let's use Flexbox!
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* Disable Browser default style
-      --------------------------------- */
+      /* Disable Browser default style */
       body {
         margin: 0;
       }
@@ -203,8 +202,7 @@ To align navbar item, let's use Flexbox!
         padding-left: 0;
       }
 
-      /* Navbar style
-      ---------------- */
+      /* Navbar style */
       .navbar {
         display: flex;
         padding: 15px 30px;
