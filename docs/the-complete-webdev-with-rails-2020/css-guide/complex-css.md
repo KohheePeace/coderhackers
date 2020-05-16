@@ -6,10 +6,8 @@ title: Complex CSS
   - ⚡ Make a part of real website for reviewing what we've learned in CSS section.
   - 🔥 To know the pain point which is solved by using Bootstrap
 
-## What we will make
-
-A part of real world website.
-
+## Task
+We're going to make **a part of** real world website.
 #### Desktop
 ![complex-css-demo](../../img/2020-05-16-05-24-34.png)
 
@@ -17,22 +15,12 @@ A part of real world website.
 ![complex-css-responsive](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-19-06-29.png)
 
 
-:::caution
-
-- You **don't need to fully understand** the code in this step.
-- The main purpose of this step is **understanding why Bootstrap is needed**.
-  
-:::
-
 ## Preparation
 
 Okay let's start!
 
 Make **`complex-css-example.html`** and **`complex-css-example.css`** in `css-test` folder.
 
-
-## Writing HTML and CSS
-Recording video to show how to make website in real life.
 
 ## Final code
 ```html title="complex-css-example.html"
@@ -100,6 +88,8 @@ body {
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 /* || Navbar */
@@ -112,14 +102,12 @@ ul {
 
 .logo {
   color: #007bff;
-  font-weight: 800;
+  font-weight: bold;
   text-decoration: none;
 }
 
 .navbar-list {
   display: flex;
-  list-style: none;
-  padding-left: 0;
   margin-left: auto;
 }
 
@@ -149,9 +137,7 @@ ul {
   border-color: #007bff;
   margin-left: 16px;
   padding: 6px 12px;
-  text-align: center;
   font-weight: bold;
-  line-height: 1.5;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -170,9 +156,9 @@ ul {
   padding: 32px 48px 96px;
 }
 
-/* CSS for child of jumbotron */
+/* CSS for child of .jumbotron */
 .jumbotron > h1 {
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .jumbotron > p {
@@ -180,30 +166,26 @@ ul {
 }
 
 .get-started-button {
-  display: inline-block;
   background-color: #007bff;
   border-color: #007bff;
   color: #ffffff;
   font-weight: bold;
-  text-align: center;
   padding: 10px 32px;
   border-radius: 50px;
-  line-height: 1.5;
   text-decoration: none;
 }
 ```
 
-## Summery
+## What is pain point ?
 
-:::important What you need to learn from this step
-  - You need to write a lot of CSS
+:::important Pain Point 😭
+  - Troublesome to write a lot of CSS
   - You need to get familiar with CSS
 :::
 
-By using **Bootstrap**, these problems are solved!
+By using **Bootstrap**, these problems will be solved!
 
 
 ## Refs
 - CSS comment: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
-- `display: inline-block`: https://www.w3schools.com/css/css_inline-block.asp
 - `CSS element>element Selector`: https://www.w3schools.com/cssref/sel_element_gt.asp
