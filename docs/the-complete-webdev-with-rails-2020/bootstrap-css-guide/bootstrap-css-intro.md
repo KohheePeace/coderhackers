@@ -3,51 +3,51 @@ title: Introduction to Bootstrap
 ---
 
 ## Goal
-- ⚡ Understand what is **Bootstrap CSS**
+- ⚡ Understand what is **Bootstrap**
 
 ## What is Bootstrap ?
 From wikipedia...
-> Bootstrap is a free and open-source <mark>**CSS framework**</mark> directed at responsive, mobile-first front-end web development. <mark>**It contains CSS- and (optionally) JavaScript-based**</mark> design templates for typography, forms, buttons, navigation and other interface **components**.
+> Bootstrap is a free and open-source <mark>**CSS framework**</mark> directed at responsive, mobile-first front-end web development. <mark>**It contains CSS- and (optionally) JavaScript-based** design templates</mark> for typography, forms, buttons, navigation and other interface **components**.
 
 https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
 
 So, Bootstrap is a **CSS framework** which contains CSS and Javascript.
 
-In this step, we are going to **focus on CSS part**.
+In this section, we are going to **focus on CSS part** of Bootstrap.
 
 ## Check official website
 
 Visit: https://getbootstrap.com/
 
-You see you need to add **CSS and JS** in Bootstrap Get Started page.
+You see you need to add **CSS and Javascript**.
 
 ![bootstrap-get-started](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-get-started.gif)
 
 
 ## Check Bootstrap CSS file
-In Bootstrap get started page, you see you need to add the below CSS `<link>` tag. 
+In Bootstrap page, it is written that you need to import below CSS file. 
 ```html
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 ```
 
 Let's check this file.
 
-Acceess
-https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
-![access-min-bootstrap](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/access-min-bootstrap.png)
+Open: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css
 
-It is difficult to read this file because this is a **compressed** file.
+![bootstrap-css-file](../../img/2020-05-19-16-31-17.png)
 
-So, let's download chrome extension to **decompression** this file for easy reading.
+It is difficult to read this file because this file is **compressed** .
+
+So, use chrome extension to **decompress** this file for easy reading.
 https://chrome.google.com/webstore/detail/javascript-and-css-code-b/iiglodndmmefofehaibmaignglbpdald?hl=en
 
-![beautified-bootstrap-ss](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/beautified-bootstrap-ss.png)
 
+![beautified-bootstrap-ss](../../img/2020-05-19-16-32-19.png)
 
-:::info
-**You see this is a <mark>huge external CSS file</mark>.**
+:::info important 🔥
+**Bootstrap CSS is a <mark>huge external CSS file</mark>.**
 :::
 
-This is the same thing we did in [last chapter](../css-guide/3-writing-ways-of-css#3-external-css-file).
+Remember [the step in CSS section](../css-guide/3-writing-ways-of-css#3-external-css-file).
 
-In the next chapter, let's play with bootstrap CSS!
+From the next step, let's play with this bootstrap CSS!

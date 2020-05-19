@@ -10,7 +10,7 @@ title: Flexbox
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 
-So by using Flexbox, it will be easier to make complicated layout like below image.
+By using Flexbox, it will be easier to make complicated layout like below image.
 
 ![flex-box-complex-layout](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-28-22-07-10.png)
 Ref: https://www.w3schools.com/css/css3_flexbox.asp
@@ -71,6 +71,10 @@ This is a image of layout without Flexbox.
 
 ### Try it here...
 Recording how to imitate https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+### `align-content`
+This is easy to understand `align-content`
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_align-content_space-between
 
 ## Refs
 https://www.w3schools.com/css/css3_flexbox.asp

@@ -5,11 +5,11 @@ title: Play with Bootstrap CSS
 ## Goal
   - ⚡ Get used to Bootstrap CSS
 
-## Start from Bootstrap starter template
+## Preparation
 
-Make `bootstrap-test` folder, and make `bootstrap-test-1.html`.
-
-Copy and paste bootstrap starter template.
+1. Make `bootstrap-test` folder
+2. Inside it make `bootstrap-test1.html`
+3. Copy and paste bootstrap starter template.
 
 https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 
@@ -20,7 +20,7 @@ https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 - After we learn javascript, I will explain about these files.
 :::
 
-```html title="bootstrap-test/bootstrap-test-1.html"
+```html title="bootstrap-test/bootstrap-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,53 +74,89 @@ https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 
 So, let's try bootstrap CSS.
 
-First, please go to **Components** page.
+First, please go to **Components => Buttons** page.
 
-![click-component-link](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/click-component-link.gif)
+![click-component-link](../../img/20200517_200207.gif)
+
+https://getbootstrap.com/docs/4.5/components/buttons/
 
 
-:::info
+:::info Important🔥
 In Bootstrap site, they show
 
-1. Output of the HTML
-2. **HTML with class** that generates **the output**
+1. **Output**
+2. **HTML code with class** that generates **the output**
+
+⚠️ **Read document carefully** to know how to use !
+
 :::
 
-Copy `alert alert-primary` class and add this to `<h1>` tag.
+## Try Button
 
-![copy-alert-class](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-alert-class.gif)
+:::info Use Case
+- You want to add **"Sign Up"** button
+:::
 
-```html title="bootstrap-test/bootstrap-test-1.html"
-...
+
+1. Make **"Sign Up"** `<a>` tag HTML code
+2. Add `btn btn-primary` classes to Sign Up button.
+
+
+![copy-btn-class](../../img/20200517_200931-fix.gif)
+
+> The `.btn` classes are designed to be used with the `<button>` element. <mark>However, you can also use these classes on `<a>` or `<input>` elements</mark> (though some browsers may apply a slightly different rendering).
+
+Ref: https://getbootstrap.com/docs/4.4/components/buttons/#button-tags
+
+```html title="bootstrap-test/bootstrap-test1.html"
+<h1>
+  Hello, world!
   <!-- highlight-next-line -->
-  <h1 class="alert alert-primary">Hello, world!</h1>
-...
+  <a href="#" class="btn btn-primary">Sign Up</a>
+</h1>
 ```
 
 Check the output...
 
-![output-after-alert-class.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-alert-class.png)
+![bootstrap-btn](../../img/2020-05-18-13-35-06.png)
 
 
-:::important
-- You can obtain **the same output** in document.
-- By just adding class `alert`, `alert-primary`
+### Outline buttons
+
+```html title="bootstrap-test/bootstrap-test1.html"
+<h1>
+  Hello, world!
+  <!-- highlight-next-line -->
+  <a href="#" class="btn btn-outline-primary">Sign Up</a>
+</h1>
+```
+
+:::note Output
+![](../../img/2020-05-18-18-43-01.png)
 :::
 
+### Change sizes of Button
+```html title="bootstrap-test/bootstrap-test1.html"
+<h1>
+  Hello, world!
+  <!-- highlight-next-line -->
+  <a href="#" class="btn btn-outline-primary btn-lg">Sign Up</a>
+</h1>
+```
 
-## Detect applied CSS by Chrome DevTools
-You see  CSS from bootstrap applied by `alert` `alert-primary` class from Bootstrap.
+:::note output
 
-![bootstrap-alert-class](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-alert-class.png)
+![](../../img/2020-05-18-18-42-07.png)
 
+:::
 
 ## What is the merit?
 Did you notice the merit of Bootstrap?
 
-Thanks to Bootstrap,
+By using Bootstrap,
 
 :::important
-- **You don't need to write CSS** by yourself
+- **<mark>You don't need to write CSS</mark>** 😁
 :::
 
 In the next step, let's see another example of Bootstrap CSS.

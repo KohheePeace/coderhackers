@@ -53,6 +53,10 @@ ul.contains-task-list {
 /* Admonitions
 --------------- */
 
+.admonition h5 {
+  text-transform: none;
+}
+
 code {
   background-color: #e7e7e7;
 }

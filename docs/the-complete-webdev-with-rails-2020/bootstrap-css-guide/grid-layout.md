@@ -20,9 +20,9 @@ https://getbootstrap.com/docs/4.4/layout/grid/
 
 ### Copy and Paste code
 
-In `bootstrap-test-1.html`
+In `bootstrap-test1.html`
 
-```html title="bootstrap-test-1.html"
+```html title="bootstrap-test1.html"
 <!doctype html>
 <html lang="en">
   <head>
@@ -132,7 +132,7 @@ And change `width: 100%;`
 Then, replace img src with ...
 
 ```html
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG" class="card-img-top" alt="...">
+https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG
 ```
 
 ### The final code
@@ -326,10 +326,9 @@ Then, replace img src with ...
 ## Summery
 :::info summery
 
-- You can make **3 column layout** website
-- By using **grid system**
+- You can make **3 column layout** website by using **grid system**
 
-```html
+```html title="Grid System of Bootstrap"
 <div class="container">
   <div class="row">
     <div class="col"></div>
@@ -338,3 +337,6 @@ Then, replace img src with ...
 </div>
 ```
 :::
+
+
+In the next step, let's learn `col` in more detail.

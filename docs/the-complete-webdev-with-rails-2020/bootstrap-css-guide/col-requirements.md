@@ -1,138 +1,25 @@
 ---
-title: Bootstrap Margin and Padding
+title: col - Check requirements
 ---
 
 ## Goal
-- ⚡ Learn Bootstrap margin and padding utilities
+- ⚡ Check layout requirements
 
 
-## What is this ?
-Bootstrap offers <mark>**`classes` to add margin or padding**</mark> responsively.
+## Requirements
+You're asked to make layout like the below requirements
 
-https://getbootstrap.com/docs/4.4/utilities/spacing/
-
-By using these `classes`, **you don't need to write CSS** for adding margin or padding.
-
-### For example
-If you want to add `margin-bottom` to `<h1>`
-```html title="html file"
-<div>
-  <h1>Hello World!</h1>
-  <p>Good morning</p>
-</div>
-```
-
-You need to
-
-1. add `class` to `h1`
-2. write css for that `class`
-
-```html title="html file"
-<div>
-  <!-- highlight-next-line -->
-  <h1 class="hello-world-title">Hello World!</h1>
-  <p>Good morning</p>
-</div>
-```
-
-```css title="css file"
-.hello-world-title {
-  margin-bottom: 24px;
-}
-```
-
-#### But with Bootstrap utilities
-You just need to add `mb-4`
-
-```html title="html file"
-<div>
-  <!-- highlight-next-line -->
-  <h1 class="mb-4">Hello World!</h1>
-  <p>Good morning</p>
-</div>
-```
-
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_063104.gif)
-
-## Syntax
-
-Let's check this utilities syntax
-
-### Margin
-#### When screen size is `xs`
-**`m{sides}-{size}`**
-```html
-<!--margin top 2 -->
-mt-2
-
-<!--margin bottom 1 -->
-mb-1
-
-<!--margin left 3 -->
-ml-3
-
-<!--margin right auto -->
-mr-auto
-```
-
-#### When screen size is `sm, md, lg, and xl`
-**`m{sides}-{breakpoint}-{size}`**
-```html
-<!-- If screen size is bigger than `lg`, margin top 2 -->
-mt-lg-2
-
-<!-- If screen size is bigger than `xl`, margin bottom 3 -->
-mb-xl-3
-```
-
-### Padding
-
-#### When screen size is `xs`
-**`p{sides}-{size}`**
-```html
-<!--padding top 2 -->
-pt-2
-
-<!--padding bottom 1 -->
-pb-1
-
-<!--padding left 3 -->
-pl-3
-
-<!--padding right auto -->
-pr-auto
-```
-
-#### When screen size is `sm, md, lg, and xl`
-**`p{sides}-{breakpoint}-{size}`**
-```html
-<!-- If screen size is bigger than `lg`, padding top 2 -->
-pt-lg-2
-
-<!-- If screen size is bigger than `xl`, padding bottom 3 -->
-pb-xl-3
-```
-
-
-## Usecase
-
-:::info
-- we need `margin-bottom` for mobile and tablet
-- we don't need `margin-bottom` for laptop
+:::info Requirements of layout
+- Desktop => 6 columns
+- Tablet => 3 columns
+- Mobile => 2 column
 :::
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_064024.gif)
+## Prepare 6 columns
+As we did in the last step, Let's prepare 6 columns for desktop layout.
 
-```html
-<!-- highlight-next-line -->
-<div class="mb-3 mb-lg-0">
-```
+So, the code becomes...
 
-:::caution
-I will handle `rem` in future step.
-:::
-
-## Final code
 ```html title="bootstrap-test1.html"
 <!DOCTYPE html>
 <html lang="en">
@@ -147,16 +34,14 @@ I will handle `rem` in future step.
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="bootstrap-test1.css" />
-
     <title>Hello, world!</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -226,7 +111,7 @@ I will handle `rem` in future step.
     </nav>
 
     <div class="jumbotron">
-      <h1 class="display-4" style="font-weight: bold;">Hello, world!</h1>
+      <h1 class="display-4">Hello, world!</h1>
       <p class="lead">
         This is a simple hero unit, a simple jumbotron-style component for
         calling extra attention to featured content or information.
@@ -241,8 +126,8 @@ I will handle `rem` in future step.
 
     <div class="container">
       <div class="row">
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+        <!-- highlight-start -->
+        <div class="col-sm">
           <div class="card" style="width: 100%;">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -259,8 +144,7 @@ I will handle `rem` in future step.
             </div>
           </div>
         </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+        <div class="col-sm">
           <div class="card" style="width: 100%;">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -277,8 +161,7 @@ I will handle `rem` in future step.
             </div>
           </div>
         </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+        <div class="col-sm">
           <div class="card" style="width: 100%;">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -295,8 +178,7 @@ I will handle `rem` in future step.
             </div>
           </div>
         </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+        <div class="col-sm">
           <div class="card" style="width: 100%;">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -313,8 +195,7 @@ I will handle `rem` in future step.
             </div>
           </div>
         </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+        <div class="col-sm">
           <div class="card" style="width: 100%;">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -331,8 +212,7 @@ I will handle `rem` in future step.
             </div>
           </div>
         </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+        <div class="col-sm">
           <div class="card" style="width: 100%;">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -349,26 +229,39 @@ I will handle `rem` in future step.
             </div>
           </div>
         </div>
+        <!-- highlight-end -->
       </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
   </body>
 </html>
 ```
+
+## Check the current output
+
+![bootstrap-grid-system-various-device-chrome-devtool](/docs/img/20200519_123720.gif)
+
+Only using **`col-sm-`** class doesn't satisfy the Requirements
+
+:::info Requirements
+- ⭕ Desktop => 6 columns
+- ❌ Tablet => 3 columns
+- ❌ Mobile => 2 column
+:::

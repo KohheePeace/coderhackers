@@ -20,8 +20,8 @@ https://getbootstrap.com/docs/4.4/components/navbar/
 ![copy-navbar-html.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-html.gif)
 
 
-Copy and paste to `bootstrap-test-1.html`
-```html title="bootstrap-test-1.html"
+Copy and paste to `bootstrap-test1.html`
+```html title="bootstrap-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -140,29 +140,23 @@ Cool navbar added and it is also **responsive**.
 
 
 :::important
-You may feel fear because there are a lot of unknown HTML with class.
+You may feel confused because there are a lot of unknown HTML code with classes.
 
-**But** the benefit of Bootstrap is
+But the benefit of Bootstrap is
 
-**<mark>You can create responsive website just copy and paste even if you don't understand it.</mark>
-**
+You can create responsive website just copy and paste **even if you don't understand it**.
+
+---
+
+⚠️ But if you are curious, let's read Bootstrap document carefully or google it !
 :::
-
-#### But, If you are curious...
-:::tip
-  1. Read the bootstrap explanation carefully.
-  2. Use Chrome DevTools to read class.
-:::
-
-#### For example, you can check **`mr-auto` class effect** like below...
-![check-bootstrap-class.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-bootstrap-class.gif)
 
 ## `Jumbotron`
 So, next let's try jumbotron component
 
 https://getbootstrap.com/docs/4.3/components/jumbotron/
 
-```html title="bootstrap-test-1.html"
+```html title="bootstrap-test1.html"
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -296,7 +290,7 @@ https://getbootstrap.com/docs/4.3/components/jumbotron/
 
 ## Summery
 
-:::tip
+:::important
  - Component is **a piece of a puzzle**.
  - You can **combine each component and make cool website** easily.
 :::

@@ -3,16 +3,19 @@ title: Complex CSS
 ---
 
 ## Goal
-  - ⚡ Make a part of real website for reviewing what we've learned in CSS section.
+  - ⚡ Copy the code of a part of real website for recapping what we've learned in CSS section.
   - 🔥 To know the pain point which is solved by using Bootstrap
 
-## Task
-We're going to make **a part of** real world website.
+## Website to make
+
+https://complex-css.now.sh/
+
 #### Desktop
-![complex-css-demo](../../img/2020-05-16-05-24-34.png)
+![](../../img/2020-05-16-15-30-25.png)
 
 #### Mobile
-![complex-css-responsive](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-19-06-29.png)
+![](../../img/2020-05-16-15-30-48.png)
+
 
 
 ## Preparation
@@ -32,13 +35,11 @@ Make **`complex-css-example.html`** and **`complex-css-example.css`** in `css-te
     <title>Document</title>
 
     <!-- highlight-start -->
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="complex-css-example.css" />
     <!-- highlight-end -->
   </head>
   <body>
     <!-- highlight-start -->
-    <!-- navbar -->
     <nav class="navbar">
       <a href="#" class="logo">Logo</a>
       <ul class="navbar-list">
@@ -60,11 +61,9 @@ Make **`complex-css-example.html`** and **`complex-css-example.css`** in `css-te
       </ul>
       <a class="sign-up-button" href="#">Sign Up</a>
     </nav>
-    <!-- END navbar -->
     <!-- highlight-end -->
 
     <!-- highlight-start -->
-    <!-- jumbotron -->
     <div class="jumbotron">
       <h1>We provide solutions for your business</h1>
       <p>
@@ -73,26 +72,16 @@ Make **`complex-css-example.html`** and **`complex-css-example.css`** in `css-te
       </p>
       <a class="get-started-button" href="#">Get started</a>
     </div>
-    <!-- END jumbotron -->
     <!-- highlight-end -->
   </body>
 </html>
 ```
 
 ```css title="complex-css-example.css"
-/* || General */
 body {
   margin: 0;
 }
 
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-  padding-left: 0;
-}
-
-/* || Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -109,18 +98,21 @@ ul {
 .navbar-list {
   display: flex;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
-/* Responsive CSS to hide navbar-list for mobile */
-@media screen and (max-width: 767.98px) {
+/* when viewport is 767px or narrower */
+@media screen and (max-width: 767px) {
   .navbar-list {
     display: none;
   }
 }
 
 .navbar-list-item {
-  padding-right: 8px;
-  padding-left: 8px;
+  margin-right: 16px;
 }
 
 .navbar-list-item-link {
@@ -128,13 +120,12 @@ ul {
 }
 
 .navbar-list-item-link:hover {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 1);
 }
 
 .sign-up-button {
   color: #ffffff;
   background-color: #007bff;
-  border-color: #007bff;
   margin-left: 16px;
   padding: 6px 12px;
   font-weight: bold;
@@ -142,32 +133,29 @@ ul {
   text-decoration: none;
 }
 
-/* Responsive CSS for mobile */
-@media screen and (max-width: 767.98px) {
+/* when viewport is 767px or narrower */
+@media screen and (max-width: 767px) {
   .sign-up-button {
     margin-left: auto;
   }
 }
 
-/* || Section Jumbotron */
 .jumbotron {
   background: aliceblue;
   text-align: center;
   padding: 32px 48px 96px;
 }
 
-/* CSS for child of .jumbotron */
-.jumbotron > h1 {
+.jumbotron-title {
   font-weight: bold;
 }
 
-.jumbotron > p {
+.jumbotron-subtitle {
   margin-bottom: 32px;
 }
 
 .get-started-button {
   background-color: #007bff;
-  border-color: #007bff;
   color: #ffffff;
   font-weight: bold;
   padding: 10px 32px;
@@ -176,7 +164,7 @@ ul {
 }
 ```
 
-## What is pain point ?
+## What is a pain point ?
 
 :::important Pain Point 😭
   - Troublesome to write a lot of CSS
@@ -184,8 +172,3 @@ ul {
 :::
 
 By using **Bootstrap**, these problems will be solved!
-
-
-## Refs
-- CSS comment: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
-- `CSS element>element Selector`: https://www.w3schools.com/cssref/sel_element_gt.asp
