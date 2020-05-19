@@ -10,7 +10,7 @@ const docsList = [
   {
     title: <>[WIP]Crud2a React React-Router</>,
     imageUrl:
-      "https://storage.googleapis.com/coderhackers-assets/crud2a-react-react-router/thumbnail.gif",
+      "https://storage.googleapis.com/coderhackers-assets/site-assets/react-react-router-crud2a-thumbnail.gif",
     description: (
       <>
         Crud with Authentication and Authorization of React and React-Router.
@@ -22,7 +22,7 @@ const docsList = [
   {
     title: <>Flutter Crud2a</>,
     imageUrl:
-      "https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/corse-thumbnail.gif",
+      "https://storage.googleapis.com/coderhackers-assets/site-assets/flutter-firestore-crud2a-course-thumbnail.gif",
     description: (
       <>
         Fastest way to learn the combination of Flutter and Firebase and
