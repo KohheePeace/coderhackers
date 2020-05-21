@@ -5,7 +5,7 @@ title: Jumbotron
 In this chapter, we are going to implement jumbotron.
 
 Copy code from
-https://getbootstrap.com/docs/4.3/components/jumbotron/
+https://getbootstrap.com/docs/4.5/components/jumbotron/
 
 ```html
 <div class="jumbotron">

@@ -12,7 +12,7 @@ In this chapter, we are going to
 
 There is a **Examples** page in Bootstrap.
 
-https://getbootstrap.com/docs/4.3/examples/
+https://getbootstrap.com/docs/4.5/examples/
 
 ![bootstrap-examples-page](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-examples-page.gif)
 
@@ -28,7 +28,7 @@ In this chapter, we'll be learning how to copy one of this example.
 
 ## Try album example
 
-We will copy album example: https://getbootstrap.com/docs/4.3/examples/album/
+We will copy album example: https://getbootstrap.com/docs/4.5/examples/album/
 ![album-example-demo.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-demo.gif)
 
 
@@ -54,10 +54,10 @@ The result is below...
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Album example · Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
     <!-- Bootstrap core CSS -->
-    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
     <style>
@@ -278,13 +278,13 @@ The result is below...
           <a href="#">Back to top</a>
         </p>
         <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.5/getting-started/introduction/">getting started guide</a>.</p>
       </div>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
   </body>
 </html>
 ```
@@ -306,16 +306,16 @@ Please open Chrome DevTools and click **`console`** tab.
 
 In `Chrome DevTools console`
 ```js
-album.html:1 Access to CSS stylesheet at 'file:///docs/4.3/dist/css/bootstrap.min.css' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
-album.html:15 GET file:///docs/4.3/dist/css/bootstrap.min.css net::ERR_FAILED
+album.html:1 Access to CSS stylesheet at 'file:///docs/4.5/dist/css/bootstrap.min.css' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
+album.html:15 GET file:///docs/4.5/dist/css/bootstrap.min.css net::ERR_FAILED
 album.html:35 GET file:///Users/kohheepeace/Code/asobi/html-playground/album.css net::ERR_FILE_NOT_FOUND
-album.html:1 Access to script at 'file:///docs/4.3/dist/js/bootstrap.bundle.min.js' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
-album.html:242 GET file:///docs/4.3/dist/js/bootstrap.bundle.min.js net::ERR_FAILED
+album.html:1 Access to script at 'file:///docs/4.5/dist/js/bootstrap.bundle.min.js' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.
+album.html:242 GET file:///docs/4.5/dist/js/bootstrap.bundle.min.js net::ERR_FAILED
 ```
 
 Let's fix these errors step by step.
 
-### Error1: `GET file:///docs/4.3/dist/css/bootstrap.min.css net::ERR_FAILED`
+### Error1: `GET file:///docs/4.5/dist/css/bootstrap.min.css net::ERR_FAILED`
 
 Search the error code in editor.
 ![how-to-search-bug.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/how-to-search-bug.gif)
@@ -328,7 +328,7 @@ This error happened because
 
 Replace
 ```
-<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 ```
 
 to
@@ -398,18 +398,18 @@ footer p {
 ![check-output-after-album-css.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-output-after-album-css.png)
 
 
-### Error3 `GET file:///docs/4.3/dist/js/bootstrap.bundle.min.js net::ERR_FAILED`
+### Error3 `GET file:///docs/4.5/dist/js/bootstrap.bundle.min.js net::ERR_FAILED`
 
 :::note
 This error occurred because js file loading failed.
 :::
 
-#### Search by `cmd + F` `docs/4.3/dist/js/bootstrap.bundle.min.js`
+#### Search by `cmd + F` `docs/4.5/dist/js/bootstrap.bundle.min.js`
 
 
 In `album.html` replace
 ```
-<script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 ```
 
 to

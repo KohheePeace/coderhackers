@@ -4,7 +4,7 @@ title: Footer
 
 
 ## Footer
-https://getbootstrap.com/docs/4.3/examples/product/
+https://getbootstrap.com/docs/4.5/examples/product/
 
 ```html
 <!-- Footer -->

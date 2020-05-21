@@ -3,16 +3,15 @@ title: col - Check requirements
 ---
 
 ## Goal
-- ⚡ Check layout requirements
-
+- ⚡Check layout requirements and problems before learning `col-` in detail.
 
 ## Requirements
-You're asked to make layout like the below requirements
+You're asked to make layout like below requirements
 
 :::info Requirements of layout
 - Desktop => 6 columns
 - Tablet => 3 columns
-- Mobile => 2 column
+- Mobile => 2 columns
 :::
 
 ## Prepare 6 columns
@@ -256,12 +255,14 @@ So, the code becomes...
 
 ## Check the current output
 
-![bootstrap-grid-system-various-device-chrome-devtool](/docs/img/20200519_123720.gif)
+![bootstrap-grid-system-various-device-chrome-devtool](/docs/img/20200520_195624.gif)
 
 Only using **`col-sm-`** class doesn't satisfy the Requirements
 
 :::info Requirements
 - ⭕ Desktop => 6 columns
 - ❌ Tablet => 3 columns
-- ❌ Mobile => 2 column
+- ❌ Mobile => 2 columns
 :::
+
+In the next step, let's satisfy mobile requirement and learn `col-` in detail.

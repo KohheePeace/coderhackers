@@ -11,7 +11,7 @@ Bootstrap provides flexbox utilities classes.
 
 By adding these **`classes`**, <mark>you don't need to write your custom CSS to use Flexbox.</mark>
 
-https://getbootstrap.com/docs/4.4/utilities/flex/
+https://getbootstrap.com/docs/4.5/utilities/flex/
 
 
 ## For example

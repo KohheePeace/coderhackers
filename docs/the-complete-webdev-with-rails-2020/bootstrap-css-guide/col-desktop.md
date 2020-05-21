@@ -3,7 +3,7 @@ title: col - Desktop
 ---
 
 ## Goal
-- ⚡ Satisfy Desktop requirement
+- ⚡ Satisfy Desktop layout requirement
 
 ## Desktop
 
@@ -13,28 +13,42 @@ title: col - Desktop
 - ✅ Mobile => 1 column
 :::
 
-### Check device width
+## Check device width
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-18-52.png)
+![](../../img/2020-05-21-17-44-52.png)
 
-### Grid options table
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-19-48.png)
+## Grid options table
+![](../../img/2020-05-21-17-57-37.png)
 
-But, `col-lg` also covers this device width and `col-lg` is enough for normal desktop or Desktop.
+The device width is applied to both **Large** and **Extra Large** range.
 
+According to this bootstrap document **Large** range includes desktop.
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-24-13.png)
-Ref: https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints
+Ref: https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints
 
-:::note
-- So, we use **`col-lg`** for desktop
+
+:::info
+For normal desktop, it is usual to use **`col-lg`**
+:::
+
+## Calculate col- number
+
+```txt title="Formula to determine col- number"
+12/(x columns) = 12/(6 columns) = 12/6 = 2 = col-2
+```
+
+![](../../img/2020-05-21-11-01-06.png)
+
+:::info
+- So, we use **`col-lg-`** for desktop
 - We want **6 columns** for desktop => **`col-lg-2`**
 :::
 
 
-Add every `col-lg-2` to every column.
+Add **`col-lg-2`** to every column.
 ```html
 <!-- highlight-next-line -->
-<div class="col-12 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-2">
   <div class="card" style="width: 100%;">
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
@@ -54,4 +68,4 @@ Add every `col-lg-2` to every column.
 ```
 
 ## Check the output
-Confirm everything works well in Chrome DevTools here...
+Confirm everything satisfy requirements in Chrome DevTools here...

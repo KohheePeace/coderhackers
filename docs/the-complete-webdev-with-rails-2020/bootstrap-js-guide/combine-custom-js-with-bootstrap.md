@@ -80,7 +80,7 @@ This is a code to open modal manually.
 ```js
 $('#myModal').modal('show')
 ```
-https://getbootstrap.com/docs/4.3/components/modal/#modalshow
+https://getbootstrap.com/docs/4.5/components/modal/#modalshow
 
 
 ## Final Code

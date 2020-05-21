@@ -19,7 +19,7 @@ Please make new folder **`frontend-combine`** for this project.
 ## Start from Bootstrap starter
 We start from Bootstrap starter template.
 
-https://getbootstrap.com/docs/4.3/getting-started/introduction/#starter-template
+https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
 Make **`index.html`** in **`frontend-combine`** and paste starter code.
 

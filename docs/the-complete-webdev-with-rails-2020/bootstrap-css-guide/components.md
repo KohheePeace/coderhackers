@@ -7,16 +7,18 @@ title: Components
 
 
 ## What is a Component ?
-**Component** is just a part of website.
 
-**By combining each components like a puzzle**, you can make cool website.
+:::info
+- **Component** is just a part of website
+- **By combining each components like a puzzle**, you can make cool website
+:::
 
 Okay let's get started! 😀
 
 ## `Navbar`
 First, let's try **Navbar** component
 
-https://getbootstrap.com/docs/4.4/components/navbar/
+https://getbootstrap.com/docs/4.5/components/navbar/
 ![copy-navbar-html.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-html.gif)
 
 
@@ -144,17 +146,20 @@ You may feel confused because there are a lot of unknown HTML code with classes.
 
 But the benefit of Bootstrap is
 
-You can create responsive website just copy and paste **even if you don't understand it**.
+You can create responsive website by just copy and paste **<mark>even if you don't understand it</mark>**.
 
 ---
 
-⚠️ But if you are curious, let's read Bootstrap document carefully or google it !
+⚠️ But if you are curious
+- Read Bootstrap document carefully
+- Google it!
+- Use chrome dev tools to check applied CSS
 :::
 
 ## `Jumbotron`
 So, next let's try jumbotron component
 
-https://getbootstrap.com/docs/4.3/components/jumbotron/
+https://getbootstrap.com/docs/4.5/components/jumbotron/
 
 ```html title="bootstrap-test1.html"
 <!DOCTYPE html>
@@ -292,5 +297,5 @@ https://getbootstrap.com/docs/4.3/components/jumbotron/
 
 :::important
  - Component is **a piece of a puzzle**.
- - You can **combine each component and make cool website** easily.
+ - You can **combine each components and make a cool website** easily.
 :::

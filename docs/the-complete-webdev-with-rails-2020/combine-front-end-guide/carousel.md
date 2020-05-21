@@ -8,7 +8,7 @@ title: Carousel
 
 ## Carousel
 Copy and Paste 
-https://getbootstrap.com/docs/4.3/components/carousel/#with-indicators
+https://getbootstrap.com/docs/4.5/components/carousel/#with-indicators
 
 ![copy-carousel-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-carousel-code.gif)
 

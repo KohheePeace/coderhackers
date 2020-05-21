@@ -11,7 +11,7 @@ title: Footer
 ## Footer
 Copy code from here
 
-https://getbootstrap.com/docs/4.3/examples/product/
+https://getbootstrap.com/docs/4.5/examples/product/
 
 
 Then, paste it

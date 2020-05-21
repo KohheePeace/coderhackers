@@ -11,7 +11,7 @@ title: Play with Bootstrap CSS
 2. Inside it make `bootstrap-test1.html`
 3. Copy and paste bootstrap starter template.
 
-https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
+https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
 ![copy-bootstrap-starter-html](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-starter-html.gif)
 
@@ -21,47 +21,30 @@ https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template
 :::
 
 ```html title="bootstrap-test/bootstrap-test1.html"
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- highlight-start -->
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- highlight-end -->
 
     <title>Hello, world!</title>
   </head>
-
   <body>
     <h1>Hello, world!</h1>
 
+    <!-- highlight-start -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- highlight-end -->
   </body>
 </html>
 ```
@@ -85,7 +68,7 @@ https://getbootstrap.com/docs/4.5/components/buttons/
 In Bootstrap site, they show
 
 1. **Output**
-2. **HTML code with class** that generates **the output**
+2. **HTML code with classes (which is from Bootstrap CSS)** that generates **the output**
 
 ⚠️ **Read document carefully** to know how to use !
 
@@ -106,7 +89,7 @@ In Bootstrap site, they show
 
 > The `.btn` classes are designed to be used with the `<button>` element. <mark>However, you can also use these classes on `<a>` or `<input>` elements</mark> (though some browsers may apply a slightly different rendering).
 
-Ref: https://getbootstrap.com/docs/4.4/components/buttons/#button-tags
+Ref: https://getbootstrap.com/docs/4.5/components/buttons/#button-tags
 
 ```html title="bootstrap-test/bootstrap-test1.html"
 <h1>

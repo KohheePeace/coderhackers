@@ -90,9 +90,9 @@ This is same code with "about us" section.
 </div>
 ```
 ### Bootstrap refs
-- `text-center`: https://getbootstrap.com/docs/4.4/utilities/text/#text-alignment
-- `badge badge-primary`: https://getbootstrap.com/docs/4.4/components/badge/
-- `align-top`: https://getbootstrap.com/docs/4.4/utilities/vertical-align/
+- `text-center`: https://getbootstrap.com/docs/4.5/utilities/text/#text-alignment
+- `badge badge-primary`: https://getbootstrap.com/docs/4.5/components/badge/
+- `align-top`: https://getbootstrap.com/docs/4.5/utilities/vertical-align/
 
 
 Then, just copy and paste this to make 2, 3 column.

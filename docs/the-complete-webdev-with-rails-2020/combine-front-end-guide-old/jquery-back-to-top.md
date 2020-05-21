@@ -36,7 +36,7 @@ Let's learn about this.
 ## Font awesome
 Font Awesome is a library for icons. It is also recommended in Bootstrap site.
 
-https://getbootstrap.com/docs/4.3/extend/icons/#preferred
+https://getbootstrap.com/docs/4.5/extend/icons/#preferred
 ![bootstrap-prefer-font-awesome](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/bootstrap-prefer-font-awesome.png)
 
 

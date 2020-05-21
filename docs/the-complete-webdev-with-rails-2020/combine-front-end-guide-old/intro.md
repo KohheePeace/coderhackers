@@ -23,7 +23,7 @@ code .
 ## Start from Bootstrap starter
 We start from Bootstrap starter template.
 
-https://getbootstrap.com/docs/4.3/getting-started/introduction/#starter-template
+https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
 Make `index.html` and paste code.
 

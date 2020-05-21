@@ -8,7 +8,7 @@ In this chapter, we are going to make **Navbar**.
 
 ### Copy and Paste code
 Copy code from
-https://getbootstrap.com/docs/4.3/components/navbar/
+https://getbootstrap.com/docs/4.5/components/navbar/
 
 ![copy-navbar](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-navbar.gif)
 

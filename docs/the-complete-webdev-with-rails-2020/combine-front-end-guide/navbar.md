@@ -12,7 +12,7 @@ In this step, we are going to make **Navbar**.
 
 ## Copy and Paste code `Navbar` component
 Copy code from
-https://getbootstrap.com/docs/4.3/components/navbar/
+https://getbootstrap.com/docs/4.5/components/navbar/
 
 ![copy-navbar](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-navbar.gif)
 
@@ -190,7 +190,7 @@ Paste to `index.html`
 ```
 
 ## Logo
-Copy dummy logo from: https://getbootstrap.com/docs/4.4/examples/product/
+Copy dummy logo from: https://getbootstrap.com/docs/4.5/examples/product/
 
 Then, remove class
 ```html title="Borrow dummy logo"
@@ -252,7 +252,7 @@ Then, remove class
 ```
 
 ### Bootstrap refs
-https://getbootstrap.com/docs/4.4/components/navbar/#brand
+https://getbootstrap.com/docs/4.5/components/navbar/#brand
 
 ## Change navbar background color
 Change navbar background color.
@@ -260,7 +260,7 @@ Change navbar background color.
 <nav class="... bg-white">
 ```
 
-https://getbootstrap.com/docs/4.4/utilities/colors/#background-color
+https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
 
 ## Shadow
 Add shadow to navbar.
@@ -269,17 +269,17 @@ Add shadow to navbar.
 <nav class="... shadow-sm">
 ```
 
-https://getbootstrap.com/docs/4.4/utilities/shadows/
+https://getbootstrap.com/docs/4.5/utilities/shadows/
 
 ## Sticky navbar
 ```html
 <nav class="... sticky-top">
 ```
 
-https://getbootstrap.com/docs/4.4/utilities/position/#sticky-top
+https://getbootstrap.com/docs/4.5/utilities/position/#sticky-top
 
 ### Example of `sticky-top`
-https://getbootstrap.com/docs/4.4/examples/product/
+https://getbootstrap.com/docs/4.5/examples/product/
 
 ## Custom css style
 ```css title="css/custom.css"

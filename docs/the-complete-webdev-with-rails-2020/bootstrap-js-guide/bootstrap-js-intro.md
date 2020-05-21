@@ -10,7 +10,7 @@ title: Introduction to JS for Bootstrap
 - Make `bootstrap-js-test` folder
 - Make `bootstrap-js-test1.html` inside it
 - Copy and Paste Bootstrap starter template
-  https://getbootstrap.com/docs/4.4/getting-started/introduction/
+  https://getbootstrap.com/docs/4.5/getting-started/introduction/
 
 ```html title="bootstrap-js-test/bootstrap-js-test1.html"
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ Some bootstrap components need
 These are the list of components which require javascript.
 
 ![Bootstrap components requiring JavaScript](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/bootstrap-need-js-component.png)
-Ref: https://getbootstrap.com/docs/4.4/getting-started/introduction/#js
+Ref: https://getbootstrap.com/docs/4.5/getting-started/introduction/#js
 :::
 
 
@@ -84,7 +84,7 @@ In this step, let's check **Modal** component*.
 
 ## Check Modal section
 
-https://getbootstrap.com/docs/4.3/components/modal/
+https://getbootstrap.com/docs/4.5/components/modal/
 
 You will find that this is **"interactive"** (user click button and modal shows up).
 
@@ -96,7 +96,7 @@ You will find that this is **"interactive"** (user click button and modal shows 
 ## Try Modal component
 ### Copy and paste Modal code
 
-https://getbootstrap.com/docs/4.3/components/modal/#live-demo
+https://getbootstrap.com/docs/4.5/components/modal/#live-demo
 
 ```html title="bootstrap-js-test1.html"
 <!DOCTYPE html>
@@ -211,7 +211,7 @@ We open modal by using this button
 </button>
 ```
 
-Check this document: https://getbootstrap.com/docs/4.3/components/modal/#via-data-attributes
+Check this document: https://getbootstrap.com/docs/4.5/components/modal/#via-data-attributes
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-10-06-18-48.png)
 

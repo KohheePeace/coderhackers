@@ -4,17 +4,28 @@ title: Grid System Layout
 
 ## Goal
 
-- ⚡ Try Bootstrap **grid system**
+- ⚡ Try Bootstrap **grid system** to make 3 columns layout
+
+![](../../img/2020-05-20-18-25-19.png)
 
 ## What is Grid system ?
 > Bootstrap’s grid system uses a series of <mark>**containers**, **rows**, and **columns** to layout and align content</mark>.
 
-https://getbootstrap.com/docs/4.4/layout/grid/
+https://getbootstrap.com/docs/4.5/layout/grid/
+
+```html title="Grid System of Bootstrap"
+<div class="container">
+  <div class="row">
+    <div class="col-**"></div>
+    ...
+  </div>
+</div>
+```
 
 ## Try Grid system
 Let's try Bootstrap grid system 👍
 
-https://getbootstrap.com/docs/4.4/layout/grid/
+https://getbootstrap.com/docs/4.5/layout/grid/
 
 ![copy-grid-layout](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-grid-layout.gif)
 
@@ -109,8 +120,10 @@ In `bootstrap-test1.html`
 
 ![output-after-copy-grid](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-grid.png)
 
-### Add Card component 
-https://getbootstrap.com/docs/4.3/components/card/
+### Add Card component
+To make it more like real example, let's add **card** component.
+
+https://getbootstrap.com/docs/4.5/components/card/
 
 ![copy-card.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-card.gif)
 
@@ -326,12 +339,14 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.
 ## Summery
 :::info summery
 
-- You can make **3 column layout** website by using **grid system**
+In this step, it is enough to learn that...
+
+- **<mark>Use Bootstrap's grid system to layout website</mark>**
 
 ```html title="Grid System of Bootstrap"
 <div class="container">
   <div class="row">
-    <div class="col"></div>
+    <div class="col-**"></div>
     ...
   </div>
 </div>
@@ -339,4 +354,4 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.
 :::
 
 
-In the next step, let's learn `col` in more detail.
+From the next step, let's learn `col-**` in detail to make more real world layout.

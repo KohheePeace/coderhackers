@@ -81,10 +81,10 @@ Then, move under **`img`** folder.
 ```
 
 ### Bootstrap refs
-- `card`, `card-body`, `card-text`: https://getbootstrap.com/docs/4.4/components/card/#titles-text-and-links
-- `media`: https://getbootstrap.com/docs/4.4/components/media-object/
-- `rounded-circle`: https://getbootstrap.com/docs/4.4/utilities/borders/#border-radius
-- `text-muted`: https://getbootstrap.com/docs/4.4/utilities/colors/#color
+- `card`, `card-body`, `card-text`: https://getbootstrap.com/docs/4.5/components/card/#titles-text-and-links
+- `media`: https://getbootstrap.com/docs/4.5/components/media-object/
+- `rounded-circle`: https://getbootstrap.com/docs/4.5/utilities/borders/#border-radius
+- `text-muted`: https://getbootstrap.com/docs/4.5/utilities/colors/#color
 
 ## Final Code
 ```html title="index.html"

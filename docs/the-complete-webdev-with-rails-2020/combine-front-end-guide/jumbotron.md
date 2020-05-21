@@ -8,7 +8,7 @@ title: Jumbotron
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-05-42-31.png)
 
 ## Copy code from
-https://getbootstrap.com/docs/4.3/components/jumbotron/
+https://getbootstrap.com/docs/4.5/components/jumbotron/
 
 ```html
 <div class="jumbotron">
@@ -233,7 +233,7 @@ So add media query.
 </div>
 ```
 
-Flex Order: https://getbootstrap.com/docs/4.4/utilities/flex/#order
+Flex Order: https://getbootstrap.com/docs/4.5/utilities/flex/#order
 
 ### Slogan for mobile
 ```css
@@ -245,7 +245,7 @@ Flex Order: https://getbootstrap.com/docs/4.4/utilities/flex/#order
 }
 ```
 `575.98px` is coming from this link:
-https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints
+https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints
 
 ### Wrap button link with `d-flex`
 
