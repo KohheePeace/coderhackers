@@ -1,12 +1,12 @@
 ---
-title: px vs em vs rem
+title: px, em and rem
 ---
 
 ## Goal
-- ⚡ Learn the difference of `px` vs `em` vs `rem`
+- ⚡ Learn the difference of `px`, `em` and `rem`
 
 
-## What is this ?
+## Preparation
 Please make **`px-em-rem.html`** file in `bootstrap-test` folder.
 
 ```html title="bootstrap-test/px-em-rem.html"
@@ -40,7 +40,6 @@ Please make **`px-em-rem.html`** file in `bootstrap-test` folder.
   </head>
   <body>
     <div class="em-area">
-      <p>Hello I'm normal</p>
       <p class="i-am-2em">Hello I'm 2em</p>
       <p class="i-am-2rem">Hello I'm 2rem</p>
       <p class="i-am-32px">Hello I'm 32px</p>
@@ -50,17 +49,9 @@ Please make **`px-em-rem.html`** file in `bootstrap-test` folder.
 ```
 
 ## What is `em` ?
-> Relative to the font-size of the element (2em means 2 times the size of the current font)	
+`em`: Relative to font-size of the parent element	
 
-https://www.w3schools.com/cssref/css_units.asp
-
-```html
-<p class="i-am-2em">Hello I'm 2em</p>
-```
-
-This default  font-size is `14px` which is inherited from the parent `.em-area` class.
-
-That's why `2em` becomes `14px x 2 = 28px`.
+https://dzone.com/articles/css-relative-font-size
 
 ### Demo
 
@@ -81,17 +72,11 @@ also become bigger.
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_074317.gif)
 
 ## What is `rem` ?
-> Relative to font-size of the root element	
+> `rem`: Relative to font-size of the root element	
 
 https://www.w3schools.com/cssref/css_units.asp
 
-**root element** is **`<html>`**. So,
-
-```html
-<p class="i-am-2rem">Hello I'm 2rem</p>
-```
-
-is `16px`(from `<html>`) x 2 = **32px**
+**root element** is **`<html>`**.
 
 ### Demo
 If you change `html` font-size,
@@ -110,12 +95,13 @@ also become bigger.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_074159.gif)
 
-
+## `px`
+Pixel doesn't change related to other element. That's why this is called absolute value.
 
 ## Which should I use ?
-Bootstrap uses **`rem`**, so following **"When in Rome, do as the Romans do"** proverb.
+Bootstrap uses **`rem`**, and we're using Bootstrap, so following bootstrap convention is better.
 
-Use **`rem`** towards these properties
+We're going to use **`rem`** towards these properties in future steps
 - `font-size`
 - `margin`
 - `padding`

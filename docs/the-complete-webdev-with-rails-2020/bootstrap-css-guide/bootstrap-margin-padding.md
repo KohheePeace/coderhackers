@@ -11,10 +11,12 @@ Bootstrap offers <mark>**`classes` to add margin or padding**</mark> responsivel
 
 https://getbootstrap.com/docs/4.5/utilities/spacing/
 
-By using these `classes`, **you don't need to write CSS** for adding margin or padding.
+By using these `classes`, **you don't need to write CSS** for just adding margin or padding.
 
-### For example
+## For example
+
 If you want to add `margin-bottom` to `<h1>`
+
 ```html title="html file"
 <div>
   <h1>Hello World!</h1>
@@ -41,7 +43,8 @@ You need to
 }
 ```
 
-#### But with Bootstrap utilities
+**But by using Bootstrap utilities**
+
 You just need to add `mb-4`
 
 ```html title="html file"
@@ -52,15 +55,21 @@ You just need to add `mb-4`
 </div>
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_063104.gif)
+![](/docs/img/20200522_081850.gif)
 
-## Syntax
 
-Let's check this utilities syntax
+:::caution
+I will explain `rem` in the future step.
+:::
 
-### Margin
-#### When screen size is `xs`
+Okay, so Let's check this margin and padding utilities syntax.
+
+## Margin
+### Without breakpoint
 **`m{sides}-{size}`**
+
+It will be applied to all breakpoints.
+
 ```html
 <!--margin top 2 -->
 mt-2
@@ -73,22 +82,34 @@ ml-3
 
 <!--margin right auto -->
 mr-auto
+
+<!--margin left and right 2 -->
+mx-2
+
+<!--margin top and bottom 2 -->
+my-2
 ```
 
-#### When screen size is `sm, md, lg, and xl`
+### With breakpoint: `sm, md, lg, and xl`
+
 **`m{sides}-{breakpoint}-{size}`**
+
+It will be applied to **<mark>that one breakpoint and all those above it</mark>**.
+
 ```html
-<!-- If screen size is bigger than `lg`, margin top 2 -->
+<!-- If viewport width is bigger than `lg`, margin top 2 -->
 mt-lg-2
 
-<!-- If screen size is bigger than `xl`, margin bottom 3 -->
+<!-- If viewport width is bigger than `xl`, margin bottom 3 -->
 mb-xl-3
 ```
 
-### Padding
+## Padding
+### Without breakpoint
 
-#### When screen size is `xs`
 **`p{sides}-{size}`**
+
+It will be applied to all breakpoints.
 ```html
 <!--padding top 2 -->
 pt-2
@@ -101,10 +122,20 @@ pl-3
 
 <!--padding right auto -->
 pr-auto
+
+<!--padding left and right 2 -->
+px-2
+
+<!--padding top and bottom 2 -->
+py-2
 ```
 
-#### When screen size is `sm, md, lg, and xl`
+### With breakpoint: `sm, md, lg, and xl`
+
 **`p{sides}-{breakpoint}-{size}`**
+
+It will be applied to **<mark>that one breakpoint and all those above it</mark>**.
+
 ```html
 <!-- If screen size is bigger than `lg`, padding top 2 -->
 pt-lg-2
@@ -114,261 +145,19 @@ pb-xl-3
 ```
 
 
-## Usecase
+## Use case
 
-:::info
+:::note Use case
 - we need `margin-bottom` for mobile and tablet
 - we don't need `margin-bottom` for laptop
 :::
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_064024.gif)
+
+![](/docs/img/20200522_092929.gif)
+https://frontend-combine-demo.now.sh/
 
 ```html
 <!-- highlight-next-line -->
-<div class="mb-3 mb-lg-0">
+<div class="mb-5 mb-lg-0">
 ```
 
-:::caution
-I will handle `rem` in future step.
-:::
-
-## Final code
-```html title="bootstrap-test1.html"
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="bootstrap-test1.css" />
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
-
-    <div class="jumbotron">
-      <h1 class="display-4" style="font-weight: bold;">Hello, world!</h1>
-      <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
-      </p>
-      <hr class="my-4" />
-      <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
-      </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <!-- highlight-next-line -->
-        <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
-          <div class="card" style="width: 100%;">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.JPG/640px-Tortoiseshell_she-cat.JPG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
-```

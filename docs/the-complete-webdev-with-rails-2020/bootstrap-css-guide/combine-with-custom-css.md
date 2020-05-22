@@ -1,16 +1,16 @@
 ---
-title: Combine with custom CSS
+title: Override Bootstrap CSS
 ---
 
 
 ## Goal
-  - ⚡ Combine custom CSS with Bootstrap CSS
+  - ⚡ Learn how to override Bootstrap CSS
 
 
 ## Why ?
 Bootstrap is useful to make nice website rapidly.
 
-**But**, **<mark>there is a case you want to customize default Bootstrap's CSS.</mark>**
+**But**, **<mark>there is a case you want to customize default Bootstrap CSS.</mark>**
 
 So, in this chapter, we going to learn how to do it!
 
@@ -18,7 +18,7 @@ So, in this chapter, we going to learn how to do it!
 
 First, let's change jumbotron background color.
 
-As shown below gif,
+As shown in the below gif,
 
 1. Open Chrome DevTools
 2. Find `.jumbotron` class
@@ -40,7 +40,7 @@ Copy and Paste and delete unnecessary part.
 
 ### Import `bootstrap-test1.css`
 
-```html {11,12} title="test3.html"
+```html {11,12} title="bootstrap-test1.html"
 <!doctype html>
 <html lang="en">
   <head>
@@ -65,7 +65,7 @@ Next, we want to make **"Hello, world!"** text bold.
 
 ![custom-css-inline-style](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/custom-css-inline-style.gif)
 
-`test3.html`
+`bootstrap-test1.html`
 
 ```html
 <!doctype html>
@@ -96,3 +96,11 @@ Next, we want to make **"Hello, world!"** text bold.
   </body>
 </html>
 ```
+
+## Summery
+To override Bootstrap CSS
+
+:::info
+1. Copy Bootstrap `class` and change CSS value
+2. Use inline-style to add new CSS
+:::

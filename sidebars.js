@@ -111,7 +111,7 @@ module.exports = {
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/col-mobile",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/col-tablet",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/col-desktop",
-        "the-complete-webdev-with-rails-2020/bootstrap-css-guide/combine-with-custom-css",
+        // "the-complete-webdev-with-rails-2020/bootstrap-css-guide/combine-with-custom-css",
         // "the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-examples-page",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-margin-padding",
         "the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-flexbox",
