@@ -122,7 +122,7 @@ module.exports = {
       JavaScript: [
         "the-complete-webdev-with-rails-2020/javascript-guide/javascript-intro",
         "the-complete-webdev-with-rails-2020/javascript-guide/where-to-write-script",
-        "the-complete-webdev-with-rails-2020/javascript-guide/refactor",
+        // "the-complete-webdev-with-rails-2020/javascript-guide/refactor",
         // "the-complete-webdev-with-rails-2020/javascript-guide/play-with-javascript",
         "the-complete-webdev-with-rails-2020/javascript-guide/dom-document",
         "the-complete-webdev-with-rails-2020/javascript-guide/element-events",
@@ -145,7 +145,7 @@ module.exports = {
     },
     {
       "🔥 Combine all front end": [
-        "the-complete-webdev-with-rails-2020/combine-front-end-guide/intro",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/combine-frontend-section-overview",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/change-font",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/navbar",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/jumbotron",

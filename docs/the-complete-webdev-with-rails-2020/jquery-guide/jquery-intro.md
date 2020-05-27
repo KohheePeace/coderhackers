@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/JQuery
 
 ## The merit of jQuery
 
-And also, let's check the below link.
+Let's check the below link.
 
 http://youmightnotneedjquery.com/
 
@@ -27,7 +27,7 @@ This is a document aimed to show **how to replace jQuery with pure javascript**,
 
 Did you find the merit of jQuery ?
 
-**You write less code compared to pure JavaScript**
+By using jQuery **you write less code compared to pure JavaScript**
 
 Check jQuery logo ...
 

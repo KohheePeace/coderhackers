@@ -3,11 +3,11 @@ title: Element Events
 ---
 
 ## Goal
-- ⚡ Understand **(2)** of the below part
+- ⚡ Understand **(2)** of the below code
 
 ```html title="js-test1.html"
 <script>
-  let demoElement = document.getElementById('demo');       --- (1)
+  let demoElement = document.getElementById("demo");       --- (1)
   
   // highlight-next-line
   demoElement.onclick = function changeContent () {        --- (2)
@@ -18,26 +18,37 @@ title: Element Events
 ```
 
 ## Overview
-In this step, we're going to focus on `<div#demo>` HTML element in DOM.
+To understand **(2) and (3)** of the above code,
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-21-24-55.png)
+we're going to focus on `<div#demo>` Element and learn **`Element`** **<mark>Events and Properties</mark>**.
+
+![](../../img/2020-05-24-19-38-42.png)
 
 
 ## ELement `Events`
-> Listen to these events using `addEventListener()` or by assigning an event listener to the `oneventname` property of this  interface.
 
-https://developer.mozilla.org/en-US/docs/Web/API/Element
+In this step, we focus on **`Element Events`** to understand **(2)**.
+
+![](../../img/2020-05-24-19-39-31.png)
 
 As described here, HTML element have various **"Events"**.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_230720.gif)
+![](/docs/img/20200523_194733.gif)
 
+https://developer.mozilla.org/en-US/docs/Web/API/Element
+
+And you can
+
+> Listen to these events using `addEventListener()` or by assigning an event listener to the <mark>`oneventname` property</mark> of this interface.
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element
 
 :::caution note
 - I will handle `addEventListener()` in future step
-- Currently focus on `oneventname` property
+- Focus on `oneventname` property currently
 :::
 
+Okay so, let's check the example of events.
 
 ## `click` event
 `click`:
@@ -46,6 +57,22 @@ As described here, HTML element have various **"Events"**.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_231416.gif)
 
+
+This is what used in our code
+
+```html
+<script>
+  let demoElement = document.getElementById("demo");
+  
+  // highlight-next-line
+  demoElement.onclick = function changeContent () { 
+    demoElement.innerHTML = "Help me";              
+    demoElement.style = "color: red";               
+  }
+</script>
+```
+
+Okay, so let's try another event.
 
 ## `mouseover` event
 `mouseover`:
@@ -56,7 +83,7 @@ As described here, HTML element have various **"Events"**.
 
 ```html title="js-test1.html"
 <script>
-  let demoElement = document.getElementById('demo');       --- (1)
+  let demoElement = document.getElementById("demo");       --- (1)
   
   demoElement.onclick = function changeContent () {        --- (2)
     demoElement.innerHTML = "Help me";                     --- (3)
@@ -74,17 +101,24 @@ As described here, HTML element have various **"Events"**.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_231838.gif)
 
-## javascript `function`
+## Javascript `function`
 
-:::info
 **`function`** is just a javascript syntax.
 
 ```js
-function functionNameHERE () {
+function functionName () {
   // Do something here
 }
 ```
 
 https://www.w3schools.com/js/js_functions.asp
-:::
 
+
+So, by writing like the below,
+
+you can define **"what to do"** when there is an event to that Element.
+```js
+SomeElement.oneventname = function functionName () {
+  // Do something here
+}
+```

@@ -7,9 +7,9 @@ title: Play with jQuery
 
 ## Overview
 
-In last step, We learned that jQuery is easy writing alternative of javascript.
+In the last step, We learned that jQuery is easy writing alternative of javascript.
 
-So, let's replace existing code with jQuery.
+So, let's replace the javascript code which we learned with jQuery.
 
 ## Preparation
 - Make `jquery-test` folder 
@@ -45,8 +45,11 @@ So, copy and paste this code
 </html>
 ```
 
-## Download jquery
-![download-jquery](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_235226.gif)
+## Import jquery
+To use jQuery, we need to import jQuery.
+https://jquery.com/
+
+![import-jquery](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_235226.gif)
 
 
 ```html title="jquery-test1.html"
@@ -83,18 +86,48 @@ So, copy and paste this code
 </html>
 ```
 
+## jQuery syntax
+First, let's check jQuery syntax.
+```js
+$(selector).eventname(function(){
+  // Do something 
+})
+```
+
+For example
+
+```js
+  // <p> tag
+  $("p").click(function() {
+    // Do something
+  })
+
+  // <div class="test">
+  $(".test").mouseover(function() {
+    // Do something
+  })
+
+  // <div id="demo">
+  $("#demo").click(function() {
+    // Do something
+  })
+```
+
+Ref: https://www.w3schools.com/jquery/jquery_syntax.asp
+
 ##  Replace `onclick`, `innerHTML`, `style`
 
 The most important things is **always googling**.
 
-- Replace `onclick`: https://api.jquery.com/click/
+- Googling: "jquery click" => https://api.jquery.com/click/
 
-- Replace `innerHTML`: https://api.jquery.com/html/
+- Googling: "jquery innerHtml" => [How to replace innerHTML of a div using jQuery?](https://stackoverflow.com/questions/1309452/how-to-replace-innerhtml-of-a-div-using-jquery)
 
-- Replace `style`: https://api.jquery.com/css/
+- Googling: "jquery inline style" => [edit existing inline style using jquery?](https://stackoverflow.com/questions/8359224/edit-existing-inline-style-using-jquery)
 
+So, this code becomes
 ```js title="Javascript"
-let demoElement = document.getElementById('demo');
+let demoElement = document.getElementById("demo");
 
 demoElement.onclick = function () {
   demoElement.innerHTML = "Help me";
@@ -115,10 +148,9 @@ $("#demo").click(function() {
 Check it works as before...
 
 ## Repalce `onmouseover`
-Googling **"jQuery onmouseover equivalent"**
+Googling **"jQuery onmouseover equivalent"** => https://api.jquery.com/mouseover/
 
-https://api.jquery.com/mouseover/
-
+So,
 ```js title="pure javascript"
 demoElement.onmouseover = function () {
   console.log("Hello~!");
@@ -134,32 +166,3 @@ $("#demo").mouseover(function() {
 ```
 
 Check it works as before...
-
-## Recap jQuery syntax
-```js
-$(selector).action(function(){
-  // Do something 
-})
-```
-
-For example
-
-```js
-// <p> tag
-$("p").click(function() {
-  // Do something
-})
-
-// <div class="test">
-$(".test").mouseover(function() {
-  // Do something
-})
-
-// <div id="demo">
-$("#demo").click(function() {
-  // Do something
-})
-```
-
-## Ref
-https://www.w3schools.com/jquery/jquery_syntax.asp

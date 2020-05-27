@@ -34,9 +34,9 @@ We will add `<script></script>` tag inside `<body>` tag.
 Okay so, let's understand the last chapter's code
 ```html
 <script>
-  document.getElementById('demo').onclick = function changeContent() {
-    document.getElementById('demo').innerHTML = "Help me";
-    document.getElementById('demo').style = "color: red";
+  document.getElementById("demo").onclick = function changeContent() {
+    document.getElementById("demo").innerHTML = "Help me";
+    document.getElementById("demo").style = "color: red";
   }
 </script>
 ```
@@ -58,14 +58,14 @@ So `test4.html`
 ```html title="test4.html"
 <script>
   // Comment out before code.
-  // document.getElementById('demo').onclick = function changeContent() {
-  //   document.getElementById('demo').innerHTML = "Help me";
-  //   document.getElementById('demo').style = "color: red";
+  // document.getElementById("demo").onclick = function changeContent() {
+  //   document.getElementById("demo").innerHTML = "Help me";
+  //   document.getElementById("demo").style = "color: red";
   // }
   
   // highlight-start
   // Get target element 'demo' and assign it to `demoElement` variable 
-  let demoElement = document.getElementById('demo');
+  let demoElement = document.getElementById("demo");
 
   // Add function to the demoElement's `onclick` event.
   // you can skip function name 'changeContent'

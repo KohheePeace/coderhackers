@@ -1,20 +1,16 @@
 ---
-title: Combine with custom JavaScript
+title: Bootstrap JS with custom JavaScript
 ---
 
 ## Goal
-  - ⚡ Learn how to combine custom jQuery code with Bootstrap
+  - ⚡ Make a feature something like below gif.
 
-## Overview
-
-In this chapter, let's make a feature like below image and learn how to combine custom jQuery code and Bootstrap. 
+![document-ready-show-modal](/docs/img/20200526_222117.gif)
 
 :::info Specifications
 1. When user visit your website
-2. Show modal
+2. Show modal to announce something (ex: wikipedia donation)
 :::
-
-![document-ready-show-modal](https://storage.googleapis.com/coderhackers-assets/docs/img/20200510_063821.gif)
 
 
 ## Preparation
@@ -52,14 +48,20 @@ In this chapter, let's make a feature like below image and learn how to combine 
 </html>
 ```
 
-## Do something when user visit website
+:::caution
+- Order of javascript file is important.
+- We will use jQuery in `custom.js` file, that's why it should be `jQuery` => `custom.js`
+:::
 
-### Add `$( document ).ready()`
+## Do something when user visit website
+To do something when user visit website, you can use `$(document).ready()`.
+
+### Add `$(document).ready()`
 https://learn.jquery.com/using-jquery-core/document-ready/
 
 ```js title="bootstrap-js-test/custom.js"
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+  console.log("ready!");
 });
 ```
 
@@ -68,10 +70,10 @@ $( document ).ready(function() {
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200510_030230.gif)
 
 ### Refactor
-This is a shorthand of  `$( document ).ready()`
+This is a shorthand of  `$(document).ready()`
 ```js title="bootstrap-js-test/custom.js"
 $(function() {
-    console.log( "ready!" );
+  console.log("ready!");
 });
 ```
 
@@ -82,16 +84,71 @@ $('#myModal').modal('show')
 ```
 https://getbootstrap.com/docs/4.5/components/modal/#modalshow
 
-
-## Final Code
+Then, change the target `id` for our code
 
 ```js title="custom.js"
 $(function () {
+  // highlight-next-line
   $("#exampleModal").modal("show");
 });
 ```
 
-## Summery
-:::important
-- By using javascript, you can open modal without clicking the button
-:::
+## Edit modal title and body
+```html title="bootstrap-js-test1.html"
+...
+<!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- highlight-start -->
+            <h5 class="modal-title" id="exampleModalLabel">We need your help</h5>
+            <!-- highlight-end -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- highlight-start -->
+            <p>
+              We need your help to maintain our website. Commodo sit anim
+              laboris exercitation elit tempor anim veniam duis in. Nulla
+              aliquip culpa pariatur irure eu deserunt. Dolore cupidatat
+              reprehenderit occaecat commodo aliqua. Eiusmod qui ipsum
+              exercitation et et adipisicing laboris. Exercitation ad
+              adipisicing duis elit consectetur et voluptate officia dolore
+              exercitation pariatur. Anim duis et ad velit et velit esse esse eu
+              cillum nulla. Non voluptate culpa ad culpa labore sit minim elit.
+            </p>
+            <!-- highlight-end -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+...
+```
+
+## Check the output
+check it works correctly here...

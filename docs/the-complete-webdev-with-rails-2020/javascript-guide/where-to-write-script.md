@@ -1,14 +1,14 @@
 ---
-title: Where to write javascript code
+title: Where to write javascript
 ---
 
 ## Goal
-  - ⚡ Learn where to write javascript
+  - ⚡ Learn where to write javascript code
 
 ## Overview
-Before dive into javascript code, let's check
+Before diving into javascript code, let's check
 
-**"where to write javascript code"** in **HTML file**.
+**"where to write javascript code"** in HTML file.
 
 ## Where to write javascript code ?
 > **In HTML**, JavaScript code is inserted between `<script>` and `</script>` tags.
@@ -22,8 +22,8 @@ https://www.w3schools.com/js/js_whereto.asp
 ```
 
 :::caution note
-- `<script>` "tag" is HTML code.
-- Inside `<script>` tag is javascript code.
+- `<script>` tag is HTML code.
+- The code inside `<script>` tag is javascript code.
 :::
 
 ## Where to place `<script>` tag in HTML?
@@ -34,8 +34,9 @@ https://www.w3schools.com/js/js_whereto.asp
 
 https://www.w3schools.com/js/js_whereto.asp
 
-```html title="inside <body> tag"
+```html title="inside <body> tag in html file"
 <body>
+  ...
   <script>
     // javascript code here...
   </script>
@@ -44,10 +45,33 @@ https://www.w3schools.com/js/js_whereto.asp
 
 or
 
-```html title="inside <head> tag"
+```html title="inside <head> tag in html file"
 <head>
+  ...
   <script>
     // javascript code here...
   </script>
 </head>
+```
+
+or both.
+
+```html
+<html>
+  <head>
+    ...
+    <script>
+      // javascript code here...
+    </script>
+  </head>
+
+  ...
+  
+  <body>
+    ...
+    <script>
+      // javascript code here...
+    </script>
+  </body>
+</html>
 ```

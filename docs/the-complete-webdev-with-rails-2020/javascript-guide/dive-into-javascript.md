@@ -35,7 +35,7 @@ Ref: http://todd-henderson.me/tutorials/javascript/building-a-javascript-library
 
 This is why we can access **`div#demo`**
 ```js
-document.getElementById('demo');
+document.getElementById("demo");
 ```
 And
 
@@ -55,7 +55,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
 :::note
 It is enough to remember that **`let`** is used to declare variable.
 ```js
-  let x = document.getElementById('demo');
+  let x = document.getElementById("demo");
 
   x.onclick = function () {
     x.innerHTML = "Help me";
@@ -101,13 +101,13 @@ In `test4.html`
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   <script>
     // Comment out before code.
-    // document.getElementById('demo').onclick = function changeContent() {
-    //   document.getElementById('demo').innerHTML = "Help me";
-    //   document.getElementById('demo').style = "color: red";
+    // document.getElementById("demo").onclick = function changeContent() {
+    //   document.getElementById("demo").innerHTML = "Help me";
+    //   document.getElementById("demo").style = "color: red";
     // }
 
     // Get target element
-    let demoElement = document.getElementById('demo');
+    let demoElement = document.getElementById("demo");
 
     // Add function to the demoElement's `onclick` event.
     // you can skip function name 'changeContent'
@@ -175,13 +175,13 @@ https://www.w3schools.com/js/js_output.asp
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   <script>
-    // document.getElementById('demo').onclick = function changeContent() {
-    //   document.getElementById('demo').innerHTML = "Help me";
-    //   document.getElementById('demo').style = "color: red";
+    // document.getElementById("demo").onclick = function changeContent() {
+    //   document.getElementById("demo").innerHTML = "Help me";
+    //   document.getElementById("demo").style = "color: red";
     // }
 
     // Get Target element
-    let demoElement = document.getElementById('demo');
+    let demoElement = document.getElementById("demo");
 
     // Add onclick function to the #demoElement.
     // you can skip function name 'changeContent'
