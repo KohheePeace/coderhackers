@@ -145,7 +145,7 @@ module.exports = {
     },
     {
       "🔥 Combine all front end": [
-        "the-complete-webdev-with-rails-2020/combine-front-end-guide/combine-frontend-section-overview",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/section-overview",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/change-font",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/navbar",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/jumbotron",
