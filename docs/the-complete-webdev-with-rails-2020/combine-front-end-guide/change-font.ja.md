@@ -1,12 +1,15 @@
 ---
-title: Change Font
+title: フォントの変え方
 ---
 
-## Goal
-- ⚡Learn how to change website **font**
+## ゴール
+- ⚡　ウェブサイトの**フォントの変更方法**を学習する。
 
-## Change `font-family`
-You can change whole website font by adding **`font-family`** in `body`.
+## `font-family`
+
+<!-- You can change whole website font by adding **`font-family`** in `body`. -->
+
+`body`の`font-family`を変更することによって、ウェブサイト全体のフォントを変更することができます。
 
 ```css title="For example"
 body {
@@ -14,25 +17,25 @@ body {
 }
 ```
 
-Try in chrome dev tools.
+chrome dev toolsで試してみましょう。
 
 ![change-font](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_234618.gif)
 
-## Check default installed fonts
-You can check default installed fonts in your devices here.
+フォントが変更されたのが分かるかと思います。
 
-Access this url in chrome: **`chrome://settings/fonts`**
+## 現在インストールされているフォントを確認する
+Google chrome で **`chrome://settings/fonts`**にアクセスすることで、現在chromeブラウザにインストールされているフォントを確認することができます。
 
 You see **`'Oswald'`** is installed. (Maybe `Oswald` is not installed in your machine)
 
-## How to use font which is not installed by default ?
+## ブラウザにインストールされていないフォントを使用する
 
-**But**, how to use font **which is not installed by default** ?
+現在ブラウザにインストールされていないフォントを使用するにはどうしたらいいでしょうか？
 
-### For example ...
-**`'Tangerine'`** is not installed by default in my machine.
+### 例えば`Tangerine`フォントを使用したい場合
+**`'Tangerine'`** フォントはデフォルトではchromeブラウザにインストールされていません。
 
-So, if you add this css,
+なので、以下のようなCSSを与えた場合
 
 ```css
 body {
@@ -40,29 +43,30 @@ body {
 }
 ```
 
-this font is not applied. Instead, **fallback fonts** is applied.
+`'Tangerine'`フォントは適用されず、代わりに**fallback font**が適用されます。
 
 
 :::caution
-This is not **`'Tangerine'`** font.
+フォントの見た目は変更されましたが、これは`'Tangerine'`フォントではなくて、fallback fontが適用されています。
 
 ![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_235157.gif)
 :::
 
-## Google Fonts
-If you want to specify your website fonts,
+## Fallback fontについて
 
-<mark>It is better to use google fonts.</mark>
+## Google Fontsについて
+特定のフォントをウェブサイトで指定する場合は、**Google Fonts**を使用するといいでしょう。
 
-
-This is because
+なぜなら、
 
 :::info
-1. Default installed fonts differs each devices. (Windows, Mac, iPhone, Android...)
-2. So, there is a case the fonts you want to use is not installed.
+- 指定したいフォントがユーザーの使用するブラウザにインストールされていない可能性がある
+- Google Fontsを読み込んでおけば、ユーザーのブラウザにインストールされていなくてもフォントが適用される。
 :::
 
-To add non default font, you can use **Google Fonts**
+## Google Fontsを使用する
+
+それでは、Google Fontsの利用の仕方を見ていきましょう。
 
 1. go to: https://fonts.google.com/
 2. **Search** font you want to use
@@ -106,10 +110,10 @@ body {
 ```
 
 
-## Poppins font 👏
-In our website, we're going to use **"Poppins"** font.
+## Poppins フォント 👏
+私たちのウェブサイトには、**"Poppins"**フォントを使用していきたいと思います。
 
-### Add Poppins font
+### Poppinsフォントを追加する
 https://fonts.google.com/specimen/Poppins
 
 We're only adding **`300`**, **`400`**, **`500`**, **`700`** and it's **`italic`** currently.

@@ -1,17 +1,16 @@
 ---
-title: Section Overview and Preparation
+title: 概要と準備
 ---
 
 
-## Goal
-- ⚡ In this section, we'll combine all the knowledge we've learned so far and make real website like below.
+## Sectionのゴール
+- ⚡ このSectionでは、いままで学んだ知識を組み合わせて以下のgifの様なウェブサイトを作成しましょう!
 
 ![preview-of-frontend-final.gif](https://storage.googleapis.com/coderhackers-assets/docs/img/20200507_214000.gif)
 
 
 
-
-## Preparation
+## 準備
 
 Please make new folder **`frontend-combine`** for this project.
 

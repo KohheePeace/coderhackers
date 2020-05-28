@@ -8,11 +8,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "kohheepeace", // Usually your GitHub org/user name.
   projectName: "coderhackers", // Usually your repo name.
-  plugins: [
-    "@docusaurus/plugin-google-analytics",
-    "@docusaurus/plugin-google-gtag",
-    "docusaurus-lunr-search",
-  ],
+  plugins: ["docusaurus-lunr-search"],
   themeConfig: {
     // sidebarCollapsible: false,
     prism: {
@@ -30,15 +26,7 @@ module.exports = {
         alt: "Logo",
         src: "img/logo.png",
       },
-      links: [
-        // {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        { to: "blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/kohheepeace/coderhackers",
-          label: "GitHub",
-          position: "right",
-        },
-      ],
+      links: [{ to: "blog", label: "Blog", position: "left" }],
     },
     footer: {
       links: [
@@ -57,10 +45,6 @@ module.exports = {
             {
               label: "Blog",
               to: "blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/kohheepeace/coderhackers",
             },
           ],
         },

@@ -1,6 +1,6 @@
 {
-  "name": "my-blog",
-  "version": "0.0.0",
+  "name": "coderhackers",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
