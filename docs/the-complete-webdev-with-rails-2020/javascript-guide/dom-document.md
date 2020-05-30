@@ -62,7 +62,7 @@ By typing `document` in console, you can obtain tree under `document`.
 
 As described in the below link **`document`** has various **"methods"**.
 
-![](/docs/img/20200523_171309.gif)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200523_171309.gif)
 
 https://developer.mozilla.org/en-US/docs/Web/API/Document
 

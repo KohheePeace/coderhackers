@@ -191,7 +191,7 @@ https://getbootstrap.com/docs/4.5/components/modal/#live-demo
 ## Check Modal Usage
 This is a document of modal usage: https://getbootstrap.com/docs/4.5/components/modal/#via-data-attributes
 
-![](../../img/2020-05-26-14-36-24.png)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-26-14-36-24.png)
 
 
 ## What's next?

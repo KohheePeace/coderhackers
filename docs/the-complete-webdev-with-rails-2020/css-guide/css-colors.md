@@ -9,7 +9,7 @@ title: CSS Colors
 
 Visit: https://www.w3schools.com/colors/colors_converter.asp
 
-![](../../img/2020-05-14-05-51-42.png)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-14-05-51-42.png)
 
 | name   | hex       | rgb                | hsl                  |
 | ------ | --------- | ------------------ | -------------------- |

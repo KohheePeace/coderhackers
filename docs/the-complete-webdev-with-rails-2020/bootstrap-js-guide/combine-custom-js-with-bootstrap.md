@@ -5,7 +5,7 @@ title: Bootstrap JS with custom JavaScript
 ## Goal
   - ⚡ Make a feature something like below gif.
 
-![document-ready-show-modal](/docs/img/20200526_222117.gif)
+![document-ready-show-modal](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200526_222117.gif)
 
 :::info Specifications
 1. When user visit your website

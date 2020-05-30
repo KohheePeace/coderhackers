@@ -22,7 +22,7 @@ title: Element Properties
 ## Element `Properties`
 To understand  **(3)** we focus on **`Element Properties`**
 
-![](../../img/2020-05-24-19-40-15.png)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-24-19-40-15.png)
 
 As described here, HTML element has a lot of properties.
 

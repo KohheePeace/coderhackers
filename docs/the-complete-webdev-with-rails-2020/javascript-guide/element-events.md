@@ -22,18 +22,18 @@ To understand **(2) and (3)** of the above code,
 
 we're going to focus on `<div#demo>` Element and learn **`Element`** **<mark>Events and Properties</mark>**.
 
-![](../../img/2020-05-24-19-38-42.png)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-24-19-38-42.png)
 
 
 ## ELement `Events`
 
 In this step, we focus on **`Element Events`** to understand **(2)**.
 
-![](../../img/2020-05-24-19-39-31.png)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-24-19-39-31.png)
 
 As described here, HTML element have various **"Events"**.
 
-![](/docs/img/20200523_194733.gif)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200523_194733.gif)
 
 https://developer.mozilla.org/en-US/docs/Web/API/Element
 
