@@ -1,12 +1,13 @@
 ---
-title: Change Font
+title: How to change fonts
 ---
 
 ## Goal
-- ⚡Learn how to change website **font**
+- ⚡　Learn how to **change the font** on your website.
 
-## Change `font-family`
-You can change whole website font by adding **`font-family`** in `body`.
+## `font-family`
+
+You can change the font of the entire website by changing the `font-family` of the `body`.
 
 ```css title="For example"
 body {
@@ -14,64 +15,69 @@ body {
 }
 ```
 
-Try in chrome dev tools.
+Let's try it with the Chrome dev tools.
 
 ![change-font](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_234618.gif)
 
-## Check default installed fonts
-You can check default installed fonts in your devices here.
+You see that the font has been changed.
 
-Access this url in chrome: **`chrome://settings/fonts`**
+## Use a font that is not installed in the browser by default
 
-You see **`'Oswald'`** is installed. (Maybe `Oswald` is not installed in your machine)
+How can I use a font that is not installed in browser by default?
 
-## How to use font which is not installed by default ?
+### For example, if you want to use the `Tangerine` font
+**`Tangerine`** fonts are not installed in the chrome browser by default.
 
-**But**, how to use font **which is not installed by default** ?
-
-### For example ...
-**`'Tangerine'`** is not installed by default in my machine.
-
-So, if you add this css,
+So, if you add the following CSS
 
 ```css
 body {
-  font-family: 'Tangerine';
+  font-family: 'Tangerine', serif;
 }
 ```
 
-this font is not applied. Instead, **fallback fonts** is applied.
-
+The `Tangerine` font is not applied, instead the **fallback font** `serif` is applied.
 
 :::caution
-This is not **`'Tangerine'`** font.
+The look of the font has changed, but this is the **fallback font** `serif` being applied, not the `Tangerine` font.
 
 ![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_235157.gif)
 :::
 
+## Fallback font
+You can specify multiple fallback fonts if the specified font is not available.
+
+```css
+font-family: 'Tangerine', 'Oswald', ..., serif;
+```
+
+`'Tangerine'` is not present => `'Oswald'` is not present => ... `serif` fonts.
+
+The last `serif` is not a name of the font, but it is a name of the "type" of fonts. The browser will automatically select and apply this type of font which is installed.
+
+Ref: https://www.w3schools.com/cssref/pr_font_font-family.asp
+
 ## Google Fonts
-If you want to specify your website fonts,
+If you want to specify a specific font for your website, It is good to use **Google Fonts**.
 
-<mark>It is better to use google fonts.</mark>
-
-
-This is because
+Because,
 
 :::info
-1. Default installed fonts differs each devices. (Windows, Mac, iPhone, Android...)
-2. So, there is a case the fonts you want to use is not installed.
+- The font you want to specify may not be installed in the user's browser.
+- If you load Google Fonts, the font will be applied even if it's not installed in the user's browser.
 :::
 
-To add non default font, you can use **Google Fonts**
+## Use Google Fonts
+Let's take a look at how to use Google Fonts.
 
-1. go to: https://fonts.google.com/
-2. **Search** font you want to use
-3. **Select** font-weight you want to use.
-4. Copy **embed `<link>`**
+1. Go to https://fonts.google.com/
+2. Search for the name of the font you want to use.
+3. Select the size of the font weight you want to use.
+4. Copy **Embed `<link>`**.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_075419.gif)
 
-Paste inside `<head>` tag.
+Paste the copied `<link>` into the `<head>` tag.
 
 ```html title="index.html"
 <head>
@@ -83,49 +89,36 @@ Paste inside `<head>` tag.
   />
 </head>
 ```
-Then
+
+Let's add the following CSS to the `body` tag by using Chrome dev tools.
 
 ```css
-body {
-  font-family: 'Tangerine', cursive;
-}
+font-family: 'Tangerine', cursive;
 ```
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_080252.gif)
 
-
-## Fallback font
-
-**"cursive"** is **fallback** generic family font.
-
-**This font is applied if the browser does not support the first font.**
-```css
-body {
-  font-family: 'Tangerine', cursive;
-}
-```
-
+You can see that the `Tangerine` font is applied correctly by loading the font with Google fonts.
 
 ## Poppins font 👏
-In our website, we're going to use **"Poppins"** font.
+We will use the **"Poppins "** font on our website.
 
 ### Add Poppins font
 https://fonts.google.com/specimen/Poppins
 
-We're only adding **`300`**, **`400`**, **`500`**, **`700`** and it's **`italic`** currently.
+とりあえず **`300`**, **`400`**, **`500`**, **`700`**のフォントを追加しておきましょう。
 
-:::info
-Q. Why select `font-weight` and `italic`?
+**+Note**: Please add any weights or italics you may need later as appropriate. In my case, I add **`300`**, **`400`**, **`500`**, **`700`** for the first time and adjust it as needed.
 
-A. This is because web site performance.
+:::info Q. Why do I need to choose between `font-weight` and `italic`?
 
+A. This is to improve the loading speed of the site by reducing the size of the font file to be loaded.
 
 Ref: https://www.smashingmagazine.com/2019/06/optimizing-google-fonts-performance/
 :::
 
-
 ```html title="Link embed"
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 ```
 
 ```css title="CSS"
@@ -134,6 +127,7 @@ font-family: 'Poppins', sans-serif;
 
 
 ## Final Code
+The final code looks like this.
 
 ```html title="index.html"
 <!DOCTYPE html>
@@ -148,10 +142,7 @@ font-family: 'Poppins', sans-serif;
 
     <!-- highlight-start -->
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- highlight-end -->
 
     <!-- Bootstrap CSS -->
