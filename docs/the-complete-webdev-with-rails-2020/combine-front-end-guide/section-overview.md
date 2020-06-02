@@ -9,12 +9,10 @@ title: Section Overview and Preparation
 ![preview-of-frontend-final.gif](https://storage.googleapis.com/coderhackers-assets/docs/img/20200507_214000.gif)
 
 
-
-
 ## Preparation
 
-1. Please create a **frontend-combine`** folder for this website.
-2. Create a **`index.html`** file in the `frontend-combine` folder.
+1. Please create a `frontend-combine` folder for this website.
+2. Create a `index.html` file in the `frontend-combine` folder.
 3. Paste the Bootstrap starter template code into `index.html`.
 https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
@@ -111,19 +109,3 @@ Next, load `css/custom.css` and `js/custom.js` into `index.html`.
 ```
 
 Now the prep is complete. Let's create a website from here! 😸
-
-## Refs
-
-https://bootstrapmade.com/
-
-https://bootstrapmade.com/demo/themes/NewBiz/
-
-https://www.shopify.com/
-
-https://squareup.com/us/en?country_redirection=true
-
-https://www.netlify.com/
-
-https://www.gitbook.com/
-
-https://startbootstrap.com/themes/new-age/
