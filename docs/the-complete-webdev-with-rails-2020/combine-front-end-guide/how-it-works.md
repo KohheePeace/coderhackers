@@ -1,11 +1,14 @@
 ---
-title: How it works section
+title: How it works Section
 ---
 
 ## Goal
-- ⚡ Make "How it works" section
+- ⚡ Make "How it works" Section
+
+![20200602135405](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602135405.png)
 
 ## Boilerplate
+First, paste the following code under the About Us section.
 ```html
 <!-- How it works -->
 <section id="how-it-works">
@@ -17,12 +20,17 @@ title: How it works section
         eiusmod tempor incididunt ut labore et dolore.
       </p>
     </div>
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4"></div>
+    </div>
   </div>
 </section>
-<!-- # How it works -->
 ```
 
-## Section css
+## The css in the section
+Change the `padding` and `background-color` of the section.
 ```css title="css/custom.css"
 /* How it works
 ------------------- */
@@ -33,7 +41,7 @@ title: How it works section
 ```
 
 ## Section Header
-This is same code with "about us" section.
+This is the same as the "About Us" part.
 
 ```css title="css/custom.css"
 #how-it-works .section-header {
@@ -48,22 +56,15 @@ This is same code with "about us" section.
 }
 ```
 
-## Prepare row and column
-
-```html
-<div class="row">
-  <div class="col-lg-4">
-  </div>
-  <div class="col-lg-4">
-  </div>
-  <div class="col-lg-4">
-  </div>
-</div>
-```
-
 ## column 1
+Let's create a single `col` in the `row` like the one below.
+
+![20200602140552](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602140552.png)
+
+Please copy and paste the following code.
 ```html
 <div class="col-lg-4">
+  <!-- highlight-start -->
   <div class="text-center">
     <img
       src="img/undraw_breakfast_psiw.svg"
@@ -87,18 +88,85 @@ This is same code with "about us" section.
       recordatione crudelitas illa.
     </p>
   </div>
+  <!-- highlight-end -->
 </div>
 ```
+
 ### Bootstrap refs
-- `text-center`: https://getbootstrap.com/docs/4.5/utilities/text/#text-alignment
-- `badge badge-primary`: https://getbootstrap.com/docs/4.5/components/badge/
-- `align-top`: https://getbootstrap.com/docs/4.5/utilities/vertical-align/
+- Centering image with `text-center`: https://getbootstrap.com/docs/4.5/utilities/text/#text-alignment
+- Create a badge with `badge badge-primary`: https://getbootstrap.com/docs/4.5/components/badge/
+- Adjust the vertical alignment of a badge with `align-top`: https://getbootstrap.com/docs/4.5/utilities/vertical-align/
 
 
-Then, just copy and paste this to make 2, 3 column.
+To create `column 2`, `column 3`, let's copy and paste this code. Then, change the image and wording.
+
+## column 2
+```html
+<div class="col-lg-4">
+  <!-- highlight-start -->
+  <div class="text-center">
+    <img
+      src="img/undraw_Cautious_dog_q83f.svg"
+      style="width: 200px; height: 140px;"
+      alt=""
+    />
+  </div>
+  <div class="p-3">
+    <h5>
+      <div
+        style="width: 22px;"
+        class="badge badge-primary align-top mr-2"
+      >
+        1
+      </div>
+      Feeding
+    </h5>
+    <p>
+      Cum similitudinem vero te nisi fructum sem duis Desideriis's
+      quis similitudinem quos. Earum class metus iis duis,
+      recordatione crudelitas illa.
+    </p>
+  </div>
+  <!-- highlight-end -->
+</div>
+```
+
+## column 3
+```html
+<div class="col-lg-4">
+  <!-- highlight-start -->
+  <div class="text-center">
+    <img
+      src="img/undraw_Modern_woman_lxh7.svg"
+      style="width: 200px; height: 140px;"
+      alt=""
+    />
+  </div>
+  <div class="p-3">
+    <h5>
+      <div
+        style="width: 22px;"
+        class="badge badge-primary align-top mr-2"
+      >
+        1
+      </div>
+      Dog walking
+    </h5>
+    <p>
+      Cum similitudinem vero te nisi fructum sem duis Desideriis's
+      quis similitudinem quos. Earum class metus iis duis,
+      recordatione crudelitas illa.
+    </p>
+  </div>
+  <!-- highlight-end -->
+</div>
+```
 
 ## Responsive margin
+Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
+
 ```html
+<!-- highlight-next-line -->
 <div class="col-lg-4 mb-5 mb-lg-0">
 ```
 
@@ -116,13 +184,13 @@ Then, just copy and paste this to make 2, 3 column.
 
     <!-- Font Awesome -->
     <script
-      src="https://kit.fontawesome.com/476ef21ecf.js"
+      src="https://kit.fontawesome.com/6284da3ffd.js"
       crossorigin="anonymous"
     ></script>
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -144,27 +212,29 @@ Then, just copy and paste this to make 2, 3 column.
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        class="d-block mx-auto"
-        role="img"
-        viewBox="0 0 24 24"
-        focusable="false"
-      >
-        <title>Product</title>
-        <circle cx="12" cy="12" r="10"></circle>
-        <path
-          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-        ></path>
-      </svg>
-      <a class="navbar-brand font-weight-bold ml-2" href="#">Logo</a>
+      <a class="navbar-brand" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class=""
+          role="img"
+          viewBox="0 0 24 24"
+          focusable="false"
+        >
+          <title>Product</title>
+          <circle cx="12" cy="12" r="10"></circle>
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
+          ></path>
+        </svg>
+        <span class="font-weight-bold">Logo</span>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -191,22 +261,23 @@ Then, just copy and paste this to make 2, 3 column.
           <li class="nav-item mr-lg-4">
             <a class="nav-link" href="#">Login</a>
           </li>
-          <li class="nav-item mr-lg-4">
-            <a class="btn btn-warning font-weight-bold px-3 py-2" href="#"
-              >Sign up</a
-            >
+          <li class="nav-item">
+            <a class="btn btn-warning font-weight-bold px-3 py-2" href="#">
+              Sign up
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <!-- # Navbar -->
 
     <!-- Jumbotron -->
     <div class="jumbotron bg-white">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1">
-            <h1 class="display-4 font-weight-bold">Learn web development</h1>
+            <h1 class="display-4 font-weight-bold">
+              Learn web development
+            </h1>
             <p class="lead">
               This is a simple hero unit, a simple jumbotron-style component for
               calling extra attention to featured content or information.
@@ -216,9 +287,7 @@ Then, just copy and paste this to make 2, 3 column.
               It uses utility classes for typography and spacing to space
               content out within the larger container.
             </p>
-            <div
-              class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start"
-            >
+            <div class="d-flex flex-column flex-lg-row">
               <a
                 class="btn btn-primary font-weight-bold mb-3 mb-lg-0"
                 href="#"
@@ -247,7 +316,6 @@ Then, just copy and paste this to make 2, 3 column.
         </div>
       </div>
     </div>
-    <!-- # Jumbotron -->
 
     <!-- About Us -->
     <section id="about-us">
@@ -267,7 +335,6 @@ Then, just copy and paste this to make 2, 3 column.
               alt=""
             />
           </div>
-
           <div class="col-md-6 d-flex flex-column justify-content-center">
             <h3 class="mb-4">Easy to customize</h3>
             <p>
@@ -275,8 +342,8 @@ Then, just copy and paste this to make 2, 3 column.
               modo in minim, rem, eos quam unde germania. Quo cum per turpis
               sanguinis nunc nicolae peccat.
             </p>
-            <a href="#" class="font-weight-bold">
-              See ways how to customize
+            <a href="#" class="font-weight-bold"
+              >See ways how to customize
               <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
@@ -325,7 +392,6 @@ Then, just copy and paste this to make 2, 3 column.
         </div>
       </div>
     </section>
-    <!-- # About Us -->
 
     <!-- highlight-start -->
     <!-- How it works -->
@@ -378,7 +444,7 @@ Then, just copy and paste this to make 2, 3 column.
                   style="width: 22px;"
                   class="badge badge-primary align-top mr-2"
                 >
-                  2
+                  1
                 </div>
                 Feeding
               </h5>
@@ -403,7 +469,7 @@ Then, just copy and paste this to make 2, 3 column.
                   style="width: 22px;"
                   class="badge badge-primary align-top mr-2"
                 >
-                  3
+                  1
                 </div>
                 Dog walking
               </h5>
@@ -417,7 +483,6 @@ Then, just copy and paste this to make 2, 3 column.
         </div>
       </div>
     </section>
-    <!-- # How it works -->
     <!-- highlight-end -->
 
     <!-- Optional JavaScript -->
@@ -449,8 +514,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Navbar
-------------------- */
+/* || Navbar */
 .nav-item {
   font-weight: 500;
 }
@@ -459,28 +523,27 @@ body {
   color: rgba(0, 0, 0, 0.9);
 }
 
-/* Jumbotron
-------------------- */
-@media screen and (min-width: 769px) {
+/* || Jumbotron */
+@media screen and (min-width: 992px) {
   .jumbotron {
-    background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
-    background-size: cover;
     margin-bottom: 0;
     height: calc(100vh - 57.69px);
     display: flex;
     align-items: center;
+    background-image: url(../img/jumbotron-bg.png);
+    background-size: cover;
   }
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 768px) {
   .jumbotron h1 {
     text-align: center;
     font-size: 2.3rem;
+    margin-top: 2.5rem;
   }
 }
 
-/* About Us
-------------------- */
+/* || About Us */
 #about-us {
   padding-top: 5rem;
 }
@@ -489,7 +552,7 @@ body {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #about-us .section-header p {
     max-width: 50%;
     margin: 0 auto;
@@ -502,8 +565,7 @@ body {
 }
 
 /* highlight-start */
-/* How it works
-------------------- */
+/* How it works */
 #how-it-works {
   padding: 5rem 0;
   background-color: #ecf5ff;

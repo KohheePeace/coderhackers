@@ -1,13 +1,13 @@
 ---
-title: How to change the font
+title: How to change fonts
 ---
 
 ## Goal
-- ⚡ Learn how to **change the font** on your website.
+- ⚡ In this step, we'll learn how to change the font on our website.
 
 ## `font-family`
 
-You can change the font of the entire website by changing the `font-family` of the `body`.
+To change the font of the whole website, you can change the `font-family` of the `body` as follows.
 
 ```css title="For example"
 body {
@@ -15,20 +15,18 @@ body {
 }
 ```
 
-Let's try it with Chrome dev tools.
+Let's try it in Chrome Dev Tools.
 
 ![change-font](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_123837.gif)
 
-You'll see that the font has been changed.
+You see that the font has been changed.
 
-## Use a font that is not installed in the browser by default
+## `Tangerine` font
+Now, let's try the `Tangerine` font. The `Tangerine` font looks like the following image.
 
-How can I use a font that is not installed in my browser by default?
+![20200603002843](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603002843.png)
 
-### For example, if you want to use the `Tangerine` font
-**`Tangerine`** fonts are not installed in the chrome browser by default.
-
-So, if you give the following CSS
+Now, let's try the following CSS in Chrome Dev Tools as before.
 
 ```css
 body {
@@ -36,62 +34,56 @@ body {
 }
 ```
 
-The `Tangerine` font is not applied, instead the **fallback font** `cursive` is applied.
+![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_124904.gif)
 
+The font has changed, but this is not the `Tangerine` font, but the `cursive` of the **fallback** font has been applied.
 
 :::caution
-The look of the font has changed, but this is not the `Tangerine` font, but the `cursive` of the **fallback font** has been applied.
+The reason for this is that the `Tangerine` font is **not installed in the chrome browser by default**.
 
-![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_124904.gif)
+*I will explain about `fallback font` later.
 :::
 
-## About Fallback Fonts
-You can specify multiple fallback fonts if the specified font is not available.
 
-```css
-font-family: 'Tangerine', 'Oswald', ... , cursive;
-```
+So how do you use a font that is not installed in your browser by default?
 
-`'Tangerine'` is missing => `'Oswald'` is missing => ... `cursive` fonts.
+**<mark>=> The answer is to use Google Fonts. 😸</mark>**
 
-The last `cursive` is not the name of the font, but the name of a type of font, and the browser will automatically select and apply the installed font of this font type.
+## Google Fonts
+If you want to use a particular font on your website, it is better to use **Google Fonts**.
 
-See: https://www.w3schools.com/cssref/pr_font_font-family.asp
+### Using Google Fonts
 
-## About Google Fonts
-If you want to specify a specific font for your website, it is better to use **Google Fonts**.
+Now let's take a look at how to use Google Fonts.
 
-Because.
-
-:::info
-- The font you want to specify may not be installed in the user's browser.
-- If you load Google Fonts, the font will be applied even if it's not installed in the user's browser.
-:::
-
-## Using Google Fonts
-
-Let's take a look at how to use Google Fonts.
-
-1. Go to https://fonts.google.com/
-2. Search for the font name you want to use
-3. Select the size of the font weight you want to use.
-4. Copy **Embed `<link>`**
+1. First, go to https://fonts.google.com/
+2. Next, search for the name of the font you want to use. This time, do a search for `Tangerine`.
+3. Next, select the font weight you want to use. Let's choose all this time.
+4. Please copy **Embed `<link>`** at the end.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_075419.gif)
 
-Paste the copied `<link>` into the `<head>` tag.
+Paste copied embeded `<link>` into the `<head>` tag as follows.
 
 ```html title="index.html"
 <head>
   ...
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <!-- highlight-start -->
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
     rel="stylesheet"
   />
+  <!-- highlight-end -->
 </head>
 ```
-Let's add the following CSS to the `body` tag by using Chrome dev tools.
+
+Now, let's check the following CSS in Chrome Dev Tools again.
 
 ```css
 font-family: 'Tangerine', cursive;
@@ -99,32 +91,66 @@ font-family: 'Tangerine', cursive;
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_125046.gif)
 
-You can see that the `Tangerine` font is applied correctly by loading Google fonts.
+This time, thanks to loading Google Fonts, you'll see that the `Tangerine` font was applied correctly.
+
+## About Fallback Fonts
+A **fallback font** is a font that is applied when the specified font is unavailable for some reason.
+
+Start with the font you want to use and then multiple fallback fonts as follows.
+
+```css
+font-family: 'Tangerine', 'Oswald', ... , cursive;
+```
+
+`'Tangerine'` is missing => `'Oswald'` is missing => ... `cursive`.
+
+The last `cursive` is the name of the font type, not the font name, and the browser will automatically select and apply the installed font of this type.
+
+Besides `cursive`, there are also `serif`, `sans-serif`, `fantasy`, and `monospace`, but it is sufficient to use CSS shown in Google Fonts.
+
+See: https://www.w3schools.com/cssref/pr_font_font-family.asp
 
 ## Poppins font 👏
-We will use the **"Poppins "** font on our website.
+We use the **"Poppins"** font on our website.
 
 ### Add a Poppins font.
+Now, let's add the Poppins font by clicking on the URL below.
+
 https://fonts.google.com/specimen/Poppins
 
-For now, let's add **`300`**, **`400`**, **`500`** and **`700`** fonts.
+In the meantime, please add **300`**, **400`**, **500`**, and **700`** fonts.
 
-***Note**: Please add any weights or italics you may need later as appropriate. In my case, I usually add **`300`**, **`400`**, **`500`**, **`700`** for the first time and adjust it as needed.
+***Note**: Different weights and italics can be added later, as needed and appropriate. In my case, I first add **`300`**, **`400`**, **`500`**, and **`700`** and adjust as needed.
 
-:::info Q. Why do you choose `font-weight` and `italic`?
+Now, copy and paste the embed link into the head tag.
 
-A. To improve the loading speed of the site by reducing the size of the font file to be loaded.
+```html title="index.html"
+<head>
+  ...
+  <!-- Google Fonts -->
+  <!-- highlight-next-line -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  ...
+</head>
+```
+
+Next, let's change the `font-family` of the body to the Poppins font.
+
+```css title="css/custom.css"
+/* highlight-start */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* highlight-end */
+```
+
+:::info Q. Why do I need to choose `font-weight` and `italic`?
+
+A. This is to improve the loading speed of the site by reducing the size of the font file to be loaded.
 
 See: https://www.smashingmagazine.com/2019/06/optimizing-google-fonts-performance/
 :::
 
-```html title="Link embed"
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-```
-
-```css title="CSS"
-font-family: 'Poppins', sans-serif;
-```
 
 
 ## Final Code

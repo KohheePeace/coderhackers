@@ -42,6 +42,10 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 </html>
 ```
 
+### Open project as a new VS code window
+Open the `frontend-combine` folder as a new VS code window.
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602_235337.gif)
+
 ### Folder Structure
 
 1. Create `css`, `js`, and `img` folders in `frontend-combine`.
@@ -49,7 +53,7 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
 ![folder-structure](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-03-23-20-58.png)
 
-I will now write css and javascript to these files.
+From now on, we will write CSS and javascript to these files.
 
 Next, load `css/custom.css` and `js/custom.js` into `index.html`.
 
@@ -108,4 +112,4 @@ Next, load `css/custom.css` and `js/custom.js` into `index.html`.
 </html>
 ```
 
-Now the prep is complete. Let's create a website from here! 😸
+Now the preparation is complete. Let's create a website from here! 😸
