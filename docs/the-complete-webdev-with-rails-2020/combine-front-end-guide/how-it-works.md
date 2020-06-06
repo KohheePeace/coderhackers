@@ -3,12 +3,13 @@ title: How it works Section
 ---
 
 ## Goal
-- ⚡ Make "How it works" Section
+- ⚡ In this step, we'll create **How it works** section!
 
 ![20200602135405](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602135405.png)
 
 ## Boilerplate
-First, paste the following code under the About Us section.
+First, copy and paste the following code under About Us section.
+
 ```html
 <!-- How it works -->
 <section id="how-it-works">
@@ -29,11 +30,12 @@ First, paste the following code under the About Us section.
 </section>
 ```
 
-## The css in the section
-Change the `padding` and `background-color` of the section.
+Use `section` tag to represent the how it works section, and use Bootstrap's Grid system (`contianer`, `row`, `col`) to create a three-column layout.
+
+## Section CSS
+Change the `padding` and `background-color` in this section.
 ```css title="css/custom.css"
-/* How it works
-------------------- */
+/* || How it works */
 #how-it-works {
   padding: 5rem 0;
   background-color: #ecf5ff;
@@ -41,14 +43,14 @@ Change the `padding` and `background-color` of the section.
 ```
 
 ## Section Header
-This is the same as the "About Us" part.
+This is the same CSS as the header of the About Us section.
 
 ```css title="css/custom.css"
 #how-it-works .section-header {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #how-it-works .section-header p {
     max-width: 50%;
     margin: 0 auto;
@@ -57,7 +59,7 @@ This is the same as the "About Us" part.
 ```
 
 ## column 1
-Let's create a single `col` in the `row` like the one below.
+Now, let's create one `col` in the `row`.
 
 ![20200602140552](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602140552.png)
 
@@ -92,13 +94,15 @@ Please copy and paste the following code.
 </div>
 ```
 
-### Bootstrap refs
-- Centering image with `text-center`: https://getbootstrap.com/docs/4.5/utilities/text/#text-alignment
-- Create a badge with `badge badge-primary`: https://getbootstrap.com/docs/4.5/components/badge/
-- Adjust the vertical alignment of a badge with `align-top`: https://getbootstrap.com/docs/4.5/utilities/vertical-align/
+### Bootstrap Class Refs
+Here's an explanation of the Bootstrap class used here.
+
+- Center the `img` using `text-center`: https://getbootstrap.com/docs/4.5/utilities/text/#text-alignment
+- Create a badge using `badge badge-primary`: https://getbootstrap.com/docs/4.5/components/badge/
+- Adjust the vertical alignment of the badge with `align-top`: https://getbootstrap.com/docs/4.5/utilities/vertical-align/
 
 
-To create `column 2`, `column 3`, let's copy and paste this code. Then, change the image and wording.
+Okay, so let's create `column-2` and `column-3`.
 
 ## column 2
 ```html
@@ -117,7 +121,7 @@ To create `column 2`, `column 3`, let's copy and paste this code. Then, change t
         style="width: 22px;"
         class="badge badge-primary align-top mr-2"
       >
-        1
+        2
       </div>
       Feeding
     </h5>
@@ -148,7 +152,7 @@ To create `column 2`, `column 3`, let's copy and paste this code. Then, change t
         style="width: 22px;"
         class="badge badge-primary align-top mr-2"
       >
-        1
+        3
       </div>
       Dog walking
     </h5>
@@ -163,7 +167,7 @@ To create `column 2`, `column 3`, let's copy and paste this code. Then, change t
 ```
 
 ## Responsive margin
-Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
+We want to add `margin-bottom` in the mobile layout, so let's add responsive margin `mb-5 mb-lg-0` classes to each `col`.
 
 ```html
 <!-- highlight-next-line -->
@@ -197,8 +201,8 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
 
@@ -213,26 +217,14 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
     >
       <a class="navbar-brand" href="#">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          class=""
-          role="img"
-          viewBox="0 0 24 24"
-          focusable="false"
-        >
-          <title>Product</title>
-          <circle cx="12" cy="12" r="10"></circle>
-          <path
-            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-          ></path>
-        </svg>
+        <img
+          src="img/logo.png"
+          alt="logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          loading="lazy"
+        />
         <span class="font-weight-bold">Logo</span>
       </a>
       <button
@@ -275,9 +267,7 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1">
-            <h1 class="display-4 font-weight-bold">
-              Learn web development
-            </h1>
+            <h1 class="display-4 font-weight-bold">Learn web development</h1>
             <p class="lead">
               This is a simple hero unit, a simple jumbotron-style component for
               calling extra attention to featured content or information.
@@ -352,7 +342,6 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
           <div class="col-md-6 order-md-2 mb-2">
             <img src="img/undraw_breakfast_psiw.svg" class="img-fluid" alt="" />
           </div>
-
           <div
             class="col-md-6 order-md-1 d-flex flex-column justify-content-center"
           >
@@ -393,7 +382,6 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
       </div>
     </section>
 
-    <!-- highlight-start -->
     <!-- How it works -->
     <section id="how-it-works">
       <div class="container">
@@ -444,7 +432,7 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
                   style="width: 22px;"
                   class="badge badge-primary align-top mr-2"
                 >
-                  1
+                  2
                 </div>
                 Feeding
               </h5>
@@ -469,7 +457,7 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
                   style="width: 22px;"
                   class="badge badge-primary align-top mr-2"
                 >
-                  1
+                  3
                 </div>
                 Dog walking
               </h5>
@@ -483,23 +471,22 @@ Let's add a responsive margin `mb-5 mb-lg-0` to each of the cols.
         </div>
       </div>
     </section>
-    <!-- highlight-end -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
 
@@ -526,8 +513,8 @@ body {
 /* || Jumbotron */
 @media screen and (min-width: 992px) {
   .jumbotron {
-    margin-bottom: 0;
     height: calc(100vh - 57.69px);
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     background-image: url(../img/jumbotron-bg.png);
@@ -535,11 +522,11 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575.98px) {
   .jumbotron h1 {
     text-align: center;
     font-size: 2.3rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -564,8 +551,7 @@ body {
   padding: 0 1.25rem;
 }
 
-/* highlight-start */
-/* How it works */
+/* || How it works */
 #how-it-works {
   padding: 5rem 0;
   background-color: #ecf5ff;
@@ -575,11 +561,10 @@ body {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #how-it-works .section-header p {
     max-width: 50%;
     margin: 0 auto;
   }
 }
-/* highlight-end */
 ```

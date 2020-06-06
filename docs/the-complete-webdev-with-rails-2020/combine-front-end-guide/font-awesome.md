@@ -11,18 +11,19 @@ title: Font Awesome
 ## What is Font Awesome?
 ![20200605163710](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200605163710.png)
 Font Awesome is the most popular icon toolkit on the web.
-With Font Awesome, you can easily add cool icons.
+**With Font Awesome, you can easily add cool icons.**
 
-## Install
-First, register and sign in to the Font Awesome website with your email address.
+## Installation.
+So, let's get started installing Font Awesome.
+
+First, register and sign in to the Font Awesome website by entering your email address.
 https://fontawesome.com/
 
-Next, copy the **Kit Code** as shown in the following GIF.
+Once you're signed in, copy the **Kit Code** as shown in the GIF below.
+
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_234358.gif)
 
-Next,
-
-Paste the copied **Kit Code** into the `<head>` tag of `index.html`.
+Next, Paste the copied **Kit Code** into the `<head>` tag of `index.html`.
 ```html title="index.html"
 <head>
   ...
@@ -41,18 +42,18 @@ Paste the copied **Kit Code** into the `<head>` tag of `index.html`.
 
 Now you can use Font Awesome.
 
-## How to add an icon
+## How to add an Icon.
 Now, let's actually add an icon.
 
-- Jump to the Icons page at https://fontawesome.com/icons?d=gallery
+- Jump to the Icons page and go to https://fontawesome.com/icons?d=gallery
 - Search for `arrow right`.
-- Select the icon to use
+- Select an icon to use in the search results
 - Copy the icon code
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_235918.gif)
 
 
-次に、以下のようにコピーしたコードを`index.html`にペーストしましょう。
+Next, paste the copied code into `index.html` as follows.
 
 ```html title="index.html"
 <a
@@ -74,6 +75,8 @@ Now, let's actually add an icon.
   <i class="fas fa-arrow-alt-circle-right"></i>
 </a>
 ```
+
+![20200605173330](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200605173330.png)
 
 You can add an icon by simply pasting the following code.
 ```html

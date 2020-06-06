@@ -9,8 +9,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 const docsList = [
   {
     title: <>[WIP]Crud2a React React-Router</>,
-    imageUrl:
-      "https://storage.googleapis.com/coderhackers-assets/site-assets/react-react-router-crud2a-thumbnail.gif",
+    imageUrl: "img/react-react-router-crud2a-thumbnail.jpg",
     description: (
       <>
         Crud with Authentication and Authorization of React and React-Router.
@@ -21,8 +20,7 @@ const docsList = [
   },
   {
     title: <>Flutter Crud2a</>,
-    imageUrl:
-      "https://storage.googleapis.com/coderhackers-assets/site-assets/flutter-firestore-crud2a-course-thumbnail.gif",
+    imageUrl: "img/flutter-firestore-crud2a-course-thumbnail.png",
     description: (
       <>
         Fastest way to learn the combination of Flutter and Firebase and
@@ -33,8 +31,7 @@ const docsList = [
   },
   {
     title: "[WIP]Fullstack web development 2020",
-    imageUrl:
-      "https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/course-thumbnail.gif",
+    imageUrl: "img/complete-web-dev-with-rails-course-thumbnail.jpg",
     description: (
       <>Complete guide to web development 2020 with Ruby on rails.</>
     ),

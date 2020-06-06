@@ -3,12 +3,16 @@ title: About Us Section
 ---
 
 ## Goal
-- ⚡ Make about us section
+- ⚡ In this step, we're going to create an **About Us section**.
+
+![20200601231957](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200601231957.png)
 
 ## Prepare images
-Download images from https://undraw.co/search with `#00B0FF` color. 
+First, prepare the images for the About Us section.
 
-Please search, download, move to `img` folder and rename it.
+Go to https://undraw.co/search and set the color `#00B0FF`.
+
+Next, download the five images by searching for the following words and move the downloaded files to the `img` folder.
 
 | Search Word       |
 | ----------------- |
@@ -18,9 +22,14 @@ Please search, download, move to `img` folder and rename it.
 | Cautious dog      |
 | Modern woman      |
 
+![20200602122620](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602122620.png)
+
+***Note**: This includes images for use in the next step.
 
 ## Boilerplate
-```html
+Next, copy and paste the following code below the jumbotron.
+
+```html title="index.html"
 <!-- About Us -->
 <section id="about-us">
   <div class="container">
@@ -45,12 +54,26 @@ Please search, download, move to `img` folder and rename it.
     </div>
   </div>
 </section>
-<!-- # About Us -->
+```
+
+
+## Add padding to this section
+Let's add a `padding-top` to this About Us section.
+
+```css
+/* || About Us */
+#about-us {
+  padding-top: 5rem;
+}
 ```
 
 ## Section header
+Let's edit the section headers. Add `text-center`, `display-5 mb-4` Bootstrap class to the section header as follows.
+
 ```html
+<!-- highlight-next-line -->
 <div class="section-header text-center">
+  <!-- highlight-next-line -->
   <h1 class="display-5 mb-4">About Us</h1>
   <p>
     Orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -59,22 +82,35 @@ Please search, download, move to `img` folder and rename it.
 </div>
 ```
 
+Also add the following custom CSS.
+
 ```css title="css/custom.css"
+/* highlight-start */
 #about-us .section-header {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #about-us .section-header p {
     max-width: 50%;
     margin: 0 auto;
   }
 }
+/* highlight-end */
 ```
 
+On the desktop, set the `max-width` of the `p` tag in the section header to 50%.
+
+Also, it is centered with `margin: 0 auto;`.
+
 ## Each Row
+Let's edit each Row.
 
 ### Row 1
+![20200602122727](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602122727.png)
+
+Add code as follows.
+
 ```html
 <div class="row">
   <div class="col-md-6">
@@ -87,10 +123,11 @@ Please search, download, move to `img` folder and rename it.
     <!-- highlight-end -->
   </div>
 
-  <!-- highlight-start -->
   <div
+    <!-- highlight-next-line -->
     class="col-md-6 d-flex flex-column justify-content-center"
-  >
+  > 
+    <!-- highlight-start -->
     <h3 class="mb-4">Easy to customize</h3>
     <p>
       One pacifice typi tot hic successum sed nulla id orci pulvinar non
@@ -101,16 +138,20 @@ Please search, download, move to `img` folder and rename it.
       >See ways how to customize
       <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
     </a>
+    <!-- highlight-end -->
   </div>
-  <!-- highlight-end -->
 </div>
 ```
 
+The image is placed on the left side and the right side uses `d-flex flex-column justify-content-center` so that the text is centered vertically.
+
 ### Row 2
+![20200605191057](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200605191057.png)
 ```html
 <div class="row">
   <!-- highlight-next-line -->
   <div class="col-md-6 order-md-2 mb-2">
+    <!-- highlight-next-line -->
     <img src="img/undraw_breakfast_psiw.svg" class="img-fluid" alt="" />
   </div>
 
@@ -118,6 +159,7 @@ Please search, download, move to `img` folder and rename it.
     <!-- highlight-next-line -->
     class="col-md-6 order-md-1 d-flex flex-column justify-content-center"
   >
+    <!-- highlight-start -->
     <h3 class="mb-4">Easy to make</h3>
     <p>
       One pacifice typi tot hic successum sed nulla id orci pulvinar non
@@ -128,20 +170,25 @@ Please search, download, move to `img` folder and rename it.
       See ways how to make
       <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
     </a>
+    <!-- highlight-end -->
   </div>
 </div>
 ```
 
-#### Add margin and paddint to each row
-```css title="css/custom.css"
-#about-us .row {
-  margin-bottom: 10rem;
-  padding: 0 1.25rem;
-}
-```
+Using `order-md-*` changes the order of images on devices larger than a tablet and on mobile.
+
+
+| Tablet and above                                                                                    | Mobile                                                                                              |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![20200602123637](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602123637.png) | ![20200602124842](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602124842.png) |
+
+
 
 ### Row 3
-This is almost same code with row 1.
+![20200605191125](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200605191125.png)
+
+This is almost the same code as `row 1`.
+
 ```html
 <div class="row">
   <div class="col-md-6">
@@ -167,10 +214,14 @@ This is almost same code with row 1.
 </div>
 ```
 
-## Add padding to section#about-us
-```css
-#about-us {
-  padding-top: 5rem;
+## margin and padding for each rows
+
+Let's adjust the margin and padding of each row.
+
+```css title="css/custom.css"
+#about-us .row {
+  margin-bottom: 10rem;
+  padding: 0 1.25rem;
 }
 ```
 
@@ -189,21 +240,21 @@ This is almost same code with row 1.
 
     <!-- Font Awesome -->
     <script
-      src="https://kit.fontawesome.com/476ef21ecf.js"
+      src="https://kit.fontawesome.com/6284da3ffd.js"
       crossorigin="anonymous"
     ></script>
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
 
@@ -217,27 +268,17 @@ This is almost same code with row 1.
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        class="d-block mx-auto"
-        role="img"
-        viewBox="0 0 24 24"
-        focusable="false"
-      >
-        <title>Product</title>
-        <circle cx="12" cy="12" r="10"></circle>
-        <path
-          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-        ></path>
-      </svg>
-      <a class="navbar-brand font-weight-bold ml-2" href="#">Logo</a>
+      <a class="navbar-brand" href="#">
+        <img
+          src="img/logo.png"
+          alt="logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          loading="lazy"
+        />
+        <span class="font-weight-bold">Logo</span>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -264,15 +305,14 @@ This is almost same code with row 1.
           <li class="nav-item mr-lg-4">
             <a class="nav-link" href="#">Login</a>
           </li>
-          <li class="nav-item mr-lg-4">
-            <a class="btn btn-warning font-weight-bold px-3 py-2" href="#"
-              >Sign up</a
-            >
+          <li class="nav-item">
+            <a class="btn btn-warning font-weight-bold px-3 py-2" href="#">
+              Sign up
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <!-- # Navbar -->
 
     <!-- Jumbotron -->
     <div class="jumbotron bg-white">
@@ -289,9 +329,7 @@ This is almost same code with row 1.
               It uses utility classes for typography and spacing to space
               content out within the larger container.
             </p>
-            <div
-              class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start"
-            >
+            <div class="d-flex flex-column flex-lg-row">
               <a
                 class="btn btn-primary font-weight-bold mb-3 mb-lg-0"
                 href="#"
@@ -320,7 +358,6 @@ This is almost same code with row 1.
         </div>
       </div>
     </div>
-    <!-- # Jumbotron -->
 
     <!-- About Us -->
     <section id="about-us">
@@ -340,7 +377,6 @@ This is almost same code with row 1.
               alt=""
             />
           </div>
-
           <div class="col-md-6 d-flex flex-column justify-content-center">
             <h3 class="mb-4">Easy to customize</h3>
             <p>
@@ -348,8 +384,8 @@ This is almost same code with row 1.
               modo in minim, rem, eos quam unde germania. Quo cum per turpis
               sanguinis nunc nicolae peccat.
             </p>
-            <a href="#" class="font-weight-bold">
-              See ways how to customize
+            <a href="#" class="font-weight-bold"
+              >See ways how to customize
               <i class="ml-1 fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
@@ -358,7 +394,6 @@ This is almost same code with row 1.
           <div class="col-md-6 order-md-2 mb-2">
             <img src="img/undraw_breakfast_psiw.svg" class="img-fluid" alt="" />
           </div>
-
           <div
             class="col-md-6 order-md-1 d-flex flex-column justify-content-center"
           >
@@ -398,23 +433,22 @@ This is almost same code with row 1.
         </div>
       </div>
     </section>
-    <!-- # About Us -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
 
@@ -429,8 +463,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Navbar
-------------------- */
+/* || Navbar */
 .nav-item {
   font-weight: 500;
 }
@@ -439,16 +472,15 @@ body {
   color: rgba(0, 0, 0, 0.9);
 }
 
-/* Jumbotron
-------------------- */
-@media screen and (min-width: 769px) {
+/* || Jumbotron */
+@media screen and (min-width: 992px) {
   .jumbotron {
-    background: url(https://storage.googleapis.com/coderhackers-assets/docs/img/jumbotron-bg.png);
-    background-size: cover;
-    margin-bottom: 0;
     height: calc(100vh - 57.69px);
+    margin-bottom: 0;
     display: flex;
     align-items: center;
+    background-image: url(../img/jumbotron-bg.png);
+    background-size: cover;
   }
 }
 
@@ -456,11 +488,11 @@ body {
   .jumbotron h1 {
     text-align: center;
     font-size: 2.3rem;
+    margin-top: 2rem;
   }
 }
 
-/* About Us
-------------------- */
+/* || About Us */
 #about-us {
   padding-top: 5rem;
 }
@@ -469,7 +501,7 @@ body {
   margin-bottom: 5rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #about-us .section-header p {
     max-width: 50%;
     margin: 0 auto;
