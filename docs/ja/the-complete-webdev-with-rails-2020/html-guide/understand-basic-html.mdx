@@ -1,0 +1,173 @@
+---
+title: Understand basic HTML
+---
+
+## ゴール
+
+- ⚡ Understand last step HTML code
+
+## Overview
+
+This is the code we used in the last step.
+
+```html title="test1.html"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Hello World!
+  </body>
+</html>
+```
+
+Let's check this code from top to bottom.
+
+:::important
+The most important thing is always **googling!**
+:::
+
+## 1. `<!DOCTYPE html>`
+
+Googling "**html doctype**"
+
+I choose this link https://www.w3schools.com/tags/tag_doctype.asp
+
+> All HTML documents must start with a `<!DOCTYPE>` declaration.
+>
+> The declaration is not an HTML tag. <mark>It is an "information" to the browser about what document type to expect.</mark>
+>
+> **In HTML 5**, the declaration is simple:
+>
+> ```html
+> <!DOCTYPE html>
+> ```
+
+For example, if you want to use **`HTML 4.01`** version, you need to add
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+```
+
+:::caution
+Always using `<!DOCTYPE html>` is enough.
+:::
+
+## 2. `<html>` tag
+
+Googling "**html tag**"
+
+> The `<html>` tag tells the browser that **this is an HTML document**.
+>
+> The `<html>` tag represents **the root of an HTML document**.
+>
+> The `<html>` tag is **the container for all other HTML elements** (except for the <!DOCTYPE> tag).
+
+https://www.w3schools.com/tags/tag_html.asp
+
+### `lang` attribute
+
+> The `lang` attribute **specifies the language of the element's content.**
+>
+> Common examples are "en" for English, "es" for Spanish, "fr" for French, and so on.
+
+https://www.w3schools.com/tags/att_global_lang.asp
+
+## 3. `<head>`
+
+Googling **"html head tag"**
+
+> The `<head>` element is a <mark>container for metadata (data about data)</mark> and is placed between the `<html>` tag and the `<body>` tag.
+> HTML metadata is data about the HTML document. <mark>Metadata is not displayed.</mark>
+> Metadata typically define the document title, character set, styles, scripts, and other meta information.
+> The following tags describe metadata: `<title>`, `<style>`, `<meta>`, `<link>`, `<script>`, and `<base>`.
+
+https://www.w3schools.com/html/html_head.asp
+
+## 4. `<meta charset="UTF-8">`
+
+Googling **"meta charset=UTF-8"**
+
+> The charset attribute specifies the character encoding for the HTML document.
+
+https://www.w3schools.com/tags/att_meta_charset.asp
+
+According to the below link, charset can be...
+
+:::note
+
+- **UTF-8**: It specify the character encoding for Unicode.
+- **ISO-8859-1**: It specify the character encoding for the Latin alphabet.
+
+:::
+
+https://www.geeksforgeeks.org/html-meta-charset-attribute/
+
+If you change the charset and add content like below...
+
+It does not display correctly.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- highlight-next-line -->
+    <meta charset="ISO-8859-1" />
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+    Бзиа збаша (Bzia zbaşa), Фэсапщы, Ç'kemi, ሰላም, and even right-to-left
+    writing such as this السلام عليكم
+  </body>
+</html>
+```
+
+![meta-charset-check](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/html-guide/meta-charset-check.png)
+
+Ref: https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8
+
+:::caution
+Always using **`UTF-8`** is enough.
+:::
+
+## 5. `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
+
+Googling **"meta viewport"**
+
+> You should include the following `<meta>` viewport element in all your web pages:
+>
+> ```html
+> <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+> ```
+>
+> A `<meta>` viewport element gives the browser instructions on **`how to control the page's dimensions and scaling`**.
+>
+> The `width=device-width` part **`sets the width of the page`** to follow **`the screen-width of the device`** (which will vary depending on the device).
+>
+> The `initial-scale=1.0` part sets the initial **`zoom level when the page is first loaded`** by the browser.
+
+https://www.w3schools.com/css/css_rwd_viewport.asp
+
+:::caution
+Just adding the default one is enough.
+:::
+
+## 6. `<title>`
+
+You can easily understand what is `<title>` tag.
+![What is title tag of html](https://storage.googleapis.com/coderhackers-assets/docs/img/20200512_042022.gif)
+
+## 7. `<body>`
+
+Googling **"html body tag"**
+
+> The `<body>` tag defines the document's body.
+> The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+Ref: https://www.w3schools.com/tags/tag_body.asp
+
+Content inside `<body></body>` tag is displayed on the screen.

@@ -1,0 +1,67 @@
+---
+title: Chrome DevTools
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## ゴール
+
+- ⚡ Learn how to use **"Chrome DevTools"** to detect CSS.
+
+## Open DevTools
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    { label: "Windows", value: "win" },
+    { label: "macOS", value: "mac" },
+  ]}
+>
+<TabItem value="win">
+
+```
+Ctrl+Shift+C
+```
+
+</TabItem>
+<TabItem value="mac">
+
+```
+Command+Shift+C
+```
+
+</TabItem>
+</Tabs>
+
+![open-google-dev-tools](../../img/20200514_115650.gif)
+
+You see the applied css
+w
+![detect-applied-css chrome dev tools](../../img/2020-05-14-12-09-18.png)
+
+:::info
+
+- **`user agent stylesheet`** is a **default CSS of web browser** (chrome, safari etc...)
+- That's why the appearance differs slightly in each browser
+
+:::
+
+## Check different mobile view
+
+![chrome-dev-tools-mobile-view](../../img/20200514_115932.gif)
+
+## Add laptop device
+
+:::info TODO
+
+- Laptop with HiDPI screen
+
+:::
+
+![add-HiDPI-screen](../../img/20200514_120307.gif)
+
+## Refs
+
+https://developers.google.com/web/tools/chrome-devtools
