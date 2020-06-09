@@ -5,9 +5,10 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./styles.module.css";
 import DocsCard from "../components/DocsCard";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+const isDev = process.env.NODE_ENV == "development";
 
 const docsList = [
-  {
+  isDev && {
     title: <>[WIP]Crud2a React React-Router</>,
     imageUrl: "img/react-react-router-crud2a-thumbnail.jpg",
     description: (
@@ -29,13 +30,19 @@ const docsList = [
     ),
     link: "docs/flutter-crud2a/introduction",
   },
-  {
+  isDev && {
     title: "[WIP]Fullstack web development 2020",
     imageUrl: "img/complete-web-dev-with-rails-course-thumbnail.jpg",
     description: (
       <>Complete guide to web development 2020 with Ruby on rails.</>
     ),
     link: "docs/the-complete-webdev-with-rails-2020/introduction",
+  },
+  {
+    title: "Front end quick learning 2020",
+    imageUrl: "img/frontend-in-a-week.jpg",
+    description: <>Fastest way to learn frontend and build real website.</>,
+    link: "docs/frontend-quick-learning/introduction",
   },
 ];
 

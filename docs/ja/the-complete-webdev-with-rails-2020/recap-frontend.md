@@ -1,10 +1,12 @@
 ---
-title: Recap Front end
+title: Frontendを振り返る
 ---
 
-Congratulation! You've done all of frontend curriculum!
+Congratulation! フロントエンドのカリキュラムをすべて終了しました！
 
-## What you've learned
+## フロントエンドのセクションで学んだこと
+
+私たちはこのフロントエンドのセクションで以下の知識を学びました。
 
 1. HTML
 2. CSS
@@ -12,22 +14,19 @@ Congratulation! You've done all of frontend curriculum!
 4. Bootstrap
 5. jQuery
 
-As described in Upwork website, these are the frontend stacks.
+これらの技術を用いて、**インタラクティブ**でクールなウェブサイトを作成し、**デプロイ**をして誰でもアクセスできるようにウェブサイトを公開する知識を身に着けました！
 
-![recap-frontend](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/recap-frontend/upwork-docs.gif)
+## 次に何を学ぶべきか？
 
-https://www.upwork.com/hiring/for-clients/frontend-vs-backend-web-development/
+しかし、フロントエンドだけでは、以下のような仕様を満たせません。
 
-## What next ?
-There are things you cannot do with only frontend.
+- データを永続的に保存する
+- ログインやログアウト
+- メールをユーザーに送る
+- ペイメントシステムを構築する
 
-- Save data persistently
-- How to login or logout
-- Send Email
-- Payment system
+などなど...
 
-etc...
+これらの要件を達成するためには、**バックエンド**の知識を学ぶ必要があります。
 
-To accomplish these requirements, we need to learn backend.
-
-We will choose **Ruby** and it's framework **Ruby on rails** to implement backend.
+バックエンドの実装には、**Ruby**とそのフレームワークである**Ruby on rails**を選択します。
