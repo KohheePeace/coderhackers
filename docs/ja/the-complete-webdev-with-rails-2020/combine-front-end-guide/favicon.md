@@ -3,23 +3,49 @@ title: Favicon
 ---
 
 ## ゴール
-- ⚡ Make favicon
+- ⚡ このステップでは、Faviconを作りましょう。
 
+## Faviconとは？
+> A favicon /ˈfæv.ɪˌkɒn/ (short for favorite icon), also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is <mark>a file containing one or more small icons, associated with a particular website or web page.</mark>
+
+https://en.wikipedia.org/wiki/Favicon
+
+実際に例を見てみましょう。
 
 ## Create demo favicon
+以下のサイトでデモ用のfaviconを作成しましょう。
+
 https://realfavicongenerator.net/
 
+**Demo with a random image**をクリックしてください。
 
-:::note
-We will place favicon files under favicons folder
+![20200609202326](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609202326.png)
+
+
+ここに表示されているのがfaviconの例になります。
+![20200609202734](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609202734.png)
+
+次に、
+**Favicon Generator Options**のPathのところの
+
+**I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here:**にチェックをいれて
+
+**favicons**と入力してボタンをクリックしてください。
+
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_030309.gif)
-:::
 
-Make `favicons` folder and then move downloaded files.
+
+次に、以下のボタンをおしてfaviconパッケージをダウンロードしてください。
+
+![20200609204037](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204037.png)
+
+`favicons` フォルダを作成し、ダウンロードしたファイルを移動させてください。
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-06-13.png)
 
 ## Link in `index.html`
+以下の画像の箇所をコピーして、`index.html`の`head`タグの中にペーストします。
+![20200609204356](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204356.png)
 ```html title="index.html"
 ...
 <!-- highlight-start -->
@@ -53,11 +79,3 @@ Make `favicons` folder and then move downloaded files.
 
 ## Check the output
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-09-43.png)
-
-## Favicon checker
-https://realfavicongenerator.net/favicon_checker#.XrGiHKgzbb2
-
-## Other Favicon generator
-
-- https://realfavicongenerator.net/favicon_checker#.XrGiHKgzbb2
-- https://favicon.io/

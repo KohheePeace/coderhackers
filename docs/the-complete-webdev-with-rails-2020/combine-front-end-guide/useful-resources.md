@@ -1,5 +1,5 @@
 ---
-title: Illustration resources
+title: Useful resources
 ---
 
 ## Illustration resources
@@ -16,3 +16,11 @@ title: Illustration resources
 
 ## Pictures
 - https://www.pexels.com/
+
+## Favicon checker
+https://realfavicongenerator.net/favicon_checker#.XrGiHKgzbb2
+
+## Favicon generator
+
+- https://realfavicongenerator.net/favicon_checker#.XrGiHKgzbb2
+- https://favicon.io/

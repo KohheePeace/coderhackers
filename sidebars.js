@@ -157,7 +157,7 @@ module.exports = {
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/javascript-plugin",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/favicon",
         "the-complete-webdev-with-rails-2020/combine-front-end-guide/deploy",
-        "the-complete-webdev-with-rails-2020/combine-front-end-guide/illustration-resources",
+        "the-complete-webdev-with-rails-2020/combine-front-end-guide/useful-resources",
       ],
     },
     "the-complete-webdev-with-rails-2020/recap-frontend",
