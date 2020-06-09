@@ -45,7 +45,7 @@ Create the `favicons` folder and move the downloaded files into it.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-06-13.png)
 
-## Link in `index.html`
+## Favicon links in `index.html`
 Copy and paste the following image code into the `head` tag of `index.html`.
 ![20200609204356](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204356.png)
 ```html title="index.html"

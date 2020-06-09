@@ -3,25 +3,42 @@ title: Deploy
 ---
 
 ## ゴール
-- ⚡ Learn how to deploy.
+- ⚡ このステップでは、deployの仕方を学びましょう!
 
-## What is deploy?
-> **Software deployment** is all of the activities that **make a software system available for use**.
+## Deployとは？
+> **Software deployment** is all of the activities that <mark>**make a software system available for use**</mark>.
 
 https://en.wikipedia.org/wiki/Software_deployment
 
-Currently our website can be accessed by only you.
+今作っているウェブサイトは、自分だけしかアクセスできません。
 
-By deploying your website, others can access your site.
+**<mark>urlを指定すれば誰でもアクセスできるようにするためには、デプロイする必要があります。</mark>**
 
 
-## Install Node
+## Vercel
+![20200609230223](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609230223.png)
+https://vercel.com/
 
-### Check if you have already installed node and npm.
+**Vercelはウェブサイトを簡単にデプロイできるサービスです。**
 
-Please
+今回はこのサービスを使用してサイトをデプロイしましょう。
 
-In `terminal`
+
+## 下準備
+
+### vercelのアカウントを作成する
+Vercelのアカウントを作成してください。事前にGithubアカウントを作成してログインするのがおすすめです。
+
+https://vercel.com/login
+
+### Nodeをインストールする
+
+vercelのコマンドラインツールをダウンロードするには**Node**が必要なのでまずインストールしましょう。
+
+最初に、**すでにnodeとnpmがインストールされているかどうか**を確認します。
+
+`terminal`で以下のコマンドを入力してください。**バージョンが表示された場合はすでにインストールされています。**
+
 ```sh
 node -v
 # highlight-next-line
@@ -31,14 +48,16 @@ npm -v
 6.4.1
 ```
 
-If you have not installed node js,
+**もしnodeとnpmがインストールされていない場合**は、以下のリンクから<mark>**"LTS"** バージョン</mark>をインストールしてください。
 
-please download nodejs <mark>**"LTS"** version</mark>
+nodeをインストールすると同時にnpmもインストールされます。
 
-https://nodejs.org/
+https://nodejs.org/en/download/
 
 
-After you finish download, please check if it shows version.
+**インストールが完了したら再度ターミナルで正しくインストールされているかチェックしましょう。**
+
+バージョンが表示されたら正しくインストールされています。
 
 ```sh
 node -v
@@ -49,42 +68,39 @@ npm -v
 6.4.1
 ```
 
-## Zeit "now"
-https://zeit.co/
+### Vercelのコマンドラインツールをダウンロードする。
 
-### Create zeit account
-Please create zeit account.
+次にvercelのコマンドラインツールをダウンロードしましょう。
 
-### Install "now"
+https://vercel.com/download
 
-In `terminal`
+`terminal`で以下のコマンドを叩いてください。
 ```sh
-npm i -g now
+npm i -g vercel
 ```
 
 
-### Login with now
-In `terminal`
+## vercelにログインする
+vercelのコマンドラインツールがインストールできたので、vercelのアカウントにログインしましょう。
+
+`terminal`で以下のコマンドを叩いてください。
 
 ```sh
-now login
+vercel login
 ```
 
-And follow the logs in terminal.
+メールアドレスを入力して、エンターを押し、送られてくるメールでverifyしてください。
 
-### Deploy with now
+## vercelを使ってデプロイする
 
-Under the `bootstrap-combine-demo` folder,
+では、vercelを使ってサイトをデプロイしましょう。
 
-Just type **`now`**
+`frontend-combine`フォルダの下でただ`vercel`とタイプするだけでデプロイできます。
 
-```sh title="terminal"
-$ now
-> Deploying ~/Code/important/bootstrap-combine-demo under kohheepeace
-> Using project bootstrap-combine-demo
-> Synced 198 files (2.24MB) [3s]
-> https://bootstrap-combine-demo-7tcwel6ys.now.sh [v2] [859ms]
-> Ready! Aliased to https://bootstrap-combine-demo.kohheepeace.now.sh [in clipboard] [5s]
+ターミナルから質問されますが、**すべて"Enter"を押してください**。デフォルトの設定が適用されます。
+
+```sh title="terminal in "
+$ vercel
 ```
 
-Visit URL...
+デプロイが完了したら、urlが自動的にクリップボードにコピーされているので、ブラウザにペーストしましょう。

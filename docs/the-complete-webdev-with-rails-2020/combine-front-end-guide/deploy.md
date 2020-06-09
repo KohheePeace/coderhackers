@@ -3,25 +3,61 @@ title: Deploy
 ---
 
 ## Goal
-- ⚡ Learn how to deploy.
+- ⚡ In this step we''ll learn how to deploy!
 
-## What is deploy?
-> **Software deployment** is all of the activities that **make a software system available for use**.
+## What is Deploy?
+> **Software deployment** is all of the activities that <mark>**make a software system available for use**</mark>.
 
 https://en.wikipedia.org/wiki/Software_deployment
 
-Currently our website can be accessed by only you.
+The website we're building now can only be accessed by you.
 
-By deploying your website, others can access your site.
+To make it accessible to everyone if they specify a url, **<mark> you need to deploy. </mark>**
 
 
-## Install Node
+## Vercel
+![20200609230223](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609230223.png)
+https://vercel.com/
 
-### Check if you have already installed node and npm.
+**Vercel is a service that makes it easy to deploy your website.**
 
-Please
+In this case, let's use this service to deploy our site.
 
-In `terminal`
+
+## Preparation
+
+### Create a vercel account
+Create a Vercel account. It is recommended to create a Github account beforehand and log in via github.
+
+https://vercel.com/login
+
+### Install Node
+
+You will need **Node** to download the vercel command line tool, so install it first.
+
+First, **check to see if node and npm are already installed.**
+
+Type the following command in terminal. **If you see the version, it's already installed.**
+
+```sh
+node -v
+# highlight-next-line
+v10.10.0
+npm -v
+# highlight-next-line
+6.4.1
+```
+**If you don't have node and npm installed**, please click the link below to install the LTS version.
+
+When you install node, npm is installed at the same time.
+
+https://nodejs.org/en/download/
+
+
+When the installation is complete, check again in the terminal to make sure it is installed correctly.
+
+If you see the version, it has been installed correctly.
+
 ```sh
 node -v
 # highlight-next-line
@@ -31,60 +67,38 @@ npm -v
 6.4.1
 ```
 
-If you have not installed node js,
+### Download Vercel's command line tool.
 
-please download nodejs <mark>**"LTS"** version</mark>
+Next, let's download the vercel command line tool.
 
-https://nodejs.org/
+https://vercel.com/download
+
+Type the following command in `terminal`.
+```sh
+npm i -g vercel
+```
 
 
-After you finish download, please check if it shows version.
+## Login to vercel
+Now that you have the vercel command line tool installed, let's log in to your vercel account.
+
+Type the following command in `terminal`.
 
 ```sh
-node -v
-# highlight-next-line
-v10.10.0
-npm -v
-# highlight-next-line
-6.4.1
+vercel login
 ```
 
-## Zeit "now"
-https://zeit.co/
+Enter your email address and press enter to VERIFY in the email you receive.
 
-### Create zeit account
-Please create zeit account.
+## Deploy with vercel
 
-### Install "now"
+Now, let's deploy the site using vercel.
 
-In `terminal`
-```sh
-npm i -g now
+Under the `frontend-combine` folder, just type `vercel` to deploy.
+
+When prompted by the terminal, **press "Enter" on everything**. The default settings are applied.
+
+```sh title="terminal in "
+$ vercel
 ```
-
-
-### Login with now
-In `terminal`
-
-```sh
-now login
-```
-
-And follow the logs in terminal.
-
-### Deploy with now
-
-Under the `bootstrap-combine-demo` folder,
-
-Just type **`now`**
-
-```sh title="terminal"
-$ now
-> Deploying ~/Code/important/bootstrap-combine-demo under kohheepeace
-> Using project bootstrap-combine-demo
-> Synced 198 files (2.24MB) [3s]
-> https://bootstrap-combine-demo-7tcwel6ys.now.sh [v2] [859ms]
-> Ready! Aliased to https://bootstrap-combine-demo.kohheepeace.now.sh [in clipboard] [5s]
-```
-
-Visit URL...
+Once the deployment is complete, the url is automatically copied to the clipboard and you can paste it into your browser.
