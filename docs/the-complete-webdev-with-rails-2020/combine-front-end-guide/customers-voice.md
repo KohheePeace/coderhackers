@@ -8,7 +8,7 @@ title : Customers Voice Section
 ![20200607155117](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607155117.png)
 
 ## Boilerplate
-First, copy and paste the following code under the How it works section.
+First, copy and paste the following code under How it works section.
 
 ```html
 <!-- Customers Voice -->
@@ -58,7 +58,7 @@ Please Download the following images as **small size**.
 - https://www.pexels.com/photo/adult-attractive-beautiful-beauty-415829/
 - https://www.pexels.com/photo/photography-of-a-guy-wearing-green-shirt-1222271/
 
-Next, Move the downloaded file to the bottom of the **`img`** folder.
+Next, Move the downloaded file into the **`img`** folder.
 
 ## column 1
 Now, let's create a one of the `column` in the `row`.
@@ -69,7 +69,7 @@ Please copy and paste the following code.
 ```html
 <!-- highlight-start -->
 <div class="col-md-4 mb-4">
-  <div class="card w-100 shadow" style="border: none;">
+  <div class="card shadow" style="border: none;">
     <div class="card-body">
       <div class="media mb-3">
         <img
@@ -101,7 +101,7 @@ Here's a description of the Bootstrap classes used here
 
 :::info
 - Create a card with the `card`, `card-body`, and `card-text`: https://getbootstrap.com/docs/4.5/components/card/#titles-text-and-links
-- Use `w-100` to make card width 100% in column: https://getbootstrap.com/docs/4.5/utilities/sizing/#relative-to-the-parent
+- Use `shadow` to add shadow toward card: https://getbootstrap.com/docs/4.5/utilities/shadows/
 - Create a section of a customer profile with the `media` class: https://getbootstrap.com/docs/4.5/components/media-object/
 - `rounded-circle` class is used to round off the corners of an image: https://getbootstrap.com/docs/4.5/utilities/borders/#border-radius
 - Change the text color with `text-muted`: https://getbootstrap.com/docs/4.5/utilities/colors/#color
@@ -112,7 +112,7 @@ Copy this code to create `column 2` and `column 3` with different image and word
 ## Column 2
 ```html
 <div class="col-md-4 mb-4">
-  <div class="card w-100 shadow" style="border: none;">
+  <div class="card shadow" style="border: none;">
     <div class="card-body">
       <div class="media mb-3">
         <img
@@ -141,7 +141,7 @@ Copy this code to create `column 2` and `column 3` with different image and word
 ## Column 3
 ```html
 <div class="col-md-4 mb-4">
-    <div class="card w-100 shadow" style="border: none;">
+    <div class="card shadow" style="border: none;">
       <div class="card-body">
         <div class="media mb-3">
           <img
@@ -480,7 +480,7 @@ The final code looks like this.
         </div>
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card w-100 shadow" style="border: none;">
+            <div class="card shadow" style="border: none;">
               <div class="card-body">
                 <div class="media mb-3">
                   <img
@@ -505,7 +505,7 @@ The final code looks like this.
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card w-100 shadow" style="border: none;">
+            <div class="card shadow" style="border: none;">
               <div class="card-body">
                 <div class="media mb-3">
                   <img
@@ -530,7 +530,7 @@ The final code looks like this.
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card w-100 shadow" style="border: none;">
+            <div class="card shadow" style="border: none;">
               <div class="card-body">
                 <div class="media mb-3">
                   <img

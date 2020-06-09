@@ -3,51 +3,74 @@ title: Javascript Plugin
 ---
 
 ## Goal
-- ⚡Learn how to use javascript plugin
+- ⚡ In this step, we are going to learn how to use javascript plugin.
+- 🔥 We'll add a plugin to the Customers Voice section to add an effect like the GIF below.
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)
 
-## Wow
+## wow.js
+We will add a plugin called wow.js to add effects.
+![20200607233437](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607233437.png)
+
 https://wowjs.uk/
-https://github.com/graingert/wow
 
 ## Install
-From document https://wowjs.uk/docs.html, we need to install 
+As described in [wow.js document](https://wowjs.uk/docs.html), the following two files are required to use this plugin.
 
 1. `animate.css`
 2. `wow.min.js`
 
-### `wow.min.js`
-
-Go to: https://github.com/graingert/wow
-
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_004112.gif)
+Let's prepare these files.
 
 ### Animate css
+First, copy the code of `animate.min.css` **v3.7.1** from the following URL.
+
 https://github.com/daneden/animate.css
+
+Next, create a file `animate.min.css` in the `css` folder and paste the copied code.
+
+:::caution
+**Note**: Do not **save** after pasting the code. This is because if you save the code, auto format feature will be applied to the code and it will decompress the compressed code.
+:::
 
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_003923.gif)
 
+### `wow.min.js`
+Next, let's prepare `wow.min.js`. Copy the code of `wow.min.js` from the following URL's `dist` folder.
+
+https://github.com/graingert/wow
+
+Next, create the `wow.min.js` file in the `js` folder and paste the copied code.
+
+:::caution
+**Note**: Do not **save** the code as well as the previous one. The auto format will decompress the compressed code.
+:::
+
+![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_004112.gif)
 
 
 ## Setup
+Now the files are ready, let's set up as described in [wow.js document] (https://wowjs.uk/docs.html).
+
 ### Animate css
 ```html title="index.html"
 <head>
+  ...
   <!-- highlight-start -->
   <!-- Animate CSS -->
   <link href="css/animate.min.css" rel="stylesheet" />
   <!-- highlight-end -->
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css" />
 </head>
 ```
 
 ### wow js
 ```html title="index.html"
 <!-- highlight-next-line -->
-<script src="js/wow.min.js"></script>  
+<script src="js/wow.min.js"></script> 
+
 <!-- Custom Javascript -->
 <script src="js/custom.js"></script>
 ```
@@ -57,18 +80,12 @@ new WOW().init();
 ```
 
 ## How to use
-Add class `wow bounceInUp` and property to target element you want to add effect.
-```html
-<div
-  <!-- highlight-start -->
-  class="wow bounceInUp"
-  data-wow-duration="1s"
-  data-wow-delay="1s"
-  <!-- highlight-end -->
->
-```
+Add the `wow bounceInUp` classes to the target element to which you want to add an effect.
 
-### For example
+And add `data-wow-duration` and `data-wow-delay` to the target element.
+
+Edit each column in the Customers Voice section as follows.
+
 ```html title="index.html"
 <!-- Customers Voice -->
 <section id="customers-voice">
@@ -98,9 +115,9 @@ Add class `wow bounceInUp` and property to target element you want to add effect
                 style="width: 40px; height: 40px;"
               />
               <div class="media-body">
-                <h6 class="mb-0">Kenny Omega</h6>
+                <h6 class="mb-0">Denny Omega</h6>
                 <span class="text-muted" style="font-size: 0.8rem;">
-                  @WWE wrestler
+                  @WWF wrestler
                 </span>
               </div>
             </div>
@@ -129,9 +146,9 @@ Add class `wow bounceInUp` and property to target element you want to add effect
                 style="width: 40px; height: 40px;"
               />
               <div class="media-body">
-                <h6 class="mb-0">Ema Wasignton</h6>
+                <h6 class="mb-0">Malissa May</h6>
                 <span class="text-muted" style="font-size: 0.8rem;">
-                  @CEO of testfy
+                  @CEO of Zahoo
                 </span>
               </div>
             </div>
@@ -160,9 +177,9 @@ Add class `wow bounceInUp` and property to target element you want to add effect
                 style="width: 40px; height: 40px;"
               />
               <div class="media-body">
-                <h6 class="mb-0">Vince McMahon</h6>
+                <h6 class="mb-0">Sobias Luke</h6>
                 <span class="text-muted" style="font-size: 0.8rem;">
-                  @CEO of WWE
+                  @CEO of thopify
                 </span>
               </div>
             </div>
@@ -177,13 +194,13 @@ Add class `wow bounceInUp` and property to target element you want to add effect
     </div>
   </div>
 </section>
-<!-- # Customers Voice -->
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010335.gif)
+![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200608_152902.gif)
 
 
-## Change each `delay` time
+## Change the `delay` time for each column
+Change the `data-wow-delay` in each column as follows.
 ```html
 <div
   class="col-md-4 mb-4 wow bounceInUp"
