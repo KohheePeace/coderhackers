@@ -1,8 +1,17 @@
 .cardLink {
-  color: var(--ifm-link-color);
+  color: #333333;
 }
 
 .cardLink:hover {
   color: var(--ifm-link-color);
   cursor: pointer;
+  text-decoration: none;
+}
+
+html[data-theme="dark"] .cardLink {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .cardLink:hover {
+  color: var(--ifm-link-color);
 }

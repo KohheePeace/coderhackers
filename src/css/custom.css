@@ -19,8 +19,19 @@
   --ifm-color-success: #25c2a0;
 }
 
-/* General
--------------------- */
+html[data-theme="dark"] {
+  --ifm-navbar-background-color: rgb(33, 36, 45);
+  --ifm-navbar-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
+  --ifm-background-color: rgb(33, 36, 45);
+  --ifm-code-color: #1c1e21;
+  --ifm-footer-background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hash-link {
+  opacity: 1 !important;
+}
+
+/* || General */
 ul.contains-task-list {
   list-style: none;
   padding-left: 0;
@@ -46,9 +57,11 @@ ul.contains-task-list {
   height: 100%;
 }
 
-/* Admonitions
---------------- */
+a code {
+  color: #1c1e21;
+}
 
+/* || Admonitions */
 .admonition h5 {
   text-transform: none;
 }

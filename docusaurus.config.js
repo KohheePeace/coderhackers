@@ -21,12 +21,12 @@ module.exports = {
       trackingID: "UA-128556070-3",
     },
     navbar: {
-      title: "Home",
+      title: "",
       logo: {
         alt: "Logo",
         src: "img/logo.png",
       },
-      links: [{ to: "blog", label: "Blog", position: "left" }],
+      links: [],
     },
     footer: {
       links: [
@@ -49,7 +49,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} @kohheepeace`,
+      copyright: `Copyright © ${new Date().getFullYear()} @kohheepeace All rights reserved.`,
     },
   },
   presets: [
