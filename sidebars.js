@@ -68,7 +68,7 @@ module.exports = {
     "flutter-crud2a/firestore-security-rules",
     "flutter-crud2a/firestore-security-rules-test",
   ],
-  FrontEndQuickLearning: isDev && [
+  frontendQuickLearning: [
     "frontend-quick-learning/introduction",
     "frontend-quick-learning/install-chrome-browser",
     "frontend-quick-learning/install-editor",
