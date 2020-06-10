@@ -3,7 +3,7 @@ title: Deploy
 ---
 
 ## Goal
-- ⚡ In this step we'll learn how to deploy!
+- ⚡ In this step we''ll learn how to deploy!
 
 ## What is Deploy?
 > **Software deployment** is all of the activities that <mark>**make a software system available for use**</mark>.
@@ -21,21 +21,21 @@ https://vercel.com/
 
 **Vercel is a service that makes it easy to deploy your website.**
 
-In this case, let's use this service to deploy our website.
+In this case, let's use this service to deploy our site.
 
 
 ## Preparation
 
 ### Create a vercel account
-Create a Vercel account. It is recommended to create a Github account beforehand and sign up via github.
+Create a Vercel account. It is recommended to create a Github account beforehand and log in via github.
 
-https://vercel.com/signup
+https://vercel.com/login
 
 ### Install Node
 
-You will need **Node** to download the **vercel command line tool**, so let's install it first.
+You will need **Node** to download the vercel command line tool, so install it first.
 
-Before we install node, let's **check if node and npm are already installed.**
+First, **check to see if node and npm are already installed.**
 
 Type the following command in terminal. **If you see the version, it's already installed.**
 

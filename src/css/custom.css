@@ -17,6 +17,8 @@
   --ifm-code-font-size: 95%;
 
   --ifm-color-success: #25c2a0;
+
+  --ifm-font-family-base: "M PLUS Rounded 1c", sans-serif;
 }
 
 html[data-theme="dark"] {
@@ -27,7 +29,11 @@ html[data-theme="dark"] {
   --ifm-footer-background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hash-link {
+div[class^="docPage_"] {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+h2 .hash-link {
   opacity: 1 !important;
 }
 

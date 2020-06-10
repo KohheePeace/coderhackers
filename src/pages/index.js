@@ -20,7 +20,7 @@ const docsList = [
     link: "docs/crud2a-react-react-router/00-intro",
   },
   {
-    title: <>Flutter Crud2a</>,
+    title: <>Flutter CRUD with Authentication and Authorization</>,
     imageUrl: "img/flutter-firestore-crud2a-course-thumbnail.png",
     description: (
       <>
@@ -39,7 +39,7 @@ const docsList = [
     link: "docs/the-complete-webdev-with-rails-2020/introduction",
   },
   {
-    title: "Front end quick learning 2020",
+    title: "Front-end quick learning 2020",
     imageUrl: "img/frontend-in-a-week.jpg",
     description: <>Fastest way to learn frontend and build real website.</>,
     link: "docs/frontend-quick-learning/introduction",
