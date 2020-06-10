@@ -8,7 +8,8 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 const isDev = process.env.NODE_ENV == "development";
 
 const docsList = [
-  isDev && {
+  {
+    isDraft: !isDev && true,
     title: <>[WIP]Crud2a React React-Router</>,
     imageUrl: "img/react-react-router-crud2a-thumbnail.jpg",
     description: (
@@ -30,7 +31,8 @@ const docsList = [
     ),
     link: "docs/flutter-crud2a/introduction",
   },
-  isDev && {
+  {
+    isDraft: !isDev && true,
     title: "[WIP]Fullstack web development 2020",
     imageUrl: "img/complete-web-dev-with-rails-course-thumbnail.jpg",
     description: (
@@ -39,7 +41,7 @@ const docsList = [
     link: "docs/the-complete-webdev-with-rails-2020/introduction",
   },
   {
-    title: "Front-end quick learning 2020",
+    title: "Front-end Quick Learning 2020",
     imageUrl: "img/frontend-in-a-week.jpg",
     description: <>Fastest way to learn frontend and build real website.</>,
     link: "docs/frontend-quick-learning/introduction",
@@ -80,9 +82,13 @@ function Home() {
           <section className={styles.docsListSection}>
             <div className="container">
               <div className="row">
-                {docsList.map((props, idx) => (
-                  <DocsCard key={idx} {...props} />
-                ))}
+                {docsList.map((props, idx) => {
+                  if (props.isDraft) {
+                    return null;
+                  } else {
+                    return <DocsCard key={idx} {...props} />;
+                  }
+                })}
               </div>
             </div>
           </section>
