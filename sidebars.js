@@ -154,6 +154,7 @@ module.exports = {
         "frontend-quick-learning/combine-front-end-guide/useful-resources",
       ],
     },
+    "frontend-quick-learning/recap-course",
   ],
   theCompleteWebDevWithRails2020: isDev && [
     "the-complete-webdev-with-rails-2020/introduction",
