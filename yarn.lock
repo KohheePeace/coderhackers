@@ -3530,9 +3530,9 @@ docsearch.js@^2.6.3:
     to-factory "^1.0.0"
     zepto "^1.2.0"
 
-"docusaurus-lunr-search@https://github.com/KohheePeace/docusaurus-lunr-search.git":
+"docusaurus-lunr-search@https://github.com/KohheePeace/docusaurus-lunr-search":
   version "2.0.1"
-  resolved "https://github.com/KohheePeace/docusaurus-lunr-search.git#2f855ed8a4ce33060656bf986565ba51c6c9e70b"
+  resolved "https://github.com/KohheePeace/docusaurus-lunr-search#42699fd4383465613ad55e98fd24020655975f92"
   dependencies:
     autocomplete.js "^0.37.0"
     cheerio "^1.0.0-rc.3"
