@@ -1,10 +1,12 @@
 ---
-title: Recap Front end
+title: Course Summary
 ---
 
-Congratulation! You've done all of frontend curriculum!
+Congratulation! We've completed the entire curriculum for this course!
 
-## What you've learned
+## What we've learned in this course
+
+We've learned the following knowledge in this course
 
 1. HTML
 2. CSS
@@ -12,22 +14,49 @@ Congratulation! You've done all of frontend curriculum!
 4. Bootstrap
 5. jQuery
 
-As described in Upwork website, these are the frontend stacks.
+We've gained the knowledge to create a cool and interactive website and **deployed** the website for everyone to access!
 
-![recap-frontend](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/recap-frontend/upwork-docs.gif)
+## Jobs you can do with your current skills
+With your current skills, you can take on jobs such as
 
-https://www.upwork.com/hiring/for-clients/frontend-vs-backend-web-development/
+- Creating and revamping company landing pages.
+- As a junior front-end engineer, create and modify pages that are not related to the backend (such as the About page and How to page).
 
-## What next ?
-There are things you cannot do with only frontend.
+## What should you learn next?
 
-- Save data persistently
-- How to login or logout
-- Send Email
-- Payment system
+Front-end alone cannot meet the following specifications for web services
 
-etc...
+- Storing data permanently
+- Log in and log out
+- Send an email to users
+- Building a Payment System
 
-To accomplish these requirements, we need to learn backend.
+And so on...
 
-We will choose **Ruby** and it's framework **Ruby on rails** to implement backend.
+In order to achieve these requirements, you will need to learn about **Back-end**.
+
+There are a number of options for developing the back-end of your website.
+
+:::info  Backend Language + Web Framework
+- Ruby + Rails
+- Javascript (Node.js) + Express
+- PHP + Laravel
+- Python + Django
+:::
+
+
+Which option you choose is subjective to the individual. It's a very annoying topic.
+
+I would recommend **Ruby + Rails**.
+
+I first tried (Node.js + Express), but at the time it was too difficult for me and I gave up on it.
+
+After that, I tried **Rails** and I was able to create a web service quickly and it was a lot of fun for me.
+
+I'm currently working on this Rails course and hope to see you again at some point.
+
+See you~! 🙋‍♂️
+
+Backend stack refs:
+- https://hackr.io/blog/top-10-web-development-frameworks-in-2020
+- https://mtm.dev/node-firebase-laravel-rails/

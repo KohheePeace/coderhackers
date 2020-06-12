@@ -6,7 +6,7 @@ Congratulation! このコースのカリキュラムをすべて終了しまし�
 
 ## このコース学んだこと
 
-私たちはこのこのコース以下の知識を学びました。
+私たちはこのコースで以下の知識を学びました。
 
 1. HTML
 2. CSS
@@ -16,7 +16,7 @@ Congratulation! このコースのカリキュラムをすべて終了しまし�
 
 これらの技術を用いて、**インタラクティブ**でクールなウェブサイトを作成し、**デプロイ**をして誰でもアクセスできるようにウェブサイトを公開する知識を身に着けました！
 
-## 現在のスキルでできる仕事
+## 現在のスキルで出来る仕事
 現在のスキルで、あなたは以下のような仕事を受注できます。
 
 - 企業のランディングページの作成・改修
@@ -37,20 +37,25 @@ Congratulation! このコースのカリキュラムをすべて終了しまし�
 
 ウェブサイトのバックエンドの開発には以下のような選択肢があります。
 
+:::info  Backend Language + Web Framework
+- Ruby + Rails
+- Javascript (Node.js) + Express
+- PHP + Laravel
+- Python + Django
+:::
 
-| Backend Language + Web Framework |
-| -------------------------------- |
-| Ruby + Rails                     |
-| Javascript (Node.js) + Express   |
-| PHP + Laravel                    |
-| Python + Django                  |
+どの選択肢を選ぶかは個人の主観によります。非常に悩ましいトピックです。
 
-どの選択肢を選ぶかは個人の主観によります。非常に難しいトピックです。
+私がおすすめなのは**Ruby + Rails**です。
 
-私がおすすめなのは**Ruby + Rails**です。はじめ(Node.js + Express)に手を出したのですが、その当時の私には少し難しすぎました。その後Railsに手を出してサクサクウェブサービスが作成でき非常に楽しかったからです。
+私は初め(Node.js + Express)に手を出したのですが、その当時の私には少し難しすぎて断念してしまいました。
 
-現在このRailsのコースを作成中ですので、またどこかでお会いできたら光栄です。Bye~.
+その後に**Railsに手を出してサクサクウェブサービスが作成でき非常に楽しかった**からです。
 
-Ref:
+現在このRailsのコースを作成中ですので、またどこかでお会いできたらと思います。
+
+See you! 🙋‍♂️
+
+Backend stack refs:
 - https://hackr.io/blog/top-10-web-development-frameworks-in-2020
 - https://mtm.dev/node-firebase-laravel-rails/

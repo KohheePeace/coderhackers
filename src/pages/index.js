@@ -41,7 +41,7 @@ const docsList = [
     link: "docs/the-complete-webdev-with-rails-2020/introduction",
   },
   {
-    title: "Front-end Quick Learning 2020",
+    title: "Frontend Master Course 2020!",
     imageUrl: "img/frontend-in-a-week.jpg",
     description: <>Fastest way to learn frontend and build real website.</>,
     link: "docs/frontend-quick-learning/introduction",
