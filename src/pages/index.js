@@ -52,10 +52,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title="CODER HACKERS"
-      description="CODER HACKERS is a site to stock and share what I've learned."
-    >
+    <Layout description="Coder Hackers is a site to stock and share what I've learned.">
       <div className={classnames("hero hero--dark", styles.heroBanner)}>
         <div
           style={{ display: "flex", flexDirection: "column", margin: "0 auto" }}
@@ -67,7 +64,7 @@ function Home() {
               src={useBaseUrl("img/logo.png")}
             />
             <h1 className={classnames("hero--title", styles.heroTitle)}>
-              {siteConfig.title}
+              CODER HACKERS
             </h1>
           </div>
           <h1 className={styles.heroProjectTagline}>

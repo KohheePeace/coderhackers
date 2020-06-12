@@ -1,7 +1,7 @@
 const remarkExternalLinks = require("remark-external-links");
 
 module.exports = {
-  title: "CODER HACKERS",
+  title: "CoderHackers",
   tagline: "stock and share what I've learned.",
   url: "https://www.coderhackers.com",
   baseUrl: "/",
