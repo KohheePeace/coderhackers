@@ -2,7 +2,7 @@
 title: Course Summary
 ---
 
-Congratulation! We've completed the entire curriculum for this course!
+Congratulation! You've completed the entire curriculum for this course!
 
 ## What we've learned in this course
 
