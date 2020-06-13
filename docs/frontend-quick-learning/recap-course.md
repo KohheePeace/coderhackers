@@ -2,7 +2,7 @@
 title: Course Summary
 ---
 
-Congratulation! You've completed the entire curriculum for this course!
+Congratulation! You've completed the entire curriculum of this course!
 
 ## What we've learned in this course
 
@@ -14,13 +14,13 @@ We've learned the following knowledge in this course
 4. Bootstrap
 5. jQuery
 
-We've gained the knowledge to create a cool and interactive website and **deployed** the website for everyone to access!
+We've gained the knowledge to create a cool and interactive website and deployed the website for everyone to access!
 
 ## Jobs you can do with your current skills
 With your current skills, you can take on jobs such as
 
 - Creating and revamping company landing pages.
-- As a junior front-end engineer, create and modify pages that are not related to the backend (such as the About page and How to page).
+- As a junior front-end engineer, create and modify pages that are not related to the backend (such as About page and How to page).
 
 ## What should you learn next?
 
@@ -38,22 +38,21 @@ In order to achieve these requirements, you will need to learn about **Back-end*
 There are a number of options for developing the back-end of your website.
 
 :::info  Backend Language + Web Framework
-- Ruby + Rails
+- Ruby + Ruby on Rails
 - Javascript (Node.js) + Express
 - PHP + Laravel
 - Python + Django
 :::
 
+Which one to choose is a very difficult question to answer.
 
-Which option you choose is subjective to the individual. It's a very annoying topic.
-
-I would recommend **Ruby + Rails**.
+But I would recommend **Ruby + Ruby on Rails**.
 
 I first tried (Node.js + Express), but at the time it was too difficult for me and I gave up on it.
 
-After that, I tried **Rails** and I was able to create a web service quickly and it was a lot of fun for me.
+After that, I tried **Ruby on Rails** and I was able to create a web service quickly and it was a lot of fun for me.
 
-I'm currently working on this Rails course and hope to see you again at some point.
+I'm currently working on the Ruby on Rails course and hope to see you again at some point.
 
 See you~! 🙋‍♂️
 
