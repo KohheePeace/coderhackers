@@ -1,10 +1,12 @@
 ---
-title: Recap Front end
+title: Recap Front-end
 ---
 
-Congratulation! You've done all of frontend curriculum!
+Congratulation! You've completed the curriculum for front-end.
 
-## What you've learned
+## What we've learned in this course
+
+We've learned the following knowledge.
 
 1. HTML
 2. CSS
@@ -12,22 +14,41 @@ Congratulation! You've done all of frontend curriculum!
 4. Bootstrap
 5. jQuery
 
-As described in Upwork website, these are the frontend stacks.
+We've gained the knowledge to create a cool and interactive website and deployed the website for everyone to access!
 
-![recap-frontend](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/recap-frontend/upwork-docs.gif)
+## Jobs you can do with your current skills
+With your current skills, you can take on jobs such as
 
-https://www.upwork.com/hiring/for-clients/frontend-vs-backend-web-development/
+- Creating and revamping company landing pages.
+- As a junior front-end engineer, create and modify pages that are not related to the backend (such as About page and How to page).
 
-## What next ?
-There are things you cannot do with only frontend.
+## What's next?
 
-- Save data persistently
-- How to login or logout
-- Send Email
-- Payment system
+Front-end alone cannot meet the following specifications for web services
 
-etc...
+- Storing data permanently
+- Log in and log out
+- Send an email to users
+- Building a Payment System
 
-To accomplish these requirements, we need to learn backend.
+And so on...
 
-We will choose **Ruby** and it's framework **Ruby on rails** to implement backend.
+In order to achieve these requirements, you will need to learn about **Back-end**.
+
+There are a number of options for developing the back-end of your website.
+
+:::info  Backend Language + Web Framework
+- Ruby + Ruby on Rails
+- Javascript (Node.js) + Express
+- PHP + Laravel
+- Python + Django
+:::
+
+Which one to choose is a very difficult question to answer.
+
+We will choose **Ruby** and **Ruby on Rails** to implement backend.
+
+
+## Backend stack refs:
+- https://hackr.io/blog/top-10-web-development-frameworks-in-2020
+- https://mtm.dev/node-firebase-laravel-rails/
