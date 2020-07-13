@@ -29,10 +29,6 @@ html[data-theme="dark"] {
   --ifm-footer-background-color: rgba(0, 0, 0, 0.4);
 }
 
-div[class^="docPage_"] {
-  font-family: "Noto Sans JP", sans-serif !important;
-}
-
 h2 .hash-link {
   opacity: 1 !important;
 }
