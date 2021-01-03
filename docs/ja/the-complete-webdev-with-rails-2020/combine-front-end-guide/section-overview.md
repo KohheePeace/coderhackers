@@ -46,7 +46,7 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
 ### VS Codeで新しいウィンドウを開く
 `frontend-combine`フォルダーを新しいVS codeウィンドウとして開きましょう。
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602_235337.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602_235337.gif)
 
 
 ### フォルダー構成

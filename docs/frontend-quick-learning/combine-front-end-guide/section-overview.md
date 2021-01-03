@@ -44,7 +44,7 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
 ### Open project as a new VS code window
 Open the `frontend-combine` folder as a new VS code window.
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602_235337.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602_235337.gif)
 
 ### Folder Structure
 

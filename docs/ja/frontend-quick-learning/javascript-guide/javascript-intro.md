@@ -39,7 +39,7 @@ Then, make html boilerplate and add `<div id="demo">Click here</div>`.
 ## Check the output
 Nothing happened if you clicked.
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200524_160844.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200524_160844.gif)
 
 ## Try First JavaScript
 
@@ -81,7 +81,7 @@ Ref:
 
 
 #### Check the output
-![output-copy-mdn-onclick-demo-code](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200524_121803.gif)
+![output-copy-mdn-onclick-demo-code](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200524_121803.gif)
 
 ## Do you understand the meaning of **"interactive"** ?
 **Interactive** means...

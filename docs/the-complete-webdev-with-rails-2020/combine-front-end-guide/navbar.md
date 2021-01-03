@@ -180,7 +180,7 @@ The final code looks like this.
 ```
 
 If it looks like the following, you should be fine.
-![20200530231534](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200530231534.png)
+![20200530231534](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200530231534.png)
 
 ## Sign Up Button
 Next, let's add a Sign Up button. Please copy and paste the code as follows.
@@ -203,7 +203,7 @@ The Bootstrap classes used here are the followings.
 - `px-3 py-2` to adjust padding: https://getbootstrap.com/docs/4.5/utilities/spacing/
 
 The current output looks like this.
-![20200530235220](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200530235220.png)
+![20200530235220](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200530235220.png)
 
 
 ## Logo
@@ -217,7 +217,7 @@ Unzip the downloaded zip file and move `android-chrome-192x192.png` from it to t
 
 Then rename it as `logo.png`.
 
-![20200603203949](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603203949.png)
+![20200603203949](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603203949.png)
 
 
 Load this `logo.png` inside `navbar-brand`.
@@ -232,7 +232,7 @@ Load this `logo.png` inside `navbar-brand`.
 ```
 
 It looks like the following.
-![20200603204838](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603204838.png)
+![20200603204838](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603204838.png)
 
 However, the size of the logo is too large, so let's add attributes by referring to the following link.
 https://getbootstrap.com/docs/4.5/components/navbar/#brand
@@ -254,7 +254,7 @@ https://getbootstrap.com/docs/4.5/components/navbar/#brand
 ```
 
 It became just the right size logo, as shown below.
-![20200603205543](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205543.png)
+![20200603205543](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603205543.png)
 
 ### Logo title
 Next, let's change the character from "Navbar" to "Logo", enclose it in `span` and add the Bootstrap class `font-weight-bold`.
@@ -268,7 +268,7 @@ Next, let's change the character from "Navbar" to "Logo", enclose it in `span` a
 ```
 
 It looks like the following.
-![20200603205625](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205625.png)
+![20200603205625](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603205625.png)
 
 ## Change the background color of Navbar
 Let's change the background color of Navbar from `bg-light` to `bg-white` class as follows.
@@ -278,7 +278,7 @@ Let's change the background color of Navbar from `bg-light` to `bg-white` class 
 ```
 
 It looks like the following.
-![20200603205738](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205738.png)
+![20200603205738](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603205738.png)
 
 https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
 
@@ -290,7 +290,7 @@ Add the class `shadow-sm` to add a shadow to the navbar to give it a three-dimen
 ```
 
 It looks like the following.
-![20200603205801](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205801.png)
+![20200603205801](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603205801.png)
 
 https://getbootstrap.com/docs/4.5/utilities/shadows/
 
@@ -339,7 +339,7 @@ Let's add `ml-auto` and `mr-lg-4` to adjust the margins.
 ```
 
 It looks like the following.
-![20200603210020](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603210020.png)
+![20200603210020](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603210020.png)
 
 ## Adding Custom CSS
 Please add the following CSS for minor visual adjustments.
@@ -357,7 +357,7 @@ Please add the following CSS for minor visual adjustments.
 /* highlight-end */
 ```
 
-![20200603210348](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603210348.png)
+![20200603210348](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603210348.png)
 
 
 ## Final Code

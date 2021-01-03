@@ -15,10 +15,10 @@ title: col - Desktop
 
 ## Check device width
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-17-44-52.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-21-17-44-52.png)
 
 ## Grid options table
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-17-57-37.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-21-17-57-37.png)
 
 The device width is applied to both **Large** and **Extra Large** range.
 
@@ -37,7 +37,7 @@ For normal desktop, it is usual to use **`col-lg`**
 12/(x columns) = 12/(6 columns) = 12/6 = 2 = col-2
 ```
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-11-01-06.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-21-11-01-06.png)
 
 :::info
 - So, we use **`col-lg-`** for desktop

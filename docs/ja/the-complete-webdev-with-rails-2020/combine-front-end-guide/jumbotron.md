@@ -71,27 +71,27 @@ https://www.canva.com/ にアクセスして、アカウントを作成してく
 次に以下のgifのように
 - "Presentation"のデザインを作成してください。
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603_235735.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200603_235735.gif)
 
 
 次に、
 - **"blue and white startup business animated presentation"**と検索して"Enter"を押してください。
 - その中の一つのスライドを選択してください。
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601_115813.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200601_115813.gif)
 
 
 次に以下のgifのように画像のカラーを`#00B0FF`に編集します。
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601_120145.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200601_120145.gif)
 
 
 最後に作成した画像を`.png`形式でダウンロードしてください。
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601_120321.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200601_120321.gif)
 
 
 ダウンロードが完了したら、ファイルを`img`フォルダの下に移して`jumbotron-bg.png`とリネームしてください。
 
-![20200601130307](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601130307.png)
+![20200601130307](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200601130307.png)
 
 ## background colorを変更する
 `bg-white`クラスを追加してjumbotronの背景色を変更しましょう。
@@ -153,7 +153,7 @@ Jumbotronの中身を以下のように50:50に分割しましょう。
   </div>
 </div>
 ```
-![20200604003421](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604003421.png)
+![20200604003421](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200604003421.png)
 
 `img-fluid`を画像が親要素に収まるように使用しています。: https://getbootstrap.com/docs/4.5/content/images/#responsive-images
 
@@ -200,7 +200,7 @@ Jumbotronのエリアを画面いっぱいに表示させるためにjumbotron�
 ```
 
 **`57.69px`** はnavbarの高さです。
-![20200604004055](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604004055.png)
+![20200604004055](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200604004055.png)
 
 `100vh`は現在の画面サイズを表します。
 https://www.w3schools.com/cssref/css_units.asp
@@ -268,7 +268,7 @@ https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints
 
 | Before                                                                                              | After                                                                                               |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![20200604011205](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604011205.png) | ![20200604011138](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604011138.png) |
+| ![20200604011205](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200604011205.png) | ![20200604011138](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200604011138.png) |
 
 
 Ref: https://getbootstrap.com/docs/4.5/utilities/flex/#order

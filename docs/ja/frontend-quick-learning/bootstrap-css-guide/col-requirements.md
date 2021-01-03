@@ -255,7 +255,7 @@ So, the code becomes...
 
 ## Check the current output
 
-![bootstrap-grid-system-various-device-chrome-devtool](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200520_195624.gif)
+![bootstrap-grid-system-various-device-chrome-devtool](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200520_195624.gif)
 
 Only using **`col-sm-`** class doesn't satisfy the Requirements
 

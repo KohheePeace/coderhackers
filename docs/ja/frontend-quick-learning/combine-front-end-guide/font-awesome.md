@@ -9,7 +9,7 @@ title: Font Awesome
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-00-04-44.png)
 
 ## What is Font Awesome?
-![20200605163710](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605163710.png)
+![20200605163710](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605163710.png)
 Font Awesome is the most popular icon toolkit on the web.
 **With Font Awesome, you can easily add cool icons.**
 
@@ -76,7 +76,7 @@ Next, paste the copied code into `index.html` as follows.
 </a>
 ```
 
-![20200605173330](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605173330.png)
+![20200605173330](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605173330.png)
 
 You can add an icon by simply pasting the following code.
 ```html

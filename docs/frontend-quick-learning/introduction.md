@@ -7,7 +7,7 @@ In this course, you will learn <mark>**front-end skills**</mark>.
 
 By the end of this course, you will be able to make a **real website** like the following GIF.
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200610_184144.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200610_184144.gif)
 
 **You can check out** this website at the following URL
 

@@ -5,7 +5,7 @@ title: About Us Section
 ## Goal
 - ⚡ In this step, we're going to create an **About Us section**.
 
-![20200601231957](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601231957.png)
+![20200601231957](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200601231957.png)
 
 ## Prepare images
 First, prepare the images for the About Us section.
@@ -22,7 +22,7 @@ Next, download the five images by searching for the following words and move the
 | Cautious dog      |
 | Modern woman      |
 
-![20200602122620](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602122620.png)
+![20200602122620](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602122620.png)
 
 ***Note**: This includes images for use in the next step.
 
@@ -107,7 +107,7 @@ Also, it is centered with `margin: 0 auto;`.
 Let's edit each Row.
 
 ### Row 1
-![20200602122727](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602122727.png)
+![20200602122727](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602122727.png)
 
 Add code as follows.
 
@@ -146,7 +146,7 @@ Add code as follows.
 The image is placed on the left side and the right side uses `d-flex flex-column justify-content-center` so that the text is centered vertically.
 
 ### Row 2
-![20200605191057](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605191057.png)
+![20200605191057](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605191057.png)
 ```html
 <div class="row">
   <!-- highlight-next-line -->
@@ -180,12 +180,12 @@ Using `order-md-*` changes the order of images on devices larger than a tablet a
 
 | Tablet and above                                                                                    | Mobile                                                                                              |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![20200602123637](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602123637.png) | ![20200602124842](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602124842.png) |
+| ![20200602123637](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602123637.png) | ![20200602124842](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602124842.png) |
 
 
 
 ### Row 3
-![20200605191125](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605191125.png)
+![20200605191125](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605191125.png)
 
 This is almost the same code as `row 1`.
 

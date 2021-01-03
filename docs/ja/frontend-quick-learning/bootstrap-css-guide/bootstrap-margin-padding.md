@@ -55,7 +55,7 @@ You just need to add `mb-4`
 </div>
 ```
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200522_081850.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200522_081850.gif)
 
 
 :::caution
@@ -153,7 +153,7 @@ pb-xl-3
 :::
 
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200522_092929.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200522_092929.gif)
 https://frontend-combine-demo.now.sh/
 
 ```html

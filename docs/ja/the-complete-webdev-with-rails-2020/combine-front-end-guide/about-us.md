@@ -5,7 +5,7 @@ title: About Us セクション
 ## ゴール
 - ⚡ このステップでは、**About Usセクション**を作りましょう。
 
-![20200601231957](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601231957.png)
+![20200601231957](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200601231957.png)
 
 ## 画像を用意する
 まず、About Usセクションに必要な画像を用意しましょう。
@@ -22,7 +22,7 @@ https://undraw.co/search にアクセスして、`#00B0FF`の色を設定して�
 | Cautious dog      |
 | Modern woman      |
 
-![20200602122620](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602122620.png)
+![20200602122620](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602122620.png)
 
 ***注意**: 次のセクションで使用する画像も含まれています。
 
@@ -102,7 +102,7 @@ https://undraw.co/search にアクセスして、`#00B0FF`の色を設定して�
 それぞれのRowを編集していきましょう。
 
 ### Row 1
-![20200602122727](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602122727.png)
+![20200602122727](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602122727.png)
 
 以下の様にコードを追加してください。
 
@@ -141,7 +141,7 @@ https://undraw.co/search にアクセスして、`#00B0FF`の色を設定して�
 画像を左側に配置し、右側のには`d-flex flex-column justify-content-center`を使用して、テキストが縦方向に中央配置されるようにしています。
 
 ### Row 2
-![20200605191057](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605191057.png)
+![20200605191057](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605191057.png)
 ```html
 <div class="row">
   <!-- highlight-next-line -->
@@ -175,12 +175,12 @@ https://undraw.co/search にアクセスして、`#00B0FF`の色を設定して�
 
 | タブレット以上                                                                                      | モバイル                                                                                            |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![20200602123637](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602123637.png) | ![20200602124842](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602124842.png) |
+| ![20200602123637](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602123637.png) | ![20200602124842](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200602124842.png) |
 
 
 
 ### Row 3
-![20200605191125](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605191125.png)
+![20200605191125](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605191125.png)
 これは`row 1`とほぼ同じコードです。
 ```html
 <div class="row">

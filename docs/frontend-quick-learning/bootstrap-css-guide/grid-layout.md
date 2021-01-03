@@ -6,7 +6,7 @@ title: Grid System Layout
 
 - ⚡ Try Bootstrap **grid system** to make 3 columns layout
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-20-18-25-19.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-20-18-25-19.png)
 
 ## What is Grid system ?
 > Bootstrap’s grid system uses a series of <mark>**containers**, **rows**, and **columns** to layout and align content</mark>.

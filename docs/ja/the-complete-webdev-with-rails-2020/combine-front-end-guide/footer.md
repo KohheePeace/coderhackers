@@ -13,7 +13,7 @@ BootstrapのexamplesからFooterのコードを借りましょう。
 
 https://getbootstrap.com/docs/4.5/examples/product/
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607_230521.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200607_230521.gif)
 
 Customers Voiceセクションの下に以下のコードをコピー＆ペーストしてください。
 ```html title="index.html"
@@ -78,7 +78,7 @@ footer {
 ```
 
 CSSを変更しただけだと、以下のようになるのでこれを修正しましょう。
-![20200607224921](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607224921.png)
+![20200607224921](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200607224921.png)
 
 ## Footerを修正する
 `footer`タグから`container`クラスを削除して、`footer`タグの中にあたらしく`<div class="container">`を追加してください。

@@ -7,7 +7,7 @@ title: Introduction
 
 最終的には、以下のGIFのようなランディングページを制作ができるようになります。
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200610_184144.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200610_184144.gif)
 
 このウェブサイトは以下のURLでチェックできます。
 

@@ -9,7 +9,7 @@ title: Font Awesome
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-00-04-44.png)
 
 ## Font Awesome とは?
-![20200605163710](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605163710.png)
+![20200605163710](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605163710.png)
 Font Awesomeはwebで最も人気なアイコンのツールキットです。
 **Font Awesomeを使えば、クールなアイコンを簡単に追加できます。**
 
@@ -74,7 +74,7 @@ https://fontawesome.com/
 </a>
 ```
 
-![20200605173330](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200605173330.png)
+![20200605173330](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605173330.png)
 
 以下のコードを貼り付けるだけでアイコンが追加できます。
 ```html

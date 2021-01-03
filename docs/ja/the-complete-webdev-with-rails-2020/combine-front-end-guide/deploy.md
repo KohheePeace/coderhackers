@@ -16,7 +16,7 @@ https://en.wikipedia.org/wiki/Software_deployment
 
 
 ## Vercel
-![20200609230223](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609230223.png)
+![20200609230223](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200609230223.png)
 https://vercel.com/
 
 **Vercelはウェブサイトを簡単にデプロイできるサービスです。**

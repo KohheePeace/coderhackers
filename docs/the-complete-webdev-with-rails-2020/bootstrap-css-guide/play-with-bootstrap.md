@@ -59,7 +59,7 @@ So, let's try bootstrap CSS.
 
 First, please go to **Components => Buttons** page.
 
-![click-component-link](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200517_200207.gif)
+![click-component-link](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200517_200207.gif)
 
 https://getbootstrap.com/docs/4.5/components/buttons/
 
@@ -85,7 +85,7 @@ In Bootstrap site, they show
 2. Add `btn btn-primary` classes to Sign Up button.
 
 
-![copy-btn-class](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200517_200931-fix.gif)
+![copy-btn-class](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200517_200931-fix.gif)
 
 > The `.btn` classes are designed to be used with the `<button>` element. <mark>However, you can also use these classes on `<a>` or `<input>` elements</mark> (though some browsers may apply a slightly different rendering).
 
@@ -101,7 +101,7 @@ Ref: https://getbootstrap.com/docs/4.5/components/buttons/#button-tags
 
 Check the output...
 
-![bootstrap-btn](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-18-13-35-06.png)
+![bootstrap-btn](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-18-13-35-06.png)
 
 
 ### Outline buttons
@@ -115,7 +115,7 @@ Check the output...
 ```
 
 :::note Output
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-18-18-43-01.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-18-18-43-01.png)
 :::
 
 ### Change sizes of Button
@@ -129,7 +129,7 @@ Check the output...
 
 :::note output
 
-![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-18-18-42-07.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-18-18-42-07.png)
 
 :::
 
