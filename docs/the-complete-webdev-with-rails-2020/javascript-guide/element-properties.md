@@ -26,7 +26,7 @@ To understand  **(3)** we focus on **`Element Properties`**
 
 As described here, HTML element has a lot of properties.
 
-![html-element-properties](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-02-20-28-59.png)
+![html-element-properties](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-02-20-28-59.png)
 
 Ref: https://developer.mozilla.org/en-US/docs/Web/API/Element
 
@@ -38,13 +38,13 @@ https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style
 ## Check properties in console
 So, first let's check current `<div#demo>` properties.
 
-![check-property](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_232636.gif)
+![check-property](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_232636.gif)
 
 
 ## Change properties
 You can **<mark>change these properties by assigning new values</mark>**.
 
-![change-property](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_232934.gif)
+![change-property](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_232934.gif)
 
 And we're doing the same thing inside function.
 

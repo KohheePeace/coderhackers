@@ -35,7 +35,7 @@ In `terminal`
 git --version
 ```
 
-![git--version.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/git-guide/git--version.gif)
+![git--version.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/git-guide/git--version.gif)
 
 ## Setting Git
 In `terminal`

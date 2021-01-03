@@ -380,7 +380,7 @@ And visit generated url
 https://firebase.google.com/docs/rules/emulator-reports
 
 If test is not applied to the rules, it shows message like this.
-![ss-of-coverage](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-27%20at%205.31.13.png)
+![ss-of-coverage](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-27%20at%205.31.13.png)
 
 ## Deploy Rules
 ```bash title="terminal"

@@ -10,7 +10,7 @@ title: Carousel
 Copy and Paste 
 https://getbootstrap.com/docs/4.5/components/carousel/#with-indicators
 
-![copy-carousel-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-carousel-code.gif)
+![copy-carousel-code](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-carousel-code.gif)
 
 ### Paste the code to index.html
 Please paste this code under about us section.
@@ -79,7 +79,7 @@ This code does not work because there is no img.
 ```
 
 Check the output here...
-![check-carousel-work-with-h1.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/check-carousel-work-with-h1.gif)
+![check-carousel-work-with-h1.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/check-carousel-work-with-h1.gif)
 
 
 ### Add section header
@@ -122,7 +122,7 @@ https://www.pexels.com/search/portrait/
 
 
 Please change the suze to **640x640**.
-![download-portrait-square](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/download-portrait-square.png)
+![download-portrait-square](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/download-portrait-square.png)
 
 After you donwload images, please move it under `img` folder and rename it to `portrait-1 2 3`.
 
@@ -171,7 +171,7 @@ After you donwload images, please move it under `img` folder and rename it to `p
 </div>
 ```
 
-![check-carousel-2.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/check-carousel-2.gif)
+![check-carousel-2.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/check-carousel-2.gif)
 
 ### Add styles
 ```html hl_lines="4 11 12 19 26"

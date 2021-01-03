@@ -26,7 +26,7 @@ Visit: https://console.firebase.google.com
 
 And make firestore database in **"test mode"**.
 
-![ss](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/create-firestore-database.png)
+![ss](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/create-firestore-database.png)
 
 ## Add Firestore code
 ```dart {11-20} title="lib/pages/register_page.dart"

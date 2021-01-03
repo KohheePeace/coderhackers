@@ -1,6 +1,6 @@
 ## Validation
 
-![rails-flow-validation.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-validation.png)
+![rails-flow-validation.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-validation.png)
 
 ## Step1 add validation to Model
 `app/models/article.rb`

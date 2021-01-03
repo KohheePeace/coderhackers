@@ -23,7 +23,7 @@ title: col - Desktop
 The device width is applied to both **Large** and **Extra Large** range.
 
 According to this bootstrap document **Large** range includes desktop.
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-24-13.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-09-05-24-13.png)
 Ref: https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints
 
 

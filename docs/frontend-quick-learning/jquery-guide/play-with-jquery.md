@@ -49,7 +49,7 @@ So, copy and paste this code
 To use jQuery, we need to import jQuery.
 https://jquery.com/
 
-![import-jquery](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_235226.gif)
+![import-jquery](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_235226.gif)
 
 
 ```html title="jquery-test1.html"

@@ -1,5 +1,5 @@
 ## Navbarについて
-![https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-real-world/arrangement.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-real-world/arrangement.png)
+![https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-real-world/arrangement.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-real-world/arrangement.png)
 
 ```
 1. My Posts

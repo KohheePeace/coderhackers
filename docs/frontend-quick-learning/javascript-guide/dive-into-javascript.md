@@ -31,7 +31,7 @@ Ref: http://todd-henderson.me/tutorials/javascript/building-a-javascript-library
 
 #### In our case
 
-![window-document-html-body-div](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/javascript-guide/window-document-html-body-div.jpg)
+![window-document-html-body-div](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/javascript-guide/window-document-html-body-div.jpg)
 
 This is why we can access **`div#demo`**
 ```js
@@ -133,7 +133,7 @@ In `test4.html`
 
 
 ### Common html event
-![common-html-events](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/javascript-guide/common-html-events.png)
+![common-html-events](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/javascript-guide/common-html-events.png)
 
 :::note
 - You don't need to remember these events

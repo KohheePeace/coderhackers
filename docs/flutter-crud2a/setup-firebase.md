@@ -23,7 +23,7 @@ https://codelabs.developers.google.com/codelabs/flutter-firebase/#5
 ## Enable Authentication Sign-in method
  
 Don't forget to enable **"Email/Password"** method.
-![enable-firebase-email-auth.png](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/enable-firebase-email-auth.png)
+![enable-firebase-email-auth.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/enable-firebase-email-auth.png)
 
 
 

@@ -5,7 +5,7 @@ title: Introduction
 
 In this chapter, we'll be combining the knowledge we've learned so far and make real website like below.
 
-![preview-of-frontend-final.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/preview-of-frontend-final.gif)
+![preview-of-frontend-final.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/preview-of-frontend-final.gif)
 
 
 ## Folder Setup

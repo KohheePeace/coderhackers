@@ -55,7 +55,7 @@ Okay so, let's check the example of events.
 > Fired when a pointing device button (e.g., a mouse's primary button) is <mark>pressed and released on a single element.</mark>
 > Also available via the `onclick` property.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_231416.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_231416.gif)
 
 
 This is what used in our code
@@ -99,7 +99,7 @@ Okay, so let's try another event.
 </script>
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_231838.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_231838.gif)
 
 ## Javascript `function`
 

@@ -19,7 +19,7 @@ Visit: https://margin-padding-demo.now.sh/
 
 And edit element style by using chrome dev tools.
 
-![play-with-padding](https://storage.googleapis.com/coderhackers-assets/docs/img/20200428_035736.gif)
+![play-with-padding](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200428_035736.gif)
 
 
 ## Padding - Shorthand Property

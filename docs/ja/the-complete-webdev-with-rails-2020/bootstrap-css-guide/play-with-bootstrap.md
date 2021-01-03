@@ -13,7 +13,7 @@ title: Play with Bootstrap CSS
 
 https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 
-![copy-bootstrap-starter-html](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-starter-html.gif)
+![copy-bootstrap-starter-html](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-starter-html.gif)
 
 :::caution
 - Ignore Javascript files now.
@@ -50,7 +50,7 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 ```
 
 #### Check current output
-![copy-bootstrap-html-output](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-html-output.png)
+![copy-bootstrap-html-output](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-bootstrap-html-output.png)
 
 
 ## Try Bootstrap CSS

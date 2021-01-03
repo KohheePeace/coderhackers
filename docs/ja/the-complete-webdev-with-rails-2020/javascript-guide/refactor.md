@@ -20,7 +20,7 @@ This is current code.
 We will do the same thing described in the below link. 
 
 
-![refactor-onclick-method](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-13-16-42-20.png)
+![refactor-onclick-method](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-13-16-42-20.png)
 https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 
 

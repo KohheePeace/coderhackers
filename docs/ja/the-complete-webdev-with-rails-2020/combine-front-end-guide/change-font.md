@@ -17,7 +17,7 @@ body {
 
 では実際にChrome Dev Toolsで試してみましょう。
 
-![change-font](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_123837.gif)
+![change-font](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200530_123837.gif)
 
 フォントが変更されたのが分かったかと思います。
 
@@ -33,7 +33,7 @@ body {
 }
 ```
 
-![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_124904.gif)
+![tangerine-font-test](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200530_124904.gif)
 
 フォントは変わりましたが、これは`Tangerine`フォントではなく、**fallback**フォントの`cursive`が適用されています。
 
@@ -61,7 +61,7 @@ body {
 3. 次に、使用したいフォントウェイトを選択します。今回はすべて選択しましょう。
 4. 最後に**Embed `<link>`**をコピーしてください。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_075419.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200503_075419.gif)
 
 以下の様に、コピーしたembed `<link>`を`<head>`タグの中にペーストします。
 
@@ -84,7 +84,7 @@ body {
 font-family: 'Tangerine', cursive;
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_125046.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200530_125046.gif)
 
 今回は、Google Fontsを読み込んだおかげで、`Tangerine`フォントが正しく適用されたのが分かったかと思います。
 

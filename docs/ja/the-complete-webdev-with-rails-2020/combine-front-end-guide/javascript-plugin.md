@@ -6,7 +6,7 @@ title: Javascript Plugin
 - ⚡ このステップでは、javascriptプラグインの使い方を学びましょう。
 - 🔥 プラグインを追加してCustomers Voiceセクションに以下のGIFの様なエフェクトを追加します。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_010547.gif)
 
 ## wow.js
 wow.jsというプラグインを追加してエフェクトを追加します。
@@ -33,7 +33,7 @@ https://github.com/daneden/animate.css
 **注意**: コードをペーストした後にsaveしてしまうとauto formatによりコードの圧縮が解かれてしまうので**saveしないでください。**
 :::
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_003923.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_003923.gif)
 
 ### `wow.min.js`
 では、今度は`wow.min.js`用意しましょう。以下のURLの`dist`フォルダから`wow.min.js`のコードをコピーしましょう。
@@ -46,7 +46,7 @@ https://github.com/graingert/wow
 **注意**: こちらも先ほど同様saveしてしまうとauto formatによりコードの圧縮が解かれてしまうので**saveしないでください。**
 :::
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_004112.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_004112.gif)
 
 
 :::info
@@ -225,4 +225,4 @@ Customers Voiceセクションの一つ一つのcolumnを以下の様に編集�
 >
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_010547.gif)

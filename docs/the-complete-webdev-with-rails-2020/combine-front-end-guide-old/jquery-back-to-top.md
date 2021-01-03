@@ -1,6 +1,6 @@
 In this chapter, we are going to make **back to top button** like below.
 
-![back-to-top-how-it-works](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-how-it-works.gif)
+![back-to-top-how-it-works](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-how-it-works.gif)
 
 
 Of course, I don't know how to implement this at first.
@@ -14,7 +14,7 @@ In this case, you can imitate code from
 
 https://bootstrapmade.com/demo/themes/NewBiz/
 
-![imitate-back-to-top-code.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/imitate-back-to-top-code.gif)
+![imitate-back-to-top-code.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/imitate-back-to-top-code.gif)
 
 This is a back-to-top code of NewBiz.
 ```html
@@ -37,7 +37,7 @@ Let's learn about this.
 Font Awesome is a library for icons. It is also recommended in Bootstrap site.
 
 https://getbootstrap.com/docs/4.5/extend/icons/#preferred
-![bootstrap-prefer-font-awesome](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/bootstrap-prefer-font-awesome.png)
+![bootstrap-prefer-font-awesome](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/bootstrap-prefer-font-awesome.png)
 
 
 Please visit
@@ -47,7 +47,7 @@ https://fontawesome.com/
 and sign up.
 
 After you sign up, please somehow reach this page.
-![copy-fontawesome-kit-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-fontawesome-kit-code.gif)
+![copy-fontawesome-kit-code](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-fontawesome-kit-code.gif)
 
 Copy and paste script code.
 
@@ -73,9 +73,9 @@ Please search **chevron**
 
 https://fontawesome.com/icons?d=gallery
 
-![search-chevron-up](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/search-chevron-up.png)
+![search-chevron-up](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/search-chevron-up.png)
 
-![copy-chevron-icon-html](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-chevron-icon-html.gif)
+![copy-chevron-icon-html](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-chevron-icon-html.gif)
 
 
 Please paste this code with comment under the footer.
@@ -87,7 +87,7 @@ Please paste this code with comment under the footer.
 <!-- # Back to Top Button -->
 ```
 
-![chevron-icon-output.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/chevron-icon-output.png)
+![chevron-icon-output.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/chevron-icon-output.png)
 
 Thanks to font awesome script, it is automatically displayed on screen.
 
@@ -106,7 +106,7 @@ Wrap Fontawesome icon by `<div>`. This is only with bootstrap class.
 ```
 
 Check the output...
-![back-to-top-btn-1](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-btn-1.png)
+![back-to-top-btn-1](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-btn-1.png)
 
 
 ## Add custom style
@@ -149,7 +149,7 @@ https://stackoverflow.com/questions/14249998/jquery-back-to-top
     </script>
 ```
 
-![back-to-top-only-click.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-only-click.gif)
+![back-to-top-only-click.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-only-click.gif)
 
 ## Fadein and Fadeout
 
@@ -203,7 +203,7 @@ https://stackoverflow.com/questions/45645772/jquery-fadein-is-not-a-function
 Download from here.
 https://code.jquery.com/
 
-![copy-full-jQuery-cdn.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-full-jQuery-cdn.gif)
+![copy-full-jQuery-cdn.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-full-jQuery-cdn.gif)
 
 ```
 <script
@@ -214,4 +214,4 @@ https://code.jquery.com/
 
 Check the output...
 
-![back-to-top-how-it-works](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-how-it-works.gif)
+![back-to-top-how-it-works](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/back-to-top-how-it-works.gif)

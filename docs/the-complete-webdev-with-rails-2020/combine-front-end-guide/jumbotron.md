@@ -61,7 +61,7 @@ First, let's prepare the main image.
 - Download the svg file
 - Move the downloaded file to the **`img`** folder.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-05-48-28.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-05-48-28.png)
 
 
 ### Background Image
@@ -336,12 +336,12 @@ The button looks like this.
 
 For desktop, the button layout direction is `row` thanks to `flex-lg-row`.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-21-18-02.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-21-18-02.png)
 
 #### Mobile and Tablet
 For Mobile and Tablet, the button layout direction is `column` thanks to `flex-column`.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-21-18-50.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-21-18-50.png)
 
 ## Final Code
 The final code looks like this.

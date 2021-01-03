@@ -8,7 +8,7 @@ We are in the middle of learning **CRUD**.
 * [ ] U: Update
 * [ ] D: Delete
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 
 In this chapter, we will make Article model.
@@ -71,7 +71,7 @@ username: postgres
 password: example
 ```
 
-![login-adminer.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/login-adminer.gif)
+![login-adminer.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/login-adminer.gif)
 
 
 ## Step4 Check database **After**
@@ -85,7 +85,7 @@ docker-compose run web rails db:migrate
 
 After running migration file, you see there is articles table created
 
-![articles-table-created.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/articles-table-created.png)
+![articles-table-created.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/articles-table-created.png)
 
 ## Step5 Edit **create** action
 We created a database, so let's write a code to save article data to the database in `create` action.
@@ -138,6 +138,6 @@ Visit: http://localhost:3000/articles/new and submit article.
 
 
 ## Step6 Check data in database
-![check-article-data.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/check-article-data.gif)
+![check-article-data.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/check-article-data.gif)
 
 In the next lesson, we will be learning how to use this Article data!

@@ -25,7 +25,7 @@ You will easily understand this syntax after you tried it!
 <!-- **`screen`** can take values like **`all`**, **`print`** as shown below image, but you almost never use except **`screen`**.
 
 So, you don't need to care about it currently.
-![css-media-types](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-28-21-56-24.png)
+![css-media-types](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-28-21-56-24.png)
 
 https://www.w3schools.com/cssref/css3_pr_mediaquery.asp -->
 
@@ -92,4 +92,4 @@ Make `media-query.html` in `css-test` folder.
 Code Ref: https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php
 
 ## Check the output
-![change-width-media-query](https://storage.googleapis.com/coderhackers-assets/docs/img/20200508_072257.gif)
+![change-width-media-query](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200508_072257.gif)

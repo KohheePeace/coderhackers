@@ -16,7 +16,7 @@ title: col - Tablet
 ![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/2020-05-21-14-16-34.png)
 
 ## Grid options table
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-15-12.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-09-05-15-12.png)
 
 
 ## Calculate col- number

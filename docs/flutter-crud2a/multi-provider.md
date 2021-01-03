@@ -103,6 +103,6 @@ drawer: HomeDrawer(),
 
 ## Provided value doesn't update...😟
 This is because `Provider` widget's value doesn't update.
-![dart-devtools](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/flutter-provider-state-dart-dev-tool.png)
+![dart-devtools](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/flutter-provider-state-dart-dev-tool.png)
 
 In the next step, let's solve this problem.

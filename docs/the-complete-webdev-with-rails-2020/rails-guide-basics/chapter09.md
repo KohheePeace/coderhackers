@@ -12,7 +12,7 @@ We are in the middle of learning **CRUD**.
 
 In this chapter, we will learn ==R: Read==.
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 
 ## Step1 Routes
@@ -68,10 +68,10 @@ Visit...
 3. http://localhost:3000/articles/2
 
 Every url show this page...
-![check-rails-show-page.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/check-rails-show-page.png)
+![check-rails-show-page.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/check-rails-show-page.png)
 
 ## Step5 Show Article Data in this page
-![rails-flow-diagram-read.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-read.png)
+![rails-flow-diagram-read.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-read.png)
 
 1. Fetch data from database by using model.
 2. Pass that data to views from controller.
@@ -113,12 +113,12 @@ def show
 end
 ```
 And, find Article where `id=1` from database.
-![article-find.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/article-find.gif)
+![article-find.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/article-find.gif)
 
 Then, views render
-![rails-show-find.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-show-find.png)
+![rails-show-find.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-show-find.png)
 
 
 visit: http://localhost:3000/articles/2
-![show-article-2.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/show-article-2.png)
+![show-article-2.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/show-article-2.png)
 => Error happened because there is no article with id=2 in database.

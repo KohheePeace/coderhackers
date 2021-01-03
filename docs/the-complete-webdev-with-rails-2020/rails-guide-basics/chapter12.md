@@ -12,9 +12,9 @@ We are in the middle of learning **CRUD**.
 
 In this chapter, we will fix last chapter error.
 
-![try-article-update.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/try-article-update.gif)
+![try-article-update.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/try-article-update.gif)
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 ## Step1 Routes
 `routes.rb`
@@ -66,4 +66,4 @@ end
 
 ## Step4 Check it
 visit: http://localhost:3000/articles/1/edit
-![check-update.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/check-update.gif)
+![check-update.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/check-update.gif)

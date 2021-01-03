@@ -8,7 +8,7 @@ So, instructors can search Top earning courses.
 
 Accourding to this insights, the top courses related **Web Development** is as follows.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-22-19-27-56.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-22-19-27-56.png)
 
 I bought **top 4** courses and compare each courses.
 

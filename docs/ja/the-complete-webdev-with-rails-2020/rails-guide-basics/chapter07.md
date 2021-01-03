@@ -129,7 +129,7 @@ Always repeat the formula...
 3. views `articles/create.html.erb`
 ```
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 `app/controllers/articles_controller.rb`
 ```ruby
@@ -150,7 +150,7 @@ end
 
 Again submit form...
 
-![yes-submit.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/yes-submit.png)
+![yes-submit.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/yes-submit.png)
 
 ## Check what parameters sent from URL
 ...

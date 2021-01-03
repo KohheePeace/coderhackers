@@ -10,7 +10,7 @@ We are in the middle of learning **CRUD**.
 
 https://guides.rubyonrails.org/getting_started.html#updating-articles
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 ## Step1 Routes
 Add a routes for edit page.
@@ -62,15 +62,15 @@ end
 
 Check views output...
 
-![article-edit-form.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/article-edit-form.png)
+![article-edit-form.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/article-edit-form.png)
 
 You see form field is initially filled with article data.
 
 ## Step4 Try update
-![try-article-update.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/try-article-update.gif)
+![try-article-update.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/try-article-update.gif)
 
 !!! info
     1. Click "Update Article" button
     2. Hit `"/articles/1"` url with method PATCH (form method is "post" but you see hidden input.)
-    ![hidden-input-patch.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/hidden-input-patch.png)
+    ![hidden-input-patch.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/hidden-input-patch.png)
     3. Error happened `No route matches [PATCH] "/articles/1"`

@@ -17,7 +17,7 @@ body {
 
 Let's try it in Chrome Dev Tools.
 
-![change-font](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_123837.gif)
+![change-font](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200530_123837.gif)
 
 You see that the font has been changed.
 
@@ -34,7 +34,7 @@ body {
 }
 ```
 
-![tangerine-font-test](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_124904.gif)
+![tangerine-font-test](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200530_124904.gif)
 
 The font has changed, but this is not the `Tangerine` font, but the `cursive` of the **fallback** font has been applied.
 
@@ -61,7 +61,7 @@ Now let's take a look at how to use Google Fonts.
 3. Next, select the font weight you want to use. Let's choose all this time.
 4. Please copy **Embed `<link>`** at the end.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200503_075419.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200503_075419.gif)
 
 Paste copied embeded `<link>` into the `<head>` tag as follows.
 
@@ -89,7 +89,7 @@ Now, let's check the following CSS in Chrome Dev Tools again.
 font-family: 'Tangerine', cursive;
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200530_125046.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200530_125046.gif)
 
 This time, thanks to loading Google Fonts, you'll see that the `Tangerine` font was applied correctly.
 

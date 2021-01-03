@@ -10,7 +10,7 @@ In this chapter, we are going to make **Navbar**.
 Copy code from
 https://getbootstrap.com/docs/4.5/components/navbar/
 
-![copy-navbar](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-navbar.gif)
+![copy-navbar](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-navbar.gif)
 
 
 Paste to `index.html`
@@ -80,7 +80,7 @@ Paste to `index.html`
 
 ### Check current output...
 
-![after-copy-navbar](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/after-copy-navbar.png)
+![after-copy-navbar](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/after-copy-navbar.png)
 
 
 ### Edit Navbar
@@ -99,7 +99,7 @@ Change navbar background (just remove `bg-light` class)
 <nav class="navbar navbar-expand-lg navbar-light">
 ```
 
-![after-edit-navbar](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/after-edit-navbar.png)
+![after-edit-navbar](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/after-edit-navbar.png)
 
 ### Check the current code
 
@@ -163,4 +163,4 @@ Change navbar background (just remove `bg-light` class)
 ```
 
 ### Current Output
-![current-output-navbar](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-14-04-04-50.png)
+![current-output-navbar](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-14-04-04-50.png)

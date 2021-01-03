@@ -7,7 +7,7 @@ title: Check web flow
 - ⚡ Understand the flow of the web
 
 ## Check web flows
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-08-01-20-51.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-08-01-20-51.png)
 
 
 :::info recap

@@ -23,7 +23,7 @@ This is a document aimed to show **how to replace jQuery with pure javascript**,
 
 **<mark>But it also suggests the merit of jQuery.</mark>**
 
-![you-might-not-need-jquery](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/jquery-guide/you-might-not-need-jquery.gif)
+![you-might-not-need-jquery](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/jquery-guide/you-might-not-need-jquery.gif)
 
 Did you find the merit of jQuery ?
 

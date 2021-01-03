@@ -11,7 +11,7 @@ We are in the middle of learning **CRUD**.
 
 Ref: https://guides.rubyonrails.org/getting_started.html#deleting-articles
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 ## Step1 Routes
 `routes.rb`
@@ -61,4 +61,4 @@ end
 ```
 
 ## Step4 Check it
-![delete-article.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/delete-article.gif)
+![delete-article.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/delete-article.gif)

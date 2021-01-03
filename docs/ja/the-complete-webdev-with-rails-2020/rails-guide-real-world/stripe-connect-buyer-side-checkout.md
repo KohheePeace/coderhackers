@@ -6,7 +6,7 @@ https://github.com/stripe-samples/checkout-one-time-payments
 In this quickstart docs, they introduces **only server integration**.
 
 ## Client card payment options
-![stripe-elements-ss.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-real-world/stripe-elements-ss.png)
+![stripe-elements-ss.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-real-world/stripe-elements-ss.png)
 https://stripe.com/docs/stripe-js#elements
 
 I will use stripe checkout.

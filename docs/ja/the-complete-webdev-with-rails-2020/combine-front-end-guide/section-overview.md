@@ -6,7 +6,7 @@ title: セクションの概要と準備
 ## ゴール
 - ⚡ このセクションでは、今まで学んできた知識を組み合わせて下のgifのようなウェブサイトを作っていきます。
 
-![preview-of-frontend-final.gif](https://storage.googleapis.com/coderhackers-assets/docs/img/20200507_214000.gif)
+![preview-of-frontend-final.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200507_214000.gif)
 
 
 
@@ -54,7 +54,7 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template
 1. `css`, `js`, `img` の3つのフォルダーを`frontend-combine`内に作成してください。
 2. `custom.css`ファイルと`custom.js`ファイルを`css`下の画像のように作成してください。
 
-![folder-structure](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-03-23-20-58.png)
+![folder-structure](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-03-23-20-58.png)
 
 From now on, we will write CSS and javascript to these files.
 

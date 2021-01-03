@@ -39,7 +39,7 @@ To understand `document`, we need to understand **DOM - Document Object Model**
 ### What is DOM ?
 When browser receives HTML file, the browser turns HTML file into a **Document Object Model (DOM) Tree** under browser's **window** object.
 
-![browser-html-to-DOM](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-02-01-53-13.png)
+![browser-html-to-DOM](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-02-01-53-13.png)
 ref: https://developers.google.com/web/updates/2018/09/inside-browser-part3
 
 ### Why making DOM ?
@@ -53,7 +53,7 @@ In **`console`** tab, you can write **`javascript` code**.
 
 And you can easily access `document` thanks to **DOM tree**.
 
-![check-document](https://storage.googleapis.com/coderhackers-assets/docs/img/20200501_053737.gif)
+![check-document](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200501_053737.gif)
 
 By typing `document` in console, you can obtain tree under `document`.
 
@@ -75,11 +75,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
 ### Image of `getElementById()`
 This is the image of getting element by using `getElementById()`.
 
-![dom-getElementById](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-02-02-39-08.png)
+![dom-getElementById](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-02-02-39-08.png)
 
 ### Check returned Element
 
-![check-returned-element](https://storage.googleapis.com/coderhackers-assets/docs/img/20200501_054401.gif)
+![check-returned-element](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200501_054401.gif)
 
 ```js
 document.getElementById("demo");

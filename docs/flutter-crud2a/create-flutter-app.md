@@ -44,7 +44,7 @@ This is **troublesome**. So, Let's fix this.
 
 ## Start flutter App with Debug mode of VS code
 If you want to **reload when you save code**, you need to **start debugging**.
-![start-flutter-debug.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/start-flutter-debug.gif)
+![start-flutter-debug.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/start-flutter-debug.gif)
 
 
 Ref: https://github.com/flutter/flutter/issues/24870

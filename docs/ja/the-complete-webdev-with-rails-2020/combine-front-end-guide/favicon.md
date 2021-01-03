@@ -32,7 +32,7 @@ https://realfavicongenerator.net/
 
 **favicons**と入力してボタンをクリックしてください。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_030309.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_030309.gif)
 
 
 次に、以下のボタンをおしてfaviconパッケージをダウンロードしてください。
@@ -41,7 +41,7 @@ https://realfavicongenerator.net/
 
 `favicons` フォルダを作成し、ダウンロードしたファイルを移動させてください。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-06-13.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-06-03-06-13.png)
 
 ## Link in `index.html`
 以下の画像の箇所をコピーして、`index.html`の`head`タグの中にペーストします。
@@ -78,4 +78,4 @@ https://realfavicongenerator.net/
 ```
 
 ## Check the output
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-09-43.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-06-03-09-43.png)

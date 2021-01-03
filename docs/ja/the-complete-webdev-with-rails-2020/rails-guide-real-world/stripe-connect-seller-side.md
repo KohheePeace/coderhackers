@@ -46,7 +46,7 @@ Then...
 
 ### Set `redirect_uri`
 Set `redirec_uri` as http://localhost:3000/stripe_callback
-![stripe-redirect-uri.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-real-world/stripe-redirect-uri.png)
+![stripe-redirect-uri.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-real-world/stripe-redirect-uri.png)
 
 ## Step 2: User creates or connects their account
 Click **Connect with Stripe** button,
@@ -62,7 +62,7 @@ Click **Connect with Stripe** button,
 Click **"Skip this account form"**
 
 
-![click-skip-this-account-form.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-real-world/click-skip-this-account-form.gif)
+![click-skip-this-account-form.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-real-world/click-skip-this-account-form.gif)
 
 ## Step 3: User is redirected back to your site
 After click **"Skip this account form"**
@@ -70,7 +70,7 @@ After click **"Skip this account form"**
 We are redirected_to http://localhost:3000/stripe_callback?scope=read_write&code=ac_GKvl6klVx930QyHtXcYaOHZlziuoU1lc
 **Note: there is **scope** and **code** params in url
 
-![stripe-error-callback.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-real-world/stripe-error-callback.png)
+![stripe-error-callback.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-real-world/stripe-error-callback.png)
 
 
 ### `routes.rb`

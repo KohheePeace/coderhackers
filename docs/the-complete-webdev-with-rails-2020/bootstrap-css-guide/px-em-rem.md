@@ -69,7 +69,7 @@ you see
 ```
 also become bigger.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_074317.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_074317.gif)
 
 ## What is `rem` ?
 > `rem`: Relative to font-size of the root element	
@@ -93,7 +93,7 @@ you see
 ```
 also become bigger.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200509_074159.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200509_074159.gif)
 
 ## `px`
 Pixel doesn't change related to other element. That's why this is called absolute value.

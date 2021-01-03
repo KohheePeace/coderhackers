@@ -10,7 +10,7 @@ title: Introduction to JS for Bootstrap
 
 As described [here](https://getbootstrap.com/docs/4.5/getting-started/introduction/#js), some bootstrap components require javascript.
 
-![Bootstrap components requiring JavaScript](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/bootstrap-need-js-component.png)
+![Bootstrap components requiring JavaScript](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-js-guide/bootstrap-need-js-component.png)
 
 This is why we import these javascript files.
 ```html title="Some Bootstrap component needs javascript files"
@@ -81,7 +81,7 @@ You will find that this component is **"interactive"** (user click button and mo
 
 **<mark>And this is why javascript is needed for this component.</mark>**
 
-![check-modal-bootstrap](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-js-guide/check-modal-bootstrap.gif)
+![check-modal-bootstrap](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-js-guide/check-modal-bootstrap.gif)
 
 
 
@@ -186,7 +186,7 @@ https://getbootstrap.com/docs/4.5/components/modal/#live-demo
 ```
 
 ### Check the output
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200510_020501.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200510_020501.gif)
 
 ## Check Modal Usage
 This is a document of modal usage: https://getbootstrap.com/docs/4.5/components/modal/#via-data-attributes

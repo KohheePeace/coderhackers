@@ -5,7 +5,7 @@ title: Absolute and Relative Path
 ## ゴール
 - ⚡ Learn **Absolute** and **Relative** Path
 
-![relative-absolute-path](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-08-01-14-31.png)
+![relative-absolute-path](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-08-01-14-31.png)
 
 ## Absolute Path
 **`Absolute path`**: **Exact location of your file** in your PC.

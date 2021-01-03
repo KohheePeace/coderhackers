@@ -25,7 +25,7 @@ As shown in the below gif,
 3. Change `background-color` css-property to `yellow`
 4. Copy code
 
-![change-jumbotron-css](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/change-jumbotron-css.gif)
+![change-jumbotron-css](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/change-jumbotron-css.gif)
 
 ### Make `bootstrap-test1.css`
 
@@ -63,7 +63,7 @@ Copy and Paste and delete unnecessary part.
 
 Next, we want to make **"Hello, world!"** text bold.
 
-![custom-css-inline-style](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/custom-css-inline-style.gif)
+![custom-css-inline-style](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/custom-css-inline-style.gif)
 
 `bootstrap-test1.html`
 

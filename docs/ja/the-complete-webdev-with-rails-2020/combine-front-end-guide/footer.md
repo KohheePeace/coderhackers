@@ -6,7 +6,7 @@ title: Footer
 ## ゴール
 - ⚡ このステップでは、Footerを作成しましょう。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-09-44-00.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-05-09-44-00.png)
 
 ## BootstrapのFooterをコピーする
 BootstrapのexamplesからFooterのコードを借りましょう。

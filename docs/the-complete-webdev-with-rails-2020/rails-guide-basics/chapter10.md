@@ -12,7 +12,7 @@ We are in the middle of learning **CRUD**.
 
 In this chapter, we will learn **how to read multiple data** (last chapter, we learned how to read single data).
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 ## Step 1 Routes
 If we visit http://localhost:3000/articles, we 
@@ -82,7 +82,7 @@ Create a new file `app/views/articles/index.html.erb`
 is for writing same HTML code with different article data repeatedly.
 
 This is a future output gif...
-![articles-each.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/articles-each.gif)
+![articles-each.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/articles-each.gif)
 
 
 ```
@@ -136,4 +136,4 @@ https://stackoverflow.com/questions/24622826/how-to-set-up-and-use-a-rails-route
 visit: http://localhost:3000/articles/new and create new article.
 
 
-![check-listing-articles.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/check-listing-articles.png)
+![check-listing-articles.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/check-listing-articles.png)

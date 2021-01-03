@@ -34,7 +34,7 @@ Next, in the Path tab of **Favicon Generator Options** section, there is a check
 Please check this checkbox, then type <mark><b>favicons</b></mark> and click button.
 
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_030309.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_030309.gif)
 
 
 Then click the button below to download the favicon package.
@@ -43,7 +43,7 @@ Then click the button below to download the favicon package.
 
 Create the `favicons` folder and move the downloaded files into it.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-06-13.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-06-03-06-13.png)
 
 ## Favicon links in `index.html`
 Copy and paste the following image code into the `head` tag of `index.html`.
@@ -81,4 +81,4 @@ Copy and paste the following image code into the `head` tag of `index.html`.
 
 ## Check the output
 We successfully added favicons.
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-06-03-09-43.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-06-03-09-43.png)

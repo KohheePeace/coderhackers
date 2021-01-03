@@ -34,4 +34,4 @@ docker-compose up
 
 ## 4 Check it works correctly
 Visit `http://localhost:3000`
-![Screenshot](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/chap01-localhost-3000.png)
+![Screenshot](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/chap01-localhost-3000.png)

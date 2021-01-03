@@ -102,13 +102,13 @@ Please search, download, move to `img` folder and rename it.
 | teacher            | about-knowledge-bases.svg    |
 | interaction design | about-interaction-design.svg |
 
-![about-us-img-folder](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/about-us-img-folder.png)
+![about-us-img-folder](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/about-us-img-folder.png)
 
 ### Check how some bootstrap class works
 
 Let's check what happenes if you delte `order-lg-2` using google dev tools
 
-![how-order-class-works](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/how-order-class-works.gif)
+![how-order-class-works](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/how-order-class-works.gif)
 
 Do you understand the meaning of class ?
 

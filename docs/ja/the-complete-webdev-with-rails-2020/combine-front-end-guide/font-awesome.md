@@ -6,7 +6,7 @@ title: Font Awesome
 - ⚡ このステップではFont Awesomeを使用したiconの追加方法を学んでいきましょう!
 - 👇 以下の画像のようなアイコンを追加します。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-00-04-44.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-05-00-04-44.png)
 
 ## Font Awesome とは?
 ![20200605163710](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605163710.png)
@@ -21,7 +21,7 @@ Font Awesomeはwebで最も人気なアイコンのツールキットです。
 https://fontawesome.com/
 
 サインインができたら、以下のGIFの様に**Kit Code**をコピーします。
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_234358.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200504_234358.gif)
 
 次に、`index.html`の`<head>` tagの中にコピーしたKit Codeを貼り付けましょう。
 ```html title="index.html"
@@ -49,7 +49,7 @@ https://fontawesome.com/
 - 検索結果の中から使用するiconを選択
 - iconコードをコピー
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_235918.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200504_235918.gif)
 
 次に、以下のようにコピーしたコードを`index.html`にペーストしましょう。
 

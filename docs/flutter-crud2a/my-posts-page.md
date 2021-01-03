@@ -76,7 +76,7 @@ stream: Firestore.instance
 ```
 
 ## Add **PopupMenuButton**
-<img src="https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/add-popup-menu-button.gif" height="400" />
+<img src="https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/add-popup-menu-button.gif" height="400" />
 
 - https://api.flutter.dev/flutter/material/PopupMenuButton-class.html
 - https://flutter-widget.live/widgets/PopupMenuButton

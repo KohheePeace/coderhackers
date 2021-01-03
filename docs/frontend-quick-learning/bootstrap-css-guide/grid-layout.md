@@ -27,7 +27,7 @@ Let's try Bootstrap grid system 👍
 
 https://getbootstrap.com/docs/4.5/layout/grid/
 
-![copy-grid-layout](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-grid-layout.gif)
+![copy-grid-layout](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-grid-layout.gif)
 
 ### Copy and Paste code
 
@@ -118,14 +118,14 @@ In `bootstrap-test1.html`
 
 ### Check the output
 
-![output-after-copy-grid](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-grid.png)
+![output-after-copy-grid](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-copy-grid.png)
 
 ### Add Card component
 To make it more like real example, let's add **card** component.
 
 https://getbootstrap.com/docs/4.5/components/card/
 
-![copy-card.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-card.gif)
+![copy-card.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-card.gif)
 
 Copy and paste card html.
 
@@ -333,7 +333,7 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tortoiseshell_she-cat.
 ```
 
 ### Check the output
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-01-51-04.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-09-01-51-04.png)
 
 
 ## Summery

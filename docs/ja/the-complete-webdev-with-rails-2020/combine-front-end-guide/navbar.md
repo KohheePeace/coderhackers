@@ -9,7 +9,7 @@ title: Navbar
 まず以下のリンクからNavbarコンポーネントのコードをコピーしてください。
 https://getbootstrap.com/docs/4.5/components/navbar/
 
-![copy-navbar](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-navbar.gif)
+![copy-navbar](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/copy-navbar.gif)
 
 
 次に`index.html`にコピーしたコードをペーストしてください。

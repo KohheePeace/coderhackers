@@ -18,7 +18,7 @@ I will introduce how to add "comment forum like Disqus" in docusaurus site 😄
 ## What we will make
 By using https://utteranc.es/, we will make comment system like below.
 
-![ss](https://storage.googleapis.com/coderhackers-assets/docs/img/ss-of-forum-in-docusaurus.png)
+![ss](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/ss-of-forum-in-docusaurus.png)
 
 ## Github setup
 Your github repo should

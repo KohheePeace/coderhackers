@@ -1,6 +1,6 @@
 !!! abstract "Chapter Goal"
     - Become used to the below part of the diagram
-    ![rails-flow-diagram-without-model.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-without-model.png)
+    ![rails-flow-diagram-without-model.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-without-model.png)
 
 Ref: https://guides.rubyonrails.org/getting_started.html#say-hello-rails
 
@@ -16,7 +16,7 @@ rails generate controller Welcome index
 
 check output...
 
-![rails-g-welcome-controller.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-g-welcome-controller.png)
+![rails-g-welcome-controller.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-g-welcome-controller.png)
 
 Rails will create several files. I highlighted important ones. 
 
@@ -61,9 +61,9 @@ end
 
 Visit http://localhost:3000/welcome/index
 
-![welcome-index.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/welcome-index.png)
+![welcome-index.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/welcome-index.png)
 
-![rails-flow-diagram-without-model.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-without-model.png)
+![rails-flow-diagram-without-model.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-without-model.png)
 
 Please pay attention to the flow
 
@@ -99,9 +99,9 @@ Be careful filename.
 
 visit http://localhost:3000/hello/hogehoge
 
-![hello-hogehoge.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/hello-hogehoge.png)
+![hello-hogehoge.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/hello-hogehoge.png)
 
-![rails-flow-diagram-without-model.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-without-model.png)
+![rails-flow-diagram-without-model.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram-without-model.png)
 
 !!! summery "Recap"
     1. Visit url http://localhost:3000/hello/hogehoge
@@ -129,7 +129,7 @@ end
 
 If you visit http://localhost:3000
 
-![welcome-index.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/welcome-index.png)
+![welcome-index.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/welcome-index.png)
 
 
 If you change the root routes...
@@ -143,4 +143,4 @@ Rails.application.routes.draw do
 end
 ```
 
-![hello-hogehoge.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/hello-hogehoge.png)
+![hello-hogehoge.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/hello-hogehoge.png)

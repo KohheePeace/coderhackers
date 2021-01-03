@@ -9,7 +9,7 @@ https://guides.rubyonrails.org/getting_started.html
 !!! success "ゴール of this part"
     1. Become able to make **CRUD**
     2. Understand the below diagram
-    ![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+    ![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 ## 2 What is Rails?
 I just highlighted important part.

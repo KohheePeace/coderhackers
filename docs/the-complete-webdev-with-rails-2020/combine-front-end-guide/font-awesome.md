@@ -6,7 +6,7 @@ title: Font Awesome
 - ⚡ In this step we are going to learn how to add an icon using Font Awesome!
 - 👇 Add an icon like the one in the following image.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-05-00-04-44.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-05-00-04-44.png)
 
 ## What is Font Awesome?
 ![20200605163710](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/20200605163710.png)
@@ -21,7 +21,7 @@ https://fontawesome.com/
 
 Once you're signed in, copy the **Kit Code** as shown in the GIF below.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_234358.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200504_234358.gif)
 
 Next, Paste the copied **Kit Code** into the `<head>` tag of `index.html`.
 ```html title="index.html"
@@ -50,7 +50,7 @@ Now, let's actually add an icon.
 - Select an icon to use in the search results
 - Copy the icon code
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200504_235918.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200504_235918.gif)
 
 
 Next, paste the copied code into `index.html` as follows.

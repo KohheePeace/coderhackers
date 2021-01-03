@@ -19,7 +19,7 @@ Okay let's get started! 😀
 First, let's try **Navbar** component
 
 https://getbootstrap.com/docs/4.5/components/navbar/
-![copy-navbar-html.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-html.gif)
+![copy-navbar-html.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-html.gif)
 
 
 Copy and paste to `bootstrap-test1.html`
@@ -138,7 +138,7 @@ Copy and paste to `bootstrap-test1.html`
 
 #### Check the output
 Cool navbar added and it is also **responsive**.
-![copy-navbar-output.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-output.gif)
+![copy-navbar-output.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-navbar-output.gif)
 
 
 :::important
@@ -289,7 +289,7 @@ https://getbootstrap.com/docs/4.5/components/jumbotron/
 ```
 
 #### Check the output
-![output-after-jumbotron](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-jumbotron.png)
+![output-after-jumbotron](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/output-after-jumbotron.png)
 
 
 

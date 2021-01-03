@@ -6,7 +6,7 @@ title: Javascript Plugin
 - ⚡ In this step, we are going to learn how to use javascript plugin.
 - 🔥 We'll add a plugin to the Customers Voice section to add an effect like the GIF below.
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_010547.gif)
 
 ## wow.js
 We will add a plugin called wow.js to add effects.
@@ -33,7 +33,7 @@ Next, create a file `animate.min.css` in the `css` folder and paste the copied c
 **Note**: Do not **save** after pasting the code. This is because if you save the code, auto format feature will be applied to the code and it will decompress the compressed code.
 :::
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_003923.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_003923.gif)
 
 ### `wow.min.js`
 Next, let's prepare `wow.min.js`. Copy the code of `wow.min.js` from the following URL's `dist` folder.
@@ -46,7 +46,7 @@ Next, create the `wow.min.js` file in the `js` folder and paste the copied code.
 **Note**: Do not **save** the code as well as the previous one. The auto format will decompress the compressed code.
 :::
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_004112.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_004112.gif)
 
 
 ## Setup
@@ -221,4 +221,4 @@ Change the `data-wow-delay` in each column as follows.
 >
 ```
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200506_010547.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200506_010547.gif)

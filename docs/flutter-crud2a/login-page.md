@@ -6,7 +6,7 @@ In this step, we're going to
 
 - make Login page.
 
-<img src="https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-11%20at%2023.32.10.png" height="480" />
+<img src="https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/Screen%20Shot%202020-02-11%20at%2023.32.10.png" height="480" />
 
 The code is almost same with Register page.
 

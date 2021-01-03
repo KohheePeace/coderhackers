@@ -5,7 +5,7 @@ title: Flexbox Usecase - Navbar
 ## Goal
 - ⚡ Make navbar by using Flexbox
 
-![navbar-flexbox-goal](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-06-45-20.png)
+![navbar-flexbox-goal](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-29-06-45-20.png)
 
 
 ## Preparation
@@ -41,7 +41,7 @@ Please make `flexbox-navbar.html` in `css-test` folder.
 ```
 
 #### Check the current output
-![html-only-navbar](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-29-05-06-10.png)
+![html-only-navbar](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-29-05-06-10.png)
 
 ## Add class name
 Add class name to add CSS

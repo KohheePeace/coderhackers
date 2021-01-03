@@ -5,7 +5,7 @@ title: Jumbotron
 ## ゴール
 - ⚡ このステップではJumbotronを作成しましょう。
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-05-42-31.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-05-42-31.png)
 
 ## jumbotronのコードをコピーする
 まず、以下のBootstrapのjumbotronのページからからコードをコピーしましょう。
@@ -60,7 +60,7 @@ https://getbootstrap.com/docs/4.5/components/jumbotron/
 - svgファイルをダウンロードする
 - ダウンロードしたファイルを **`img`**フォルダに移す
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-05-48-28.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-05-48-28.png)
 
 
 ### 背景画像
@@ -322,10 +322,10 @@ https://www.w3schools.com/css/css_combinators.asp
 ボタンは以下のようになります。
 
 #### デスクトップ
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-21-18-02.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-21-18-02.png)
 
 #### モバイルおよびタブレット
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-04-21-18-50.png)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-04-21-18-50.png)
 
 ## Final Code
 最終的なコードは以下のようになります。

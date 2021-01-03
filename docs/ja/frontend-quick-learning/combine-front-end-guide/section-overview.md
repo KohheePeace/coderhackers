@@ -6,7 +6,7 @@ title: Section Overview and Preparation
 ## Goal
 - ⚡ In this section, we'll combine the knowledge we've learned so far to create a website like the GIF below.
 
-![preview-of-frontend-final.gif](https://storage.googleapis.com/coderhackers-assets/docs/img/20200507_214000.gif)
+![preview-of-frontend-final.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200507_214000.gif)
 
 
 ## Preparation
@@ -51,7 +51,7 @@ Open the `frontend-combine` folder as a new VS code window.
 1. Create `css`, `js`, and `img` folders in `frontend-combine`.
 2. Create `custom.css` and `custom.js` files as shown in the below image.
 
-![folder-structure](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-03-23-20-58.png)
+![folder-structure](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-05-03-23-20-58.png)
 
 From now on, we will write CSS and javascript to these files.
 

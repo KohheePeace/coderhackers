@@ -14,7 +14,7 @@ In this step, we will
 Convert `lib/main.dart` from stateless widget to StatefulWidget.
 This is because I want to handle state in this widget.
 
-![convert-stateless-to-statefull.gif](https://storage.googleapis.com/coderhackers-assets/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
+![convert-stateless-to-statefull.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/flutter_firebase_firestore_crud2a/convert-stateless-to-statefull.gif)
 
 ## Add firebase `onAuthStateChanged` and check `isAuthenticated`
 - Declare `isAuthenticated`

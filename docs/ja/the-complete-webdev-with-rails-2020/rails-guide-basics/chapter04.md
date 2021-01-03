@@ -10,7 +10,7 @@ We are in the middle of learning **CRUD**.
 * [ ] U: Update
 * [ ] D: Delete
 
-![rails-flow-diagram.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/rails-flow-diagram.png)
 
 ## Step1
 `routes.rb`
@@ -67,7 +67,7 @@ Make `app/views/articles` folder (*plural) and `app/views/articles/new.html.erb`
 
 visit: http://localhost:3000/articles/new
 
-![new-article-ss](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/rails-guide-basics/new-article-ss.png)
+![new-article-ss](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/rails-guide-basics/new-article-ss.png)
 
 
 ## Step4 Add link to this page from root page

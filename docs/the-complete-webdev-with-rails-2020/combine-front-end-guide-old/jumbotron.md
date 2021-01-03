@@ -149,14 +149,14 @@ Search `status` and change color
 
 https://undraw.co/search
 
-![undraw-search-status-update.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/undraw-search-status-update.png)
+![undraw-search-status-update.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/undraw-search-status-update.png)
 
 Download **status update**
-![download-status-update](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/download-status-update.png)
+![download-status-update](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/download-status-update.png)
 
 
 Move this file under `img` folder and rename it to `jumbotron.svg`
-![move-status-update-and-rename](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/move-status-update-and-rename.png)
+![move-status-update-and-rename](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/move-status-update-and-rename.png)
 
 Add `img tag` to the right column of jumbotron
 ```html hl_lines="12"
@@ -180,7 +180,7 @@ Add `img tag` to the right column of jumbotron
 
 ### Edit jumbotron style for mobile
 Mobile jumbotron looks not good, so we'll fix this.
-![edit-jumbotron-style-for-mobile](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/edit-jumbotron-style-for-mobile.png)
+![edit-jumbotron-style-for-mobile](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/edit-jumbotron-style-for-mobile.png)
 Add `mb-5` (marbin-bottom) for mobile style.
 
 ```html hl_lines="3"
@@ -227,7 +227,7 @@ Add `mb-5` (marbin-bottom) for mobile style.
 
 
 
-![pro-tip-jumbotron.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/combine-front-end-guide/pro-tip-jumbotron.png)
+![pro-tip-jumbotron.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/combine-front-end-guide/pro-tip-jumbotron.png)
 
 
 ## Useful resources

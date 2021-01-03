@@ -89,7 +89,7 @@ Let's start from this code.
 ```
 
 ### Check the output
-![css-intro](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-27-22-31-34.png)
+![css-intro](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-27-22-31-34.png)
 
 You see  that <mark>**CSS is a language for styling**</mark>.
 

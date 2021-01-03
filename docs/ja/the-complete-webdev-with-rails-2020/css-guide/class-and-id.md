@@ -66,7 +66,7 @@ ul {
 
 The output is like below...
 
-![css-class-and-id](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-04-27-22-48-30.png)
+![css-class-and-id](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/2020-04-27-22-48-30.png)
 
 ## Difference between an `id` and a `class`?
 

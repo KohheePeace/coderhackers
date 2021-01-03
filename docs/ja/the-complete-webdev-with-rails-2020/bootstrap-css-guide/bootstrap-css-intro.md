@@ -21,7 +21,7 @@ Visit: https://getbootstrap.com/
 
 You see you need to add **CSS and Javascript**.
 
-![bootstrap-get-started](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-get-started.gif)
+![bootstrap-get-started](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-get-started.gif)
 
 
 ## Check Bootstrap CSS file

@@ -67,7 +67,7 @@ $(document).ready(function () {
 
 ### Check the output
 
-![](https://storage.googleapis.com/coderhackers-assets/docs/img/20200510_030230.gif)
+![](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/docs/img/20200510_030230.gif)
 
 ### Refactor
 This is a shorthand of  `$(document).ready()`

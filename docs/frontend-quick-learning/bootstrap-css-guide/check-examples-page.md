@@ -14,7 +14,7 @@ There is a **Examples** page in Bootstrap.
 
 https://getbootstrap.com/docs/4.5/examples/
 
-![bootstrap-examples-page](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-examples-page.gif)
+![bootstrap-examples-page](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/bootstrap-examples-page.gif)
 
 
 In this chapter, we'll be learning how to copy one of this example.
@@ -29,11 +29,11 @@ In this chapter, we'll be learning how to copy one of this example.
 ## Try album example
 
 We will copy album example: https://getbootstrap.com/docs/4.5/examples/album/
-![album-example-demo.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-demo.gif)
+![album-example-demo.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-demo.gif)
 
 
 ### Copy all source code
-![copy-album-code](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-album-code.gif)
+![copy-album-code](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-album-code.gif)
 
 Then...
 
@@ -294,14 +294,14 @@ The result is below...
 **
 
 
-![album-example-not-working.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-not-working.png)
+![album-example-not-working.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-not-working.png)
 
 ## Fix bug
 Okay, so let's **fix bug and learn to check bug**.
 
 Please open Chrome DevTools and click **`console`** tab.
 
-![check-console-error.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-console-error.gif)
+![check-console-error.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-console-error.gif)
 
 
 In `Chrome DevTools console`
@@ -318,7 +318,7 @@ Let's fix these errors step by step.
 ### Error1: `GET file:///docs/4.5/dist/css/bootstrap.min.css net::ERR_FAILED`
 
 Search the error code in editor.
-![how-to-search-bug.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/how-to-search-bug.gif)
+![how-to-search-bug.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/how-to-search-bug.gif)
 
 :::note
 This error happened because
@@ -341,7 +341,7 @@ to
 
 You see **the output changes and error console log decreased**.
 
-![album-example-fix-step1.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-fix-step1.png)
+![album-example-fix-step1.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/album-example-fix-step1.png)
 
 ### Error2: `GET file:///Users/kohheepeace/Code/asobi/html-playground/album.css net::ERR_FILE_NOT_FOUND`
 
@@ -350,11 +350,11 @@ This error happened because there is no `album.css`
 :::
 
 #### Make `album.css`
-![make-album-css.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/make-album-css.gif)
+![make-album-css.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/make-album-css.gif)
 
 
 #### Copy `album.css`
-![copy-album-css.gif](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-album-css.gif)
+![copy-album-css.gif](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/copy-album-css.gif)
 
 
 #### Final `album.css`
@@ -395,7 +395,7 @@ footer p {
 ```
 
 #### Check output
-![check-output-after-album-css.png](https://storage.googleapis.com/coderhackers-assets/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-output-after-album-css.png)
+![check-output-after-album-css.png](https://coderhackers-1304676641.cos.ap-tokyo.myqcloud.com/the-complete-webdev-with-rails-2020/bootstrap-css-guide/check-output-after-album-css.png)
 
 
 ### Error3 `GET file:///docs/4.5/dist/js/bootstrap.bundle.min.js net::ERR_FAILED`
