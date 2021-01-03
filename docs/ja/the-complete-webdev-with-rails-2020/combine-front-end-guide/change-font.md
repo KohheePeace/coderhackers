@@ -24,7 +24,7 @@ body {
 ## `Tangerine` font
 では、次に`Tangerine`fontを試してみましょう。`Tangerine`フォントは以下の画像のようなフォントです。
 
-![20200603002843](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603002843.png)
+![20200603002843](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603002843.png)
 
 では、先ほどと同様に以下のCSSをChrome Dev Toolsで試してみましょう。
 ```css

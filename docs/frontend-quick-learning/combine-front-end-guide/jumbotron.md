@@ -5,7 +5,7 @@ title: Jumbotron
 ## Goal
 - ⚡ In this step, we're going to create a **Jumbotron**.
 
-![20200604013125](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604013125.png)
+![20200604013125](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604013125.png)
 
 ## Copy jumbotron code
 First, let's copy the code from the Bootstrap jumbotron page.
@@ -53,7 +53,7 @@ Next, let's prepare images for Jumbotron.
 
 ### Main image
 First, let's prepare the main image.
-![20200604130822](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604130822.png)
+![20200604130822](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604130822.png)
 
 - Go to https://undraw.co/illustrations.
 - Change the color of the image to `"#00B0FF"`.
@@ -67,14 +67,14 @@ First, let's prepare the main image.
 ### Background Image
 Next, let's create a background image.
 
-![20200604131141](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604131141.png)
+![20200604131141](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604131141.png)
 
 Go to https://www.canva.com/ to create an account.
 
 Then, as in the following GIF
 - Create a design for "Presentation".
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603_235735.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603_235735.gif)
 
 
 Next,
@@ -82,20 +82,20 @@ Next,
 - **Search for "blue and white startup business animated presentation"** and press Enter.
 - Select one of the slides in it as shown in below GIF.
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200601_115813.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601_115813.gif)
 
 
 Next, edit the color of the element to `#00B0FF`, as in the following gif.
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200601_120145.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601_120145.gif)
 
 
 Finally, download the created image in `.png` format.
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200601_120321.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601_120321.gif)
 
 
 When the download is completed, move the file to the `img` folder and rename it `jumbotron-bg.png`.
 
-![20200601130307](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200601130307.png)
+![20200601130307](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200601130307.png)
 
 ## Change background color
 Add the `bg-white` class to change the background color of the jumbotron.
@@ -158,7 +158,7 @@ The code looks like this.
   </div>
 </div>
 ```
-![20200604003421](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604003421.png)
+![20200604003421](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604003421.png)
 
 Using `img-fluid` class so that the image fits into the parent element.: https://getbootstrap.com/docs/4.5/content/images/#responsive-images
 
@@ -205,7 +205,7 @@ Also, use Flexbox to center the contents of the jumbotron.
 ```
 
 **`57.69px`** is the height of the navbar.
-![20200604004055](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604004055.png)
+![20200604004055](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604004055.png)
 
 The `100vh` is the current screen size.
 https://www.w3schools.com/cssref/css_units.asp
@@ -276,7 +276,7 @@ Use the `order-` class to change the order of images and slogans on mobile.
 
 | Before                                                                                              | After                                                                                               |
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![20200604011205](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604011205.png) | ![20200604011138](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200604011138.png) |
+| ![20200604011205](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604011205.png) | ![20200604011138](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200604011138.png) |
 
 
 Ref: https://getbootstrap.com/docs/4.5/utilities/flex/#order

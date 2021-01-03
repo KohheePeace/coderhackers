@@ -10,7 +10,7 @@ title: Javascript Plugin
 
 ## wow.js
 We will add a plugin called wow.js to add effects.
-![20200607233437](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607233437.png)
+![20200607233437](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607233437.png)
 
 https://wowjs.uk/
 
@@ -196,7 +196,7 @@ Edit each column in the Customers Voice section as follows.
 </section>
 ```
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200608_152902.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200608_152902.gif)
 
 
 ## Change the `delay` time for each column

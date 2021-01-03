@@ -19,11 +19,11 @@ https://realfavicongenerator.net/
 
 **Demo with a random image**をクリックしてください。
 
-![20200609202326](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609202326.png)
+![20200609202326](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609202326.png)
 
 
 ここに表示されているのがfaviconの例になります。
-![20200609202734](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609202734.png)
+![20200609202734](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609202734.png)
 
 次に、
 **Favicon Generator Options**のPathのところの
@@ -37,7 +37,7 @@ https://realfavicongenerator.net/
 
 次に、以下のボタンをおしてfaviconパッケージをダウンロードしてください。
 
-![20200609204037](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204037.png)
+![20200609204037](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609204037.png)
 
 `favicons` フォルダを作成し、ダウンロードしたファイルを移動させてください。
 
@@ -45,7 +45,7 @@ https://realfavicongenerator.net/
 
 ## Link in `index.html`
 以下の画像の箇所をコピーして、`index.html`の`head`タグの中にペーストします。
-![20200609204356](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204356.png)
+![20200609204356](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609204356.png)
 ```html title="index.html"
 ...
 <!-- highlight-start -->

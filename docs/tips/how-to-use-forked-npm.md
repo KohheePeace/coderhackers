@@ -5,7 +5,7 @@ title: 🍕 How to use forked npm package
 ## Question
 - 🐯 What if you want to use a forked npm package in your project?
 
-![20200612203410](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200612203410.png)
+![20200612203410](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200612203410.png)
 
 ## Develop locally
 First of all, you want to fix the npm that you forked, so clone it locally.

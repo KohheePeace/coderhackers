@@ -13,7 +13,7 @@ Let's borrow footer code from Bootstrap examples.
 
 https://getbootstrap.com/docs/4.5/examples/product/
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607_230521.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607_230521.gif)
 
 
 Paste the copied code under the Customers Voice section.
@@ -79,7 +79,7 @@ footer {
 ```
 
 If you just changed the CSS, it looks the following, so let's fix this.
-![20200607224921](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607224921.png)
+![20200607224921](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607224921.png)
 
 ## Fixing Footer.
 Remove the `container` class from the `footer` tag. Then, add a new `<div class="container">` inside `footer`.

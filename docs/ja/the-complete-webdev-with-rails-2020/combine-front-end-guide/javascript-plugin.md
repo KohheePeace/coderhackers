@@ -10,7 +10,7 @@ title: Javascript Plugin
 
 ## wow.js
 wow.jsというプラグインを追加してエフェクトを追加します。
-![20200607233437](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607233437.png)
+![20200607233437](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607233437.png)
 
 https://wowjs.uk/
 
@@ -200,7 +200,7 @@ Customers Voiceセクションの一つ一つのcolumnを以下の様に編集�
 </section>
 ```
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200608_152902.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200608_152902.gif)
 
 
 ## 各columnの`delay`時間を変更する

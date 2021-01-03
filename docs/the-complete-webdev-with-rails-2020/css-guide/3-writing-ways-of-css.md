@@ -80,7 +80,7 @@ Edit `css-test1.html`
 
 Current folder structure looks like this
 
-![css-3-writing-styles-folder](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-14-12-47-40.png)
+![css-3-writing-styles-folder](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-14-12-47-40.png)
 
 :::important
 You see that **<mark>all 1, 2, 3 output is same.</mark>**

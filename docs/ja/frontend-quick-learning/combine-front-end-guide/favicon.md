@@ -12,7 +12,7 @@ https://en.wikipedia.org/wiki/Favicon
 
 The icon in the following images are examples of favicon.
 
-![20200609210713](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609210713.png)
+![20200609210713](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609210713.png)
 
 ## Create demo favicon
 So, let's create a demo favicon at the following site
@@ -21,11 +21,11 @@ https://realfavicongenerator.net/
 
 Please Click **Demo with a random image**.
 
-![20200609202326](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609202326.png)
+![20200609202326](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609202326.png)
 
 
 These are the examples of favicon.
-![20200609202734](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609202734.png)
+![20200609202734](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609202734.png)
 
 Next, in the Path tab of **Favicon Generator Options** section, there is a checkbox
 
@@ -39,7 +39,7 @@ Please check this checkbox, then type <mark><b>favicons</b></mark> and click but
 
 Then click the button below to download the favicon package.
 
-![20200609204037](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204037.png)
+![20200609204037](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609204037.png)
 
 Create the `favicons` folder and move the downloaded files into it.
 
@@ -47,7 +47,7 @@ Create the `favicons` folder and move the downloaded files into it.
 
 ## Favicon links in `index.html`
 Copy and paste the following image code into the `head` tag of `index.html`.
-![20200609204356](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200609204356.png)
+![20200609204356](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200609204356.png)
 ```html title="index.html"
 ...
 <!-- highlight-start -->

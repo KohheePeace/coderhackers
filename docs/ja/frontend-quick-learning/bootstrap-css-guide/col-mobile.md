@@ -21,12 +21,12 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 
 You see **iPhone 6** viewport width is **375**px
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-19-12-44-11.png)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-19-12-44-11.png)
 
 ## Check grid options tables
 Then, let's check this tables.
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-21-11-51-48.png)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-11-51-48.png)
 Ref: https://getbootstrap.com/docs/4.5/layout/grid/#grid-options
 
 This tables show **which `col-xx` to use for each viewport width**.
@@ -41,13 +41,13 @@ This is why I checked device viewport width.
 
 ## Why `col-6` for 2 columns ?
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-19-08-36-38.png)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-19-08-36-38.png)
 
 :::info
 Maximum number of columns in row is **12**
 :::
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-21-11-01-06.png)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-11-01-06.png)
 
 :::info
 ```txt title="Formula to determine col- number"
@@ -82,7 +82,7 @@ Change every `col-sm` to `col-6`
 
 ## Check the current output
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200520_215205.gif)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200520_215205.gif)
 
 :::caution
 

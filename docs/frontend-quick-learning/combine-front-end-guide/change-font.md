@@ -24,7 +24,7 @@ You see that the font has been changed.
 ## `Tangerine` font
 Now, let's try the `Tangerine` font. The `Tangerine` font looks like the following image.
 
-![20200603002843](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603002843.png)
+![20200603002843](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603002843.png)
 
 Now, let's try the following CSS in Chrome Dev Tools as before.
 

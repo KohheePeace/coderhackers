@@ -5,7 +5,7 @@ title: How it works Section
 ## Goal
 - ⚡ In this step, we'll create **How it works** section!
 
-![20200602135405](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602135405.png)
+![20200602135405](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602135405.png)
 
 ## Boilerplate
 First, copy and paste the following code under About Us section.
@@ -61,7 +61,7 @@ This is the same CSS as the header of the About Us section.
 ## column 1
 Now, let's create one `col` in the `row`.
 
-![20200602140552](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602140552.png)
+![20200602140552](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602140552.png)
 
 Please copy and paste the following code.
 ```html

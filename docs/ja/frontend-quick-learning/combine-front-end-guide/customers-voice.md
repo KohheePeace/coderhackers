@@ -5,7 +5,7 @@ title : Customers Voice Section
 ## Goal
 - ⚡ In this step, we're going to create a **Customers Voice** section.
 
-![20200607155117](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607155117.png)
+![20200607155117](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607155117.png)
 
 ## Boilerplate
 First, copy and paste the following code under How it works section.
@@ -62,7 +62,7 @@ Next, Move the downloaded file into the **`img`** folder.
 
 ## column 1
 Now, let's create a one of the `column` in the `row`.
-![20200607155501](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607155501.png)
+![20200607155501](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607155501.png)
 
 Please copy and paste the following code.
 

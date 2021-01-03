@@ -180,7 +180,7 @@ https://getbootstrap.com/docs/4.5/components/navbar/
 ```
 
 以下のようになっていれば大丈夫です。
-![20200530231534](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200530231534.png)
+![20200530231534](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200530231534.png)
 
 ## Sign Up ボタン
 次にSign Upボタンを追加しましょう。以下の様にコードをコピー&ペーストしてください。
@@ -203,7 +203,7 @@ https://getbootstrap.com/docs/4.5/components/navbar/
 - `px-3 py-2`でpaddingを調整: https://getbootstrap.com/docs/4.5/utilities/spacing/
 
 現在のアウトプットは以下のようになります。
-![20200530235220](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200530235220.png)
+![20200530235220](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200530235220.png)
 
 
 ## Logo
@@ -216,7 +216,7 @@ https://favicon.io/favicon-generator/
 ダウンロードしたzipファイルを解凍して,その中から`android-chrome-192x192.png`を`img`フォルダーに移します。
 その後、`logo.png`とリネームしてください。
 
-![20200603203949](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603203949.png)
+![20200603203949](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603203949.png)
 
 
 この`logo.png`を`navbar-brand`の中で読み込みましょう。
@@ -231,7 +231,7 @@ https://favicon.io/favicon-generator/
 ```
 
 以下のようになります。
-![20200603204838](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603204838.png)
+![20200603204838](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603204838.png)
 
 しかし、このままではサイズが大きすぎるので、以下のリンクを参考にattributesを追加しましょう。
 https://getbootstrap.com/docs/4.5/components/navbar/#brand
@@ -253,7 +253,7 @@ https://getbootstrap.com/docs/4.5/components/navbar/#brand
 ```
 
 以下のようにちょうどいい大きさのロゴになりました。
-![20200603205543](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603205543.png)
+![20200603205543](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205543.png)
 
 ### Logo title
 次に、"Navbar"から"Logo"に文字を変えて、`span`で囲み、Bootstrapのクラス`font-weight-bold`を追加しましょう。
@@ -267,7 +267,7 @@ https://getbootstrap.com/docs/4.5/components/navbar/#brand
 ```
 
 以下のようになります。
-![20200603205625](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603205625.png)
+![20200603205625](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205625.png)
 
 ## Navbarのbackground colorを変更する。
 以下のように、`bg-light`から`bg-white`クラスに変更してNavbarのbackgroundカラーを変更しましょう。
@@ -277,7 +277,7 @@ https://getbootstrap.com/docs/4.5/components/navbar/#brand
 ```
 
 以下のようになります。
-![20200603205738](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603205738.png)
+![20200603205738](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205738.png)
 
 https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
 
@@ -289,7 +289,7 @@ https://getbootstrap.com/docs/4.5/utilities/colors/#background-color
 ```
 
 以下のようになります。
-![20200603205801](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603205801.png)
+![20200603205801](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603205801.png)
 
 https://getbootstrap.com/docs/4.5/utilities/shadows/
 
@@ -338,7 +338,7 @@ https://getbootstrap.com/docs/4.5/examples/product/
 ```
 
 以下のようになります。
-![20200603210020](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603210020.png)
+![20200603210020](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603210020.png)
 
 ## Custom CSSを追加する
 細かい見た目の調整のための以下のCSSを加えてください。
@@ -356,7 +356,7 @@ https://getbootstrap.com/docs/4.5/examples/product/
 /* highlight-end */
 ```
 
-![20200603210348](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200603210348.png)
+![20200603210348](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200603210348.png)
 
 
 ## Final Code

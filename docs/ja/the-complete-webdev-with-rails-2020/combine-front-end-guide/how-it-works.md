@@ -5,7 +5,7 @@ title: How it works セクション
 ## ゴール
 - ⚡ このステップでは、**How it works**セクションを作りましょう！
 
-![20200602135405](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602135405.png)
+![20200602135405](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602135405.png)
 
 ## Boilerplate
 まず以下のコードをAbout Usセクションの下にコピー&ペーストしてください。
@@ -60,7 +60,7 @@ title: How it works セクション
 
 ## column 1
 では、`row`の中のひとつの`col`を作成していきましょう。
-![20200602140552](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200602140552.png)
+![20200602140552](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200602140552.png)
 
 以下のコードをコピー&ペーストしてください。
 ```html

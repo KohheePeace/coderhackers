@@ -13,7 +13,7 @@ title: col - Tablet
 :::
 
 ## Check device width
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-21-14-16-34.png)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-14-16-34.png)
 
 ## Grid options table
 ![](https://storage.googleapis.com/coderhackers-assets/docs/img/2020-05-09-05-15-12.png)
@@ -21,7 +21,7 @@ title: col - Tablet
 
 ## Calculate col- number
 
-![](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-21-11-01-06.png)
+![](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-21-11-01-06.png)
 ```txt title="Formula to determine col- number"
 12/(x columns) = 12/(3 columns) = 12/3 = 4 = col-4
 ```

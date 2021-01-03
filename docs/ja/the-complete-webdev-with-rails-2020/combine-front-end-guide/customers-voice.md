@@ -5,7 +5,7 @@ title : Customers Voice セクション
 ## ゴール
 - ⚡ このステップでは**Customers Voice**セクションを作っていきましょう。
 
-![20200607155117](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607155117.png)
+![20200607155117](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607155117.png)
 
 ## Boilerplate
 まず以下のコードをHow it worksセクションの下にコピー&ペーストしてください。
@@ -62,7 +62,7 @@ title : Customers Voice セクション
 
 ## column 1
 では、`row`の中のひとつの`column`を作成していきましょう。
-![20200607155501](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/20200607155501.png)
+![20200607155501](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/20200607155501.png)
 
 以下のコードをコピー＆ペーストしてください。
 

@@ -34,7 +34,7 @@ Let's check this file.
 
 Open: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css
 
-![bootstrap-css-file](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-19-16-31-17.png)
+![bootstrap-css-file](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-19-16-31-17.png)
 
 It is difficult to read this file because this file is **compressed** .
 
@@ -42,7 +42,7 @@ So, use chrome extension to **decompress** this file for easy reading.
 https://chrome.google.com/webstore/detail/javascript-and-css-code-b/iiglodndmmefofehaibmaignglbpdald?hl=en
 
 
-![beautified-bootstrap-ss](https://coderhackers-1302290683.cos.ap-singapore.myqcloud.com/2020-05-19-16-32-19.png)
+![beautified-bootstrap-ss](https://coderhackers-1304676641.cos.ap-singapore.myqcloud.com/2020-05-19-16-32-19.png)
 
 :::info important 🔥
 **Bootstrap CSS is a <mark>huge external CSS file</mark>.**
