@@ -43,7 +43,7 @@ function DocItem(props) {
     const script = document.createElement('script');
 
     script.src = "https://utteranc.es/client.js";
-    script.setAttribute('repo', "KohheePeace/coderhackers");
+    script.setAttribute('repo', "your-user-name/your-repo-name");
     script.setAttribute('issue-term', "pathname");
     script.setAttribute('label', "comment");
     script.setAttribute('theme',"github-light");
